@@ -15,10 +15,10 @@ I am also available by appointment. (<a href="https://calendly.com/lcappiello/30
 
 ### Courses Taught
 
-- <a href="https://lgpcappiello.github.io/teaching/stat1/">STAT 1 Introduction to Statistics</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/">STAT 1 Introduction to Statistics</a>
 - STAT 115A Introduction to Probability Theory
 - STAT 115B Introduction to Mathematical Statistics
-- <a href="https://lgpcappiello.github.io/teaching/stat128/">STAT 128 Statistical Computing</a>
+- <a href="https://lgpperry.github.io/teaching/stat128/">STAT 128 Statistical Computing</a>
 - STAT 199 Independent Study
 - MATH 26A Calculus I for the Social and Life Sciences
 - MATH 107A Fundamental Mathematical Concepts
@@ -26,7 +26,7 @@ I am also available by appointment. (<a href="https://calendly.com/lcappiello/30
 ### Selected Course Materials
 
 - <a href="https://bookdown.org/lgpcappiello/introstats/">Introduction to Statistics</a> (Open source Stat 1 textbook.)
-- <a href="https://lgpcappiello.github.io/teaching/shinyapps/">A list of my Shiny Apps and the code to run them.</a>
+- <a href="https://lgpperry.github.io/teaching/shinyapps/">A list of my Shiny Apps and the code to run them.</a>
 - Online Mini-Lectures (2020-2021 School Year)
     - <a href="https://www.youtube.com/playlist?list=PLuMDlHzKEzEFDn6yfD9D3DCsp_j2AfDvm" target="_blank">Introduction to Statistics</a>
     - <a href="https://www.youtube.com/playlist?list=PLuMDlHzKEzEHVDBeTH5I_ghfON5ev4vCv" target="_blank">Calculus I for the Social and Life Sciences</a>
@@ -35,5 +35,5 @@ I am also available by appointment. (<a href="https://calendly.com/lcappiello/30
 
 ## Department of Statistics at UC Riverside
 ### Course Websites
-- [STAT 100A Introduction to Statistics (Summer 2019)](https://lgpcappiello.github.io/teaching/stat100a/)
-- [STAT 100B Introduction to Statistics (Fall 2019)](https://lgpcappiello.github.io/teaching/stat100b/)
+- [STAT 100A Introduction to Statistics (Summer 2019)](https://lgpperry.github.io/teaching/stat100a/)
+- [STAT 100B Introduction to Statistics (Fall 2019)](https://lgpperry.github.io/teaching/stat100b/)
