@@ -16,8 +16,8 @@
 title: Lauren Perry
 email: cappiello@csus.edu
 description: test description
-# twitter_username: lgpcappiello
-github_username: lgpcappiello
+# twitter_username: lgpperry
+github_username: lgpperry
 minimal_mistakes_skin: default
 search: true
 
@@ -67,13 +67,13 @@ author:
       url: "https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/lgpcappiello"
+      url: "https://github.com/lgpperry"
 
 footer:
   # links:
   #   - label: "GitHub"
   #     icon: "fab fa-fw fa-github"
-  #     url: "https://github.com/lgpcappiello"
+  #     url: "https://github.com/lgpperry"
 
 defaults:
   # _posts
