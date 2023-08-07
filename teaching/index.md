@@ -6,12 +6,12 @@ author_profile: true
 ---
 
 ## Math & Stats at Sac State
-### Spring 2023 drop-in hours
+### Fall 2023 drop-in hours
 
-- Tuesday/Thursday 12:15-1:15 PM in Shasta 153
-- Wednesday 1:00-2:00 PM via Zoom
+- Mondays 1:30 - 3:00 PM via Zoom
+- Wednesday 1:30 - 3:00 in Shasta 153
 
-I am also available by appointment. (<a href="https://calendly.com/lcappiello/30min">Click here to view my calendar and set up an appointment.</a>)
+I am also available by appointment. (<a href="https://calendly.com/lgpperry/30min">Click here to view my calendar and set up an appointment.</a>)
 
 ### Courses Taught
 
