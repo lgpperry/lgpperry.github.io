@@ -14,7 +14,7 @@ As a college student, I went to six different colleges and universities, switche
 
 > "The best thing about being a statistician is that you get to play in everyone's backyard." - John Tukey
 
-I ended up in statistics because I love solving puzzles and learning about everything (and talking to everyone). When I'm not working, I'm an enthusiastic tabletop gamer and I usually have several <a href="https://lgpcappiello.github.io/Crafting-Projects/">unfinished crafting projects</a> laying around. I also love animals and have a <a href="https://lgpcappiello.github.io/Meet-the-Rescues/">growing menagerie of rescues</a>. 
+I ended up in statistics because I love solving puzzles and learning about everything (and talking to everyone). When I'm not working, I'm an enthusiastic tabletop gamer and I usually have several <a href="https://lgpperry.github.io/Crafting-Projects/">unfinished crafting projects</a> laying around. I also love animals and have a <a href="https://lgpperry.github.io/Meet-the-Rescues/">growing menagerie of rescues</a>. 
 
 ### Curriculum Vitae
-My CV may be found <a href="https://lgpcappiello.github.io/CappielloCV.pdf" target="_blank">here</a> (last update: July 2023).
+My CV may be found <a href="https://lgpcappiello.github.io/PerryCV.pdf" target="_blank">here</a> (last update: July 2023).
