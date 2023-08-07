@@ -11,7 +11,7 @@ author_profile: true
 - [RDRR.io](https://rdrr.io/snippets/)
 
 ## Shiny Apps
-- <a href="https://lgpcappiello.github.io/teaching/shinyapps/">A list of my Shiny Apps and the code to run them.</a>
+- <a href="https://lgpperry.github.io/teaching/shinyapps/">A list of my Shiny Apps and the code to run them.</a>
 
 ## [Rossman and Chance Applets](https://www.rossmanchance.com/applets/index2021.html)
 
@@ -27,7 +27,7 @@ author_profile: true
 - [The R Inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 - [R for Data Science](https://r4ds.had.co.nz/introduction.html)
 - [Advanced R](http://adv-r.had.co.nz/) (This is a companion website for the textbook, but it has lots of good information!)
-- [Exploring Elementary Mathematics](https://lgpcappiello.github.io/teaching/Math107Book.pdf) (This is the textbook for Math 107A, written by [Dr. Elce](https://www.csus.edu/faculty/e/kelce/).) 
+- [Exploring Elementary Mathematics](https://lgpperry.github.io/teaching/Math107Book.pdf) (This is the textbook for Math 107A, written by [Dr. Elce](https://www.csus.edu/faculty/e/kelce/).) 
 
 ## Sac State Student Resources
 
