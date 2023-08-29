@@ -1,6 +1,6 @@
 ---
 title: "6.2 The Logic of Hypothesis Testing"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

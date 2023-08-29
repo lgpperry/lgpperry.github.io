@@ -1,6 +1,6 @@
 ---
 title: "6.3 The Confidence Interval Approach to Hypothesis Testing"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

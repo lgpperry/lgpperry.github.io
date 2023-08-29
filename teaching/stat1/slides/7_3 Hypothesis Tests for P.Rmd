@@ -1,6 +1,6 @@
 ---
 title: "7.3 Hypothesis Tests for a Proportion"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

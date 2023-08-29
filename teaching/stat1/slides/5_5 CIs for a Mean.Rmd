@@ -1,6 +1,6 @@
 ---
 title: "5.5 Confidence Intervals for a Mean"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

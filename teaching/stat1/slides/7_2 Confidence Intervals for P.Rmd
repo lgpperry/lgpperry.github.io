@@ -1,6 +1,6 @@
 ---
 title: "7.2 Confidence Intervals for a Proportion"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

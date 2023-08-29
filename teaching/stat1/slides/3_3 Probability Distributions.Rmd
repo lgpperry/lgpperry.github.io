@@ -1,6 +1,6 @@
 ---
 title: "3.3 Probability Distributions"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

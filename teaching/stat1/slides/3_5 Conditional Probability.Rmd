@@ -1,6 +1,6 @@
 ---
 title: "3.5 Conditional Probability"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output: 
   ioslides_presentation:
     widescreen: true

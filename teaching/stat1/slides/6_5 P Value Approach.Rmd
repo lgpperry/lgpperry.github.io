@@ -1,6 +1,6 @@
 ---
 title: "6.5 The P-Value Approach to Hypothesis Testing"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

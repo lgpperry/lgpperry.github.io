@@ -1,6 +1,6 @@
 ---
 title: "2.2 Central Tendency"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

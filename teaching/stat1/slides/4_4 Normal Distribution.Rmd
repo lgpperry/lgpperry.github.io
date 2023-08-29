@@ -1,6 +1,6 @@
 ---
 title: "4.4 The Normal Distribution"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true

@@ -1,6 +1,6 @@
 ---
 title: "4.3 The Binomial Distribution"
-author: "Dr. Lauren Parker"
+author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
     widescreen: true
