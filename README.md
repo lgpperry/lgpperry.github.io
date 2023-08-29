@@ -4,4 +4,4 @@ Assistant Professor of Mathematics & Statistics at California State University, 
 
 ## Contact
 
-cappiello@csus.edu
+perry@csus.edu
