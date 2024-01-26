@@ -1,0 +1,78 @@
+---
+title: "3.3 Correlation"
+author: "Dr. Lauren Perry"
+output:
+  ioslides_presentation: 
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Residuals
+
+**Residuals** are the leftover *stuff* (variation) in the data after
+accounting for model fit:
+$$\text{data} = \text{prediction} + \text{residual}$$ 
+Each observation has its own residual. 
+
+## Residuals
+
+The residual for an observation $(x,y)$ is the
+difference between observed ($y$) and predicted ($\hat{y}$):
+$$e = y - \hat{y}$$ 
+
+We denote the residuals by $e$ and find $\hat{y}$ by
+plugging $x$ into the regression equation. 
+
+- If an observation lands above
+the regression line, $e > 0$. If below, $e < 0$.
+
+## Concept: Want Residuals Close to Zero
+
+When we estimate the parameters for the regression, our goal is to get
+each residual as close to 0 as possible. 
+
+- Might try minimizing $$\sum_{i=1}^n e_i = \sum_{i=1}^n (y_i - \hat{y}_i)$$ 
+    - ...but that would just give us very large negative residuals. 
+
+## Concept: Want Residuals Close to Zero
+
+- Instead, we use squares: 
+\[
+\sum_{i=1}^n e_i^2 = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n [y_i - (b_0 + b_1 x_i)]^2
+\] 
+    - The values $b_0$ and $b_1$ that minimize this will make up our regression line.
+
+## Finding a Regression Line
+
+The slope can be estimated as
+$$b_1 = \frac{s_y}{s_x}\times R$$ and the intercept as
+$$b_0 = \bar{y} - b_1 \bar{x}$$
+
+## Example
+
+```{r}
+plot(faithful$waiting, faithful$eruptions, xlab="Waiting Time", ylab="Eruption Duration")
+```
+
+## Example
+
+The sample statistics for these data are
+
+ |      |    `waiting`    |  `eruptions`   |
+ |:----:|:---------------:|:--------------:|
+ | mean | $\bar{x}=70.90$ | $\bar{y}=3.49$ |
+ |  sd  |   $s_x=13.60$   |   $s_y=1.14$   |
+ |      |                 |   $R = 0.90$   |
+
+Find the regression line, then interpret the slope and intercept. 
+
+## The Coefficient of Determination
+
+The **coefficient of determination**, $R^2$, is the square of the correlation coefficient.
+
+- This value tells us how much of the variability around the regression line is accounted for by the regression. 
+- An easy way to interpret this value is to assign it a letter grade. 
+    - For example, if $R^2 = 0.84$, the predictive capabilities of the regression line get a B.
