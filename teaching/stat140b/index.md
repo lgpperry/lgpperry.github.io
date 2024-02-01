@@ -15,4 +15,4 @@ Slides are based on [Introduction to Statistical Learning](https://www.statlearn
 
 ### Chapter 3
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_3_1.pdf">3.1 (Simple) Linear Regression</a>
-- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_3_1.pdf">3.2 Multiple Linear Regression</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_3_2.pdf">3.2 Multiple Linear Regression</a>
