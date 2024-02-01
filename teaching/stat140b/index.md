@@ -7,7 +7,7 @@ author_profile: true
 
 ## Slides
 
-Slides are based on [Introduction to Statistical Learning](https://www.statlearning.com/). Original RMarkdown files available upon request. 
+Slides are based on [Introduction to Statistical Learning](https://www.statlearning.com/) by James, Witten, Hastie, And Tibshirani. Original RMarkdown files available upon request. 
 
 ### Chapter 2
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_2_1.pdf">2.1 What is Statistical Learning?</a>
