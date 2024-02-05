@@ -12,7 +12,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ***
 
-It's important to stop and think about our predictions. 
+It's important to stop and think about our predictions.
+
 - Sometimes, the numbers just don't make sense.
 - Other times it's harder to tell something's wrong!
 

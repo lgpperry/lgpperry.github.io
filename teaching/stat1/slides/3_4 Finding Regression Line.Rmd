@@ -33,10 +33,12 @@ the regression line, $e > 0$. If below, $e < 0$.
 Goal: get each residual as close to 0 as possible. 
 
 To shrink the residuals toward 0, we minimize:
+\[
 \begin{align}
 \sum_{i=1}^n e_i^2 &= \sum_{i=1}^n (y_i - \hat{y}_i)^2 \\
 & = \sum_{i=1}^n [y_i - (b_0 + b_1 x_i)]^2
 \end{align} 
+\]
 
 The values $b_0$ and $b_1$ that minimize this will make up our regression line.
 
