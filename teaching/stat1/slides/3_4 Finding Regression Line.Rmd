@@ -1,5 +1,5 @@
 ---
-title: "3.3 Correlation"
+title: "3.4 Finding a Regression Line"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
@@ -15,49 +15,48 @@ knitr::opts_chunk$set(echo = FALSE)
 **Residuals** are the leftover *stuff* (variation) in the data after
 accounting for model fit:
 $$\text{data} = \text{prediction} + \text{residual}$$ 
-Each observation has its own residual. 
 
 ## Residuals
 
-The residual for an observation $(x,y)$ is the
+- Each observation has its own residual. 
+- The residual for an observation $(x,y)$ is the
 difference between observed ($y$) and predicted ($\hat{y}$):
 $$e = y - \hat{y}$$ 
-
-We denote the residuals by $e$ and find $\hat{y}$ by
+- We denote the residuals by $e$ and find $\hat{y}$ by
 plugging $x$ into the regression equation. 
 
-- If an observation lands above
+Note: If an observation lands above
 the regression line, $e > 0$. If below, $e < 0$.
 
-## Concept: Want Residuals Close to Zero
+## Residuals
 
-When we estimate the parameters for the regression, our goal is to get
-each residual as close to 0 as possible. 
+Goal: get each residual as close to 0 as possible. 
 
-- Might try minimizing $$\sum_{i=1}^n e_i = \sum_{i=1}^n (y_i - \hat{y}_i)$$ 
-    - ...but that would just give us very large negative residuals. 
+To shrink the residuals toward 0, we minimize:
+\begin{align}
+\sum_{i=1}^n e_i^2 &= \sum_{i=1}^n (y_i - \hat{y}_i)^2 \\
+& = \sum_{i=1}^n [y_i - (b_0 + b_1 x_i)]^2
+\end{align} 
 
-## Concept: Want Residuals Close to Zero
+The values $b_0$ and $b_1$ that minimize this will make up our regression line.
 
-- Instead, we use squares: 
-\[
-\sum_{i=1}^n e_i^2 = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n [y_i - (b_0 + b_1 x_i)]^2
-\] 
-    - The values $b_0$ and $b_1$ that minimize this will make up our regression line.
+## Finding $b_0$ and $b_1$
 
-## Finding a Regression Line
-
-The slope can be estimated as
-$$b_1 = \frac{s_y}{s_x}\times R$$ and the intercept as
+- The slope is
+$$b_1 = \frac{s_y}{s_x}\times R$$ 
+- The intercept is
 $$b_0 = \bar{y} - b_1 \bar{x}$$
 
-## Example
+## Example: Old Faithful Geyser in Yellowstone
+
+- `eruptions`, the length of each eruption
+- `waiting`, the time between eruptions
 
 ```{r}
 plot(faithful$waiting, faithful$eruptions, xlab="Waiting Time", ylab="Eruption Duration")
 ```
 
-## Example
+## Example: Old Faithful Geyser in Yellowstone
 
 The sample statistics for these data are
 
@@ -66,8 +65,34 @@ The sample statistics for these data are
  | mean | $\bar{x}=70.90$ | $\bar{y}=3.49$ |
  |  sd  |   $s_x=13.60$   |   $s_y=1.14$   |
  |      |                 |   $R = 0.90$   |
+ 
+ Find the regression line and interpret the parameters.
+ 
+## Example: Old Faithful Geyser in Yellowstone
 
-Find the regression line, then interpret the slope and intercept. 
+```{r, message=F}
+plot(x = faithful$waiting, y = faithful$eruptions,
+     xlab = "Waiting Time (minutes)",
+     ylab = "Eruption Duration (minutes)")
+abline(summary(lm(formula = eruptions ~ waiting, data=faithful))$coef[,1],
+       col = "red", lwd = 2)
+```
+
+## Checkpoint
+
+Consider a dataset on `height` and `age` of $n=84$ Loblolly pine trees. 
+
+- We want to use tree `height` to predict tree `age`.
+
+The sample statistics for these data are
+
+ |      |    `height`     |      `age`     |
+ |:----:|:---------------:|:--------------:|
+ | mean | $32.36$ | $13.00$ |
+ |  sd  |   $20.67$   |   $7.90$   |
+ |      |                 |   $R = 0.99$   |
+ 
+ Find the regression line and interpret the parameters.
 
 ## The Coefficient of Determination
 
