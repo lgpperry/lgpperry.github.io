@@ -1,5 +1,5 @@
 ---
-title: "3.2 Sample Spaces and Events"
+title: "4.2 Sample Spaces and Events"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

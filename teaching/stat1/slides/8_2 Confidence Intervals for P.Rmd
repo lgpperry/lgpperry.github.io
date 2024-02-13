@@ -1,5 +1,5 @@
 ---
-title: "7.2 Confidence Intervals for a Proportion"
+title: "8.2 Confidence Intervals for a Proportion"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

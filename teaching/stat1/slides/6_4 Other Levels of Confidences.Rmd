@@ -1,5 +1,5 @@
 ---
-title: "5.4 Other Levels of Confidence"
+title: "6.4 Other Levels of Confidence"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

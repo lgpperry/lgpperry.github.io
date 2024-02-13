@@ -1,5 +1,5 @@
 ---
-title: "4.5 Area Under the Standard Normal Curve"
+title: "5.5 Area Under the Standard Normal Curve"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

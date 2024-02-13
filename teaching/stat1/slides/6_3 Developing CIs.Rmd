@@ -1,5 +1,5 @@
 ---
-title: "5.3 Developing Confidence Intervals"
+title: "6.3 Developing Confidence Intervals"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

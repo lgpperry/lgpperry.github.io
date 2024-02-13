@@ -1,5 +1,5 @@
 ---
-title: "6.2 The Logic of Hypothesis Testing"
+title: "7.2 The Logic of Hypothesis Testing"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

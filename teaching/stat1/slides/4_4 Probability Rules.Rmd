@@ -1,5 +1,5 @@
 ---
-title: "3.4 Rules of Probability"
+title: "4.4 Rules of Probability"
 author: "Dr. Lauren Perry"
 output: 
   ioslides_presentation:

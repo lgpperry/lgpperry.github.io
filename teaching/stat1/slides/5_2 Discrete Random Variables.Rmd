@@ -1,5 +1,5 @@
 ---
-title: "4.2 Discrete Random Variables"
+title: "5.2 Discrete Random Variables"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

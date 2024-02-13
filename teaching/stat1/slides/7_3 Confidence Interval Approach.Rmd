@@ -1,5 +1,5 @@
 ---
-title: "6.3 The Confidence Interval Approach to Hypothesis Testing"
+title: "7.3 The Confidence Interval Approach to Hypothesis Testing"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

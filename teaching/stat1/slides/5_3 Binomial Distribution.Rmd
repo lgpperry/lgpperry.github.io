@@ -1,5 +1,5 @@
 ---
-title: "4.3 The Binomial Distribution"
+title: "5.3 The Binomial Distribution"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

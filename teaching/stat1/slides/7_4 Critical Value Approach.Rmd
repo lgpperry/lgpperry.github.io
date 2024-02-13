@@ -1,5 +1,5 @@
 ---
-title: "6.4 The Critical Value Approach to Hypothesis Testing"
+title: "7.4 The Critical Value Approach to Hypothesis Testing"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 

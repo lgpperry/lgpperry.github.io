@@ -1,5 +1,5 @@
 ---
-title: "5.5 Confidence Intervals for a Mean"
+title: "6.5 Confidence Intervals for a Mean"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
