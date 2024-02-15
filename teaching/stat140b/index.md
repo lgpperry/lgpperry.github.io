@@ -19,3 +19,6 @@ Original RMarkdown files available upon request.
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_3_1.pdf">3.1 (Simple) Linear Regression</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_3_2.pdf">3.2 Multiple Linear Regression</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_3_3.pdf">3.3 Other Considerations in the Regression Model</a>
+
+### Chapter 4
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_1.pdf">4.1 and 4.2 Introducing Classification</a>
