@@ -21,7 +21,3 @@ I rescued Suki after moving to Sacramento in summer 2020. I found her on Craigsl
 <img src="http://lgpcappiello.github.io/images/IMG-9041.jpg" alt="Sokka in the sunshine" width="30%"> <img src="http://lgpcappiello.github.io/images/IMG-9057.jpg" alt="Sokka being a goober" width="30%"> <img src="https://lgpcappiello.github.io/images/IMG_9511.JPG" alt="Sokka napping on my pillow after shoving all of the blankets aside" width="30%"> 
 
 I got Sokka from Sacramento Independent Animal Rescuers in January 2021. He loves to snuggle. He came to me very shy, but I spent some time working with a trainer to get his confidence up. He's doing great, but he probably won't ever be excited about new people. Sokka is also named after Avatar the Last Airbender, but I didn't name him! The rescue named him and he came to me (and to Suki!) with his name. My sister found him for me on Petfinder and it felt like fate :)
-
-## The Turtles
-
-Two red-eared sliders came home with me (as tiny babies) from Chinatown in Los Angeles circa 2014. The friend I'd gone to LA with passed away unexpectedly in 2017 and they're a sweet reminder of her.
