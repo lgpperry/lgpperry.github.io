@@ -23,3 +23,4 @@ Original RMarkdown files available upon request.
 ### Chapter 4
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_1.pdf">4.1 and 4.2 Introducing Classification</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_3.pdf">4.3 Logistic Regression</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4.pdf">4.4 Generative Methods for Classification</a>
