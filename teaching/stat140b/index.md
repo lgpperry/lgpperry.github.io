@@ -28,3 +28,4 @@ Original RMarkdown files available upon request.
     - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_2.pdf">4.4.2 Linear Discriminant Analysis for p > 2</a>
     - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_3.pdf">4.4.3 Quadratic Discriminant Analysis</a>
     - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_4.pdf">4.4.4 Naive Bayes</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_6.pdf">4.6 Generalied Linear Models</a>
