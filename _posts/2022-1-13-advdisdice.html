@@ -405,10 +405,10 @@ disadvantage. Recall</p>
 \text{ and } B) = P(A)\times P(B) = \frac{1}{20}\times \frac{1}{20} =
 \frac{1}{400} =0.0025\]</span> There is a 0.25% (one quarter of one
 percent!) chance of rolling two 20s.</p>
-<p>In general, an average roll of a d20 is 10.5. We can use order
-statistics to find the average roll with disadvantage, similar to the
-approach used in <a href="https://lgpperry.github.io/chrstats/"><em>this
-post</em></a>)… or we can simulate it using <code>R</code>:</p>
+<p>In general, an average roll of a d20 is 10.5 (this is the mean and
+the median). We can use order statistics to find the average roll with
+disadvantage, similar to the approach used in <a href="https://lgpperry.github.io/chrstats/"><em>this post</em></a>)… or
+we can simulate it using <code>R</code>:</p>
 <pre class="r"><code>  nrep &lt;- 10000000
   roll.dis &lt;- numeric(length=nrep)
   for(i in 1:nrep){
@@ -424,7 +424,7 @@ of the two. Finally, we exit the loop and take the average of the 10
 million simulated rolls with disadvantage.</p>
 <p>Running the simulation, we find that the average roll with
 disadvantage is 7.18, significantly lower than our usual average of
-10.5!</p>
+10.5! Even worse, the <em>median</em> roll with disadvantage is a 6!</p>
 </div>
 <div id="advantage" class="section level3">
 <h3>Advantage</h3>
@@ -482,7 +482,7 @@ B) = \frac{1}{20} + \frac{1}{20} - \frac{1}{400} = \frac{39}{400} =
 } B)\)</span> in the subsection on disadvantage. There is a 9.75% chance
 of rolling a 20 with advantage.</p>
 <p>What about an average roll with advantage? This is going to be really
-similar to how we think about average rolls with disadvantage:</p>
+similar to how we thought about average rolls with disadvantage:</p>
 <pre class="r"><code>  nrep &lt;- 10000000
   roll.adv &lt;- numeric(length=nrep)
   for(i in 1:nrep){
@@ -497,7 +497,8 @@ rolls of the d20 and the <code>max</code> function takes the larger of
 the two. Finally, we exit the loop and take the average of the 10
 million simulated rolls with advantage.</p>
 <p>Running the simulation, we find that the average roll with advantage
-is 13.83, significantly higher than our usual average of 10.5!</p>
+is 13.83. Our median is is even higher, coming in at 15, significantly
+better than that 10.5 average we get rolling straight.</p>
 </div>
 
 
