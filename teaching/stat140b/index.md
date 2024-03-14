@@ -33,3 +33,4 @@ Original RMarkdown files available upon request.
 ### Chapter 5: Resampling Methods
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_1.pdf">5.1 Cross-Validation</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_2.pdf">5.2 Bootstrap</a> (slides from Dr. James Flegal, UCR)
+    - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_2.rmd">Original rmd with R code</a>
