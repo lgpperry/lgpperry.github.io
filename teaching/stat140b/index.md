@@ -34,3 +34,6 @@ Original RMarkdown files available upon request.
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_1.pdf">5.1 Cross-Validation</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_2.pdf">5.2 Bootstrap</a> (slides from Dr. James Flegal, UCR)
     - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_2.rmd">Original rmd with R code</a>
+
+### Chapter 6: Linear Model Selection and Regularization
+- <a href="https://hastie.su.domains/ISLR2/Slides/Ch6_Model_Selection.pdf">Slides</a> (from <a href="https://www.statlearning.com/resources-second-edition">ISLR2 resources</a>).
