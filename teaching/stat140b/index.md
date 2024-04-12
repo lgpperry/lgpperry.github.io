@@ -41,3 +41,6 @@ Original RMarkdown files available upon request.
 ### Chapter 7: Moving Beyond Linearity
 - <a href="https://web.stanford.edu/~hastie/ISLR2/Slides/Ch7_Moving_Beyond_Linearity.pdf">Slides</a> (from <a href="https://www.statlearning.com/resources-second-edition">ISLR2 resources</a>).
     - Slides 1-15
+
+### Chapter 8: Tree-Based Methods
+- <a href="https://web.stanford.edu/~hastie/ISLR2/Slides/Ch8_Tree_Based_Methods.pdf">Slides</a> (from <a href="https://www.statlearning.com/resources-second-edition">ISLR2 resources</a>).
