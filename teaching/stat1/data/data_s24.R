@@ -1,2 +1,2 @@
-data_s24 <- read.delim("https://lgpperry.github.io/teaching/stat1/data/Stat1_SurveyData_S24.csv")
-data_s24[sapply(data_s24, is.character)] <- lapply(data_s24[sapply(data_s24, is.character)], as.factor)
+survey <- read.delim("https://lgpperry.github.io/teaching/stat1/data/Stat1_SurveyData_S24.csv")
+survey[sapply(survey, is.character)] <- lapply(survey[sapply(survey, is.character)], as.factor)
