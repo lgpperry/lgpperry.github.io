@@ -8,6 +8,7 @@ author_profile: true
 ## Run R Online
 
 - [RStudio Cloud](https://rstudio.cloud/projects)
+- [webR](https://webr.r-wasm.org/latest/)
 - [RDRR.io](https://rdrr.io/snippets/)
 
 ## Shiny Apps
