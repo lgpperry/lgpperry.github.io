@@ -18,17 +18,7 @@ I also make dice bags!
 
 <img src="http://lgpcappiello.github.io/images/IMG-2273.jpg" width="45%"> <img src="http://lgpcappiello.github.io/images/IMG-2274.jpg" width="45%">
 
-The catio I built outside my home office window.
-
-<img src="http://lgpcappiello.github.io/images/IMG-1800-Original.jpeg" width="45%">
-
-<img src="http://lgpcappiello.github.io/images/IMG-1082-Original.jpeg" width="75%">
-
-A bed frame to squeeze one more guest bed space into the office. 
-
-<img src="http://lgpcappiello.github.io/images/IMG-2376.jpg" alt="A pink table in front of a window with a bunch of plants on it." width="75%">
-
-A little windowsill extension table I threw together for some of my plants. 
+The catio I built outside one of the bedroom windows. 
 
 ## Knitting
 
