@@ -17,4 +17,4 @@ As a college student, I went to six different colleges and universities, switche
 I ended up in statistics because I love solving puzzles and learning about everything (and talking to everyone). When I'm not working, I'm an enthusiastic tabletop gamer and I enjoy playing music. My partner is also a teacher and we spend our breaks traveling. I also love animals and we have a <a href="https://lgpperry.github.io/Meet-the-Rescues/">little menagerie of rescues</a>. 
 
 ### Curriculum Vitae
-My CV may be found <a href="https://lgpperry.github.io/PerryCV.pdf" target="_blank">here</a> (last update: Feb 2024).
+My CV may be found <a href="https://lgpperry.github.io/PerryCV.pdf" target="_blank">here</a> (last update: Aug 2024).
