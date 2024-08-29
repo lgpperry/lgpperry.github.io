@@ -21,13 +21,29 @@ author_profile: true
 
 ## Open Source Textbooks
 
+### Stat 1 (Intro Stats)
+
 - [Introduction to Statistics](https://bookdown.org/lgpcappiello/introstats/) (This is my own text that I use in Stat 1.)
 - [OpenIntro Statistics](https://leanpub.com/openintro-statistics)
 - [Introductory Statistics by OpenStax](https://openstax.org/details/books/introductory-statistics)
-- [Probability Course](http://www.probabilitycourse.com/) (This covers a lot of the Stat 115AB material.)
+
+### Linear Models and Statistical Learning
+
+- [Linear Models with R](https://www.utstat.toronto.edu/~brunner/books/LinearModelsWithR.pdf)
+- [An Introduction to Statistical Learning](https://www.statlearning.com/) (The website has both an R and a Python version.)
+
+### Mathematical Statistics / Probability Theory 
+
+- [Probability Course](http://www.probabilitycourse.com/) 
+
+### R Programming
+
 - [The R Inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 - [R for Data Science](https://r4ds.had.co.nz/introduction.html)
 - [Advanced R](http://adv-r.had.co.nz/) (This is a companion website for the textbook, but it has lots of good information!)
+
+### Other
+
 - [Exploring Elementary Mathematics](https://lgpperry.github.io/teaching/Math107Book.pdf) (This is the textbook for Math 107A, written by [Dr. Elce](https://www.csus.edu/faculty/e/kelce/).) 
 
 ## Sac State Student Resources
