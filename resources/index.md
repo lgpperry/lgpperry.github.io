@@ -23,7 +23,7 @@ author_profile: true
 
 ### Stat 1 (Intro Stats)
 
-- [Introduction to Statistics](https://bookdown.org/lgpcappiello/introstats/) (This is my own text that I use in Stat 1.)
+- [Introduction to Statistics](https://bookdown.org/lgpperry/introstats/) (This is my own text that I use in Stat 1.)
 - [OpenIntro Statistics](https://leanpub.com/openintro-statistics)
 - [Introductory Statistics by OpenStax](https://openstax.org/details/books/introductory-statistics)
 
