@@ -15,7 +15,7 @@ author_profile: true
 
 ## Student research
 
-If you are a student interested in statistics research, [send me an email](mailto:cappiello@csus.edu)! I would be happy to chat with you about your options.
+If you are a student interested in statistics research, [send me an email](mailto:perry@csus.edu)! I would be happy to chat with you about your options.
 
 ## Student Projects
 
