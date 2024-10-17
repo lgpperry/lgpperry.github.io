@@ -2,6 +2,8 @@
 permalink: /
 title: ""
 author_profile: true
+layout: single
+classes: wide
 ---
 
 Welcome! I am an Assistant Professor in the Mathematics and Statistics Department at CSU, Sacramento. My research interests include biostatistics and applied statistics, particularly in biological and social science fields. 
