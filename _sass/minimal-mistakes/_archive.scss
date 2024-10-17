@@ -437,11 +437,11 @@
   .wide {
   .archive {
     @include breakpoint($large) {
-      padding-right: 0;
+      padding-right: $right-sidebar-width-narrow;
     }
 
     @include breakpoint($x-large) {
-      padding-right: 0;
+      padding-right: $right-sidebar-width-narrow;
     }
   }
 }
