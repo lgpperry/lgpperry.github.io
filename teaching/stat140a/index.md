@@ -18,6 +18,13 @@ author_profile: true
 - [Qualitative Preditors and Interactions](https://lgpperry.github.io/teaching/stat140a/5-Quantitative-Predictors-and-Interactions.pdf)
 - [Model Diagnostics](https://lgpperry.github.io/teaching/stat140a/6-Model-Diagnostics.pdf)
 
+### Missing Data
+
+- [A Brief Overview of Missing Data](https://lgpperry.github.io/teaching/stat140a/1-Missing-Data.html)
+
 ### ANOVA
 
 - [Introduction to ANOVA](https://lgpperry.github.io/teaching/stat140a/1-Intro-ANOVA.html)
+- [Multiple Comparisons](https://lgpperry.github.io/teaching/stat140a/3-Multiple-Comparisons.pdf)
+- [ANOVA as Linear Models](https://lgpperry.github.io/teaching/stat140a/4-ANOVA-Linear-Models.pdf)
+- [Factorial Designs](https://lgpperry.github.io/teaching/stat140a/5-Factorial-Designs.html)
