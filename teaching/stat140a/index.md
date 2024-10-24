@@ -28,3 +28,4 @@ author_profile: true
 - [Multiple Comparisons](https://lgpperry.github.io/teaching/stat140a/3-Multiple-Comparisons.pdf)
 - [ANOVA as Linear Models](https://lgpperry.github.io/teaching/stat140a/4-ANOVA-Linear-Models.pdf)
 - [Factorial Designs](https://lgpperry.github.io/teaching/stat140a/5-Factorial-Designs.html)
+- [Block Designs](https://lgpperry.github.io/teaching/stat140a/6-Block-Designs.html)
