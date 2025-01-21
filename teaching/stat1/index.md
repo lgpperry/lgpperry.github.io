@@ -10,9 +10,9 @@ author_profile: true
 Slides are based on my [Introduction to Statistics](https://bookdown.org/lgpperry/introstats/). These slides have some short checkpoint problems, but do not include most of our in-class activities. Original RMarkdown files available upon request. 
 
 ### Chapter 1
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_2-Statistics-Terminology.html" target="blank">1.1 Statistics Terminology</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_3-Sampling-Design.html" target="blank">1.2 Sampling and Design</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_4-Frequency-Distributions.html" target="blank">1.3 Frequency Distributions</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_1-Statistics-Terminology.html" target="blank">1.1 Statistics Terminology</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_2-Sampling-Design.html" target="blank">1.2 Sampling and Design</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_3-Frequency-Distributions.html" target="blank">1.3 Frequency Distributions</a>
 
 ### Chapter 2
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/2_2-Central-Tendency.html" target="blank">2.1 Measures of Central Tendency</a>
