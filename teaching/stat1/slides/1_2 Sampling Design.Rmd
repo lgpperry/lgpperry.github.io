@@ -65,6 +65,32 @@ When we do research, we have two options:
 
 Experiments allow us to infer causation. Observational studies do not.
 
+## Example: Experiment
+
+A biologist wants to know if different diets impact reproductive behaviors in mice. Of the 50 mice they have in the lab, 17 will be given Diet A, 17 will be given Diet B, and 16 Diet C. 
+
+The biologist is going to provide each mouse with a specific diet, so this is an *experiment*. That is, they are assigning treatments (diets) to cases (mice). 
+
+##  Example: Experiment
+
+A medical researcher wants to know if a new heartburn medication is as effective as antacids. They bring 150 people into the lab and have them drink something that causes heartburn. After a set period of time, 75 of them are given an antacid and 75 are given the new heartburn medication. The researchers then measure how long it takes for each person's heartburn to subside. 
+
+This is an *experiment* because the researchers provided each person with a treatment - an antacid or the new medication. That is, the researchers assigned a treatment to each subject.
+
+##  Example: Observational Study
+
+A psychology researcher asked 100 people to take a survey on a variety of personality traits. 
+
+Because the researcher did not assign any treatments to the subjects in the study (everyone took the same survey), this is an *observational study*.
+ 
+##  Example: Observational Study
+
+A researcher wanted to examine the relationship between cigarette smoking and stomach cancer. They follow 65 people from ages 40-70 and compare the stomach cancer rates of smokers and non-smokers. 
+
+This is an observational study because the researcher did not *assign* treatments to cases. That is, each subject in the study was free to choose whether to smoke cigarettes. 
+
+(If the reseachers found a strong relationship between smoking and stomach cancer, they would not be able to say that smoking *causes* stomach cancer, but they would have strong motivation for futher research!)
+
 ## Experimental design principles
 
 <ul>
@@ -87,7 +113,30 @@ In an experimental setting, we talk about
     <li><strong>Treatments:</strong> experimental conditions (based on combinations of factor levels).</li>
 </ul>
 
-***
+## Example
+
+Some entomologists are interested in the number of eggs laid by carrion beetles at different temperatures and different levels of moisture in the environment. They set up various enclosures for the beetles with temperatures either above or below freezing; and humidity levels of 10%, 50%, and 80%. After 24 hours in an enclosure, they check how many eggs were laid by each beetle.
+
+## Example
+
+- The entomologists are interested in observing how different things impact number of eggs laid, so this is the *response variable*. 
+- The *factors* are temperature and humidity, the two variables our researchers think will impact that response variable. 
+    - For humidity, the levels are 20%, 50%, and 80%;
+    - For temperature, the levels are "below freezing" and "above freezing".
+
+## Example
+
+- To get at the treatments, we need to consider all possible combinations of factor levels. 
+- That is, we need to think about all of the possible ways to combine the different temperatures and humidities:
+    1. 20% humidity, below freezing.
+    2. 50% humidity, below freezing.
+    3. 80% humidity, below freezing.
+    4. 20% humidity, above freezing.
+    5. 50% humidity, above freezing.
+    6. 80% humidity, above freezing.
+- There are six different combinations, which make up the six different treatments in this experiment.
+
+## Human Subjects
 
 In human subjects research, we do a little extra work:
 
