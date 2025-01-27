@@ -15,9 +15,8 @@ Slides are based on my [Introduction to Statistics](https://bookdown.org/lgpperr
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/1_3-Frequency-Distributions.html" target="blank">1.3 Frequency Distributions</a>
 
 ### Chapter 2
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/2_2-Central-Tendency.html" target="blank">2.1 Measures of Central Tendency</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/2_3-Variability.html" target="blank">2.2 Measures of Variability</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/2_4-Position.html" target="blank">2.3 Measures of Position</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/2_1-Central-Tendency.html" target="blank">2.1 Measures of Central Tendency</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/2_2-Variability.html" target="blank">2.2 Measures of Variability</a>
 
 ### Chapter 3
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/3_2-Linear-Equations.html" target="blank">3.1 Linear Equations</a>
