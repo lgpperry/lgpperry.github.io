@@ -6,8 +6,6 @@ layout: single
 classes: wide
 ---
 
-Welcome! I am an Assistant Professor in the Mathematics and Statistics Department at CSU, Sacramento. 
-
 ## About
 
 As a college student, I went to six different colleges and universities, switched majors countless times, and finally graduated after five years. I started college wanting to be an opera singer and starred in a condensed version of Leonard Bernstein's <a href="https://vimeo.com/32599888" target="_blank">Trouble in Tahiti</a>. Eventually I found my way to Statistics and went on to do my PhD in Applied Statistics at UC Riverside. 
