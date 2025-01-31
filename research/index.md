@@ -5,13 +5,7 @@ layout: single
 author_profile: true
 ---
 
-## Interests
-
-- Applied statistics and data analysis
-- Nonparametric methods 
-- Causal inference
-- Biostatistics
-- Statistics and mathematics education
+My research is primarily in applied statistics, where I do a lot of collaborative work with other researchers. I am always open to mentoring student research and am happy to work on projects outside of the current scope of my research. I also do consulting work as time permits. Please feel free to reach out to me with any questions at perry@csus.edu. 
 
 ## Student research
 
