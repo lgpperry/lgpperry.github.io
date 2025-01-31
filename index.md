@@ -10,7 +10,7 @@ Welcome! I am an Assistant Professor in the Mathematics and Statistics Departmen
 
 ## About
 
-As a college student, I went to six different colleges and universities, switched majors countless times, and finally graduated after five years. I started college wanting to be an opera singer and starred in a <a href="https://vimeo.com/32599888" target="_blank">condensed version of Leonard Bernstein's Trouble in Tahiti</a>. Eventually I found my way to Statistics and went on to do my PhD in Applied Statistics at UC Riverside. 
+As a college student, I went to six different colleges and universities, switched majors countless times, and finally graduated after five years. I started college wanting to be an opera singer and starred in a condensed version of Leonard Bernstein's <a href="https://vimeo.com/32599888" target="_blank">Trouble in Tahiti</a>. Eventually I found my way to Statistics and went on to do my PhD in Applied Statistics at UC Riverside. 
 
 > "The best thing about being a statistician is that you get to play in everyone's backyard." - John Tukey
 
