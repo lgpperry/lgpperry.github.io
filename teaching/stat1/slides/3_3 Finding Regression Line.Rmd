@@ -135,7 +135,7 @@ Since $R = 0.90$, we can find $R^2 = 0.90^2 = 0.81$
 
 That is, 81\% of the variability around the regression line is accounted for by the regression and this line gets a B
 
-***
+## Prediction: Some Notes
 
 It's important to stop and think about our predictions.
 
@@ -168,18 +168,10 @@ The best fit line is $$\hat{y} = 2.69 + 0.179x$$
 - The correlation is $R=0.877$.
 - So the coefficient of determination is $R^2 = 0.767$.
     - (think: a C grade)
-    
-## Prediction: Some Notes
-
-It's important to stop and think about our predictions!
-
-- Sometimes the numbers don't make sense.
-    - We've seen this plugging in $x=0$ for our intercept.
-- Sometimes there are other issues that are a little trickier to notice.
 
 ## Prediction: Some Notes
 
-Suppose we have the line $$\hat{y} = 2.66 + 0.181x$$ and we wanted to predict the value of $y$ when $x=0.1$: $$\hat{y} = 2.66 + 0.181\times0.1 = 2.67$$
+Suppose we wanted to predict the value of $y$ when $x=0.1$: $$\hat{y} = 2.66 + 0.181\times0.1 = 2.67$$
 
 ## Prediction: Some Notes
 
@@ -197,12 +189,6 @@ mod <- lm(y.dat ~ x.dat)
 plot(x,y,type='l', lwd=3, col='red', ylim=c(min(y), max(y.dat))); points(x.dat,y.dat, pch=16); abline(v=5); abline(v=20); 
   points(x=0.1, y=mod$coefficients[1]+0.1* mod$coefficients[2], pch=16, col='blue'); abline(v=0.1, lty=2)
 ```
-
-## Extrapolation
-
-This is what we call *extrapolation*, applying a model estimate for values outside of the data's range for $x$. 
-
-- Make sure you check the range for $x$ before making predictions!
 
 ## Homework Problems
 
