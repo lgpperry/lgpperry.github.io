@@ -22,7 +22,6 @@ Slides are based on my [Introduction to Statistics](https://bookdown.org/lgpperr
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/3_1-Linear-Equations.html" target="blank">3.1 Linear Equations</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/3_2-Correlation.html" target="blank">3.2 Correlation</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/3_3-Finding-Regression-Line.html" target="blank">3.3 Finding a Regression Line</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/3_4-Prediction" target="blank">3.4 Prediction: A Cautionary Tale</a>
 
 ### Chapter 4
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/4_2-Sample-Spaces-and-Events.html" target="blank">4.1 Sample Spaces and Events</a>
