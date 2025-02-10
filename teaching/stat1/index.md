@@ -24,10 +24,10 @@ Slides are based on my [Introduction to Statistics](https://bookdown.org/lgpperr
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/3_3-Finding-Regression-Line.html" target="blank">3.3 Finding a Regression Line</a>
 
 ### Chapter 4
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/4_2-Sample-Spaces-and-Events.html" target="blank">4.1 Sample Spaces and Events</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/4_3-Probability-Distributions.html" target="blank">4.2 Probability Distributions</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/4_4-Probability-Rules.html" target="blank">4.3 Rules of Probability</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/4_5-Conditional-Probability.html" target="blank">4.4 Conditional Probability</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/4_1-Sample-Spaces-and-Events.html" target="blank">4.1 Sample Spaces and Events</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/4_2-Probability-Distributions.html" target="blank">4.2 Probability Distributions</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/4_3-Probability-Rules.html" target="blank">4.3 Rules of Probability</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/4_4-Conditional-Probability.html" target="blank">4.4 Conditional Probability</a>
 
 ### Chapter 5
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/5_2-Discrete-Random-Variables.html" target="blank">5.1 Discrete Random Variables</a>
