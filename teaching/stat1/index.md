@@ -30,11 +30,9 @@ Slides are based on my [Introduction to Statistics](https://bookdown.org/lgpperr
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/4_4-Conditional-Probability.html" target="blank">4.4 Conditional Probability</a>
 
 ### Chapter 5
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/5_2-Discrete-Random-Variables.html" target="blank">5.1 Discrete Random Variables</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/5_3-Binomial-Distribution.html" target="blank">5.2 The Binomial Distribution</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/5_4-Normal-Distribution.html" target="blank">5.3 The Normal Distribution</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/5_5-Area-Under-Standard-Normal.html" target="blank">5.4 Area Under the Standard Normal Curve</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/5_6-Working-with-Normal.html" target="blank">5.5 Working with Normally Distributed Variables</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/5_1-Discrete-Random-Variables.html" target="blank">5.1 Discrete Random Variables</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/5_2-Binomial-Distribution.html" target="blank">5.2 The Binomial Distribution</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/5_3-Normal-Distribution.html" target="blank">5.3 The Normal Distribution</a>
 
 ### Chapter 6
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/6_2-Sampling-Error.html" target="blank">6.1 Sampling Error</a>
