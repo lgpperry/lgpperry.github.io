@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Lauren Perry, PhD"
+title: "Welcome!"
 author_profile: true
 layout: single
 classes: wide
