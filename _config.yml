@@ -56,7 +56,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Lauren Perry"
+  # name   : "Lauren Perry"
   avatar : "https://avatars.githubusercontent.com/u/5975339?v=4"
   bio    : "Assistant Professor of Mathematics & Statistics at Sacramento State<br>Pronouns: she/her"
   links:
