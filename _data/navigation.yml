@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Home"
-    url: https://lgpperry.github.io/
+    url: /
   - title: "Teaching"
     url: /teaching/
   - title: "Student Resources"
