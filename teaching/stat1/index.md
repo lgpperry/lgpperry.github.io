@@ -35,10 +35,10 @@ Slides are based on my [Introduction to Statistics](https://bookdown.org/lgpperr
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/5_3-Normal-Distribution.html" target="blank">5.3 The Normal Distribution</a>
 
 ### Chapter 6
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/6_2-Sampling-Error.html" target="blank">6.1 Sampling Error</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/6_3-Developing-CIs.html" target="blank">6.2 Developing Confidence Intervals</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/6_4-Other-Levels-of-Confidences.html" target="blank">6.3 Other Levels of Confidence</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/6_5-CIs-for-a-Mean.html" target="blank">6.4 Confidence Intervals for a Mean</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/6_1-Sampling-Error.html" target="blank">6.1 Sampling Error</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/6_2-Developing-CIs.html" target="blank">6.2 Developing Confidence Intervals</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/6_3-Other-Levels-of-Confidences.html" target="blank">6.3 Other Levels of Confidence</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/6_4-CIs-for-a-Mean.html" target="blank">6.4 Confidence Intervals for a Mean</a>
 
 ### Chapter 7
 
