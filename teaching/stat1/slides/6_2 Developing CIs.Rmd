@@ -1,5 +1,5 @@
 ---
-title: "6.3 Developing Confidence Intervals"
+title: "6.2 Developing Confidence Intervals"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
@@ -9,6 +9,10 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+### Goals
+
+1. Find and interpret 95\% confidence intervals for a mean when (A) the population is normal and (B) $\sigma$ is known. 
 
 ***
 
@@ -139,3 +143,7 @@ Suppose I took a random sample of 50 Sac State students and asked about their SA
 1. Find a 95\% confidence interval for Sac State SAT scores. 
 2. Interpret your interval in the context of the problem. 
 3. What is the width of your interval? If you want a narrower interval, what could you do? 
+
+## Homework Problems
+
+Section 6.2 Exercises 1 and 2
