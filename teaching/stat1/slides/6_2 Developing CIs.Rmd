@@ -10,7 +10,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-### Goals
+## Goals
 
 1. Find and interpret 95\% confidence intervals for a mean when (A) the population is normal and (B) $\sigma$ is known. 
 
@@ -125,16 +125,19 @@ upper_vector <- samp_mean + cv * samp_sd / sqrt(n)
 plot_ci(lower_vector, upper_vector, 80)
 ```
 
-## Example 
-
-The preferred keyboard height for typists is approximately normally distributed with $\sigma=2.0$. A sample of size $n=31$, resulted in a mean preferred keyboard height of $80 cm$. Find and interpret a 95\% confidence interval for keyboard height.
-
 ## Common mistakes
 
 - It is NOT accurate to say that "the probability that $\mu$ is in the confidence interval is 0.95". 
     - The parameter $\mu$ is some fixed quantity and it's either in the interval or it isn't. 
 - We are NOT "95\% confident that $\bar{x}$ is in the interval". 
-    - The value $\bar{x}$ is some known quantity and it's always in the interval. 
+    - The value $\bar{x}$ is some known quantity and it's always in the interval.
+    
+## Example 
+
+The preferred keyboard height for typists is approximately normally distributed with $\sigma=2.0$. A sample of size $n=31$, resulted in a mean preferred keyboard height of $80 cm$. 
+
+1. Find and interpret a 95\% confidence interval for keyboard height.
+2. What is the width of the interval? If we wanted a narrower interval, what could we do? 
 
 ## Checkpoint
 
@@ -142,7 +145,6 @@ Suppose I took a random sample of 50 Sac State students and asked about their SA
     
 1. Find a 95\% confidence interval for Sac State SAT scores. 
 2. Interpret your interval in the context of the problem. 
-3. What is the width of your interval? If you want a narrower interval, what could you do? 
 
 ## Homework Problems
 

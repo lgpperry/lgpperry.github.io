@@ -10,6 +10,14 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Goals
+
+1. Use the t-distribution (applet) to find critical values.
+2. Identify when to use the normal distribution and when to use the t-distribution for confidence intervals.
+3. Find and interpret confidence intervals for a mean when $\sigma$ is unknown
+    a. When $n \ge 30$
+    b. When $n < 30$
+
 ## Confidence Intervals for a Mean
 
 Realistically, the value of $\sigma$ is almost never known.
@@ -23,9 +31,15 @@ Realistically, the value of $\sigma$ is almost never known.
 
 - In this case, we can plug in $s$ for $\sigma$: $$\bar{x} \pm z_{\alpha/2}\frac{s}{\sqrt{n}}.$$
 
-...but what about when $n < 30$?
+## Example
+
+In 2010, a survey collected responses from 1,154 US residents. One of the questions was “After an average workday, about how many hours do you have to relax or pursue activities that you enjoy?”. The average time spent relaxing was 3.68 hours, with a standard deviation of 2.6 hours. 
+
+Find and interpret a 95\% confidence interval for the average time spent relaxing after work.
 
 ## The T-Distribution
+
+What do we do when $n < 30$?
 
 If $$Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}}$$ has a standard normal distribution (for $X$ normal or $n\ge30$), the slightly modified $$T = \frac{\bar{X}-\mu}{s/\sqrt{n}}$$ has what we call the **t-distribution** with $n-1$ **degrees of freedom**.
 
@@ -73,5 +87,22 @@ legend(1.4,0.4,legend=c("Standard Normal","T, df=30","T, df=10","T, df=5","T, df
 - Click anywhere else on the page and the applet will automatically fill in the box under "t-value". 
 - This is your t critical value. 
 
+## Example
+
+Find t critical values for the following settings:
+
+1. A $95\%$ confidence interval with $n=17$
+2. A $90\%$ confidence interval with $n=8$
+3. A $98\%$ confidence interval with $n=24$
+
+## Example
+
+The weights of 6 randomly selected NFL linebackers were $$243, 238, 229, 253, 248, 225$$. Find and interpret a 90\% confidence interval for the average weight of NFL linebackers.
+
 ## Checkpoint
 
+A different sample of NFL linebacker weights from 23 randomly selected players resulted in a mean of 242 pounds and a standard deviation of 13 pounds. Based on this new sample, find and interpret a 98\% confidence interval for the average weight of NFL linebackers.
+
+## Homework Problems
+
+Section 6.5 Exercises 1-4

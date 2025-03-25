@@ -10,6 +10,11 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Goals 
+
+1. Use the normal distribution applet to find critical values.
+2. Find and interpret confidence intervals for a mean when (A) the population is normal and (B) $\sigma$ is known.
+
 ***
 
 The 95\% confidence interval is common in research, but there's nothing inherently special about it. 
@@ -51,13 +56,19 @@ text(x2, 0.-0.015, "-c.v."); text(x3, -0.015, "+c.v.")
 | 98\% | 0.02 | 2.326 |
 | 99\% | 0.01 | 2.575 | 
 
-## Checkpoint
+## Example
 
 Prior experience with SAT scores in the CSU system suggests that SAT scores are well-approximated by a normal distribution with standard deviation known to be 50. Suppose we have a random sample of 50 Sac State students with (sample) mean SAT score 1112. 
 
 1. Calculate a 98\% confidence interval.
-2. Calculate a 90\% confidence interval.
-3. Interpret each interval in the context of the problem. Comment on how the intervals change as you change the confidence level.
+2. Interpret the interval in the context of the problem.
+
+## Checkpoint
+
+Prior experience with SAT scores in the CSU system suggests that SAT scores are well-approximated by a normal distribution with standard deviation known to be 50. Suppose we have a random sample of 50 Sac State students with (sample) mean SAT score 1112. 
+
+3. Calculate a 90\% confidence interval.
+4. Interpret each interval in the context of the problem. Comment on how the intervals change as you change the confidence level.
 
 ## Breaking Down a Confidence Interval
 
@@ -88,33 +99,6 @@ If we can be 99\% confident (or even higher), why do we tend to "settle" for 95\
 
 - What will higher levels of confidence do to this interval? 
 
-## Sample Size
+## Homework Problems
 
-There is one other thing we can control in the confidence interval: the sample size $n$. 
-
-- We can specify the confidence level and the maximum acceptable interval width and use these to determine sample size. 
-- We know that $$\text{interval width} \ge 2z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$$
-- Letting interval width equal $w$, we can solve for $n$: $$ n \ge \left(2z_{\alpha/2}\frac{\sigma}{w}\right)^2$$ 
-
-## Sample Size
-
-Alternately, we may specify a maximum margin of error $m$ instead: $$ n \ge \left(z_{\alpha/2}\frac{\sigma}{m}\right)^2$$ 
-
-- Once we've done a sample size calculation, we need a whole number for $n$. 
-- Since $n \ge$ something, we will *always round up*.
-
-## Checkpoint 
-
-Suppose we want a 95\% confidence interval for the mean of a normally distributed population with standard deviation $\sigma=10$. It is important for our margin of error to be no more than 2. What sample size do we need?
-
-## Some comments
-
-- As desired width/margin of error decreases, $n$ will increase. 
-- As $\sigma$ increases, $n$ will also increase. (More population variability will necessitate a larger sample size.)
-- As confidence level increases, $n$ will also increase.
-
-## Checkpoint
-
-Prior experience with SAT scores in the CSU system suggests that SAT scores are well-approximated by a normal distribution with standard deviation known to be 50. 
-
-Find the sample size required for a 98% confidence interval with maximum margin of error 10.
+Section 6.3 Exercises 1 and 2
