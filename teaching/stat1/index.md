@@ -9,46 +9,46 @@ author_profile: true
 
 Slides are based on my [Introduction to Statistics](https://bookdown.org/lgpperry/introstats/). These slides have some short checkpoint problems, but do not include most of our in-class activities. Original RMarkdown files available upon request. 
 
-### Chapter 1
+### Module 1
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/1_1-Statistics-Terminology.html" target="blank">1.1 Statistics Terminology</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/1_2-Sampling-Design.html" target="blank">1.2 Sampling and Design</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/1_3-Frequency-Distributions.html" target="blank">1.3 Frequency Distributions</a>
 
-### Chapter 2
+### Module 2
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/2_1-Central-Tendency.html" target="blank">2.1 Measures of Central Tendency</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/2_2-Variability.html" target="blank">2.2 Measures of Variability</a>
 
-### Chapter 3
+### Module 3
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/3_1-Linear-Equations.html" target="blank">3.1 Linear Equations</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/3_2-Correlation.html" target="blank">3.2 Correlation</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/3_3-Finding-Regression-Line.html" target="blank">3.3 Finding a Regression Line</a>
 
-### Chapter 4
+### Module 4
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/4_1-Sample-Spaces-and-Events.html" target="blank">4.1 Sample Spaces and Events</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/4_2-Probability-Distributions.html" target="blank">4.2 Probability Distributions</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/4_3-Probability-Rules.html" target="blank">4.3 Rules of Probability</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/4_4-Conditional-Probability.html" target="blank">4.4 Conditional Probability</a>
 
-### Chapter 5
+### Module 5
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/5_1-Discrete-Random-Variables.html" target="blank">5.1 Discrete Random Variables</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/5_2-Binomial-Distribution.html" target="blank">5.2 The Binomial Distribution</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/5_3-Normal-Distribution.html" target="blank">5.3 The Normal Distribution</a>
 
-### Chapter 6
+### Module 6
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/6_1-Sampling-Error.html" target="blank">6.1 Sampling Error</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/6_2-Developing-CIs.html" target="blank">6.2 Developing Confidence Intervals</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/6_3-Other-Levels-of-Confidences.html" target="blank">6.3 Other Levels of Confidence</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/6_4-Sample-Size.html" target="blank">6.4 Confidence Level, Precision, and Sample Size</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/6_5-CIs-for-a-Mean.html" target="blank">6.5 Confidence Intervals for a Mean</a>
 
-### Chapter 7
+### Module 7
 
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/7_2-Logic-of-Hypothesis-Testing.html" target="blank">7.1 Logic of Hypothesis Testing</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/7_3-Confidence-Interval-Approach.html" target="blank">7.2 Confidence Interval Approach</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/7_4-Critical-Value-Approach.html" target="blank">7.3 Critical Value Approach</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/7_5-P-Value-Approach.html" target="blank">7.4 P-Value Approach</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/7_1-Logic-of-Hypothesis-Testing.html" target="blank">7.1 Logic of Hypothesis Testing</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/7_2-Confidence-Interval-Approach.html" target="blank">7.2 Confidence Interval Approach</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/7_3-Critical-Value-Approach.html" target="blank">7.3 Critical Value Approach</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/7_4-P-Value-Approach.html" target="blank">7.4 P-Value Approach</a>
 
-### Chapter 8
+### Module 8
 
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/8_2-Confidence-Intervals-for-P.html" target="blank">8.1 Confidence Intervals for a Proportion</a>
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/8_3-Hypothesis-Tests-for-P.html" target="blank">8.2 Hypothesis Tests for a Proportion</a>
