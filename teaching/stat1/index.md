@@ -50,7 +50,7 @@ Slides are based on my [Introduction to Statistics](https://bookdown.org/lgpperr
 
 ### Module 8
 
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/8_2-Confidence-Intervals-for-P.html" target="blank">8.1 Confidence Intervals for a Proportion</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/8_3-Hypothesis-Tests-for-P.html" target="blank">8.2 Hypothesis Tests for a Proportion</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/8_1-Confidence-Intervals-for-P.html" target="blank">8.1 Confidence Intervals for a Proportion</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/8_2-Hypothesis-Tests-for-P.html" target="blank">8.2 Hypothesis Tests for a Proportion</a>
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://bookdown.org/lgpperry/introstats/">Introduction to Statistics</a> and associated materials by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lgpperry.github.io/">Lauren Perry</a> are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
