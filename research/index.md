@@ -11,7 +11,7 @@ My research is primarily in applied statistics, where I do a lot of collaborativ
 
 I do consulting work as time permits. Please feel free to reach out to me with any questions at perry@csus.edu. 
 
-Sacramento State also offers a Capstone Course where our students take on consutling projects free of charge. [Click here](https://forms.office.com/pages/responsepage.aspx?id=AZC0tj-L-kOZoXBujH41mM5QfwqOc9RKgZnet9bSVfpUNUVCTDBUQjE2SkVEVVg0WkhDUjU3UVlITy4u&route=shorturl) for the inquiry form. 
+Sacramento State also offers a Capstone Course where our students take on consulting projects free of charge. [Click here](https://forms.office.com/pages/responsepage.aspx?id=AZC0tj-L-kOZoXBujH41mM5QfwqOc9RKgZnet9bSVfpUNUVCTDBUQjE2SkVEVVg0WkhDUjU3UVlITy4u&route=shorturl) for the inquiry form. 
 
 ## Student research
 
