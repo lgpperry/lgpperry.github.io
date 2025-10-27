@@ -71,7 +71,7 @@ Putting everything together, the 95% confidence interval is $$\left(\bar{x} - z_
 
 <br>
 
-The value $1.96$ is chosen because $(-1.96 < Z < 1.96) = 0.95$ (this is what makes it a 95% confidence interval!).
+The value $1.96$ is chosen because $P(-1.96 < Z < 1.96) = 0.95$ (this is what makes it a 95% confidence interval!).
 
 ## Interpreting a Confidence Interval
 
@@ -134,17 +134,17 @@ plot_ci(lower_vector, upper_vector, 80)
     
 ## Example 
 
-The preferred keyboard height for typists is approximately normally distributed with $\sigma=2.0$. A sample of size $n=31$, resulted in a mean preferred keyboard height of $80 cm$. 
-
-1. Find and interpret a 95\% confidence interval for keyboard height.
-2. What is the width of the interval? If we wanted a narrower interval, what could we do? 
-
-## Checkpoint
-
 Suppose I took a random sample of 50 Sac State students and asked about their SAT scores and found a mean score of 1112. Prior experience with SAT scores in the CSU system suggests that SAT scores are well-approximated by a normal distribution with standard deviation known to be 50. 
     
 1. Find a 95\% confidence interval for Sac State SAT scores. 
 2. Interpret your interval in the context of the problem. 
+
+## Checkpoint
+
+The preferred keyboard height for typists is approximately normally distributed with $\sigma=2.0$. A sample of size $n=31$, resulted in a mean preferred keyboard height of $80 cm$. 
+
+1. Find and interpret a 95\% confidence interval for keyboard height.
+2. What is the width of the interval? If we wanted a narrower interval, what could we do? 
 
 ## Homework Problems
 
