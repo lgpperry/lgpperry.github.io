@@ -22,7 +22,7 @@ author_profile: true
 
 ### Selected Course Materials
 
-- <a href="https://bookdown.org/lgpperry/introstats/">Introduction to Statistics</a> (Open source Stat 1 course notes.)
+- <a href="https://lgpperry.github.io/IntroStats/">Introduction to Statistics</a> (Open source Stat 1 course notes.)
 - <a href="https://lgpperry.github.io/teaching/shinyapps/">A list of my Shiny Apps and the code to run them.</a>
 - Online Mini-Lectures (2020-2021 School Year)
     - <a href="https://www.youtube.com/playlist?list=PLuMDlHzKEzEFDn6yfD9D3DCsp_j2AfDvm" target="_blank">Introduction to Statistics</a>

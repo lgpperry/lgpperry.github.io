@@ -61,7 +61,7 @@ author:
   bio    : "Assistant Professor of Mathematics & Statistics at Sacramento State<br>Pronouns: she/her"
   links:
     - label: Intro Stats (textbook)
-      url: https://bookdown.org/lgpperry/introstats/
+      url: https://lgpperry.github.io/IntroStats/
     - label: Sac State Math/Stats
       url: "https://www.csus.edu/college/natural-sciences-mathematics/mathematics-statistics/"
     - label: NorCal DataFest
