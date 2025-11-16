@@ -1,0 +1,70 @@
+---
+title: "9.1 Hypothesis Tests for Two Proportions"
+author: "Dr. Lauren Perry"
+output:
+  ioslides_presentation: 
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Comparing Proportions
+
+Sometimes, we might like to *compare* two proportions.
+
+- $n_i$ is sample size for the $i$th group
+- $p_i$ the proportion for the $i$th group
+- We will examine their *difference*: $p_1 - p_2$.
+- Similar to the tests we used for a single proportion. 
+
+## Conditions
+
+1. Independence within and between groups
+    - generally satisfied if the data are from random samples or a randomized experiment
+2. We need $n_1p_1 > 10$ and $n_1(1-p_1)>10$ **and** $n_2p_2 > 10$ and $n_2(1-p_2)>10$
+
+## Standard Error
+
+If our conditions are satisfied, the standard error is $$\sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}$$ and we can calculate confidence intervals and perform hypothesis tests on $p_1 - p_2$. 
+
+## Confidence Intervals for Two Proportions
+
+A $100(1-\alpha)\%$ confidence interval for $p_1-p_2$ is 
+
+$$(\hat{p_1} - \hat{p_2}) \pm z_{\alpha/2} \times \sqrt{\frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2}}$$
+
+## Example
+
+
+
+## Hypothesis Tests
+
+- We are interested in checking whether $p_1 = p_2$
+- This is null hypothesis of $$H_0: p_1 - p_2 = 0$$ 
+    - So the null value is zero. 
+- In this case, we use a *pooled proportion* to estimate $p$ in the standard error. 
+
+## Pooled Proportion
+
+$$\hat{p}_{\text{pooled}} = \frac{\text{total number of successes}}{\text{total number of cases}} = \frac{\hat{p_1}n_1 + \hat{p_2}n_2}{n_1 + n_2}$$
+
+## Pooled Standard Error
+
+$$ \text{Standard Error} = \sqrt{\frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_1} + \frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_2}}$$
+
+## Test Statistic and P-Value
+
+- The critical value is $z_{\alpha/2}$. 
+- The test statistic is $$z = \frac{\hat{p_1}-\hat{p_2}}{\sqrt{\frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_1} + \frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_2}}}$$
+- The p-value is $$2P(Z > |z|)$$ where $z$ is the test statistic.
+
+## Steps
+
+1. State the null and alternative hypotheses.
+2. Determine the significance level $\alpha$. Check assumptions, $n_1p_1 > 10$ and $n_1(1-p_1)>10$ **and** $n_2p_2 > 10$ and $n_2(1-p_2)>10$.
+3. Compute the value of the test statistic.
+4. Determine the critical value or p-value.
+5. For the *critical value approach*: If the test statistic is in the rejection region, reject the null hypothesis. For the *p-value approach*: If $\text{p-value} < \alpha$, reject the null hypothesis. Otherwise, do not reject.
+6. Interpret results. 
