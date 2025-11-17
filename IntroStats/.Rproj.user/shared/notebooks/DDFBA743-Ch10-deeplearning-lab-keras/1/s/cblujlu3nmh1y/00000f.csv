@@ -1,0 +1,4 @@
+"0","modnn %>% compile(loss = ""mse"","
+"0","    optimizer = optimizer_rmsprop(),"
+"0","    metrics = list(""mean_absolute_error"")"
+"0","   )"

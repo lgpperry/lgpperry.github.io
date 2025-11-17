@@ -1,0 +1,5 @@
+"0","set.seed(0)"
+"0","x4 <- sample(c(0,1), 100, TRUE)"
+"0","x5 <- sample(c(0,1), 100, TRUE)"
+"0","# should have been"
+"0","y3 <- 3*x4 + 2*x5 - 4*x4*x5 + rnorm(100, sd=10)"

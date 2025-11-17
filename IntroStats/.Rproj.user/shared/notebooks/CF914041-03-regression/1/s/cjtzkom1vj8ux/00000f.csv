@@ -1,0 +1,3 @@
+"0","plot(1000*mtcars$wt, mtcars$mpg, pch=16,"
+"0","     main = ""Scatter Plot of Car Weight vs MPG"","
+"0","     xlab=""Weight (lbs)"", ylab=""Miles Per Gallon"")"

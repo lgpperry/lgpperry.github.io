@@ -1,0 +1,32 @@
+h1:introduction-to-data Introduction to Data
+h2:statistics-terminology Statistics Terminology
+h3:section-exercises Section Exercises
+h2:statistical-sampling Statistical Sampling
+h3:sampling-types Sampling Types
+h4:simple-random-sampling Simple Random Sampling
+h4:stratified-sampling Stratified Sampling
+h4:cluster-sampling Cluster Sampling
+h4:systematic-sampling Systematic Sampling
+h3:section-exercises-1 Section Exercises
+h2:experimental-design Experimental Design
+h3:experiments Experiments
+h3:observational-studies Observational Studies
+h3:experimental-design-principles Experimental Design Principles
+h3:section-exercises-2 Section Exercises
+h2:frequency-distributions Frequency Distributions
+h3:qualitative-variables Qualitative Variables
+h3:quantitative-variables Quantitative Variables
+h3:section-exercises-3 Section Exercises
+h2:r-lab-data-basics-and-graphs R Lab: Data Basics and Graphs
+h3:r-as-a-calculator R as a Calculator
+h4:your-turn Your Turn
+h4:your-turn-1 Your Turn
+h3:random-number-generation Random Number Generation
+h4:your-turn-2 Your Turn
+h3:entering-data Entering Data
+h4:your-turn-3 Your Turn
+h4:your-turn-4 Your Turn
+h3:histograms Histograms
+h4:your-turn-5 Your Turn
+h3:bar-plots Bar Plots
+

@@ -1,0 +1,4 @@
+"0","set.seed(0)"
+"0","mod1 <- tune(svm, mpg.flg ~ . -mpg, data=Auto, kernel=""linear"","
+"0","             ranges = list(cost = c(0.001, 0.01, 0.1, 1, 5, 10, 100)))"
+"0","mod1$performances"

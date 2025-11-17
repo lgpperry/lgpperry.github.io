@@ -1,0 +1,97 @@
+---
+title: "8.2 Hypothesis Tests for a Proportion"
+author: "Dr. Lauren Perry"
+output:
+  ioslides_presentation: 
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Hypothesis Tests for a Proportion
+
+For a single proportion, the null and alternative hypotheses are
+
+- $H_0: p = p_0$
+- $H_A: p \ne p_0$
+
+We can perform a hypothesis test for $p$ using the confidence interval, critical value, or p-value approach.
+
+**Setting and Assumptions**: $p$ is target parameter, $np_0 > 10$, $n(1-p_0)>10$.
+
+## Confidence Interval Approach
+
+The $100(1-\alpha)\%$ confidence interval for $p$ is $$\hat{p}\pm z_{\alpha/2}\sqrt{\frac{p_0(1-p_0)}{n}}$$ 
+
+- Notice that we use $p_0$ in the standard error and *not* the sample proportion. 
+    - The standard error is calculated based on the null hypothesis, which says that $p=p_0$. 
+
+## Confidence Interval Approach
+
+Steps:
+
+1. State null and alternative hypotheses.
+2. Decide on significance level $\alpha$. Check assumptions.
+3. Find the critical value. 
+4. Compute confidence interval. 
+5. If the null value is *not* in the confidence interval, reject the null hypothesis. Otherwise, do not reject.
+6. Interpret results in the context of the problem. 
+
+## Example
+
+A quick internet search suggests that 38.4% of US households have dogs. A random sample of 27 US households resulted in 15 of them having dogs. Is it reasonable to assume that the internet search is correct? Test at the 0.05 level of significance using a confidence interval approach.
+
+## Checkpoint
+
+A company wants to figure out if people have a preference for one of its two premium products. They take a poll of 50 likely customers and find that 21 of them prefer product A. Do people have a preference for one product over the other? (Note: if there is no preference, we would expect the proportion to be 0.5 for each of the two products, so $p_0=0.5$.)
+
+## Critical Value Approach
+
+The critical value is $z_{\alpha/2}$ and the test statistic is $$z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}$$ 
+
+- Notice that we again plug in $p_0$ for the standard error and *not* the sample proportion. 
+
+## Critical Value Approach
+
+Steps:
+
+1. State the null and alternative hypotheses.
+2. Determine the significance level $\alpha$. Check assumptions.
+3. Compute the value of the test statistic.
+4. Determine the critical values.
+5. If the test statistic is in the rejection region, reject the null hypothesis. Otherwise, do not reject.
+6. Interpret results.
+
+## Example
+
+In 2007, the proportion of US adults who had ever had chickenpox was 61.4\%. Since the chickenpox vaccine was introduced in 1995, it is reasonable to wonder if this value has decreased over time. A 2020 random sample of 100 US adults resulted in 13 with chickenpox. Use the critical value approach to test (at the 0.01 level of significance) whether the proportion of US adults who have ever had chickenpox is still 61.4\%.
+
+## Checkpoint
+
+Approximately 71% of Americans identify as religious. Suppose we take a random sample of 27 young adults (and find that 19 identify as religious. Use the critical value approach to test if the proportion of young adults who are religious is the same as that of Americans as a whole. Use $\alpha = 0.01$. 
+
+## P-Value Approach
+
+The p-value is $$2P(Z > |z|)$$ where $z$ is the test statistic described previously.
+
+## P-Value Approach
+
+Steps:
+
+1. State the null and alternative hypotheses.
+2. Determine the significance level $\alpha$. Check assumptions.
+3. Compute the value of the test statistic.
+4. Determine the p-value.
+5. If $\text{p-value} < \alpha$, reject the null hypothesis. Otherwise, do not reject.
+6. Interpret results.
+
+## Example
+
+The 2020 US census suggested that 18.9\% of the population identifies as Hispanic or Latino. A random sample of 53 Californians resulted in 20 who identified as Hispanic or Latino. Is the proportion of Hispanic or Latino Californians different from that of the US as a whole? Test at the 0.05 level of significance using the p-value approach.
+
+## Checkpoint
+
+In 2010, approximately 76.26% of Americans lived in Urban areas. A recent survey of 1000 Americans found that 831 lived in an urban area. Has the proportion of Americans in urban areas changed since 2010? Test at the 0.01 level of significance using the p-value approach.
+

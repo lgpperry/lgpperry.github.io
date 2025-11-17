@@ -1,0 +1,2 @@
+"0","miss <- which(is.na(pens), arr.ind = TRUE) # find all the locations of missing data"
+"0","pens <- pens[-miss[1,],] # remove all observations with missing data"

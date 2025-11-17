@@ -1,0 +1,4 @@
+"0","set.seed(0)"
+"0","ind <- sample(nrow(OJ), 800)"
+"0","trn.oj <- OJ[ind,]"
+"0","tst.oj <- OJ[-ind,]"

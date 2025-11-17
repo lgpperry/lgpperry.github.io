@@ -1,0 +1,5 @@
+"0","barplot(table(gender), "
+"0","        main = ""Bar Plot of Gender"", "
+"0","        xlab = ""Gender"","
+"0","        ylab = ""Frequency"", "
+"0","        col = ""green"")"

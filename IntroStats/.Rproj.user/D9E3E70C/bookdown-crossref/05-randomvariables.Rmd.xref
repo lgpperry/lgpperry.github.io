@@ -1,0 +1,22 @@
+h1:random-variables Random Variables
+h2:discrete-random-variables Discrete Random Variables
+h3:the-mean-and-standard-deviation The Mean and Standard Deviation
+h3:section-exercises Section Exercises
+h2:the-binomial-distribution The Binomial Distribution
+h3:mean-and-variance Mean and Variance
+h3:section-exercises-1 Section Exercises
+h2:the-normal-distribution The Normal Distribution
+h3:z-scores Z-Scores
+h3:empirical-rule-for-variables Empirical Rule for Variables
+h3:section-exercises-2 Section Exercises
+h2:area-under-the-standard-normal-curve Area Under the Standard Normal Curve
+h3:section-exercises-3 Section Exercises
+h2:working-with-normally-distributed-variables Working with Normally Distributed Variables
+h3:normal-distribution-probabilities Normal Distribution Probabilities
+h3:percentiles Percentiles
+h3:section-exercises-4 Section Exercises
+h2:r-lab-probabilities-and-percentiles R Lab: Probabilities and Percentiles
+h3:binomial-probabilities Binomial Probabilities
+h3:normal-distribution-probabilities-1 Normal Distribution Probabilities
+h3:normal-distribution-percentiles Normal Distribution Percentiles
+

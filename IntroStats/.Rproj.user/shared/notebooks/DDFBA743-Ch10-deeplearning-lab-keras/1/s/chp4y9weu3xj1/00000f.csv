@@ -1,0 +1,3 @@
+"0","modelnn %>% compile(loss = ""categorical_crossentropy"","
+"0","    optimizer = optimizer_rmsprop(), metrics = c(""accuracy"")"
+"0","  )"

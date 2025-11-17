@@ -1,0 +1,1 @@
+"0","points(which.min(regsum.f$bic), regsum.f$bic[which.min(regsum.f$bic)], pch = 4)"

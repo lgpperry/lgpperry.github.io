@@ -1,0 +1,7 @@
+"0","set.seed(0)"
+"0","x1 <- rep(1:100,5)"
+"0","y1 <- 3*x1 + rchisq(500, 2)"
+"0",""
+"0","qqnorm(rstandard(lm(y1 ~ x1)), main = ""Q-Q Plot"","
+"0","       ylab=""Standardized Residuals"","
+"0","       xlim = c(-3, 3), ylim = c(-3, 6)) "

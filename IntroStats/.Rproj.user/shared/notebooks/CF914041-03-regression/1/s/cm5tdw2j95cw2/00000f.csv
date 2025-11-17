@@ -1,0 +1,5 @@
+"0","set.seed(0)"
+"0","num <- sample(1:30, 10)"
+"0","price <- 8 + 3.25*num"
+"0","plot(num,price,xlab=""Number of Coffees Purchased in a Month"", ylab=""Amount of Money Spent on Coffee"","
+"0","     cex=1.5, pch=16)"

@@ -1,0 +1,20 @@
+"0","tune.oj <- tune(svm, Purchase ~ ., data=trn.oj, kernel = ""linear"", "
+"0","                ranges = list(cost = c(0.001 , 0.01, 0.1, 1, 5, 10)))"
+"0","summary(tune.oj)"
+"1","
+Parameter tuning of "
+"1",""
+"1","‘svm’"
+"1",""
+"1",":
+
+"
+"1","- sampling method:"
+"1"," "
+"1","10-fold cross validation"
+"1"," "
+"1","
+
+"
+"1","- best parameters:
+"

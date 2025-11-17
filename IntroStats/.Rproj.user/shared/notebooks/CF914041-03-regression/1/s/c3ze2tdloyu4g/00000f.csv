@@ -1,0 +1,7 @@
+"0","set.seed(0)"
+"0","num <- sample(1:30, 20)"
+"0","price <- runif(20,12,18) + runif(20,4,6.5)*num"
+"0","plot(num,price,main=""Monthly Coffee Spending"","
+"0","     xlab=""Number of Coffees Purchased"", "
+"0","     ylab=""Amount of Money Spent"","
+"0","     cex=1.5, pch=16)"

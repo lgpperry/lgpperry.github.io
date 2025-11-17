@@ -1,0 +1,1 @@
+"0","lines(density(X, adjust=2), col=""darkgreen"", lwd=2) "

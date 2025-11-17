@@ -1,0 +1,2 @@
+"0","regfit.best <- regsubsets(Salary ~ .,"
+"0","    data = Hitters[train, ], nvmax = 19)"

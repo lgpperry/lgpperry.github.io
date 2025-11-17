@@ -1,0 +1,49 @@
+---
+title: "6.4 Confidence Level, Precision, Sample Size"
+author: "Dr. Lauren Perry"
+output:
+  ioslides_presentation: 
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Goals 
+
+1. Use a desired maximum margin of error to calculate a sample size.
+2. Use a desired maximum interval width to calculate a sample size.
+
+## Sample Size
+
+Other than level of confidence, there is one other thing we can control in the confidence interval: the sample size $n$. 
+
+- We can specify the confidence level and the maximum acceptable interval width and use these to determine sample size. 
+- We know that $$\text{interval width} \ge 2z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$$
+- Letting interval width equal $w$, we can solve for $n$: $$ n \ge \left(2z_{\alpha/2}\frac{\sigma}{w}\right)^2$$ 
+
+## Sample Size
+
+Alternately, we may specify a maximum margin of error $m$ instead: $$ n \ge \left(z_{\alpha/2}\frac{\sigma}{m}\right)^2$$ 
+
+- Once we've done a sample size calculation, we need a whole number for $n$. 
+- Since $n \ge$ something, we will *always round up*.
+
+## Checkpoint 
+
+Suppose we want a 95\% confidence interval for the mean of a normally distributed population with standard deviation $\sigma=10$. It is important for our margin of error to be no more than 2. What sample size do we need?
+
+## Some comments
+
+- As desired width/margin of error decreases, $n$ will increase. 
+- As $\sigma$ increases, $n$ will also increase. (More population variability will necessitate a larger sample size.)
+- As confidence level increases, $n$ will also increase.
+
+## Checkpoint
+
+Prior experience with SAT scores in the CSU system suggests that SAT scores are well-approximated by a normal distribution with standard deviation known to be 50. 
+
+Find the sample size required for a 98% confidence interval with maximum margin of error 10.
+
+## Homework Problems

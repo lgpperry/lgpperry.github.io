@@ -1,0 +1,4 @@
+"0","library(palmerpenguins)"
+"0","#head(penguins)"
+"0","plot(penguins$flipper_length_mm, penguins$body_mass_g,"
+"0","     xlab = ""Flipper Length (mm)"", ylab = ""Body Mass (g)"")"

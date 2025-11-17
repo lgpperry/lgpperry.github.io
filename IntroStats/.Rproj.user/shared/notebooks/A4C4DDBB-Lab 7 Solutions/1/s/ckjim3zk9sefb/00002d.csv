@@ -1,0 +1,1 @@
+"0","points(which.min(regsum.f$cp), regsum.f$cp[which.min(regsum.f$cp)], pch = 4)"

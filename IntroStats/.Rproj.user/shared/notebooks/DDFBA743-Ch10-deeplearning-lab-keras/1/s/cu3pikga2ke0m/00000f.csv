@@ -1,0 +1,4 @@
+"0","library(jpeg)"
+"0","par(mar = c(0, 0, 0, 0), mfrow = c(5, 5))"
+"0","index <- sample(seq(50000), 25)"
+"0","for (i in index) plot(as.raster(x_train[i,,, ]))"

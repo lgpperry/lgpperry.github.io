@@ -1,0 +1,6 @@
+"0","library(ISLR2)"
+"0","Gitters <- na.omit(Hitters)"
+"0","n <- nrow(Gitters)"
+"0","set.seed(13)"
+"0","ntest <- trunc(n / 3)"
+"0","testid <- sample(1:n, ntest)"

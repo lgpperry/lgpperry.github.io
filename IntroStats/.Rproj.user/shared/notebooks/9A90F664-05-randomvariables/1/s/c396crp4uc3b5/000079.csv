@@ -1,0 +1,6 @@
+"0","par(mfrow=c(2,2))"
+"0","x <- seq(1:100)"
+"0","y <- dnorm(x,50,15)"
+"0",""
+"0","x2 <- 60"
+"0","plot(x,y,type='l', xaxt='n', yaxt='n', ylab="""",xlab=""P(X < c)"", ylim=c(-0.003,max(y)+0.001))"

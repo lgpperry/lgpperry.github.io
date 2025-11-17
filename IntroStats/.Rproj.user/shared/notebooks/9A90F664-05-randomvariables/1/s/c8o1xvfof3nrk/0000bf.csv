@@ -1,0 +1,3 @@
+"0","hist(rbinom(1000,10,0.9), main="""", freq=FALSE, "
+"0","     xlim=c(-0.5,10.5), ylim=c(0,0.4), breaks=brks,"
+"0","     xlab=""n = 10, p = 0.9"", ylab=""Probability"")"

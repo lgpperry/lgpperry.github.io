@@ -1,0 +1,5 @@
+"0","regfit.b <- regsubsets(y ~ poly(x, 10), data = data.frame(y, x), nvmax = 10, method = ""backward"")"
+"0","regsum.b <- summary(regfit.b)"
+"0",""
+"0","par(mfrow=c(2,2))"
+"0","plot(regsum.b$adjr2, xlab = ""Number of Predictors"", ylab=""Adjusted R-Squared"", type='l')"

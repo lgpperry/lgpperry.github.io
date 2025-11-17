@@ -1,0 +1,116 @@
+---
+title: "3.2 Correlation"
+author: "Dr. Lauren Perry"
+output:
+  ioslides_presentation: 
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Goals 
+
+1.  Interpret a correlation coefficient.
+    - Describe the strength of a linear relationship. 
+    - Relate correlation coefficients to scatter plots. 
+
+## Correlation
+
+Goal: formalize the concept of the *strength* of a linear relationship.
+
+The **correlation** (or **correlation coefficient**) $R$ between two variables describes the strength of their linear relationship.
+
+$$R = \frac{1}{n-1}\sum_{i=1}^n\left(\frac{x_i - \bar{x}}{s_x}\times\frac{y_i - \bar{y}}{s_y}\right)$$
+
+- $s_x$ and $s_y$ are the respective standard deviations for $x$ and
+$y$
+- The sample size $n$ is the total number of $(x,y)$ pairs.
+- $R$ always takes values between $-1$ and $1$. 
+
+This is a pretty involved formula! We'll let a computer handle this one.
+
+***
+
+Correlations
+
+-   close to $-1$ suggest strong, negative linear relationships.
+-   close to $+1$ suggest strong, positive linear relationships.
+-   close to $0$ have little-to-no linear relationship.
+
+*** 
+
+Note: the sign of the correlation will match the sign of the slope!
+
+-   If $R < 0$, there is a downward trend and $b_1 < 0$.
+-   If $R > 0$, there is an upward trend and $b_1 > 0$.
+-   If $R \approx 0$, there is no relationship and $b_1 \approx 0$.
+
+## Examples
+
+```{r}
+set.seed(0)
+par(mfrow=c(1,2))
+x1 <- 1:100 + rnorm(100, 0, 25)
+y1 <- 7*x1 + 4 + rnorm(100, 0, 100)
+plot(x1, y1, main = "R = 0.93", xlab="", ylab="", xaxt="n", yaxt="n")
+
+x2 <- 1:100 + rnorm(100, 0, 35)
+y2 <- 5*x2 - 6 + rnorm(100, 0, 300)
+plot(x2, y2, main = "R = 0.55", xlab="", ylab="", xaxt="n", yaxt="n")
+```
+
+## More Examples
+
+```{r}
+set.seed(0)
+par(mfrow=c(1,2))
+x3 <- 1:100 + rnorm(100, 0, 5)
+y3 <- runif(100, 10, 100)
+plot(x3, y3, main = "R = 0.07", xlab="", ylab="", xaxt="n", yaxt="n")
+
+x4 <- 1:100 + rnorm(100, 0, 5)
+y4 <- -runif(100, 5, 50) + rnorm(100, 0, 200)
+plot(x4, y4, main = "R = -0.05", xlab="", ylab="", xaxt="n", yaxt="n")
+```
+
+## Even More Examples
+
+```{r}
+set.seed(0)
+par(mfrow=c(1,2))
+x5 <- 1:100 + rnorm(100, 0, 5)
+y5 <- -5*x2 - 6 + rnorm(100, 0, 170)
+plot(x5, y5, main = "R = -0.53", xlab="", ylab="", xaxt="n", yaxt="n")
+
+x6 <- 1:100 + rnorm(100, 0, 5)
+y6 <- -8*x6 + 15 + rnorm(100, 0, 100)
+plot(x6, y6, main = "R = -0.94", xlab="", ylab="", xaxt="n", yaxt="n")
+```
+
+***
+
+When two variables are highly correlated ($R$ close to $-1$ or $1$)
+
+- we know there is a strong *relationship* between them
+- BUT we do not know what *causes* that relationship
+
+That is, **correlation does not imply causation**.
+
+***
+A final note:
+
+- Obviously there's a strong relationship between $x$ and $y$. 
+  - In fact, $y = x^2$. 
+- But the *correlation* between $x$ and $y$ is 0!
+
+```{r}
+x <- -10:10
+y <- x^2
+plot(x,y, type='l', lwd=2); points(x,y, cex = 2, pch=16, col='salmon')
+```
+
+## Homework Problems
+
+Section 3.2 Exercise 1

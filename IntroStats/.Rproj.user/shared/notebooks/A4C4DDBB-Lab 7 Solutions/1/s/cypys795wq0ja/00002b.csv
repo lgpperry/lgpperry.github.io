@@ -1,0 +1,1 @@
+"0","points(which.max(regsum$adjr2), regsum$adjr2[which.max(regsum$adjr2)], pch = 4)"

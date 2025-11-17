@@ -1,0 +1,4 @@
+"0",""
+"0","z_ticks <- seq(-3, 3, by = 1)"
+"0","x_ticks <- 1100 + z_ticks * 200"
+"0","axis(side = 1, line = 3, at = x_ticks, labels = z_ticks, col.axis = ""blue"")"

@@ -1,0 +1,24 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Student Resources"
+    url: /resources/
+  - title: "Research & Consulting"
+    url: /research/
+  - title: "Blog"
+    url: /blog/year-archive/
+  
+#teaching:
+#  - title: "Course Links"
+#    children:
+#      - title: "MATH 26A"
+#        url: /teaching/math26a/
+#      - title: "STAT 1"
+#        url: /teaching/stat1/
+#      - title: "STAT 100A (UCR)"
+#        url: /teaching/stat100a/
+#      - title: "STAT 100B (UCR)"
+#        url: /teaching/stat100b/

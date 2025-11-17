@@ -1,0 +1,8 @@
+"0","modelnn <- keras_model_sequential()"
+"0","modelnn %>%"
+"0","  layer_dense(units = 256, activation = ""relu"","
+"0","       input_shape = c(784)) %>%"
+"0","  layer_dropout(rate = 0.4) %>%"
+"0","  layer_dense(units = 128, activation = ""relu"") %>%"
+"0","  layer_dropout(rate = 0.3) %>%"
+"0","  layer_dense(units = 10, activation = ""softmax"")"

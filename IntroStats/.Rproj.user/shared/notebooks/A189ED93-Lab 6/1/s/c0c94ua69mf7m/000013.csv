@@ -1,0 +1,7 @@
+"0","which.min(reg.summary$bic)"
+"1","[1]"
+"1"," 6"
+"1","
+"
+"0","plot(reg.summary$bic, xlab = ""Number of Variables"","
+"0","    ylab = ""BIC"", type = ""l"")"

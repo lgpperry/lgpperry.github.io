@@ -1,0 +1,1 @@
+"0","x <- scale(model.matrix(Salary ~ . - 1, data = Gitters))"

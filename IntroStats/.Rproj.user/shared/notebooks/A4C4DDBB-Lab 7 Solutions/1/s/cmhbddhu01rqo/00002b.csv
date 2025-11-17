@@ -1,0 +1,2 @@
+"0",""
+"0","plot(regsum.b$cp, xlab = ""Number of Predictors"", ylab=""Mallow's Cp"", type='l')"

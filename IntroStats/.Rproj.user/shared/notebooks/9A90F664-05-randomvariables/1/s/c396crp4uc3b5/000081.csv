@@ -1,0 +1,1 @@
+"0","polygon(x=c(x[c(x1,x1:max(x),max(x))]), y= c(0, y[x1:max(x)], 0), col=""lightblue""); abline(h=0)"

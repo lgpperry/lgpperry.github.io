@@ -1,0 +1,1 @@
+"0","# lm(penguins$body_mass_g ~ penguins$flipper_length_mm)"

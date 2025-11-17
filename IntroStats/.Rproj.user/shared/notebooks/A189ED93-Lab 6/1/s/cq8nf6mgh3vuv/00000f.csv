@@ -1,0 +1,6 @@
+"0","val.errors <- rep(NA, 19)"
+"0","for (i in 1:19) {"
+"0"," coefi <- coef(regfit.best, id = i)"
+"0"," pred <- test.mat[, names(coefi)] %*% coefi"
+"0"," val.errors[i] <- mean((Hitters$Salary[test] - pred)^2)"
+"0","}"

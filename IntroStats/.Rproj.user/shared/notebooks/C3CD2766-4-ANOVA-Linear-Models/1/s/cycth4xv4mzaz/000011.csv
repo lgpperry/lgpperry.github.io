@@ -1,0 +1,1 @@
+"0","interaction.plot(as.factor(ToothGrowth$dose), ToothGrowth$supp, ToothGrowth$len)"

@@ -1,0 +1,163 @@
+---
+title: "1.2 Sampling and Design"
+author: "Dr. Lauren Perry"
+output:
+  ioslides_presentation: 
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Goals
+
+2. Describe sampling and experimental design techniques.
+    - Understand key terms
+    - Describe how to collect data using a random sample
+    - Identify whether research is an experiment or an observational study
+    - Identify experimental design principles
+
+## Statistical Sampling
+
+How do we get samples? 
+
+- We want a sample that represents our population. 
+- **Representative samples** reflect the relevant characteristics of our population. 
+- In general, we get representative samples by selecting our samples *at random* and with an adequate sample size. 
+
+***
+
+A non-representative sample is said to be **biased**. 
+
+Ex: A sample of chihuahuas to represent all dogs. 
+
+These can be a result of **convenience sampling**, choosing a sample based on ease. 
+
+***
+
+Common sources of bias in our daily lives: 
+
+- *Anecdotal evidence* is data based on personal experience or observation. 
+    - Typically this consists of only one or two observations and is NOT representative of the population. 
+- Availability bias is your brain's tendency to think that examples of things that come readily to mind are more representative than is actually the case.
+
+## Simple Random Samples
+
+- We avoid bias by taking random samples. 
+- One type of random sample is a **simple random sample**. 
+    - We can think of this as "raffle sampling", like drawing names out of a hat. 
+    - Each case (or each possible sample) has an equal chance of being selected. 
+    - Knowing that A is selected doesn't tell us anything about whether B is selected. 
+- Instead of literally drawing from a hat, we usually use a **random number generator** from a computer.
+
+## Experimental Design
+
+When we do research, we have two options:
+
+<ol><li>Conduct an **experiment**, where researchers assign treatments to cases.</li>
+  <ol type ="a">
+  <li>**Treatments** are experimental conditions.</li>
+  <li>In an experiment, cases may also be called **experimental units** (items or individuals on which the experiment is performed).</li>
+  </ol>
+<li>Conduct an **observational study**, where no conditions are assigned. These are often done for ethical reasons, like examining the impacts of smoking cigarettes.</li>
+</ol>
+
+Experiments allow us to infer causation. Observational studies do not.
+
+## Example: Experiment
+
+A biologist wants to know if different diets impact reproductive behaviors in mice. Of the 50 mice they have in the lab, 17 will be given Diet A, 17 will be given Diet B, and 16 Diet C. 
+
+The biologist is going to provide each mouse with a specific diet, so this is an *experiment*. That is, they are assigning treatments (diets) to cases (mice). 
+
+##  Example: Experiment
+
+A medical researcher wants to know if a new heartburn medication is as effective as antacids. They bring 150 people into the lab and have them drink something that causes heartburn. After a set period of time, 75 of them are given an antacid and 75 are given the new heartburn medication. The researchers then measure how long it takes for each person's heartburn to subside. 
+
+This is an *experiment* because the researchers provided each person with a treatment - an antacid or the new medication. That is, the researchers assigned a treatment to each subject.
+
+##  Example: Observational Study
+
+A psychology researcher asked 100 people to take a survey on a variety of personality traits. 
+
+Because the researcher did not assign any treatments to the subjects in the study (everyone took the same survey), this is an *observational study*.
+ 
+##  Example: Observational Study
+
+A researcher wanted to examine the relationship between cigarette smoking and stomach cancer. They follow 65 people from ages 40-70 and compare the stomach cancer rates of smokers and non-smokers. 
+
+This is an observational study because the researcher did not *assign* treatments to cases. That is, each subject in the study was free to choose whether to smoke cigarettes. 
+
+(If the reseachers found a strong relationship between smoking and stomach cancer, they would not be able to say that smoking *causes* stomach cancer, but they would have strong motivation for futher research!)
+
+## Experimental design principles
+
+<ul>
+<li>**Control**: two or more treatments are compared.</li>
+<li>**Randomization**: experimental units are assigned to treatment groups (usually and preferably at random).</li>
+<li>**Replication**: a large enough sample size is used to test each treatment many times (on many different experimental units).</li>
+<li>**Blocking**: if variables other than treatment are likely to have an impact on study outcome, we use blocks.</li>
+</ul>
+
+An experiment without blocking has a completely randomized design; an experiment with blocking has a randomized block design. 
+
+***
+
+In an experimental setting, we talk about
+
+<ul>
+    <li><strong>Response variable</strong>: the characteristic of the experimental outcome being measured or observed.</li>
+    <li><strong>Factor:</strong> a variable whose impact on the response variable is of interest in the experiment.</li>
+    <li><strong>Levels</strong>: the possible values of a factor.</li>
+    <li><strong>Treatments:</strong> experimental conditions (based on combinations of factor levels).</li>
+</ul>
+
+## Example
+
+Some entomologists are interested in the number of eggs laid by carrion beetles at different temperatures and different levels of moisture in the environment. They set up various enclosures for the beetles with temperatures either above or below freezing; and humidity levels of 10%, 50%, and 80%. After 24 hours in an enclosure, they check how many eggs were laid by each beetle.
+
+## Example
+
+- The entomologists are interested in observing how different things impact number of eggs laid, so this is the *response variable*. 
+- The *factors* are temperature and humidity, the two variables our researchers think will impact that response variable. 
+    - For humidity, the levels are 20%, 50%, and 80%;
+    - For temperature, the levels are "below freezing" and "above freezing".
+
+## Example
+
+- To get at the treatments, we need to consider all possible combinations of factor levels. 
+- That is, we need to think about all of the possible ways to combine the different temperatures and humidities:
+    1. 20% humidity, below freezing.
+    2. 50% humidity, below freezing.
+    3. 80% humidity, below freezing.
+    4. 20% humidity, above freezing.
+    5. 50% humidity, above freezing.
+    6. 80% humidity, above freezing.
+- There are six different combinations, which make up the six different treatments in this experiment.
+
+## Human Subjects
+
+In human subjects research, we do a little extra work:
+
+<ul>
+<li>If subjects do not know what treatment group they are in, the study is called <strong>blind.</strong></li>
+  <ul>
+  <li>We use a <strong>placebo</strong> (fake treatment) to achieve this.</li>
+  </ul>
+<li>If neither the subjects nor the researchers who interact with them know the treatment group, it is called <strong>double blind.</strong></li>
+</ul>
+
+This helps avoid bias caused by placebo effect, doctor's expectations for outcome, etc.!
+
+## Checkpoint
+
+A study published in 2009 sought to examine whether supplementing with chia seeds contributed to weight loss. Researchers recruited 76 individuals and randomly assigned them into either a treatment group or a control group. The treatment group was given a set quantity of daily chia seeds; the control group was given a placebo. At the end of the 12-week study, they found no difference in average weight lost between the treatment and control group.
+
+1. Is this an observational study or an experiment? Explain.
+    
+2. Identify the (a) cases and (b) response variable. 
+
+## Homework Problems
+
+Section 1.2 Exercises 1-4

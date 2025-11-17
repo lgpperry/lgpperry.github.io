@@ -1,0 +1,3 @@
+"0","# One possibility:"
+"0","x <- rnorm(100, 4, 10)"
+"0","eps <- rnorm(100)"

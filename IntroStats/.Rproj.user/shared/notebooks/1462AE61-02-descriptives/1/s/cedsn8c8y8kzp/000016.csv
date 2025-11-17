@@ -1,0 +1,2 @@
+"0","data(""geyser"")"
+"0","boxplot(geyser$duration, ylab=""Eruption Duration"", xlab=""Old Faithful Geyser"")"

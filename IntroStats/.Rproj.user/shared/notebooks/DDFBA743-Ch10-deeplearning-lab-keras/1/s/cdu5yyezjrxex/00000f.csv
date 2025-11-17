@@ -1,0 +1,48 @@
+"0","model <- keras_model_sequential() %>%"
+"0","  layer_conv_2d(filters = 32, kernel_size = c(3, 3),"
+"0","      padding = ""same"", activation = ""relu"","
+"0","      input_shape = c(32, 32, 3)) %>%"
+"0","  layer_max_pooling_2d(pool_size = c(2, 2)) %>%"
+"0","  layer_conv_2d(filters = 64, kernel_size = c(3, 3),"
+"0","      padding = ""same"", activation = ""relu"") %>%"
+"0","  layer_max_pooling_2d(pool_size = c(2, 2)) %>%"
+"0","  layer_conv_2d(filters = 128, kernel_size = c(3, 3),"
+"0","      padding = ""same"", activation = ""relu"") %>%"
+"0","  layer_max_pooling_2d(pool_size = c(2, 2)) %>%"
+"0","  layer_conv_2d(filters = 256, kernel_size = c(3, 3),"
+"0","      padding = ""same"", activation = ""relu"") %>%"
+"0","  layer_max_pooling_2d(pool_size = c(2, 2)) %>%"
+"0","  layer_flatten() %>%"
+"0","  layer_dropout(rate = 0.5) %>%"
+"0","  layer_dense(units = 512, activation = ""relu"") %>%"
+"0","  layer_dense(units = 100, activation = ""softmax"")"
+"2","WARNING:tensorflow:From C:\Users\CAPPIE~1\AppData\Local\MINICO~1\envs\R-TENS~1\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+"
+"0","summary(model)"
+"1","Model: ""sequential_4""
+_______________________________________________________________
+ Layer (type)               Output Shape             Param #   
+===============================================================
+ conv2d_3 (Conv2D)          (None, 32, 32, 32)       896       
+ max_pooling2d_3 (MaxPooli  (None, 16, 16, 32)       0         
+ ng2D)                                                         
+ conv2d_2 (Conv2D)          (None, 16, 16, 64)       18496     
+ max_pooling2d_2 (MaxPooli  (None, 8, 8, 64)         0         
+ ng2D)                                                         
+ conv2d_1 (Conv2D)          (None, 8, 8, 128)        73856     
+ max_pooling2d_1 (MaxPooli  (None, 4, 4, 128)        0         
+ ng2D)                                                         
+ conv2d (Conv2D)            (None, 4, 4, 256)        295168    
+ max_pooling2d (MaxPooling  (None, 2, 2, 256)        0         
+ 2D)                                                           
+ flatten (Flatten)          (None, 1024)             0         
+ dropout_5 (Dropout)        (None, 1024)             0         
+ dense_10 (Dense)           (None, 512)              524800    
+ dense_9 (Dense)            (None, 100)              51300     
+===============================================================
+Total params: 964516 (3.68 MB)
+Trainable params: 964516 (3.68 MB)
+Non-trainable params: 0 (0.00 Byte)
+_______________________________________________________________
+"

@@ -1,0 +1,8 @@
+"0","reticulate::use_condaenv(condaenv = ""r-tensorflow"", conda = ""C:/Users/cappiello/AppData/Local/miniconda3/Scripts/conda.exe"", required = TRUE)"
+"0",""
+"0","library(keras)"
+"0","modnn <- keras_model_sequential() %>%"
+"0","  layer_dense(units = 50, activation = ""relu"","
+"0","        input_shape = ncol(x)) %>%"
+"0","   layer_dropout(rate = 0.4) %>%"
+"0","   layer_dense(units = 1)"

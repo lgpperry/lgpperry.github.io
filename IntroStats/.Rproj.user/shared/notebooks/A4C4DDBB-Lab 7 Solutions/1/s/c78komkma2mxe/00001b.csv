@@ -1,0 +1,5 @@
+"0","library(glmnet)"
+"0","X <- model.matrix(y ~ poly(x, 10), data.frame(y, x))[,-1]"
+"0",""
+"0","mod.lasso <- cv.glmnet(X, y, alpha = 1)"
+"0","plot(mod.lasso)"

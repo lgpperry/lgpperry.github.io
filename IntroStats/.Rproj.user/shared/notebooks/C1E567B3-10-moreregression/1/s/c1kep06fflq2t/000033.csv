@@ -1,0 +1,3 @@
+"0","qqnorm(rstandard(mod1), main = ""Q-Q Plot"","
+"0","       ylab=""Standardized Residuals"","
+"0","       xlim = c(-3, 3), ylim = c(-3, 4))  # set your limits here"

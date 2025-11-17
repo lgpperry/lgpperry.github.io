@@ -1,0 +1,6 @@
+"0","# Best subset"
+"0","regfit.full <- regsubsets(y2 ~ poly(x, 10), data = data.frame(y2, x), nvmax = 10)"
+"0","regsum <- summary(regfit.full)"
+"0",""
+"0","par(mfrow=c(2,2))"
+"0","plot(regsum$adjr2, xlab = ""Number of Predictors"", ylab=""Adjusted R-Squared"", type='l')"

@@ -1,0 +1,1 @@
+"0","polygon(x=c(x[x >= 1150 & x <= 1300]), y= c(0, y[x > 1150 & x < 1300], 0), col=""mistyrose"")"
