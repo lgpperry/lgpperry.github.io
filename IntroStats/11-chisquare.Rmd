@@ -1,0 +1,141 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Chi-Square Tests
+
+In this module, we will continue our discussion on statistical inference with a discussion on hypothesis testing. In hypothesis testing, we take a more active approach to our data by asking questions about population parameters and developing a framework to answer those questions. We will root this discussion in confidence intervals before learning about several other approaches to hypothesis testing. 
+
+**Module Learning Outcomes/Objectives**
+
+1. Perform and interpret inference for
+    a. a population variance.
+    b. the ratio of two variances.
+    c. tests of goodness of fit and contingency tables. 
+
+This module's outcomes correspond to course outcomes (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.
+
+## Inference for a Population Variance
+
+Sometimes, it may be of interest to examine directly the variability of a population. Why? Suppose we have some medication that comes in a pill form. We know that each pill has an average of 10mg of active ingredient. For this medication to be consistently effective, we want to make sure that the amount of active ingredient does not *vary* too much from one pill to the next. We examine this using tests for population variance. 
+
+### The Chi-Square Distribution 
+
+Numerically, the variance is different from the mean because it cannot be negative... so it won't make sense to use a normal or t distribution. In order to do hypothesis testing for a variance, we need to learn a little bit about a new distribution, the **chi-square distribution**. 
+
+Chi-square distributions
+
+- have curves that start at 0 and extend indefinitely in the positive direction. 
+- are fully determined by parameter $\text{df}$.
+- are right-skewed.
+- have means equal to $\text{df}$ and variances equal to $2\times\text{df}$.
+
+These makes it a great choice for modeling continuous random variables that can only take on positive values, like the variance!
+
+The chi-square distribution is denoted $\chi^2_{\text{df}}$, where $\chi$ is the Greek letter "chi" and $\text{df}$ is the degrees of freedom. The plot below shows several examples of chi-square distributions with different degrees of freedom.
+
+```{r}
+x <- seq(0,35,length.out=100)
+y1 <- dchisq(x, 3)
+y2 <- dchisq(x, 5)
+y3 <- dchisq(x, 10)
+y4 <- dchisq(x, 20)
+plot(x, y1, type='l', xlim=c(0,30), ylim=c(0,0.25), lwd=2, col="red", xlab="",ylab="",yaxt="n")
+points(x, y2, type='l', lwd=2, col="orange")
+points(x, y3, type='l', lwd=2, col="darkgreen")
+points(x, y4, type='l', lwd=2, col="blue")
+legend(24,0.25,c("df = 3","df = 5","df = 10","df = 20"), lwd=2, 
+       col=c("red","orange","darkgreen","blue"))
+```
+
+Note that we are not able to see the full distributions, so that right-skew may not always be apparent. The chi-square distribution goes on forever in the positive direction, though, so eventually each curve *has* to skew to the right. We should also notice that, for larger values of $\text{df}$, the curve looks a bit like the normal curve. 
+
+### Confidence Intervals for $\sigma$
+
+A $(1-\alpha)100\%$ confidence interval for $\sigma^2$ is $$\left(\frac{(n-1)s^2}{\chi^2_{1-\alpha/2, n-1}}, \frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}}\right)$$ where $\chi^2_{1-\alpha/2, n-1}$ and $\chi^2_{\alpha/2, n-1}$ are the critical values based on significance level $\alpha$ and degrees of freedom $n-1$. We have to consider two separate critical values because the chi-square distribution is not symmetric, which means that - unlike the normal and t distributions - they will *not* be the same value with different signs. 
+
+To get a $(1-\alpha)100\%$ confidence interval for $\sigma$, we will take the square root of each side:
+
+$$\left(\sqrt{\frac{(n-1)s^2}{\chi^2_{1-\alpha/2, n-1}}}, \sqrt{\frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}}}\right)$$
+
+This follows a slightly different pattern than the confidence intervals we saw previously, but we can use and interpret it in exactly the same way.
+
+### Hypothesis Tests for $\sigma$
+
+Think back to the example given at the start of this section. Suppose we want the amount of medication in those pills to have a standard deviation no more than 0.5mg (a variance of 0.25mg$^2$). 
+
+In this case, we will test whether a variance is equal to some quantity or not. The null and alternative hypotheses are
+
+- $H_0$: the variance is 0.25mg$^2$.
+- $H_A$: the variance is NOT 0.25mg$^2$.
+
+In general, and using statistical notation, this will look like
+
+- $H_0$: $\sigma^2 = \sigma^2_0$
+- $H_A$: $\sigma^2 \ne \sigma^2_0$
+
+**Setting and assumptions**: $\sigma^2$ (or $\sigma$) is the target parameter, the population from which the sample was taken is normally distributed. 
+
+#### Confidence Interval Approach {-}
+
+Steps:
+
+1. State null and alternative hypotheses.
+2. Decide on significance level $\alpha$. Check assumptions.
+3. Find the critical values $\chi^2_{1-\alpha/2, n-1}$ and $\chi^2_{\alpha/2, n-1}$
+4. Compute confidence interval. 
+5. If the null value is *not* in the confidence interval, reject the null hypothesis. Otherwise, do not reject.
+6. Interpret results in the context of the problem. 
+
+#### Critical Value Approach {-}
+
+The critical values are $\chi^2_{1-\alpha/2, n-1}$ and $\chi^2_{\alpha/2, n-1}$. The test statistic is $$T = \frac{(n-1)s}{\sigma^2_0}$$ where $s$ is the sample standard deviation. The rejection region for this test is $T < \chi^2_{\alpha/2, n-1}$ OR $T > \chi^2_{1-\alpha/2, n-1}$. 
+
+```{r}
+x <- seq(0,30,length.out=1000)
+y <- dchisq(x, df=9)
+x1 <- 0; x2 <- qchisq(0.15, 10); x3 <- qchisq(0.85, 10); x4 <- 30
+x.coord <- c(x[x > x1 & x < x2])
+y.coord <- y[x > x1 & x < x2]
+x.coord2 <- c(x[x > x3 & x < x4])
+y.coord2 <- y[x > x3 & x < x4]
+plot(x,y,type='l', xaxt='n', yaxt='n', ylab="",xlab="", ylim=c(-0.0075,max(y)+0.01)) 
+abline(h=0); # abline(v=1100)
+polygon(x=x.coord, y= c(0, y.coord[2:(length(y.coord)-1)], 0), col="mistyrose")
+polygon(x=x.coord2, y= c(0, y.coord2[2:(length(y.coord2)-1)], 0), col="mistyrose")
+text(3.5,0.01,"Reject"); text(16,0.01,"Reject"); text(10,0.01,"Do Not Reject")
+text(x2, -0.005, "lower c.v."); text(x3, -0.005, "upper c.v.")
+```
+
+Steps:
+
+1. State the null and alternative hypotheses.
+2. Determine the significance level $\alpha$. Check assumptions.
+3. Compute the value of the test statistic.
+4. Determine the critical values.
+5. If the test statistic is in the rejection region, reject the null hypothesis. Otherwise, do not reject.
+6. Interpret results.
+
+#### P-Value Approach {-}
+
+To find the p-value:
+
+- If your test statistic $T < df$, the p-value is $2P(\chi^2_{df} < T)$.
+- If your test statistic $T \ge df$, the p-value is $2P(\chi^2_{df} > T)$.
+
+Steps:
+
+1. State the null and alternative hypotheses.
+2. Determine the significance level $\alpha$. Check assumptions.
+3. Compute the value of the test statistic.
+4. Determine the p-value.
+5. If $\text{p-value} < \alpha$, reject the null hypothesis. Otherwise, do not reject.
+6. Interpret results.
+
+## The Ratio of Two Variances
+
+## Goodness of Fit
+
+## Contingency Tables

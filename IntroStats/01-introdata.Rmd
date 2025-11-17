@@ -1,0 +1,787 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Introduction to Data
+
+What is statistics? There are two ways to think about this:
+
+1.  Facts and data, organized or summarized in such a way that they provide useful information about something.
+2.  The science of analyzing, organizing, and summarizing data.
+
+As a field, Statistics provides tools for scientists, practitioners, and laypeople to better understand data. You may find yourself using knowledge from this course in a research lab, while reading a research report, or even while watching the news!
+
+**Module Learning Objectives/Outcomes**
+
+After completing Module 1, you will be able to:
+
+1.  Understand basic statistical terminology.
+2.  Describe sampling and experimental design techniques.
+3.  Organize and visualize data using techniques for exploratory data analysis.
+4.  Identify the shape of a data set.
+5.  Understand and interpret graphical displays.
+
+**R objectives**
+
+1.  Manually enter data.
+2.  Generate random numbers.
+3.  Create histograms.
+
+This module's outcomes correspond to course outcomes (1) organize, summarize, and interpret data in tabular, graphical, and pictorial formats and (2) organize and interpret bivariate data and learn simple linear regression and correlation.
+
+## Statistics Terminology
+
+There are two ways to think about statistics:
+
+1.  **Descriptive statistics** are methods for *describing* information.
+
+For example, 66% of eligible voters voted in the 2020 presidential election (the highest turnout since 1900!).
+
+2.  **Inferential statistics** are methods for *drawing inference* (making decisions about something we are uncertain about).
+
+For example, a poll suggests that 75% of voters will select Candidate A. People haven't voted yet, so we don't know what will happen, but we could reasonably conclude that Candidate A will win the election.
+
+The first three modules of this text are dedicated to methods for descriptive statistics. Modules 4 and 5 build up some background information to help with inferential statistics, and then Modules 6 and beyond deal with inferential statistics.
+
+**Data** is factual information. We collect data from a **population**, the collection of all individuals or items a researcher is interested in.
+
+-   Collecting data from an entire population is called a **census**.
+    -   This is complicated and expensive! There's a reason the United States only does a census every 10 years.
+-   We can also take a **sample**, a subset of the population we get data from.
+    -   If you think of the population as a pie, the sample is a small slice. Whether it's a pumpkin pie, a cherry pie, or a savory pie, the small slice will tell you that. We don't need to eat the entire pie to learn a lot about it!
+
+Data are often organized in what we call a **data matrix**. If you've ever seen data in a spreadsheet, that's a data matrix!
+
+|           |         |            |            |                    |
+|-----------|---------|------------|------------|--------------------|
+|           | **Age** | **Gender** | **Smoker** | **Marital Status** |
+| **Person 1** | 45 | Male   | yes | married |
+| **Person 2** | 23 | Female | no  | single  | 
+| **Person 3** | 36 | Other  | no  | married |
+| **Person 4** | 29 | Female | no  | single  | 
+
+Each row (horizontal) represents one **observation** (also called **observational units**, **cases**, or **subjects**). These are the individuals or items in the sample.
+
+Each column (vertical) represents a **variable**, the characteristic or thing being measured. Think of variables as measurements that can *vary* from one observation to the next.
+
+There are two broad types of variable, each of which can be further categorized into two sub-types:
+
+1.  **Numeric** or **quantitative** variables take *numeric* values AND it is sensible to do math with those values.
+    a.  **Discrete numeric** variables take numeric values with jumps. Typically, this means they can only take whole number values. These are often counts of something. For example, the number of pets you have, the number of cars that drive through an intersection during rush hour, or the number of classes students are taking.
+    b.  **Continuous numeric** variables take values "between the jumps". Typically, this means they can take decimal values. For example, weights of guinea pigs, milliliters of medication administered, or any measurements of time.
+2.  **Categorical** or **qualitative** variables take values that are *categories*. These could be something like gender, ice cream flavors, or dog breeds.
+    a. **Ordinal categorical** variables have categories with some kind of intrinsic ordering, meaning we can rank them in a meaningful way. For example, a survey asking for approval levels might have categories "strongly disapprove, disapprove, neutral, approve, strongly approve"; and letter grades have the standard ordering "A, B, C, D, F". 
+    b. **Nominal categorical** variables have categories with no intrinsic ordering. Examples include eye color, college major, and the city people live in. 
+
+<center><font size='4'><b>The "Does it make sense"? Test</b></font></center>
+
+-   Sometimes, categories can be represented by numbers. Ask yourself if it makes sense to do math with those numbers. If it doesn't make sense, it's probably a categorical variable. Some examples: zip codes, phone area codes, or student ID numbers.
+-   If you're unsure whether a variable is discrete or continuous, pick a number with some decimal places and ask yourself if that value makes sense. If it doesn't, it's probably discrete. For example, number of siblings is discrete (you can't have 2.3 siblings), but age is continuous (a number like 21.3 may not be how we usually share our age, but it is meaningful). 
+
+### Section Exercises {.unnumbered}
+
+For exercises 1-10, determine whether the variable is discrete numeric, continuous numeric, ordinal categorical, or nominal categorical.
+
+<ol>
+  <li>species</li>
+  <li>temperature in Celsius</li>
+  <li>level of education</li>
+  <li>blood type</li>
+  <li>grams of flour in a cake recipe</li>
+  <li>political party</li>
+  <li>level to which a person agrees with some statement</li>
+  <li>number of siblings</li>
+  <li>number of cars that cross a bridge during rush hour</li>
+  <li>heart rate (beats per minute)</li>
+</ol>
+
+For exercises 11-16, refer to the following table showing part of the data matrix from an Intro Stats course survey. Note that some rows have been removed.
+
+|          |          |                     |                         |                         |
+|----------|----------|---------------------|-------------------------|-------------------------|
+|          | **Age**  | **Year in college** | **What is your major?** | **Units this semester** |
+| 1        | 19       | Sophomore           | Health Sciences         | 15                      |
+| 2        | 19       | Sophomore           | Business                | 15                      |
+| 3        | 19       | Sophomore           | Undecided               | 14                      |
+| $\vdots$ | $\vdots$ | $\vdots$            | $\vdots$                | $\vdots$                |
+| 29       | 21       | Junior              | Business                | 15                      |
+
+<ol start="11">
+  <li>What does each row of the data matrix represent?</li>
+  <li>What does each column of the data matrix represent?</li>
+  <li>How many observations are there in the full dataset?</li>
+  <li>What are the three other terms that mean the same thing as "observation"?</li>
+  <li>How many variables are there?</li>
+  <li>Indicate whether each variable in the data matrix is discrete numeric, continuous numeric, ordinal categorical, or nominal categorical.</li>
+</ol>
+
+For exercises 17-21, identify the population and the sample.
+
+<ol start="17">
+  <li> A survey of 2084 US households found that 45\% have multiple TVs. </li>
+  <li> A local university wants to impose a new student fee in order to offer a better student rec center. They ask 87 students whether they support this fee.</li>
+  <li> A medical research company wants to test how well their new prosthetic hand design works for amputees. They recruit 27 amputees and have them wear the hands for a week, tracking their comfort and how well the hands respond to different cues. </li>
+  <li> A scientist wants to track the life cycles of invasive Burmese pythons in Florida. She spends a month in the field and tags 52 pythons for monitoring. </li>
+  <li> A college student wants to know if people living in her dorm actually enjoy the food offered at the dorm's food court. He approaches 18 students during meals at the food court and asks about their opinions. </li> 
+</ol>
+
+<ol start ="22">
+  <li>In your own words, explain the differences between a population, a sample, and an observation.</li>
+  <li>**Dig Deeper** Read the article, [Here’s Why an Accurate Census Count Is So Important](https://www.nytimes.com/2018/03/27/us/politics/census-citizenship-question.html) from the New York Times. (If you can't access the article, try a Google search for "why an accurate census count is important".) Take a moment to write down your thoughts on the relationship between how we collect data (for example - the questions asked in the census) and the power data has over people's lives. As researchers, scientists, and consumers of media, what are some reasons this is important to think about?</li>
+</ol>
+
+## Statistical Sampling 
+
+How do we get samples? We want a sample that represents our population. **Representative samples** reflect the relevant characteristics of our population.
+
+In general, we get representative samples by selecting our samples *at random* and with an adequate sample size.
+
+A non-representative sample is said to be **biased**. For example, if we used a sample of chihuahuas to represent all dogs, we probably wouldn't get very good information; that sample would be *biased*.
+
+These can be a result of **convenience sampling**, choosing a sample based on ease. 
+
+In our daily lives, common sources of bias are *anecdotal evidence* and *availability bias*. Anecdotal evidence is data based on personal experience or observation. Typically this consists of only one or two observations and is NOT representative of the population. For example, suppose a friend tells you their grandpa smoked a pack of cigarettes a day and lived to be 100. That may be entirely true, but it does not negate the fact that smoking is bad for your health. 
+
+Availability bias is your brain's tendency to think that examples of things that come readily to mind are more representative than is actually the case. For example, shark attacks are actually extremely uncommon, but the media tends to report on extreme anecdotes, making us more prone to this kind of bias! Anecdotal evidence is more directly connected to data, but both are important to be mindful of as responsible consumers of information. 
+
+### Sampling Types
+
+#### Simple Random Sampling {.unnumbered}
+
+We avoid bias by taking random samples. One type of random sample is a **simple random sample**. We can think of this as "raffle sampling", like drawing names out of a hat. Each case (or each possible sample) has an equal chance of being selected. Knowing that A is selected doesn't tell us anything about whether B is selected. Instead of literally drawing from a hat, we usually use a **random number generator** from a computer.
+
+#### Stratified Sampling {.unnumbered}
+
+In a **stratified sample**, we break the population down into groups called **strata** based on characteristics we think might be relevant to our study. Individuals or items within a strata should be fairly similar to each other with respect to the outcome of interest. We then take a random sample from each strata. This ensures we have representation from each group. 
+
+> Example: A local politician believes men and women will vote differently on an upcoming ballot measure. She goes into the community and randomly samples 50 men and 50 women to ask for their thoughts on the ballot measure.
+
+We can also use stratified sampling to make sure that the proportion of items in each group in the population matches the proportions in our sample. 
+
+> Example: A local high school is 29% freshmen, 27% sophomores, 24% juniors and 19% seniors. They want to collect a sample of 100 students using class level as strata. Since some class levels have more students than others, they set their strata to match: they select 29 freshmen (29% of their sample), 27 sophomores, 24 juniors, and 19 seniors.
+
+This approach to stratified sampling can also help us ensure that small strata are adequately represented in our study.
+
+> Example: Suppose we are doing some drug development research for a particular disease and know that a very small part of our population develops an especially severe form of the diease. In order to make sure those individuals are represented in our sample, we could treat disease severity as strata. The motivation in this case is that, in a simple random sample, we might miss those individuals entirely! By constructing these strata, we make sure they are accounted for. 
+
+#### Cluster Sampling {.unnumbered}
+
+In a **cluster sample**, we break the population into **clusters**, where each cluster is similar to the population (and so the clusters are all similar to each other). We then take a random sample of clusters and measure all items or individuals within those randomly selected clusters. 
+
+> Example: An airline wants to survey people who take its international flights from the United States to Asia. They randomly select 10 of these flights and give the survey to every individual on each of those 10 flights. 
+
+> Example: A farmer wants to know something about the plants in their fields. They randomly select 5 of their fields and examine all of the plants in each field. 
+
+The potential downside to cluster sampling is that there may be factors that make clusters meaningfully different from one other. 
+
+> Example: If our airline randomly samples flights to Asia, they may have failed to take into account that the people going to Vietnam are different from the people going to the Philipines who are different from the people going to India. That is, it's probably not reasonable to assume that every flight to Asia is representative of the entire population of individuals who use that airline to fly to Asia. 
+
+#### Systematic Sampling {.unnumbered}
+
+In a **systematic sample**, we choose some starting point in our population and then collect every $k$th observation. 
+
+> Example: If I had a list of student ID numbers for every student at Sacramento State, I could generate a sample of students by selecting every 100th number. 
+
+> Example: Suppose we want to examine some machine part coming off on an assembly line. We collect a sample by pulling every 20th part off of the assembly line for additional testing. 
+
+One potential issue with systematic sampling is that there may be some pattern in the data. 
+
+> Example: A machine on an assembly line is oiled after producing 20 components, and its performance degrades steadily after it is oiled. If we select every 20 components, we match this *periodicity* and fail to capture a representative sample of components. 
+
+### Section Exercises {.unnumbered}
+
+For exercises 1-5, determine whether the sample is likely to be *biased*. Explain your thought process.
+
+<ol>
+  <li> A professor wants to learn something about Sacramento State students, so they take a sample of all of their Stat 1 students.</li>
+  <li> A psychologist wants to draw conclusions about adults, and they run their study on a sample of randomly selected college students.</li>
+  <li> A pollster wants to draw conclusions about how people in California will vote on an upcoming ballot measure, so they select a random sample of 1000 likely voters in California.</li>
+  <li> Your roommate wants to know how many energy drinks other college students drink, so he asks all of his buddies to spend a week keeping track of how many energy drinks they consume.</li>
+  <li> A researcher wants to know how well some new medical intervention works, so they find volunteers willing to come into their clinic and participate in their study. </li>
+</ol>
+
+Exercises 6-11 each describe a statistical sampling scenario. Determine the statistical sampling type. 
+
+<ol start="6">
+  <li> A spa wants to know how customers like their treatments, so they ask every tenth customer to fill out a satisfaction survey.</li> 
+  <li> A landscaping company wants to know which suburbs they should advertise their services to. They get a list of all the suburbs in their area and randomly sample 10 households from each suburb to ask about their landscaping needs. </li>
+  <li> A city council wants to know whether its residents support building a new sports stadium. They get a list of all residents in the city and randomly call 200 of them.</li>
+  <li> A farmer wants to know which varieties of beans will yield the most product. She randomly selects five of her fields and examines the total bean yields for each of those five fields. </li>
+  <li> A researcher wants to know if a new medical intervention will help reduce the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1362956/">higher anesthetic requirement for redheads</a>. His company has clinics in a number of US cities, so he randomly selects five of those clinics. Each clinic then asks all of their patients if they are willing to participate in the study.</li>
+  <li> To conduct an exit poll for voters at a specific voting location, a pollster stands outside the voting location and interviews every fifth person who exits the building. </li>
+</ol>
+
+For exercises 12-16, come up with a research scenario for the listed sampling type.
+
+<ol start="12">
+  <li> simple random sampling </li>
+  <li> stratified sampling </li>
+  <li> cluster sampling </li>
+  <li> systematic sampling </li>
+</ol>
+
+## Experimental Design
+
+When we do research, we have two options: run an experiment or an observational study.
+
+### Experiments
+
+In an **experiment**, researchers assign **treatments** (experimental conditions) to cases. 
+    
+> **Example** A biologist wants to know if different diets impact reproductive behaviors in mice. Of the 50 mice they have in the lab, 17 will be given Diet A, 17 will be given Diet B, and 16 Diet C. The biologist is going to provide each mouse with a specific diet, so this is an *experiment*. That is, they are assigning treatments (diets) to cases (mice). 
+
+> **Example** A medical researcher wants to know if a new heartburn medication is as effective as antacids. They bring 150 people into the lab and have them drink something that causes heartburn. After a set period of time, 75 of them are given an antacid and 75 are given the new heartburn medication. The researchers then measure how long it takes for each person's heartburn to subside. This is an *experiment* because the researchers provided each person with a treatment - an antacid or the new medication. That is, the researchers assigned a treatment to each subject. 
+
+In an experiment, cases may also be called **experimental units** (items or individuals on which the experiment is performed).
+
+### Observational Studies
+
+In an **observational study**, no conditions are assigned. These are often done for ethical reasons, like examining the impacts of smoking cigarettes.
+
+> **Example** A psychology researcher asked 100 people to take a survey on a variety of personality traits. Because the researcher did not assign any treatments to the subjects in the study (everyone took the same survey), this is an *observational study*.
+
+> **Example** A researcher wanted to examine the relationship between cigarette smoking and stomach cancer. They follow 65 people from ages 40-70 and compare the stomach cancer rates of smokers and non-smokers. This is an observational study because the researcher did not *assign* treatments to cases. That is, each subject in the study was free to choose whether to smoke cigarettes. (If the reseachers found a strong relationship between smoking and stomach cancer, they would not be able to say that smoking *causes* stomach cancer, but they would have strong motivation for futher research!)
+
+Importantly, experiments allow us to infer causation. Observational studies do not.
+
+### Experimental Design Principles
+
+We have some additional things to think about for experiments, starting with our experimental design principles:
+
+**Control**: two or more treatments are compared. We want to compare multiple treatments because it helps us be confident that our treatments are causing the effect we are observing. For example, if we wanted to know whether ibuprofen reduces pain from headaches, we would want to compare the use of ibuprofen to, for example, not taking any painkiller. This comparison allows us to confirm that any reduction in pain happened because of the ibuprofen, rather than the pain reduction being something that would have happened over time even without the drug. 
+
+**Randomization**: experimental units are assigned to treatment groups, usually and preferably at random. Essentially, we want each treatment group to look like a mini random sample and, just like with samples, that random assignment helps ensure that each group is representative of the population. 
+
+**Replication**: a large enough sample size is used to test each treatment many times (on many different experimental units). Perhaps the best way to think about why this is important is to think of the scenario where there is only one case in each treatment group. With such a small number in each group, we would have no way of knowing if the treatment is causing some effect or if any changes are happening by random chance. By selecting a larger sample size, we essentially "average out" the things that happen at random so that we can focus on the treatments themselves.
+
+**Blocking**: if variables other than treatment are likely to have an impact on study outcome, we use blocks. Blocks give us a little bit of additional control over making sure that each treatment is representative of our population. For example, I might separate patients in a medical study into "high risk" and "low risk" blocks. I would randomly assign all of the high risk patients to a treatment and then randomly assign all of the low risk patients to a treatment. This helps ensure an even distribution of high/low risk patients in each treatment group. 
+
+An experiment without blocking has a completely randomized design; an experiment with blocking has a randomized block design.
+
+In an experimental setting, we talk about
+
+-   **Response variable**: the characteristic of the experimental outcome being measured or observed.
+-   **Factor:** a variable whose impact on the response variable is of interest in the experiment.
+-   **Levels**: the possible values of a factor.
+-   **Treatments**: experimental conditions (based on combinations of factor levels).
+
+> Example: Some entomologists are interested in the number of eggs laid by carrion beetles at different temperatures and different levels of moisture in the environment. They set up various enclosures for the beetles with temperatures either above or below freezing; and humidity levels of 10%, 50%, and 80%. After 24 hours in an enclosure, they check how many eggs were laid by each beetle.
+>
+> In this scenario, the entomologists are interested in observing how different things impact number of eggs laid, so this is the response variable. The factors are temperature and humidity, the two variables our researchers think will impact that response variable. For humidity, the levels are 20%, 50%, and 80%; for temperature, the levels are "below freezing" and "above freezing".
+>
+> To get at the treatments, we need to consider all possible combinations of factor levels. That is, we need to think about all of the possible ways to combine the different temperatures and humidities:
+>
+> 1. 20% humidity, below freezing.
+> 2. 50% humidity, below freezing.
+> 3. 80% humidity, below freezing.
+> 4. 20% humidity, above freezing.
+> 5. 50% humidity, above freezing.
+> 6. 80% humidity, above freezing.
+>
+> There are six different combinations, which make up the six different treatments in this experiment. 
+
+In human subjects research, we do a little extra work. If subjects do not know what treatment group they are in, the study is called **blind**. We use a **placebo** (fake treatment) to achieve this. We do this because, psychologically, people's expectations for their outcome (their idea of what is going to happen to them) has a strong impact on how they actually do. This is called the placebo effect. If neither the subjects nor the researchers who interact with them know the treatment group, it is called **double blind.** This helps avoid bias caused by researcher's expectations for outcome. This can happen when, for example, a person does not know what treatment group they are in, but a doctor knows they are getting a fake treatment and acts as if they may have a bad outcome.
+
+### Section Exercises {.unnumbered}
+
+<ol>
+  <li>A group of researchers wanted to know if puppies have an effect on heart rate. From a sample of 18 people, they randomly assigned 10 to take a test while in a room with a puppy. The remaining 8 people took the same test in a room with no puppies. During the test, each participant's heart rate was monitored.</li>
+  <ol style="list-style-type: lower-alpha;">
+    <li>Is this an observational study or an experiment? Explain.</li>
+    <li>Identify the (i) cases and (ii) response variable.</li>
+    <li> Explain how this study satisfies the principles of (i) control, (ii) randomization, and (iii) replication. </li>
+    <li> Can this study be used to infer causality (cause and effect)? Why or why not? </li>
+  </ol>
+  <li>A group of researchers wanted to examine the relationship between smoking and type 2 diabetes. In a sample of 200 people, 47 were smokers and 153 were non-smokers. The researchers followed both groups for 10 years and tracked whether they developed diabetes.   <ol>
+  <li>Is this an observational study or an experiment? Explain.</li>
+  <li> Can this study be used to infer causality? Why or why not? </li>
+  </ol style="list-style-type: lower-alpha;">
+  <li>A scientist wanted to examine how different conditions impacted the life cycle of monarch butterflies. Butterfly cocoons were placed individually into enclosures at three different temperatures: 70 degrees, 90 degrees, and 110 degrees; and two different levels of humidity: high (85%) and low (15%). The scientist then measured how long each cocoon took to develop into a butterfly.</li>
+  <ol style="list-style-type: lower-alpha;">
+    <li>Is this an observational study or an experiment? Explain.</li>
+    <li>Identify the (i) cases and (ii) response variable.</li>
+    <li>Identify the factors. What are the levels of each factor?</li>
+    <li>What are the possible treatments in this experiment? (Hint: there should be 6 combinations of factor levels.)</li>
+    <li> Explain how this study satisfies the principles of (i) control, (ii) randomization, and (iii) replication. </li>
+    <li> Can this study be used to infer causality? Why or why not? </li>
+  </ol>
+  <li>A drug manufacturer wants to know how well a new blood pressure medication works. They recruit 130 people with high blood pressure and randomly assign 65 of them to the new medication; the other 65 will receive an existing blood pressure medication that is known to work well. Researchers will then monitor each participant's blood pressure over time to determine whether the new medication works at least as well as existing medications.</li>
+    <ol style="list-style-type: lower-alpha;">
+    <li>Is this an observational study or an experiment? Explain.</li>
+    <li>Identify the (i) cases and (ii) response variable.</li>
+    <li> Explain how this study satisfies the principles of (i) control, (ii) randomization, and (iii) replication. </li>
+    <li> What would need to be true for this study to be *blind*? </li>
+    <li> What would need to be true for this study to be *double blind*? </li>
+    <li> Why do you think the researchers chose not to use a placebo in this study? </li>
+  </ol>
+</ol>
+
+## Frequency Distributions
+
+### Qualitative Variables
+
+**Frequency** (**count**): the number of times a particular value occurs. Suppose we have the following data for the class level of students in a section of Introductory Statistics:
+
+`sophomore, freshman, freshman, sophomore, sophomore, senior, sophomore, freshman, senior, sophomore, freshman, junior, freshman, freshman, senior, sophomore, sophomore, freshman, sophomore, junior, freshman, sophomore, junior, freshman, senior, freshman, freshman, senior, freshman, sophomore`
+
+This is a lot to take in at a glance, so we are going to think about ways to summarize it. A **frequency distribution** lists each distinct value with its frequency.
+
+|   Class   | Frequency |
+|:---------:|:---------:|
+| freshman  |    12     |
+| sophomore |    10     |
+|  junior   |     3     |
+|  senior   |     5     |
+
+Note that I can also quickly get the total number of students in the class from this frequency distribution; since all students are accounted for in the data, the total number of students is $12 + 10 + 3 + 5 = 30$.
+
+A **bar plot** is a graphical representation of a frequency distribution. Each bar's height is based on the frequency of the corresponding category.
+
+```{r message=FALSE}
+df <- data.frame(Level=c("freshman","sophomore","junior","senior"),
+                Count=c(12, 10, 3, 5))
+df$Level <- ordered(df$Level, levels = c("freshman","sophomore","junior","senior"))
+
+library(ggplot2)
+library(scales)
+
+ggplot(data=df, aes(x=Level, y=Count)) +
+  geom_bar(stat="identity", fill="steelblue") +
+  theme_minimal() + 
+  ggtitle("Bar Plot of Class") + 
+  scale_y_continuous(name="Frequency", breaks= pretty_breaks()) +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+The bar plot above shows the class level breakdown for students in an Introductory Statistics course. Take a moment to notice how the bars match up with the frequency distribution above. Since class level is an ordinal variable, we should match the order of the bars to the order of the categories. 
+
+For nominal variables, we can use a **Pareto chart**, which is a bar chart with the bars sorted from highest to lowest frequency. 
+
+```{r}
+library(tidyverse)
+library(gapminder)
+library(ggplot2)
+
+pop_df <- gapminder %>%
+  filter(year==2007)%>%
+  group_by(continent) %>%
+  summarize(pop_in_millions=sum(pop)/1e06)
+pop_df %>% 
+  ggplot(aes(reorder(continent, pop_in_millions, decreasing=TRUE),
+             pop_in_millions))+
+  geom_col() + 
+  theme_minimal() +
+  labs(x="Continent", title="Pareto Chart of Population", y="Population (Millions)")+
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+This allows us to quickly examine which categories appear most and least frequently, as well as how their frequencies compare to each other. 
+
+**Relative frequency** is the ratio of the frequency to the total number of observations.
+
+$$
+  \text{relative frequency} = \frac{\text{frequency}}{\text{number of observations}}
+$$
+
+This is also called the **proportion**. The **percentage** can be obtained by multiplying the proportion by 100.
+
+A **relative frequency distribution** lists each distinct value with its relative frequency.
+
+|   Class   | Frequency |   Relative Frequency   | Percent |
+|:---------:|:---------:|:----------------------:|:-------:|
+| freshman  |    12     |     $12/30 = 0.4$      |   40%   |
+| sophomore |    10     | $10/30 \approx 0.3333$ | 33.33%  |
+|  junior   |     3     |      $3/30 = 0.1$      |   10%   |
+|  senior   |     5     | $5/30 \approx 0.1667$  | 16.67%  |
+
+Notice that if we add up all of the relative frequencies, we get 1. Equivalently, if we add all of the percents, we get 100%. This total represents 100% of the students in this course. 
+
+### Quantitative Variables
+
+We can also apply this concept to numeric data. A **dot plot** is one graphical representation of this. A dot plot shows a number line with dots drawn above the line. Each dot represents a single point.
+
+```{r message=FALSE}
+library(ggplot2)
+set.seed(0)
+dat <- data.frame(x=sample(1:10,50,TRUE))
+ggplot(dat, aes(x = x)) +
+  geom_dotplot(dotsize = 2, stackratio = 1.1, fill = "steelblue") + 
+  scale_x_continuous(breaks = c(1:10)) +
+  scale_y_continuous(NULL, breaks=NULL) + 
+  labs(title = "Example Dot Plot", x = "Values", y = "") +
+  theme_bw()+
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+For example, the dot plot above shows a sample where the value 1 appears three times, the value 5 appears six times, etc.
+
+We would also like to be able to visualize larger, more complex data sets. This is hard to do using a dot plot! Instead, we can do this using **bins**, which group numeric data into equal-width consecutive intervals.
+
+> **Example**: A random sample of weights (in lbs) from 12 cats:
+>
+> $$\quad 6.2 \quad 11.6 \quad 7.2 \quad 17.1 \quad 15.1 \quad 8.4 \quad    7.7 \quad   13.9 \quad  21.0 \quad  5.5 \quad 9.1 \quad 7.3 $$
+>
+> The **minimum** (smallest value) is 5.5 and the **maximum** (largest value) is 21. There are lots of ways to break these into "bins", but what about...
+>
+> -   5 - 10
+> -   10 - 15
+> -   15 - 20
+> -   20 - 25
+>
+> Each bin has an equal width of 5, but if we had a cat with a weight of exactly 15 lbs, would we use the second or third bin?? It's unclear. To make this clear, we need there to be no overlap. Instead, we could use:
+>
+> |  Weight   | Count |
+> |:---------:|:-----:|
+> | [5, 10)  |   7   |
+> | [10, 15) |   2   |
+> | [15, 20) |   2   |
+> | [20, 25) |   1   |
+>
+> Now, a cat with a weight of 15.0 lbs would be placed in the third bin (but not the second). (Recall that the interval notation $[5, 10)$ means $5 \le x < 10$.)
+
+We will visualize this using a **histogram**, which is a lot like a bar plot but for numeric data:
+
+```{r}
+wts <- c( 6.2, 11.6, 7.2, 17.1, 15.1, 8.4, 7.7, 13.9, 21.0, 5.5, 9.1, 7.3)
+df <- data.frame(wts)
+ggplot(data=df, aes(x=wts)) +
+  geom_histogram(breaks=c(5,10,15,20,25), color="black", fill = "steelblue") +
+  theme_minimal() + 
+  ggtitle("Histogram of Cat Weights")+
+  scale_y_continuous(name="Frequency") +
+  scale_x_continuous(name="Weight (lbs)") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+This is what we call a **frequency histogram** because each bar height reflects the frequency of that bin. We can also create a **relative frequency histogram** which displays the relative frequency instead of the frequency:
+
+```{r}
+wts <- c( 6.2, 11.6, 7.2, 17.1, 15.1, 8.4, 7.7, 13.9, 21.0, 5.5, 9.1, 7.3)
+df <- data.frame(wts)
+ggplot(data=df, aes(x=wts)) +
+  geom_histogram(aes(y = after_stat(count / sum(count))), 
+                 breaks=c(5,10,15,20,25), color="black", fill = "steelblue") +
+  theme_minimal() + 
+  ggtitle("Histogram of Cat Weights")+
+  scale_y_continuous(name="Relative Frequency") +
+  scale_x_continuous(name="Weight (lbs)") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+Notice that these last two histograms look the same *except for the numbers on the vertical axis*! This gives us insight into the shape of the data **distribution**, literally how the values are distributed across the bins. The part of the distribution that "trails off" to one or both sides is called a **tail** of the distribution.
+
+When a histogram trails off to one side, we say it is **skewed** (right-skewed if it trails off to the right, left-skewed if it trails off to the left). Data sets with roughly equal tails are **symmetric**.
+
+```{r}
+par(mfrow=c(2,2))
+set.seed(0)
+x1 <- rpois(1000,2)
+hist(x1, main="Right-Skewed Distribution", xlab="", ylab="", xaxt='n', yaxt='n')
+x2 <- 8-x1
+hist(x2, main="Left-Skewed Distribution", xlab="", ylab="", xaxt='n', yaxt='n')
+x3 <- rnorm(1000)
+hist(x3, main="Symmetric Distribution", xlab="", ylab="", xaxt='n', yaxt='n')
+x4 <- c(rnorm(500), rnorm(500,5))
+hist(x4, main="Symmetric Distribution", xlab="", ylab="", xaxt='n', yaxt='n')
+```
+
+We can also use a histogram to identify **modes**. For numeric data, especially continuous variables, we think of modes as *prominent peaks*.
+
+```{r}
+par(mfrow=c(2,2))
+set.seed(0)
+x3 <- rnorm(1000)
+hist(x3, main="Unimodal", xlab="", ylab="", xaxt='n', yaxt='n')
+x4 <- c(rnorm(500), rnorm(500,5))
+hist(x4, main="Bimodal", xlab="", ylab="", xaxt='n', yaxt='n')
+x1 <- c(rnorm(330), rnorm(330,5), rnorm(340,9))
+hist(x1, main="Multimodal", xlab="", ylab="", xaxt='n', yaxt='n')
+x2 <- c(rnorm(330), rnorm(330,5,0.5), rnorm(340,11,1.5))
+hist(x2, main="Multimodal", xlab="", ylab="", xaxt='n', yaxt='n')
+```
+
+-   **Unimodal**: one prominent peak.
+-   **Bimodal**: two prominent peaks.
+-   **Multimodal**: three or more prominent peaks.
+
+Finally, we can also "smooth out" these histograms and use a smooth curve to examine the shape of the distribution. Below are the smooth curve versions of the distributions shown in the four histograms used to demonstrate skew and symmetry.
+
+```{r}
+par(mfrow=c(2,2))
+set.seed(0)
+x1 <- rpois(10000,2)
+plot(density(x1, bw=0.6), main="Right-Skewed Distribution", xlab="", ylab="", xaxt='n', yaxt='n')
+x2 <- 8-x1
+plot(density(x2, bw=0.6), main="Left-Skewed Distribution", xlab="", ylab="", xaxt='n', yaxt='n')
+x3 <- rnorm(10000)
+plot(density(x3, bw=0.5), main="Symmetric Distribution", xlab="", ylab="", xaxt='n', yaxt='n')
+x4 <- c(rnorm(5000), rnorm(5000,5))
+plot(density(x4, bw=0.5), main="Symmetric Distribution", xlab="", ylab="", xaxt='n', yaxt='n')
+```
+
+### Section Exercises {.unnumbered}
+
+
+<ol>
+  <li>Twenty-five Stat 1 students were asked how tall they were. A histogram of their responses is shown below. Describe the shape (modality and skew/symmetry) of this distribution.</li>
+
+```{r}
+hist(c(5, 0, 1, 7, 3, 2, 0, 1, 4, 3, 2, 0, 2, 2, 0, 0, 5, 1, 1, 1, 5, 2, 3, 2, 4, 6), 
+     main="", xlab = "Number of Siblings", col="lightblue")
+```
+
+<li>The following histogram shows the duration (in minutes) for 299 eruptions of Old Faithful Geyser in Yellowstone National Park. Describe the shape of this distribution</li>
+</ol> 
+
+```{r}
+library(MASS)
+data(geyser)
+hist(geyser$duration, main="", xlab="Eruption Duration (minutes)", col="orange")
+```
+
+For exercises 3-5, twenty-one Stat 1 students were asked where they were from. A bar chart of their responses is shown below.
+
+```{r}
+loc <- c("Sacramento Area","Bay Area","Sacramento Area","Bay Area","Bay Area","Sacramento Area","Sacramento Area","Bay Area","Sacramento Area","Bay Area","Out of State","Bay Area","Sacramento Area","Sacramento Area","Sacramento Area","Bay Area","Out of State","Other California","Bay Area","Sacramento Area","Other California")
+loc <- factor(loc, levels=c("Sacramento Area", "Bay Area", "Other California", "Out of State"))
+barplot(table(loc), col ="pink", ylim=c(0,10), main="Bar Plot of Responses to 'Where Are You From?'")
+```
+
+<ol start="3">
+  <li>How many people in this class are from the Bay Area? </li>
+  <li>Use the bar plot to create the frequency distribution for these data.</li>
+  <li>Use your frequency distribution from (a) to find the relative frequency distribution for these data.</li>
+</ol>
+
+For exercises 6-8, use the following data on student eye color:
+    <center> `brown, brown, blue, green, blue, brown, brown, grey, brown, blue,` </br>
+              `brown, green, brown, blue, brown, brown, brown, blue, blue, brown` </center>
+
+<ol start="6">
+  <li>Construct a frequency distribution for these data.</li>
+  <li>Construct a relative frequency distribution.</li>
+  <li>Create a Pareto chart for these data.</li>
+</ol>
+
+## R Lab: Data Basics and Graphs {.unnumbered}
+
+### R as a Calculator {.unnumbered}
+
+Let's start simple. Type in `2+2` and click the "Run" button in the top left panel. The answer to $2+2$ should appear in the bottom left panel under the line of code you just ran. It will look something like 
+
+> \> 2+2
+>
+> [1] 4
+
+Basically, using R as a calculator works the same way as the scientific calculator you may have used in math classes. That is, R follows the traditional order of operations. However, some of the operators may be a little different from what you're used to.
+
+-   Addition and subtraction are as you would expect: `3+5` will give the solution to $3+5$ and `6-4` the solution to $6-4$.
+-   We use an asterisk for multiplication: `3*4` will give the solution to $3\times 4$.
+-   For division, we use a forward slash: `6/2` gives the solution to $6 \div 2$.
+-   Finally, for exponents, we use a caret: `7^3` gives the solution to $7^3$.
+-   For the square root, we have a special command: `sqrt(9)` gives the solution to $\sqrt{9}$.
+
+By default, R will always produce either the whole number result or a decimal. That's what we want in this class!
+
+Try entering each of the commands given above in R, pressing the green "Run" button after each one. Notice that you can either delete everything in the box and then do a new calculation, or you can put your new calculation on the next line:
+
+```{r, echo=TRUE, eval=FALSE}
+6-4
+3*4
+7^3
+```
+
+Try copy and pasting the three lines above into the top left panel and then take a moment to notice what the output looks like and how it matches up with the lines of code you entered.
+
+#### Your Turn {.unnumbered}
+
+1.  For each of the following mathematical expressions, provide an R expression you could write to find the solution.
+    a.  $7^{11}$
+    b.  $17\times9$
+    c.  $\sqrt{49}$
+
+We can also do much more extensive calculations in R, but we need to be very careful with our order of operations! If in doubt, break your equation up and do it piece by piece. For example, consider the expression $$\frac{7-4}{5/\sqrt{10}}$$ I can put this entire thing into R as `(7-4)/(5/sqrt(10))` but that requires a bunch of parenthesis to get the order of operations right!
+
+Another option is to break this down. I start with `7-4` to get a value of 3 in the numerator. Then, I can find `5/sqrt(10)` separately, which is 1.581. Finally, I would enter `3/1.581` to get my final answer of 1.897. (I would do the same thing with a scientific calculator if I weren't 100% comfortable with my parentheses!)
+
+#### Your Turn {.unnumbered}
+
+2.  For each of the following mathematical expressions, provide an R expression you could write to find the solution.
+    a.  $4\times 7 - 3$
+    b.  $3^5 + 2\times2$
+    c.  $\frac{4.5 - 2.3}{1.75}$
+
+### Random Number Generation {.unnumbered}
+
+To generate a random whole number using R, we can use the `sample` command. We use the `sample` command like `sample(minimum:maximum, size = n)`, replacing `minimum` with the minimum value (often the number 1), `maximum` with the maximum value, and `n` with the sample size.
+
+The following command takes a random sample of size 1 from the values 1 through 10 (the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9, 10):
+
+```{r, echo=TRUE, eval=FALSE}
+sample(1:10, size = 1)
+```
+
+which results in the output
+
+```{r}
+sample(1:10, size = 1)
+```
+
+#### Your Turn {.unnumbered}
+
+3.  Provide an R expression you could use to generate a random sample of size $n=10$ with minimum value 1 and maximum value 100.
+4.  Provide an R expression you could use to generate a random number ($n=1$) between 8 and 20.
+
+### Entering Data {.unnumbered}
+
+We can work with data in R by reading it in from a file or by entering it manually. To enter numeric data manually, we use the `c` command.
+
+The following line of code saves the `ages` data from the data matrix example above:
+
+```{r, echo=TRUE}
+ages = c(45, 23, 36, 29)
+```
+
+Notice that we set `ages` equal to `c()` with the numbers in the parentheses, separated by commas. Also notice that the numbers are in the same order as in the data. If I want to use the `ages` variable later, I can refer to it directly in R and it will print out the values in that variable:
+
+```{r, echo=TRUE}
+ages = c(45, 23, 36, 29)
+```
+
+#### Your Turn {.unnumbered}
+
+5.  Provide an R expression for entering the following data.
+    a.  The variable `pets` has values $1, 0, 2, 1, 1, 0, 2, 3, 4$.
+    b.  The variable `height` has values $58.2, 69.1, 74.5, 66.0, 62.4, 64.8, 71.5$
+6.  Provide an R expression for entering the following data. You will need to decide on appropriate variable names.
+    a.  The number of days per week students go to school resulted in the data $3, 5, 4, 5, 5, 3, 3, 4$.
+
+To enter categorical data in R, we do the same thing, but with the addition of quotation marks:
+
+```{r, echo=TRUE}
+gender = c("Male", "Female", "Other", "Female")
+```
+
+Notice that for every variable I entered data for in R, I gave it a *single word name*. That's important! R will not recognize spaces. However, R does recognize upper versus lowercase letters! In R, `age` is different from `Age`.
+
+#### Your Turn {.unnumbered}
+
+7.  Provide an R expression for entering the following data.
+    a.  The variable `smoker` has values $\text{yes, no, yes, yes, no}$.
+8.  Provide an R expression for entering the following data. You will need to decide on an appropriate variable name.
+    a.  The level of a sample of college students resulted in the data $\text{freshman, freshman, sophomore, senior, freshman}$.
+
+Usually may want to use data without entering it by hand in R. In this class, we will do this in two ways. The first is by using datasets that are built into R. One such dataset is called
+
+```{r}
+# Take the Loblolly dataset info from the next subsection
+```
+
+To access and this data in R, we enter the following command:
+
+```{r, echo=TRUE}
+data(Loblolly)
+```
+
+The final way is what we use most often in practice. When we do data analysis in the real world, often our data is stored in an Excel, csv, or similar spreadsheet-type file. For this class, when we use external data, we will only use data stored in csv files. To read in a csv file, we use the command `read.csv`. For example
+
+```{r, echo=TRUE, eval=FALSE}
+read.csv("C:\Users\perry\Documents\Courses\STAT 1\dataset.csv")
+```
+
+Reads in a file located on my computer. The stuff inside the quotation marks is a *filepath*, which tells R both which file I want (`dataset.csv`) and where the file is located (`C:\Users\perry\Documents\Courses\STAT 1\`). We can do something similar with csv files stored online, which is how we will use external datafiles in this course. Further, for this course, I will always provide you with the line of code you need to read in any external files.
+
+### Histograms {.unnumbered}
+
+```{r}
+Loblolly <- data.frame(height = Loblolly$height, age = Loblolly$age)
+```
+
+There is a built-in dataset in R called `Loblolly`, which contains the variables `height` and `age` of some Loblolly pine trees. I can refer to this data by typing in `Loblolly` directly. To view just the first few observations (out of the 84 total in the data), I can use the `head` command:
+
+```{r, echo=TRUE}
+head(Loblolly)
+```
+
+The information that appears next to each \#\# is what R prints out for us.
+
+In order to refer to the variables in `Loblolly` directly, I will need to use the `attach` command. This tells R that when I say `age` I mean the age variable from the `Loblolly` dataset (and not from some other dataset).
+
+```{r, message=FALSE}
+attach(Loblolly)
+```
+
+I want to create a histogram to visualize the ratio of tree height to age. First, I need to find this ratio for each observation. I can do this easily in R by dividing `height` by `age`. I will save this as a new variable called `htage_ratio`.
+
+```{r, echo=TRUE}
+htage_ratio = height/age
+```
+
+Then to create a histogram of the height to age ratio, we will use the command `hist` on the variable `htage_ratio`:
+
+```{r, echo=TRUE}
+hist(htage_ratio)
+```
+
+I can clean up this graph by taking advantage of additional *arguments* in the `hist` command:
+
+-   `main` is where I can give the plot a new title. (Make sure to put the title in quotes!)
+-   `xlab` is the x-axis (horizontal axis) title.
+-   `ylab` is the y-axis (vertical axis) title.
+-   `freq` allows us to create either frequency or *relative frequency* histograms.
+    -   If we set it equal to `TRUE` it will produce a frequency histogram. (This is the default if we don't give R any instructions.)
+    -   If we set it equal to `FALSE` it will produce a relative frequency histogram.
+-   `col` allows us to give R a specific color for the bars.
+
+Notice that each argument is separated by a comma.
+
+```{r, echo=TRUE}
+hist(htage_ratio, 
+     main = "Histogram of Height-to-Age Ratio", 
+     xlab = "Height-to-Age Ratio (feet/year)", 
+     ylab = "Relative Frequency", 
+     freq = FALSE,
+     col = 'pink')
+```
+
+When I am done, I will use the `detatch` command to tell R that I am not working with the `Loblolly` data anymore.
+
+```{r, echo=TRUE}
+detach(Loblolly)
+```
+
+#### Your Turn {.unnumbered}
+
+9.  Provide an R expression to create a histogram of the `height` variable in the `Loblolly` pine tree data. Copy and paste this histogram into your lab solutions.
+10.  Provide an R expression to create a histogram of the `age` variable in the `Loblolly` pine tree data. Give your histogram an appropriate main title and vertical axis title, and choose a color for the bars. Copy and paste this histogram into your lab solutions.
+
+### Bar Plots {.unnumbered}
+
+To create a bar plot, we will begin by asking R to generate a frequency table. We do this using the `table` command. By default, this command shows the categories in alphabetical order. That is fine.
+
+Earlier, we created this `gender` variable. Let's use it to create a frequency table:
+
+```{r}
+table(gender)
+```
+
+To make a bar plot, we need to put that table command into the barplot command. Here's what that looks like:
+
+```{r}
+barplot(table(gender))
+```
+
+To do this with a different variable, I would change out `gender` for the other variable. Everything else stays the same!
+
+The customization for the bar plot is essentially the same as for histograms:
+
+```{r}
+barplot(table(gender), 
+        main = "Bar Plot of Gender", 
+        xlab = "Gender",
+        ylab = "Frequency", 
+        col = "green")
+```
+
