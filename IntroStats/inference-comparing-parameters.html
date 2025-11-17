@@ -54,8 +54,9 @@
 
 
 <style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -65,7 +66,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -464,13 +465,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Conditions:</p>
 <ol style="list-style-type: decimal">
 <li>Independence within and between groups (generally satisfied if the data are from random samples or a randomized experiment).</li>
-<li>We need <span class="math inline">\(n_1p_1 &gt; 10\)</span> and <span class="math inline">\(n_1(1-p_1)&gt;10\)</span> <strong>and</strong> <span class="math inline">\(n_2p_2 &gt; 10\)</span> and <span class="math inline">\(n_2(1-p_2)&gt;10\)</span></li>
+<li>We need <span class="math inline">\(n_1p_1 &gt; 10\)</span> and <span class="math inline">\(n_1(1-p_1)&gt;10\)</span> <strong>and</strong> <span class="math inline">\(n_2p_2 &gt; 10\)</span> and <span class="math inline">\(n_2(1-p_2)&gt;10\)</span>
+<ul>
+<li>Recall that <span class="math inline">\(np\)</span> is the number of successes and <span class="math inline">\(n(1-p)\)</span> is the number of failures, so we can also check if both groups have at least 10 successes and at least 10 failures.</li>
+</ul></li>
 </ol>
 <p>If these conditions are satisfied, the standard error is <span class="math display">\[\sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}\]</span> and we can calculate confidence intervals and perform hypothesis tests on <span class="math inline">\(p_1 - p_2\)</span>.</p>
 <div id="confidence-intervals-for-two-proportions" class="section level3 hasAnchor" number="9.1.1">
 <h3><span class="header-section-number">9.1.1</span> Confidence Intervals for Two Proportions<a href="inference-comparing-parameters.html#confidence-intervals-for-two-proportions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A <span class="math inline">\(100(1-\alpha)\%\)</span> confidence interval for <span class="math inline">\(p_1-p_2\)</span> is</p>
 <p><span class="math display">\[\hat{p_1} - \hat{p_2} \pm z_{\alpha/2} \times \sqrt{\frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2}}\]</span></p>
+<blockquote>
+<p><strong>Example</strong>: Last semester, a professor taught two sections of the same class. The first section had 30 students, 19 of whom passed. The second section had 43 students, 30 of whom passed. Find and interpret at 95% confidence interval for the difference in pass rates (proportion of students who passed) for the two sections.</p>
+<p><em>Solution</em>: First, we should note that <span class="math inline">\(n_1=30\)</span> and <span class="math inline">\(\hat{p}_1 = 19/30 = 0.633\)</span> and that <span class="math inline">\(n_2=43\)</span> and <span class="math inline">\(\hat{p}_2 = 30/43 = 0.698\)</span>. For a 95% confidence interval, the critical value is <span class="math inline">\(z_{0.025} = 1.96\)</span>.</p>
+<p>Now for the first section, there were <span class="math inline">\(19\)</span> passes and <span class="math inline">\(30-19-11\)</span> failures. For the second section, there were <span class="math inline">\(30\)</span> passes and <span class="math inline">\(43-30-13\)</span> failures. All our ``successes” and failures are at least 10, so our conditions are satisfied.</p>
+<p>Then <span class="math display">\[\begin{aligned}
+  \hat{p_1} - \hat{p_2} &amp;\pm z_{\alpha/2} \times \sqrt{\frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2}} \\
+  0.633 - 0.698 &amp;\pm 1.96 \sqrt{\frac{0.633(1-0.633)}{30} + \frac{0.698(1-0.698)}{43}} \\
+-0.065 &amp;\pm 1.96\sqrt{0.0126} \\
+-0.065 &amp;\pm 0.0248 \\
+(-0.065-0.0248, &amp;-0.065 + 0.0248) \\
+(-0.090, &amp; -0.040)
+\end{aligned}\]</span>
+We can be 95% confident that the true difference in proportion of students who passed section 1 versus section 2 was between -0.09 and -0.04.</p>
+</blockquote>
 </div>
 <div id="critical-values-test-statistics-and-p-values" class="section level3 hasAnchor" number="9.1.2">
 <h3><span class="header-section-number">9.1.2</span> Critical Values, Test Statistics, and P-Values<a href="inference-comparing-parameters.html#critical-values-test-statistics-and-p-values" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -478,16 +496,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>This pooled proportion is calculated as <span class="math display">\[\hat{p}_{\text{pooled}} = \frac{\text{total number of successes}}{\text{total number of cases}} = \frac{\hat{p_1}n_1 + \hat{p_2}n_2}{n_1 + n_2}\]</span>
 which makes the standard error in this case
 <span class="math display">\[ \text{Standard Error} = \sqrt{\frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_1} + \frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_2}}\]</span></p>
-<p>The critical value is <span class="math inline">\(z_{\alpha/2}\)</span>. The test statistic is <span class="math display">\[z = \frac{\hat{p_1}-\hat{p_2}}{\sqrt{\frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_1} + \frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_2}}}\]</span>and the p-value is <span class="math display">\[2P(Z &gt; |z|)\]</span> where <span class="math inline">\(z\)</span> is the test statistic.</p>
+<p>The critical value is <span class="math inline">\(z_{\alpha/2}\)</span>. The test statistic is
+<span class="math display">\[\begin{aligned}
+z &amp;= \frac{\hat{p_1}-\hat{p_2}}{\text{standard error}} \\
+&amp;=  \frac{\hat{p_1}-\hat{p_2}}{\sqrt{\frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_1} + \frac{\hat{p}_{\text{pooled}}(1-\hat{p}_{\text{pooled}})}{n_2}}}
+\end{aligned}\]</span>
+and the p-value is <span class="math display">\[2P(Z &gt; |z|)\]</span> where <span class="math inline">\(z\)</span> is the test statistic.</p>
 <p><strong>Steps:</strong></p>
 <ol style="list-style-type: decimal">
 <li>State the null and alternative hypotheses.</li>
 <li>Determine the significance level <span class="math inline">\(\alpha\)</span>. Check assumptions, <span class="math inline">\(n_1p_1 &gt; 10\)</span> and <span class="math inline">\(n_1(1-p_1)&gt;10\)</span> <strong>and</strong> <span class="math inline">\(n_2p_2 &gt; 10\)</span> and <span class="math inline">\(n_2(1-p_2)&gt;10\)</span>.</li>
 <li>Compute the value of the test statistic.</li>
 <li>Determine the critical value or p-value.</li>
-<li>For the <em>critical value approach</em>: If the test statistic is in the rejection region, reject the null hypothesis. For the <em>p-value approach</em>: If <span class="math inline">\(\text{p-value} &lt; \alpha\)</span>, reject the null hypothesis. Otherwise, do not reject.</li>
+<li>Decision.
+<ul>
+<li>For the <em>critical value approach</em>: If the test statistic is in the rejection region, reject the null hypothesis.</li>
+<li>For the <em>p-value approach</em>: If <span class="math inline">\(\text{p-value} &lt; \alpha\)</span>, reject the null hypothesis. Otherwise, do not reject.</li>
+</ul></li>
 <li>Interpret results.</li>
 </ol>
+<blockquote>
+<p><strong>Example</strong>: A researcher wants to know if female dogs are more likely to bark when someone comes to the door than male dogs. He takes a random sample of 50 male and 50 female dogs and tracks whether they bark at the door. Of the male dogs, 37 barked at the door. Of the female dogs, 39 barked at the door. Test at the 0.1 level of significance whether female dogs bark at the door more often.</p>
+<p><em>Solution</em>: Let male dogs be 1 and female dogs be 2. Then from the problem statement, <span class="math inline">\(n_1=50\)</span> and <span class="math inline">\(\hat{p}_1=37/50=0.74\)</span>, and <span class="math inline">\(n_2=50\)</span> and <span class="math inline">\(\hat{p}_2=39/50=0.78\)</span>.</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(H_0: p_1-p_2=0\)</span> vs <span class="math inline">\(H_A: p_1-p_2\ne0\)</span></li>
+<li>Our level of significance is <span class="math inline">\(\alpha=0.1\)</span>. For male dogs, there were <span class="math inline">\(37\)</span> successes and <span class="math inline">\(50-37=13\)</span> failures; for female dogs, there were <span class="math inline">\(39\)</span> successes and <span class="math inline">\(50-39-11\)</span> failures. So our conditions are satisfied.</li>
+<li>For the test statistic, we need the pooled proportion.
+<span class="math display">\[\begin{aligned}
+\hat{p}_{\text{pooled}} &amp;= \frac{\text{total number of successes}}{\text{total number of cases}} \\
+&amp;= \frac{37+39}{50+50}\\ &amp;= \frac{76}{100} \\ &amp;= 0.76
+\end{aligned}\]</span>
+and the standard error is
+<span class="math display">\[\begin{aligned}
+\text{SE} &amp;= \sqrt{\frac{0.76(1-0.76)}{50} + \frac{0.76(1-0.76)}{50}} \\
+&amp;= \sqrt{\frac{0.1824}{50} + \frac{0.1824}{50}} \\
+&amp;= \sqrt{0.007296} \\ &amp;= 0.085
+\end{aligned}\]</span>
+Then the test statistic is <span class="math display">\[z = \frac{\hat{p_1}-\hat{p_2}}{\text{SE}} = \frac{0.74-0.78}{0.085} = -0.47 \]</span></li>
+<li>For the critical value approach, we would find <span class="math inline">\(z_{0.1/2}=1.645\)</span>. For the p-value approach, we would find <span class="math display">\[2P(Z &gt; |-0.47|) = 2(0.3192) = 0.6384\]</span></li>
+<li>Since the test statistic is in the rejection region (and the p-value <span class="math inline">\(=0.6384&gt;\alpha=0.1\)</span>), we fail to reject the null hypothesis.</li>
+<li>At the 0.1 level of significance, the data provide insufficient evidence to conclude that female or male dogs are more likely to bark when someone comes to the door.</li>
+</ol>
+</blockquote>
+<p>Calculating the pooled standard error and test statistic can be pretty tedious! In practice, we almost always let a computer handle these types of tests.</p>
 </div>
 </div>
 <div id="hypothesis-tests-for-two-means" class="section level2 hasAnchor" number="9.2">
