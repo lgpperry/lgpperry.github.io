@@ -100,7 +100,7 @@ We can break categorical variables down into
 
 - **Ordinal categorical** variables have categories with some kind of intrinsic ordering, meaning we can rank them in a meaningful way.
     - Ex: a survey asking for approval levels might have categories “strongly disapprove, disapprove, neutral, approve, strongly approve”; and letter grades have the standard ordering “A, B, C, D, F”
-- **Continuous numeric** variables have categories with no intrinsic ordering.
+- **Nominal categorical** variables have categories with no intrinsic ordering.
     - Ex: eye color, high school attended, and the city people live in
 
 ## The "Does it make sense"? Test
