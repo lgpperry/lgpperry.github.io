@@ -11,8 +11,9 @@ Slides are based on my [Introduction to Statistics](https://lgpperry.github.io/I
 
 ### Module 1
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/1_1-Statistics-Terminology.html" target="blank">1.1 Statistics Terminology</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_2-Sampling-Design.html" target="blank">1.2 Sampling and Design</a>
-- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_3-Frequency-Distributions.html" target="blank">1.3 Frequency Distributions</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_2-Statistical-Sampling.html" target="blank">1.2 Statistical Sampling</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_3-Experimental-Design.html" target="blank">1.3 Experimental Design</a>
+- <a href="https://lgpperry.github.io/teaching/stat1/slides/1_4-Frequency-Distributions.html" target="blank">1.4 Frequency Distributions</a>
 
 ### Module 2
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/2_1-Central-Tendency.html" target="blank">2.1 Measures of Central Tendency</a>
