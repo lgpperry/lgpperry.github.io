@@ -1,5 +1,5 @@
 ---
-title: "1.2 Sampling and Design"
+title: "1.3 Experimental Design"
 author: "Dr. Lauren Perry"
 output:
   ioslides_presentation: 
@@ -12,44 +12,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Goals
 
-2. Describe sampling and experimental design techniques.
+2. Describe experimental design techniques.
     - Understand key terms
-    - Describe how to collect data using a random sample
     - Identify whether research is an experiment or an observational study
     - Identify experimental design principles
-
-## Statistical Sampling
-
-How do we get samples? 
-
-- We want a sample that represents our population. 
-- **Representative samples** reflect the relevant characteristics of our population. 
-- In general, we get representative samples by selecting our samples *at random* and with an adequate sample size. 
-
-***
-
-A non-representative sample is said to be **biased**. 
-
-Ex: A sample of chihuahuas to represent all dogs. 
-
-These can be a result of **convenience sampling**, choosing a sample based on ease. 
-
-***
-
-Common sources of bias in our daily lives: 
-
-- *Anecdotal evidence* is data based on personal experience or observation. 
-    - Typically this consists of only one or two observations and is NOT representative of the population. 
-- Availability bias is your brain's tendency to think that examples of things that come readily to mind are more representative than is actually the case.
-
-## Simple Random Samples
-
-- We avoid bias by taking random samples. 
-- One type of random sample is a **simple random sample**. 
-    - We can think of this as "raffle sampling", like drawing names out of a hat. 
-    - Each case (or each possible sample) has an equal chance of being selected. 
-    - Knowing that A is selected doesn't tell us anything about whether B is selected. 
-- Instead of literally drawing from a hat, we usually use a **random number generator** from a computer.
 
 ## Experimental Design
 
@@ -157,7 +123,3 @@ A study published in 2009 sought to examine whether supplementing with chia seed
 1. Is this an observational study or an experiment? Explain.
     
 2. Identify the (a) cases and (b) response variable. 
-
-## Homework Problems
-
-Section 1.2 Exercises 1-4
