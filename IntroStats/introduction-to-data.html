@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Module 1 Introduction to Data | Introduction to Statistics</title>
   <meta name="description" content="Module 1 Introduction to Data | Introduction to Statistics." />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Module 1 Introduction to Data | Introduction to Statistics" />
   <meta property="og:type" content="book" />
@@ -491,35 +491,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Data are often organized in what we call a <strong>data matrix</strong>. If you’ve ever seen data in a spreadsheet, that’s a data matrix!</p>
 <table>
 <tbody>
-<tr>
+<tr class="odd">
 <td></td>
 <td><strong>Age</strong></td>
 <td><strong>Gender</strong></td>
 <td><strong>Smoker</strong></td>
 <td><strong>Marital Status</strong></td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Person 1</strong></td>
 <td>45</td>
 <td>Male</td>
 <td>yes</td>
 <td>married</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Person 2</strong></td>
 <td>23</td>
 <td>Female</td>
 <td>no</td>
 <td>single</td>
 </tr>
-<tr>
+<tr class="even">
 <td><strong>Person 3</strong></td>
 <td>36</td>
 <td>Other</td>
 <td>no</td>
 <td>married</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><strong>Person 4</strong></td>
 <td>29</td>
 <td>Female</td>
@@ -595,42 +595,42 @@ heart rate (beats per minute)
 <col width="27%" />
 </colgroup>
 <tbody>
-<tr>
+<tr class="odd">
 <td></td>
 <td><strong>Age</strong></td>
 <td><strong>Year in college</strong></td>
 <td><strong>What is your major?</strong></td>
 <td><strong>Units this semester</strong></td>
 </tr>
-<tr>
+<tr class="even">
 <td>1</td>
 <td>19</td>
 <td>Sophomore</td>
 <td>Health Sciences</td>
 <td>15</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>2</td>
 <td>19</td>
 <td>Sophomore</td>
 <td>Business</td>
 <td>15</td>
 </tr>
-<tr>
+<tr class="even">
 <td>3</td>
 <td>19</td>
 <td>Sophomore</td>
 <td>Undecided</td>
 <td>14</td>
 </tr>
-<tr>
+<tr class="odd">
 <td><span class="math inline">\(\vdots\)</span></td>
 <td><span class="math inline">\(\vdots\)</span></td>
 <td><span class="math inline">\(\vdots\)</span></td>
 <td><span class="math inline">\(\vdots\)</span></td>
 <td><span class="math inline">\(\vdots\)</span></td>
 </tr>
-<tr>
+<tr class="even">
 <td>29</td>
 <td>21</td>
 <td>Junior</td>
@@ -713,12 +713,12 @@ In your own words, explain the differences between a population, a sample, and a
 </blockquote>
 <p>This approach to stratified sampling can also help us ensure that small strata are adequately represented in our study.</p>
 <blockquote>
-<p>Example: Suppose we are doing some drug development research for a particular disease and know that a very small part of our population develops an especially severe form of the diease. In order to make sure those individuals are represented in our sample, we could treat disease severity as strata. The motivation in this case is that, in a simple random sample, we might miss those individuals entirely! By constructing these strata, we make sure they are accounted for.</p>
+<p>Example: Suppose we are doing some drug development research for a particular disease and know that a very small part of our population develops an especially severe form of the disease. In order to make sure those individuals are represented in our sample, we could treat disease severity as strata. The motivation in this case is that, in a simple random sample, we might miss those individuals entirely! By constructing these strata, we make sure they are accounted for.</p>
 </blockquote>
 </div>
 <div id="cluster-sampling" class="section level4 unnumbered hasAnchor">
 <h4>Cluster Sampling<a href="introduction-to-data.html#cluster-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>In a <strong>cluster sample</strong>, we break the population into <strong>clusters</strong>, where each cluster is similar to the population (and so the clusters are all similar to each other). We then take a random sample of clusters and measure all items or individuals within those randomly selected clusters.</p>
+<p>In a <strong>cluster sample</strong>, we break the population into <strong>clusters</strong>, where each cluster is similar to the population (and so the clusters are all similar to each other). We then take a random sample of clusters and measure <em>all</em> items or individuals within each of those randomly selected clusters.</p>
 <blockquote>
 <p>Example: An airline wants to survey people who take its international flights from the United States to Asia. They randomly select 10 of these flights and give the survey to every individual on each of those 10 flights.</p>
 </blockquote>
@@ -727,7 +727,7 @@ In your own words, explain the differences between a population, a sample, and a
 </blockquote>
 <p>The potential downside to cluster sampling is that there may be factors that make clusters meaningfully different from one other.</p>
 <blockquote>
-<p>Example: If our airline randomly samples flights to Asia, they may have failed to take into account that the people going to Vietnam are different from the people going to the Philipines who are different from the people going to India. That is, it’s probably not reasonable to assume that every flight to Asia is representative of the entire population of individuals who use that airline to fly to Asia.</p>
+<p>Example: If our airline randomly samples flights to Asia, they may have failed to take into account that the people going to Vietnam are different from the people going to the Philippines who are different from the people going to India. That is, it’s probably not reasonable to assume that every flight to Asia is representative of the entire population of individuals who use that airline to fly to Asia.</p>
 </blockquote>
 </div>
 <div id="systematic-sampling" class="section level4 unnumbered hasAnchor">
@@ -935,25 +935,25 @@ A drug manufacturer wants to know how well a new blood pressure medication works
 <p>This is a lot to take in at a glance, so we are going to think about ways to summarize it. A <strong>frequency distribution</strong> lists each distinct value with its frequency.</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">Class</th>
 <th align="center">Frequency</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">freshman</td>
 <td align="center">12</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">sophomore</td>
 <td align="center">10</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">junior</td>
 <td align="center">3</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">senior</td>
 <td align="center">5</td>
 </tr>
@@ -961,10 +961,10 @@ A drug manufacturer wants to know how well a new blood pressure medication works
 </table>
 <p>Note that I can also quickly get the total number of students in the class from this frequency distribution; since all students are accounted for in the data, the total number of students is <span class="math inline">\(12 + 10 + 3 + 5 = 30\)</span>.</p>
 <p>A <strong>bar plot</strong> is a graphical representation of a frequency distribution. Each bar’s height is based on the frequency of the corresponding category.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-1-1.png" alt="" width="672" /></p>
 <p>The bar plot above shows the class level breakdown for students in an Introductory Statistics course. Take a moment to notice how the bars match up with the frequency distribution above. Since class level is an ordinal variable, we should match the order of the bars to the order of the categories.</p>
 <p>For nominal variables, we can use a <strong>Pareto chart</strong>, which is a bar chart with the bars sorted from highest to lowest frequency.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-2-1.png" alt="" width="672" /></p>
 <p>This allows us to quickly examine which categories appear most and least frequently, as well as how their frequencies compare to each other.</p>
 <p><strong>Relative frequency</strong> is the ratio of the frequency to the total number of observations.</p>
 <p><span class="math display">\[
@@ -974,7 +974,7 @@ A drug manufacturer wants to know how well a new blood pressure medication works
 <p>A <strong>relative frequency distribution</strong> lists each distinct value with its relative frequency.</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">Class</th>
 <th align="center">Frequency</th>
 <th align="center">Relative Frequency</th>
@@ -982,25 +982,25 @@ A drug manufacturer wants to know how well a new blood pressure medication works
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">freshman</td>
 <td align="center">12</td>
 <td align="center"><span class="math inline">\(12/30 = 0.4\)</span></td>
 <td align="center">40%</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">sophomore</td>
 <td align="center">10</td>
 <td align="center"><span class="math inline">\(10/30 \approx 0.3333\)</span></td>
 <td align="center">33.33%</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">junior</td>
 <td align="center">3</td>
 <td align="center"><span class="math inline">\(3/30 = 0.1\)</span></td>
 <td align="center">10%</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">senior</td>
 <td align="center">5</td>
 <td align="center"><span class="math inline">\(5/30 \approx 0.1667\)</span></td>
@@ -1013,7 +1013,7 @@ A drug manufacturer wants to know how well a new blood pressure medication works
 <div id="quantitative-variables" class="section level3 hasAnchor" number="1.4.2">
 <h3><span class="header-section-number">1.4.2</span> Quantitative Variables<a href="introduction-to-data.html#quantitative-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can also apply this concept to numeric data. A <strong>dot plot</strong> is one graphical representation of this. A dot plot shows a number line with dots drawn above the line. Each dot represents a single point.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-3-1.png" alt="" width="672" /></p>
 <p>For example, the dot plot above shows a sample where the value 1 appears three times, the value 5 appears six times, etc.</p>
 <p>We would also like to be able to visualize larger, more complex data sets. This is hard to do using a dot plot! Instead, we can do this using <strong>bins</strong>, which group numeric data into equal-width consecutive intervals.</p>
 <blockquote>
@@ -1029,25 +1029,25 @@ A drug manufacturer wants to know how well a new blood pressure medication works
 <p>Each bin has an equal width of 5, but if we had a cat with a weight of exactly 15 lbs, would we use the second or third bin?? It’s unclear. To make this clear, we need there to be no overlap. Instead, we could use:</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">Weight</th>
 <th align="center">Count</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">[5, 10)</td>
 <td align="center">7</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">[10, 15)</td>
 <td align="center">2</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">[15, 20)</td>
 <td align="center">2</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">[20, 25)</td>
 <td align="center">1</td>
 </tr>
@@ -1056,21 +1056,21 @@ A drug manufacturer wants to know how well a new blood pressure medication works
 <p>Now, a cat with a weight of 15.0 lbs would be placed in the third bin (but not the second). (Recall that the interval notation <span class="math inline">\([5, 10)\)</span> means <span class="math inline">\(5 \le x &lt; 10\)</span>.)</p>
 </blockquote>
 <p>We will visualize this using a <strong>histogram</strong>, which is a lot like a bar plot but for numeric data:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-4-1.png" alt="" width="672" /></p>
 <p>This is what we call a <strong>frequency histogram</strong> because each bar height reflects the frequency of that bin. We can also create a <strong>relative frequency histogram</strong> which displays the relative frequency instead of the frequency:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-5-1.png" alt="" width="672" /></p>
 <p>Notice that these last two histograms look the same <em>except for the numbers on the vertical axis</em>! This gives us insight into the shape of the data <strong>distribution</strong>, literally how the values are distributed across the bins. The part of the distribution that “trails off” to one or both sides is called a <strong>tail</strong> of the distribution.</p>
 <p>When a histogram trails off to one side, we say it is <strong>skewed</strong> (right-skewed if it trails off to the right, left-skewed if it trails off to the left). Data sets with roughly equal tails are <strong>symmetric</strong>.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-6-1.png" alt="" width="672" /></p>
 <p>We can also use a histogram to identify <strong>modes</strong>. For numeric data, especially continuous variables, we think of modes as <em>prominent peaks</em>.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-7-1.png" alt="" width="672" /></p>
 <ul>
 <li><strong>Unimodal</strong>: one prominent peak.</li>
 <li><strong>Bimodal</strong>: two prominent peaks.</li>
 <li><strong>Multimodal</strong>: three or more prominent peaks.</li>
 </ul>
 <p>Finally, we can also “smooth out” these histograms and use a smooth curve to examine the shape of the distribution. Below are the smooth curve versions of the distributions shown in the four histograms used to demonstrate skew and symmetry.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-8-1.png" alt="" width="672" /></p>
 </div>
 <div id="section-exercises-3" class="section level3 unnumbered hasAnchor">
 <h3>Section Exercises<a href="introduction-to-data.html#section-exercises-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1078,14 +1078,14 @@ A drug manufacturer wants to know how well a new blood pressure medication works
 <li>
 Twenty-five Stat 1 students were asked how tall they were. A histogram of their responses is shown below. Describe the shape (modality and skew/symmetry) of this distribution.
 </li>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-9-1.png" alt="" width="672" /></p>
 <li>
 The following histogram shows the duration (in minutes) for 299 eruptions of Old Faithful Geyser in Yellowstone National Park. Describe the shape of this distribution
 </li>
 </ol>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-10-1.png" alt="" width="672" /></p>
 <p>For exercises 3-5, twenty-one Stat 1 students were asked where they were from. A bar chart of their responses is shown below.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-11-1.png" alt="" width="672" /></p>
 <ol start="3">
 <li>
 How many people in this class are from the Bay Area?
@@ -1239,7 +1239,7 @@ Create a Pareto chart for these data.
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="introduction-to-data.html#cb12-1" tabindex="-1"></a>htage_ratio <span class="ot">=</span> height<span class="sc">/</span>age</span></code></pre></div>
 <p>Then to create a histogram of the height to age ratio, we will use the command <code>hist</code> on the variable <code>htage_ratio</code>:</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="introduction-to-data.html#cb13-1" tabindex="-1"></a><span class="fu">hist</span>(htage_ratio)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-25-1.png" alt="" width="672" /></p>
 <p>I can clean up this graph by taking advantage of additional <em>arguments</em> in the <code>hist</code> command:</p>
 <ul>
 <li><code>main</code> is where I can give the plot a new title. (Make sure to put the title in quotes!)</li>
@@ -1259,7 +1259,7 @@ Create a Pareto chart for these data.
 <span id="cb14-4"><a href="introduction-to-data.html#cb14-4" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Relative Frequency&quot;</span>, </span>
 <span id="cb14-5"><a href="introduction-to-data.html#cb14-5" tabindex="-1"></a>     <span class="at">freq =</span> <span class="cn">FALSE</span>,</span>
 <span id="cb14-6"><a href="introduction-to-data.html#cb14-6" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&#39;pink&#39;</span>)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-26-1.png" alt="" width="672" /></p>
 <p>When I am done, I will use the <code>detatch</code> command to tell R that I am not working with the <code>Loblolly</code> data anymore.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="introduction-to-data.html#cb15-1" tabindex="-1"></a><span class="fu">detach</span>(Loblolly)</span></code></pre></div>
 <div id="your-turn-5" class="section level4 unnumbered hasAnchor">
@@ -1278,10 +1278,10 @@ Create a Pareto chart for these data.
 ## Female   Male  Other 
 ##      2      1      1</code></pre>
 <p>To make a bar plot, we need to put that table command into the barplot command. Here’s what that looks like:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-29-1.png" alt="" width="672" /></p>
 <p>To do this with a different variable, I would change out <code>gender</code> for the other variable. Everything else stays the same!</p>
 <p>The customization for the bar plot is essentially the same as for histograms:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-30-1.png" alt="" width="672" /></p>
 
 </div>
 </div>
@@ -1306,42 +1306,42 @@ Create a Pareto chart for these data.
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

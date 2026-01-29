@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Module 5 Random Variables | Introduction to Statistics</title>
   <meta name="description" content="Module 5 Random Variables | Introduction to Statistics." />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Module 5 Random Variables | Introduction to Statistics" />
   <meta property="og:type" content="book" />
@@ -480,7 +480,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Example</strong>:</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="left">Number of Siblings, <span class="math inline">\(x\)</span></th>
 <th align="center">0</th>
 <th align="center">1</th>
@@ -490,7 +490,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="left"><strong>Probability</strong>, <span class="math inline">\(P(X=x)\)</span></td>
 <td align="center">0.200</td>
 <td align="center">0.425</td>
@@ -502,7 +502,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </table>
 <p>(Assume for the sake of the example that no one has more than 4 siblings.)</p>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-77-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-72-1.png" alt="" width="672" /></p>
 <p>Interpretation: in a large number of independent observations of a random variable <span class="math inline">\(X\)</span>, the proportion of times each possible value occurs will approximate the probability distribution of <span class="math inline">\(X\)</span>.</p>
 <div id="the-mean-and-standard-deviation" class="section level3 hasAnchor" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> The Mean and Standard Deviation<a href="random-variables.html#the-mean-and-standard-deviation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -544,7 +544,7 @@ These formulas are <em>exactly</em> equivalent and you may use whichever you wis
 <p>In general, a table is the best way to keep track of a variance calculation:</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center"><span class="math inline">\(x\)</span></th>
 <th align="center"><span class="math inline">\(P(X=x)\)</span></th>
 <th align="center"><span class="math inline">\(xP(X=x)\)</span></th>
@@ -553,42 +553,42 @@ These formulas are <em>exactly</em> equivalent and you may use whichever you wis
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">0</td>
 <td align="center">0.200</td>
 <td align="center">0</td>
 <td align="center">0</td>
 <td align="center">0</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">1</td>
 <td align="center">0.425</td>
 <td align="center">0.425</td>
 <td align="center">1</td>
 <td align="center">0.425</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">2</td>
 <td align="center">0.275</td>
 <td align="center">0.550</td>
 <td align="center">4</td>
 <td align="center">1.100</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">3</td>
 <td align="center">0.075</td>
 <td align="center">0.225</td>
 <td align="center">9</td>
 <td align="center">0.675</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">4</td>
 <td align="center">0.025</td>
 <td align="center">0.100</td>
 <td align="center">16</td>
 <td align="center">0.400</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"><span class="math inline">\(\mu\)</span> = 1.3</td>
@@ -608,7 +608,7 @@ Consider the following probability distribution for some discrete random variabl
 </li>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">x</th>
 <th align="center">0</th>
 <th align="center">1</th>
@@ -618,7 +618,7 @@ Consider the following probability distribution for some discrete random variabl
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">P(x)</td>
 <td align="center">0.1</td>
 <td align="center">0.2</td>
@@ -644,7 +644,7 @@ Consider the probability distribution of the number of dogs owned by people in t
 </li>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Number of dogs, <span class="math inline">\(x\)</span></th>
 <th>0</th>
 <th>1</th>
@@ -653,7 +653,7 @@ Consider the probability distribution of the number of dogs owned by people in t
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>Proportion of people, <span class="math inline">\(p(x)\)</span></td>
 <td>0.635</td>
 <td>0.212</td>
@@ -674,20 +674,20 @@ For a randomly selected household, what is the probability they have at least 2 
 </div>
 <div id="the-binomial-distribution" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> The Binomial Distribution<a href="random-variables.html#the-binomial-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The binomial distribution is used to describe the number of successes in some fixed number of trials (or some set sample size).</p>
-<blockquote>
-<p><strong>Example</strong>: Suppose we will roll three dice: a green (<span class="math inline">\(G\)</span>), a blue (<span class="math inline">\(B\)</span>), and a red (<span class="math inline">\(R\)</span>). What is the probability that exactly one of them will result in a 1?</p>
-<p>Let’s start by considering one specific scenario where exactly one die results in a 1:
-<span class="math display">\[\begin{aligned}
+<p>The binomial distribution is used to describe the number of successes in some fixed number of trials (or some set sample size).
+&gt; <strong>Example</strong>: Suppose we will roll three dice: a green (<span class="math inline">\(G\)</span>), a blue (<span class="math inline">\(B\)</span>), and a red (<span class="math inline">\(R\)</span>). What is the probability that exactly one of them will result in a 1?
+&gt;
+&gt; Let’s start by considering one specific scenario where exactly one die results in a 1:
+&gt; <span class="math display">\[\begin{aligned}
 P(G = 1 \text{ and } B \ne 1 \text{ and } R \ne 1 ) &amp;= P(G = 1)P(B &gt; 1)P(R &gt; 1) \\
 &amp;= \frac{1}{6} \times \frac{5}{6} \times \frac{5}{6} \\
 &amp;= (0.1667)(0.8333)(0.8333) \\
 &amp;= (0.1667)^1(0.8333)^2 \\
 &amp;= 0.1157
 \end{aligned} \]</span>
-Note that “not 1” in this scenario is the same as “greater than 1” and includes the values <span class="math inline">\(2\)</span>, <span class="math inline">\(3\)</span>, <span class="math inline">\(4\)</span>, <span class="math inline">\(5\)</span>, and <span class="math inline">\(6\)</span>, which is how we come up with those individual probabilities. Also notice that our first step was to use the multiplication rule for independent events!</p>
-<p>But we also could have considered the scenarios where the Blue or Red die was the single die to roll a 1. In each case, the probability is the same: <span class="math inline">\((0.1667)^1(0.8333)^2\)</span> so we need to multiply this probability by 3: <span class="math display">\[P(\text{exactly one four-sided die rolls a 1}) = 3\times(0.1667)^1(0.8333)^2 = 0.3472\]</span></p>
-</blockquote>
+&gt; Note that “not 1” in this scenario is the same as “greater than 1” and includes the values <span class="math inline">\(2\)</span>, <span class="math inline">\(3\)</span>, <span class="math inline">\(4\)</span>, <span class="math inline">\(5\)</span>, and <span class="math inline">\(6\)</span>, which is how we come up with those individual probabilities. Also notice that our first step was to use the multiplication rule for independent events!
+&gt;
+&gt; But we also could have considered the scenarios where the Blue or Red die was the single die to roll a 1. In each case, the probability is the same: <span class="math inline">\((0.1667)^1(0.8333)^2\)</span> so we need to multiply this probability by 3: <span class="math display">\[P(\text{exactly one four-sided die rolls a 1}) = 3\times(0.1667)^1(0.8333)^2 = 0.3472\]</span></p>
 <p>Next, think back to replication in an experiment. Each replication is what we call a <strong>trial</strong>. We will consider a setting where each trial has two possible outcomes.</p>
 <blockquote>
 <p><strong>Example</strong>: Suppose you want to know if a coin is fair (both sides equally likely). You might flip the coin 100 times (thus running 100 trials). Each trial is a flip of the coin with two possible outcomes: heads or tails.</p>
@@ -797,7 +797,7 @@ So the probability that exactly 4 of the 10 US households have dog(s) is 0.241.<
 <li>If <span class="math inline">\(p &lt; 0.5\)</span>, the distribution is right-skewed.</li>
 <li>If <span class="math inline">\(p &gt; 0.5\)</span>, the distribution is left-skewed.</li>
 </ul>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-78-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-73-1.png" alt="" width="672" /></p>
 </div>
 <div id="probabilities-with-inequalities" class="section level3 hasAnchor" number="5.2.2">
 <h3><span class="header-section-number">5.2.2</span> Probabilities with Inequalities<a href="random-variables.html#probabilities-with-inequalities" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -886,7 +886,7 @@ Consider the probability distribution of the number of dogs owned by people in t
 </li>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Number of dogs, <span class="math inline">\(x\)</span></th>
 <th>0</th>
 <th>1</th>
@@ -895,7 +895,7 @@ Consider the probability distribution of the number of dogs owned by people in t
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>Proportion of people, <span class="math inline">\(p(x)\)</span></td>
 <td>0.635</td>
 <td>0.212</td>
@@ -921,9 +921,9 @@ What is the probability that fewer than 3 people out of 10 will have dog(s)?
 <h2><span class="header-section-number">5.3</span> The Normal Distribution<a href="random-variables.html#the-normal-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If we can represent a discrete variable with a probability histogram, what can we do with a continuous variable?</p>
 <p>We represent the shape of a continuous variable using a <strong>density curve</strong>. This is like a histogram, but with a smooth curve:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-79-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-74-1.png" alt="" width="672" /></p>
 <p>For a variable with a density curve, the proportion of all possible observations that lie within a specified range equals the corresponding area under the density curve.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-80-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-75-1.png" alt="" width="672" /></p>
 <p>Properties of density curves:</p>
 <ol style="list-style-type: decimal">
 <li>The curve is always above the horizontal axis (because probabilities are always nonnegative).</li>
@@ -939,7 +939,7 @@ What is the probability that fewer than 3 people out of 10 will have dog(s)?
 <li>have spreads that depend on <span class="math inline">\(\sigma\)</span>.</li>
 </ul>
 <p>Pay close attention to the horizontal axis and how spread out the densities are in each of the following plots:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-81-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-76-1.png" alt="" width="672" /></p>
 <p>Notice that the bottom left plot comes to a sharper peak, while the bottom right has a gentler slope. This is what we mean by “spread”: the density on the bottom right is the most spread out.</p>
 <center>
 <font size='4'><b>Empirical Rule</b></font>
@@ -989,11 +989,11 @@ standard deviations above the mean.</p>
 <p>Note: when we z-score a variable, we preserve the area under the curve properties! If <span class="math inline">\(X\)</span> is Normal<span class="math inline">\((\mu,\sigma)\)</span>, then <span class="math display">\[P(X &lt; c) = P\left(Z &lt; \frac{c - \mu}{\sigma}\right) = P(Z &lt; z).\]</span></p>
 <p>We will think about area under the standard normal curve in terms of <strong>cumulative probabilities</strong> or probabilities of the form <span class="math inline">\(P(Z &lt; z)\)</span>.</p>
 <p>We will use the fact that the total area under the curve is 1 to find probabilities like <span class="math inline">\(P(Z &gt; c)\)</span>:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-82-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-77-1.png" alt="" width="672" /></p>
 <p>Using the graphic to help visualize, we can see that <span class="math display">\[1 = P(Z &lt; c) + P(Z &gt; c)\]</span> which we can then rewrite as
 <span class="math display">\[P(Z &gt; c) = 1-P(Z&lt;c).\]</span></p>
 <p>We can also use this concept to find <span class="math inline">\(P(a &lt; Z &lt; b)\)</span>.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-83-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-78-1.png" alt="" width="672" /></p>
 <p>Notice that <span class="math display">\[1 = P(Z &lt; a) + P(a &lt; Z &lt; b) + P(Z &gt; b),\]</span> which we can rewrite as <span class="math display">\[P(a &lt; Z &lt; b) = 1 - P(Z &gt; b) - P(Z &lt; a)\]</span> and since we just found that <span class="math inline">\(P(Z &gt; b) = 1 - P(Z &lt; b)\)</span>, we can replace <span class="math inline">\(1 - P(Z &gt; b)\)</span> with <span class="math inline">\(P(Z &lt; b)\)</span>, and get <span class="math display">\[P(a &lt; Z &lt; b) = P(Z &lt; b) - P(Z &lt; a).\]</span></p>
 <center>
 <font size='4'><b>Key Cumulative Probability Concepts</b></font>
@@ -1026,22 +1026,22 @@ standard deviations above the mean.</p>
 <li>Sketch. On the bottom axis, I am including <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\mu\pm\sigma\)</span>, <span class="math inline">\(\mu\pm2\sigma\)</span>, and <span class="math inline">\(\mu\pm3\sigma\)</span>,as well as the corresponding z-scores (in blue).</li>
 </ol>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-84-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-79-1.png" alt="" width="672" /></p>
 <blockquote>
 <ol start="2" style="list-style-type: decimal">
 <li>Shade and label:</li>
 </ol>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-85-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-80-1.png" alt="" width="672" /></p>
 <blockquote>
 <ol start="3" style="list-style-type: decimal">
 <li>Calculate z-scores: <span class="math display">\[x = 1150 \rightarrow z = \frac{1150-1100}{200} = 0.25\]</span> and <span class="math display">\[x=1300 \rightarrow z = \frac{1300-1100}{200} = 1.\]</span></li>
 <li>Use an applet to find <span class="math inline">\(P(Z &lt; 0.25) = 0.599\)</span> and <span class="math inline">\(P(Z &lt; 1) = 0.841\)</span> <em>or</em> use the <code>pnorm</code> command in R:</li>
 </ol>
 </blockquote>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="random-variables.html#cb51-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="fl">0.25</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="random-variables.html#cb53-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="fl">0.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.5987063</code></pre>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="random-variables.html#cb53-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="random-variables.html#cb55-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1] 0.8413447</code></pre>
 <blockquote>
 <p>Note that <span class="math display">\[P(1150 &lt; X &lt; 1300) = P\left(\frac{1150-1100}{200} &lt; Z &lt; \frac{1300-1100}{200}\right) = P(0.25 &lt; Z &lt; 1)\]</span> and, using cumulative probability concepts, <span class="math display">\[P(0.25 &lt; Z &lt; 1) = P(Z &lt; 1) - P(Z &lt; 0.25).\]</span> We found <span class="math inline">\(P(Z &lt; 0.25) \approx 0.5987\)</span> and <span class="math inline">\(P(Z &lt; 1) \approx 0.8413\)</span>, so <span class="math display">\[P(Z &lt; 1) - P(Z &lt; 0.25) \approx 0.8413 - 0.5987 = 0.2426.\]</span> That is, approximately 26.26% of test-takers score between 1150 and 1300 on the SAT.</p>
@@ -1068,13 +1068,13 @@ standard deviations above the mean.</p>
 <li>Sketch the normal curve.</li>
 </ol>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-87-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-82-1.png" alt="" width="672" /></p>
 <blockquote>
 <ol start="2" style="list-style-type: decimal">
 <li>Shade the region of interest and label the area.</li>
 </ol>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-88-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-83-1.png" alt="" width="672" /></p>
 <blockquote>
 <ol start="3" style="list-style-type: decimal">
 <li>Use the applet to determine the z-score for the area. This results in <span class="math inline">\(z = 1.28\)</span>.</li>
@@ -1094,7 +1094,7 @@ Use this information, along with the z-score formula, to fill in the table, belo
 </li>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>x</th>
 <th>62</th>
 <th>64</th>
@@ -1108,7 +1108,7 @@ Use this information, along with the z-score formula, to fill in the table, belo
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td><strong>z</strong></td>
 <td>___</td>
 <td>___</td>
@@ -1196,21 +1196,21 @@ Assume <span class="math inline">\(X\)</span> is approximately normal. What perc
 <li><code>size</code> the value of <span class="math inline">\(n\)</span></li>
 <li><code>prob</code> the probability <span class="math inline">\(p\)</span></li>
 </ul>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="random-variables.html#cb55-1" tabindex="-1"></a><span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">65</span>, <span class="at">size =</span> <span class="dv">100</span>, <span class="at">prob =</span> <span class="fl">0.66</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="random-variables.html#cb57-1" tabindex="-1"></a><span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">65</span>, <span class="at">size =</span> <span class="dv">100</span>, <span class="at">prob =</span> <span class="fl">0.66</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0815753</code></pre>
 <p>So without doing any hand calculations, I find that <span class="math inline">\(P(X=65) = 0.082\)</span>; the probability that exactly 65 of 100 randomly selected US adults take prescription medication is 0.082.</p>
 <p>Suppose now we want to find <span class="math inline">\(P(63 &lt; X &lt; 68)\)</span>. How can we manage that? We can figure out that this probability includes numbers between 63 and 68, but does not include 63 or 68. In fact, it is the numbers 64 through 67. SO we can break this up as <span class="math display">\[ P(63 &lt; X &lt; 68) = P(X=64) + P(X=65)+ P(X=66) + P(X=67) \]</span></p>
 <p>In R, we can get a sequence of whole numbers using the format <code>a:b</code>. For example</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="random-variables.html#cb57-1" tabindex="-1"></a><span class="dv">64</span><span class="sc">:</span><span class="dv">67</span></span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="random-variables.html#cb59-1" tabindex="-1"></a><span class="dv">64</span><span class="sc">:</span><span class="dv">67</span></span></code></pre></div>
 <pre><code>## [1] 64 65 66 67</code></pre>
 <p>gives all whole numbers from 64 through 67.</p>
 <p>I can then put this directly into the <code>dbinom</code> command!</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="random-variables.html#cb59-1" tabindex="-1"></a><span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">64</span><span class="sc">:</span><span class="dv">67</span>, <span class="at">size =</span> <span class="dv">100</span>, <span class="at">prob =</span> <span class="fl">0.66</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="random-variables.html#cb61-1" tabindex="-1"></a><span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">64</span><span class="sc">:</span><span class="dv">67</span>, <span class="at">size =</span> <span class="dv">100</span>, <span class="at">prob =</span> <span class="fl">0.66</span>)</span></code></pre></div>
 <pre><code>## [1] 0.07587601 0.08157530 0.08397457 0.08272122</code></pre>
 <p>This produces each individual probability <span class="math inline">\(P(X=64)\)</span>, <span class="math inline">\(P(X=65)\)</span>, <span class="math inline">\(P(X=66)\)</span>, and <span class="math inline">\(P(X=67)\)</span>. To quickly add these up, I am going to use the <code>sum</code> command. Notice that I put the entire <code>dibnom</code> command <em>in the parentheses</em> of the <code>sum()</code>.</p>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="random-variables.html#cb61-1" tabindex="-1"></a><span class="fu">sum</span>(</span>
-<span id="cb61-2"><a href="random-variables.html#cb61-2" tabindex="-1"></a>  <span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">64</span><span class="sc">:</span><span class="dv">67</span>, <span class="at">size =</span> <span class="dv">100</span>, <span class="at">prob =</span> <span class="fl">0.66</span>)</span>
-<span id="cb61-3"><a href="random-variables.html#cb61-3" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="random-variables.html#cb63-1" tabindex="-1"></a><span class="fu">sum</span>(</span>
+<span id="cb63-2"><a href="random-variables.html#cb63-2" tabindex="-1"></a>  <span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">64</span><span class="sc">:</span><span class="dv">67</span>, <span class="at">size =</span> <span class="dv">100</span>, <span class="at">prob =</span> <span class="fl">0.66</span>)</span>
+<span id="cb63-3"><a href="random-variables.html#cb63-3" tabindex="-1"></a>)</span></code></pre></div>
 <pre><code>## [1] 0.3241471</code></pre>
 <p>And so <span class="math inline">\(P(63 &lt; X &lt; 68) = 0.324\)</span>; the probability that between 64 and 67 (inclusive) US adults in a sample of 100 take prescription medication is 0.324.</p>
 </div>
@@ -1228,25 +1228,25 @@ Assume <span class="math inline">\(X\)</span> is approximately normal. What perc
 </ul></li>
 </ul>
 <p>Suppose <span class="math inline">\(X\)</span> is a normal random variable with mean <span class="math inline">\(\mu=8\)</span> and standard deviation <span class="math inline">\(\sigma=2\)</span>. To find <span class="math inline">\(P(X &gt; 4)\)</span>, I would write</p>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="random-variables.html#cb63-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q=</span><span class="dv">4</span>, <span class="at">mean=</span><span class="dv">8</span>, <span class="at">sd=</span><span class="dv">2</span>, <span class="at">lower.tail=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="random-variables.html#cb65-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q=</span><span class="dv">4</span>, <span class="at">mean=</span><span class="dv">8</span>, <span class="at">sd=</span><span class="dv">2</span>, <span class="at">lower.tail=</span><span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## [1] 0.9772499</code></pre>
 <p>So <span class="math inline">\(P(X &gt; 4) = 0.9772\)</span></p>
 <p>Because R will use the standard normal distribution if we leave out the <code>mean</code> and <code>sd</code> commands, it’s even easier to find probabilities for <span class="math inline">\(Z\)</span>, To find <span class="math inline">\(P(Z&lt;1)\)</span>, I would type:</p>
-<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="random-variables.html#cb65-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q=</span><span class="dv">1</span>, <span class="at">lower.tail=</span><span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="random-variables.html#cb67-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="at">q=</span><span class="dv">1</span>, <span class="at">lower.tail=</span><span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## [1] 0.8413447</code></pre>
 <p>so <span class="math inline">\(P(Z &lt; 1) = 0.841\)</span>.</p>
 <p>A quick note about R: R will print very large numbers and numbers close to 0 using <em>scientific notation</em>. However, R’s scientific notation may not look the way you’re used to! Check out the R output for <span class="math inline">\(P(Z &lt; -5)\)</span>:</p>
-<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="random-variables.html#cb67-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="random-variables.html#cb69-1" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="sc">-</span><span class="dv">5</span>)</span></code></pre></div>
 <pre><code>## [1] 2.866516e-07</code></pre>
 <p>When you see <code>e-07</code>, that means <span class="math inline">\(\times10^{-7}\)</span>… so <span class="math inline">\(P(Z &lt; -5) = 2.8665 \times 10^{-7} \approx 0.00000029\)</span>.</p>
 </div>
 <div id="normal-distribution-percentiles" class="section level3 unnumbered hasAnchor">
 <h3>Normal Distribution Percentiles<a href="random-variables.html#normal-distribution-percentiles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Instead of using an applet, we can use the <code>qnorm</code> command in R to find the z-score corresponding to a percentile. In this case, we simply enter the percentile of interest <em>expressed as a proportion</em> in the <code>qnorm</code> command. That is, to find the z score for the 90th percentile, we would enter</p>
-<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="random-variables.html#cb69-1" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="fl">0.9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="random-variables.html#cb71-1" tabindex="-1"></a><span class="fu">qnorm</span>(<span class="fl">0.9</span>)</span></code></pre></div>
 <pre><code>## [1] 1.281552</code></pre>
 <p>which gives the same result as the applet in the example above. Then, we can use R as a calculator to find the value of <span class="math inline">\(x\)</span> (recall <span class="math inline">\(\mu=1100\)</span> and <span class="math inline">\(\sigma=200\)</span>)</p>
-<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="random-variables.html#cb71-1" tabindex="-1"></a><span class="dv">1100</span> <span class="sc">+</span> <span class="fl">1.281552</span><span class="sc">*</span><span class="dv">200</span></span></code></pre></div>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="random-variables.html#cb73-1" tabindex="-1"></a><span class="dv">1100</span> <span class="sc">+</span> <span class="fl">1.281552</span><span class="sc">*</span><span class="dv">200</span></span></code></pre></div>
 <pre><code>## [1] 1356.31</code></pre>
 <p>This gives us the same result as before, that 90% of SAT test-takers score below 1356.</p>
 
@@ -1273,42 +1273,42 @@ Assume <span class="math inline">\(X\)</span> is approximately normal. What perc
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

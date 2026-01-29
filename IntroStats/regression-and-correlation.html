@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Module 3 Regression and Correlation | Introduction to Statistics</title>
   <meta name="description" content="Module 3 Regression and Correlation | Introduction to Statistics." />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Module 3 Regression and Correlation | Introduction to Statistics" />
   <meta property="og:type" content="book" />
@@ -469,7 +469,7 @@ in <span class="math inline">\(y\)</span> for a one-unit increase in <span class
 <h3><span class="header-section-number">3.1.1</span> Scatter Plots<a href="regression-and-correlation.html#scatter-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A <strong>scatter plot</strong> shows the relationship between two (numeric)
 variables.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-56-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-51-1.png" alt="" width="672" /></p>
 <p>This is just a bunch of points of the form <span class="math inline">\((x,y)\)</span> plotted in the
 <span class="math inline">\(xy\)</span>-plane, where instead of showing the full x- and y-axes, we crop the
 plot to show only the part where we have data.</p>
@@ -480,7 +480,7 @@ We call this type of data <strong>bivariate data</strong> (“bi” as in “two
 for their home coffee machine. Each coffee they purchase costs $4.25.
 If we know the numbers of coffees they bought last month, we know
 <em>exactly</em> how much money they spent!</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-57-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-52-1.png" alt="" width="672" /></p>
 <p>This relationship can be modeled perfectly with a straight line:
 <span class="math inline">\(y = 15 + 4.25x\)</span>. The y-intercept tells us that, in a month when this person buys zero coffees (<span class="math inline">\(x=0\)</span>), they spend <span class="math inline">\(\$15\)</span>. The slope tells us that, for each additional coffee purchased, the amount of money spent in that month goes up by <span class="math inline">\(\$4.25\)</span></p>
 <p>When we can do this – model a relationship perfectly
@@ -494,7 +494,7 @@ typically real-world data is much more complex than this.</p>
 the relationship to be imperfect. What if that bag of coffee didn’t
 always cost $15? Or the coffee drinks didn’t always cost $4.25? In
 this case, you might get a plot that looks something like this:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-58-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-53-1.png" alt="" width="672" /></p>
 <p>Without doing any math, you can think about where you might draw a line
 through these points. Later on, we will formalize how to do that
 mathematically.</p>
@@ -546,7 +546,12 @@ in Antarctica.</p>
 <p>We will consider two measurements for each penguin: their body mass
 (weight in grams) and flipper length (in millimeters).</p>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-59-1.png" width="672" /></p>
+<pre><code>## 
+## Attaching package: &#39;palmerpenguins&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:datasets&#39;:
+## 
+##     penguins, penguins_raw</code></pre>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-54-1.png" alt="" width="672" /></p>
 <blockquote>
 <p>Clearly, the relationship isn’t perfectly linear, but there does
 appear to be some kind of linear relationship (as flipper length
@@ -554,7 +559,7 @@ increases, body mass also increases). We want to try to use flipper
 length (<span class="math inline">\(x\)</span>) to predict body mass (<span class="math inline">\(y\)</span>).</p>
 <p>The regression model for these data is <span class="math display">\[\hat{y}=-5780.83 + 49.69x\]</span></p>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-60-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-55-1.png" alt="" width="672" /></p>
 <blockquote>
 <p>We can interpret the slope and intercept by using the definitions
 given previously and tweaking them to match the context of the data:</p>
@@ -662,7 +667,7 @@ where <span class="math inline">\(s_x\)</span> and <span class="math inline">\(s
 <col width="16%" />
 </colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th align="center"><span class="math inline">\(x\)</span></th>
 <th align="left"><span class="math inline">\(\frac{x-\bar{x}}{s_x}\)</span></th>
 <th align="center"><span class="math inline">\(y\)</span></th>
@@ -671,42 +676,42 @@ where <span class="math inline">\(s_x\)</span> and <span class="math inline">\(s
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">2</td>
 <td align="left"><span class="math inline">\(\frac{2-3.2}{1.30} = -0.92\)</span></td>
 <td align="center">1</td>
 <td align="left"><span class="math inline">\(\frac{1-5.8}{3.49} = -1.37\)</span></td>
 <td align="right"><span class="math inline">\((-0.92)(-1.37) = 1.26\)</span></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">4</td>
 <td align="left"><span class="math inline">\(\frac{4-3.2}{1.30} = 0.61\)</span></td>
 <td align="center">8</td>
 <td align="left"><span class="math inline">\(\frac{8-5.8}{3.49} = 0.63\)</span></td>
 <td align="right"><span class="math inline">\((0.61)(0.63) = 0.39\)</span></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">3</td>
 <td align="left"><span class="math inline">\(\frac{3-3.2}{1.30} =-0.15\)</span></td>
 <td align="center">6</td>
 <td align="left"><span class="math inline">\(\frac{6-5.8}{3.49} = 0.06\)</span></td>
 <td align="right"><span class="math inline">\((-0.15)(0.06) = -0.01\)</span></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">5</td>
 <td align="left"><span class="math inline">\(\frac{5-3.2}{1.30} = 1.38\)</span></td>
 <td align="center">10</td>
 <td align="left"><span class="math inline">\(\frac{10-5.8}{3.49} = 1.20\)</span></td>
 <td align="right"><span class="math inline">\((1.38)(1.20) = 1.66\)</span></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">2</td>
 <td align="left"><span class="math inline">\(\frac{2-3.2}{1.30} =-0.92\)</span></td>
 <td align="center">4</td>
 <td align="left"><span class="math inline">\(\frac{4-5.8}{3.49} = -0.52\)</span></td>
 <td align="right"><span class="math inline">\((-0.92)(-0.52) = 0.47\)</span></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center"></td>
 <td align="left"></td>
 <td align="center"></td>
@@ -739,11 +744,11 @@ flipper length <em>causes</em> a higher body weight (or vice versa). That is,
 <em>correlation does not imply causation</em>.</p>
 <blockquote>
 <p>Example Correlations:
-<img src="IntroStats_files/figure-html/unnamed-chunk-61-1.png" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-61-2.png" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-61-3.png" width="672" /></p>
+<img src="IntroStats_files/figure-html/unnamed-chunk-56-1.png" alt="" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-56-2.png" alt="" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-56-3.png" alt="" width="672" /></p>
 </blockquote>
 <p>A final note: correlations only represent <em>linear</em> relationships. Consider the
 following scatter plot:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-62-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-57-1.png" alt="" width="672" /></p>
 <p>Obviously there’s a strong relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. In fact,
 there’s a perfect relationship here: <span class="math inline">\(y = x^2\)</span>. But the <em>correlation</em>
 between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> is 0! This is one reason why it’s important to
@@ -757,7 +762,7 @@ relationship between a penguin’s <code>body mass</code> from its
 <code>flipper length</code>. The scatter plot below shows the relationship
 between these two variables.</li>
 </ol>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-63-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-58-1.png" alt="" width="672" /></p>
 <ol>
 <ol style="list-style-type: lower-alpha;">
 <li>
@@ -806,31 +811,31 @@ Geyser in Yellowstone National Park: <code>eruptions</code>, the length of each
 eruption and <code>waiting</code>, the time between eruptions. Each is measured
 in minutes.</p>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-64-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-59-1.png" alt="" width="672" /></p>
 <blockquote>
 <p>There does appear to be some kind of linear relationship here, so we
 will see if we can use the wait time to predict the eruption duration.
 The sample statistics for these data are</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center"></th>
 <th align="center"><code>waiting</code></th>
 <th align="center"><code>eruptions</code></th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">mean</td>
 <td align="center"><span class="math inline">\(\bar{x}=70.90\)</span></td>
 <td align="center"><span class="math inline">\(\bar{y}=3.49\)</span></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">sd</td>
 <td align="center"><span class="math inline">\(s_x=13.60\)</span></td>
 <td align="center"><span class="math inline">\(s_y=1.14\)</span></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"><span class="math inline">\(R = 0.90\)</span></td>
@@ -871,7 +876,7 @@ applying a model estimate for values outside of the data’s range for
 anything about how the relationship outside of the scope of our data!</p>
 <p>Consider the following data with the best fit line drawn on the scatter
 plot.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-65-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-60-1.png" alt="" width="672" /></p>
 <p>The best fit line is <span class="math display">\[\hat{y} = 2.69 + 0.179x\]</span> and the correlation is
 <span class="math inline">\(R=0.877\)</span>. Then the coefficient of determination is <span class="math inline">\(R^2 = 0.767\)</span>
 (think: a C grade), so the model has decent predictive capabilities.
@@ -883,7 +888,7 @@ the data using the model <span class="math inline">\(y = 2\ln(x) + \text{random 
 not familiar with the natural log, <span class="math inline">\(\ln\)</span>, don’t worry about it! You
 won’t need to use it.) The true (population) best-fit model would look
 like this:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-66-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-61-1.png" alt="" width="672" /></p>
 <p>The vertical lines at <span class="math inline">\(x=5\)</span> and <span class="math inline">\(x=20\)</span> show the bounds of our data. The
 blue dot at <span class="math inline">\(x=0.1\)</span> is the predicted value <span class="math inline">\(\hat{y}\)</span> based on the linear
 model. The dashed horizontal line helps demonstrate just how far this
@@ -901,24 +906,24 @@ are</li>
 </ol>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center"></th>
 <th align="center">Height</th>
 <th align="center">Age</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">mean</td>
 <td align="center"><span class="math inline">\(32.36\)</span></td>
 <td align="center"><span class="math inline">\(13.00\)</span></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">sd</td>
 <td align="center"><span class="math inline">\(20.67\)</span></td>
 <td align="center"><span class="math inline">\(7.90\)</span></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"><span class="math inline">\(R = 0.90\)</span></td>
@@ -953,29 +958,29 @@ The correlation is <span class="math inline">\(R = 0.871\)</span>.</li>
 </ol>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
 <th>Body Mass (g)</th>
 <th>Flipper Length (mm)</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>Minimum</td>
 <td>2700.0</td>
 <td>172.0</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Maximum</td>
 <td>6300.0</td>
 <td>231.0</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Mean</td>
 <td>4201.75</td>
 <td>200.92</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Standard Deviation</td>
 <td>801.95</td>
 <td>14.06</td>
@@ -1022,31 +1027,31 @@ for these data are</li>
 </ol>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center"></th>
 <th align="center">Horsepower</th>
 <th align="center">Quarter Mile Time (sec)</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">mean</td>
 <td align="center"><span class="math inline">\(146.69\)</span></td>
 <td align="center"><span class="math inline">\(17.85\)</span></td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">sd</td>
 <td align="center"><span class="math inline">\(68.56\)</span></td>
 <td align="center"><span class="math inline">\(1.79\)</span></td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"><span class="math inline">\(R = -0.708\)</span></td>
 </tr>
 </tbody>
 </table>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-67-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-62-1.png" alt="" width="672" /></p>
 <ol>
 <ol style="list-style-type: lower-alpha;">
 <li>
@@ -1104,19 +1109,19 @@ the title in quotes!)</li>
 <li><code>xlab</code> is the x-axis title.</li>
 <li><code>ylab</code> is the y-axis title.</li>
 </ul>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="regression-and-correlation.html#cb43-1" tabindex="-1"></a><span class="fu">data</span>(<span class="st">&quot;faithful&quot;</span>)</span>
-<span id="cb43-2"><a href="regression-and-correlation.html#cb43-2" tabindex="-1"></a><span class="fu">attach</span>(faithful)</span>
-<span id="cb43-3"><a href="regression-and-correlation.html#cb43-3" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> waiting, <span class="at">y =</span> eruptions,</span>
-<span id="cb43-4"><a href="regression-and-correlation.html#cb43-4" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Scatterplot of Old Faithful Geyser Data&quot;</span>,</span>
-<span id="cb43-5"><a href="regression-and-correlation.html#cb43-5" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Waiting Time (minutes)&quot;</span>,</span>
-<span id="cb43-6"><a href="regression-and-correlation.html#cb43-6" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Eruption Duration (minutes)&quot;</span>)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-68-1.png" width="672" /></p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="regression-and-correlation.html#cb45-1" tabindex="-1"></a><span class="fu">data</span>(<span class="st">&quot;faithful&quot;</span>)</span>
+<span id="cb45-2"><a href="regression-and-correlation.html#cb45-2" tabindex="-1"></a><span class="fu">attach</span>(faithful)</span>
+<span id="cb45-3"><a href="regression-and-correlation.html#cb45-3" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> waiting, <span class="at">y =</span> eruptions,</span>
+<span id="cb45-4"><a href="regression-and-correlation.html#cb45-4" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Scatterplot of Old Faithful Geyser Data&quot;</span>,</span>
+<span id="cb45-5"><a href="regression-and-correlation.html#cb45-5" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Waiting Time (minutes)&quot;</span>,</span>
+<span id="cb45-6"><a href="regression-and-correlation.html#cb45-6" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Eruption Duration (minutes)&quot;</span>)</span></code></pre></div>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-63-1.png" alt="" width="672" /></p>
 </div>
 <div id="correlation-1" class="section level3 unnumbered hasAnchor">
 <h3>Correlation<a href="regression-and-correlation.html#correlation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To find the correlation between two variables <code>x</code> and <code>y</code>, we use the
 command <code>cor(x,y)</code>.</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="regression-and-correlation.html#cb44-1" tabindex="-1"></a><span class="fu">cor</span>(<span class="at">x =</span> waiting, <span class="at">y =</span> eruptions)</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="regression-and-correlation.html#cb46-1" tabindex="-1"></a><span class="fu">cor</span>(<span class="at">x =</span> waiting, <span class="at">y =</span> eruptions)</span></code></pre></div>
 <pre><code>## [1] 0.9008112</code></pre>
 <p>The correlation between waiting time and eruption duration for Old
 Faithful Geyser is <span class="math inline">\(-0.645\)</span>.</p>
@@ -1129,7 +1134,7 @@ the form <code>y ~ x</code>. For example, to find the regression line for the Ol
 Faithful geyser data with waiting time predicting eruption duration,
 <span class="math display">\[\text{eruptions} = b_0 + b_1\times\text{waiting}\]</span> we would use
 <code>formula = eruptions ~ waiting</code>:</p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="regression-and-correlation.html#cb46-1" tabindex="-1"></a><span class="fu">lm</span>(<span class="at">formula =</span> eruptions <span class="sc">~</span> waiting)</span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="regression-and-correlation.html#cb48-1" tabindex="-1"></a><span class="fu">lm</span>(<span class="at">formula =</span> eruptions <span class="sc">~</span> waiting)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = eruptions ~ waiting)
@@ -1143,7 +1148,7 @@ Faithful geyser data with waiting time predicting eruption duration,
 <p>To get the coefficient of determination, we can simply find and square
 the correlation coefficient. I will do this by putting the <code>cor()</code>
 command in parentheses and squaring it by adding <code>^2</code> at the end:</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="regression-and-correlation.html#cb48-1" tabindex="-1"></a>(<span class="fu">cor</span>(<span class="at">x =</span> waiting, <span class="at">y =</span> eruptions))<span class="sc">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="regression-and-correlation.html#cb50-1" tabindex="-1"></a>(<span class="fu">cor</span>(<span class="at">x =</span> waiting, <span class="at">y =</span> eruptions))<span class="sc">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 0.8114608</code></pre>
 <p>We might also be interested in adding a regression line to a
 scatterplot. Now that we know how to find both separately, we can put
@@ -1156,13 +1161,13 @@ optional arguments for adjusting line color and thickness:</p>
 <li><code>col</code>: the line color</li>
 <li><code>lwd</code>: the line width</li>
 </ul>
-<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="regression-and-correlation.html#cb50-1" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> waiting, <span class="at">y =</span> eruptions,</span>
-<span id="cb50-2"><a href="regression-and-correlation.html#cb50-2" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Scatterplot of Old Faithful Geyser Data&quot;</span>,</span>
-<span id="cb50-3"><a href="regression-and-correlation.html#cb50-3" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Waiting Time (minutes)&quot;</span>,</span>
-<span id="cb50-4"><a href="regression-and-correlation.html#cb50-4" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Eruption Duration (minutes)&quot;</span>)</span>
-<span id="cb50-5"><a href="regression-and-correlation.html#cb50-5" tabindex="-1"></a><span class="fu">abline</span>(<span class="fu">summary</span>(<span class="fu">lm</span>(<span class="at">formula =</span> eruptions <span class="sc">~</span> waiting))<span class="sc">$</span>coef[,<span class="dv">1</span>],</span>
-<span id="cb50-6"><a href="regression-and-correlation.html#cb50-6" tabindex="-1"></a>       <span class="at">col =</span> <span class="st">&quot;red&quot;</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-72-1.png" width="672" /></p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="regression-and-correlation.html#cb52-1" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> waiting, <span class="at">y =</span> eruptions,</span>
+<span id="cb52-2"><a href="regression-and-correlation.html#cb52-2" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Scatterplot of Old Faithful Geyser Data&quot;</span>,</span>
+<span id="cb52-3"><a href="regression-and-correlation.html#cb52-3" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Waiting Time (minutes)&quot;</span>,</span>
+<span id="cb52-4"><a href="regression-and-correlation.html#cb52-4" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Eruption Duration (minutes)&quot;</span>)</span>
+<span id="cb52-5"><a href="regression-and-correlation.html#cb52-5" tabindex="-1"></a><span class="fu">abline</span>(<span class="fu">summary</span>(<span class="fu">lm</span>(<span class="at">formula =</span> eruptions <span class="sc">~</span> waiting))<span class="sc">$</span>coef[,<span class="dv">1</span>],</span>
+<span id="cb52-6"><a href="regression-and-correlation.html#cb52-6" tabindex="-1"></a>       <span class="at">col =</span> <span class="st">&quot;red&quot;</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code></pre></div>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-67-1.png" alt="" width="672" /></p>
 
 </div>
 </div>
@@ -1187,42 +1192,42 @@ optional arguments for adjusting line color and thickness:</p>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

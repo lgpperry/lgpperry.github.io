@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Module 4 Probability Concepts | Introduction to Statistics</title>
   <meta name="description" content="Module 4 Probability Concepts | Introduction to Statistics." />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Module 4 Probability Concepts | Introduction to Statistics" />
   <meta property="og:type" content="book" />
@@ -482,25 +482,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Example</strong>: Consider the following frequency distribution from Module 1</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">Class</th>
 <th align="center">Frequency</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">freshman</td>
 <td align="center">12</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">sophomore</td>
 <td align="center">10</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">junior</td>
 <td align="center">3</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">senior</td>
 <td align="center">5</td>
 </tr>
@@ -521,25 +521,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">Class</th>
 <th align="center">Frequency</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">freshman</td>
 <td align="center">12</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">sophomore</td>
 <td align="center">10</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">junior</td>
 <td align="center">3</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">senior</td>
 <td align="center">5</td>
 </tr>
@@ -570,7 +570,7 @@ What is the probability they are <em>not</em> a senior?
 <div id="venn-diagrams" class="section level3 hasAnchor" number="4.2.1">
 <h3><span class="header-section-number">4.2.1</span> Venn Diagrams<a href="probability-concepts.html#venn-diagrams" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Venn Diagrams</strong> show events as circles. The circles overlap where events share common outcomes.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-74-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-69-1.png" alt="" width="672" /></p>
 <p>When a Venn Diagram has <em>no overlap</em> the events are mutually exclusive. This Venn Diagram shows the event “Draw a Diamond” and the event “Draw a Face Card”. There are 13 diamonds and 12 face cards in a deck. In this case, the events are <em>not</em> mutually exclusive: it’s possible to draw both a diamond and a face card at the same time: the Jack of Diamonds, Queen of Diamonds, and King of Diamonds.</p>
 <div class="float">
 <img src="standard52.jpg" alt="Image retrieved from www.cis.upenn.edu/~cis110/" />
@@ -578,9 +578,9 @@ What is the probability they are <em>not</em> a senior?
 </div>
 <p>The “face cards” are the Jacks, Queens, and Kings. Each row represents a “suit”. From top to bottom, the suits are clubs, spades, hearts, and diamonds. Cards can be either red (hearts and diamonds) or black (spades and clubs).</p>
 <p>We can also use Venn Diagrams to visualize the relationships between events.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-75-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-70-1.png" alt="" width="672" /></p>
 <p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are disjoint, this looks like</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-76-1.png" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-71-1.png" alt="" width="672" /></p>
 <p>Notice that in this case there is no shading for <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> because they cannot both happen!</p>
 </div>
 <div id="probability-axioms" class="section level3 hasAnchor" number="4.2.2">
@@ -588,7 +588,7 @@ What is the probability they are <em>not</em> a senior?
 <p>A <strong>probability distribution</strong> lists all possible disjoint outcomes (think: all possible values of a variable) and their associated probabilities. This can be in the form of a table</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">Roll of a six-sided die</th>
 <th align="center">1</th>
 <th align="center">2</th>
@@ -599,7 +599,7 @@ What is the probability they are <em>not</em> a senior?
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">Probability</td>
 <td align="center">1/6</td>
 <td align="center">1/6</td>
@@ -625,7 +625,7 @@ What is the probability they are <em>not</em> a senior?
 </ol>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">X</th>
 <th align="center">{1 or 2}</th>
 <th align="center">{3 or 4}</th>
@@ -633,7 +633,7 @@ What is the probability they are <em>not</em> a senior?
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">P(X)</td>
 <td align="center">1/3</td>
 <td align="center">1/3</td>
@@ -647,7 +647,7 @@ What is the probability they are <em>not</em> a senior?
 </ol>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">Y</th>
 <th align="center">{1 or 2}</th>
 <th align="center">{2 or 3}</th>
@@ -656,7 +656,7 @@ What is the probability they are <em>not</em> a senior?
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">P(Y)</td>
 <td align="center">1/3</td>
 <td align="center">1/3</td>
@@ -679,7 +679,7 @@ What is the probability they are <em>not</em> a senior?
 </ol>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">x</th>
 <th align="center">0</th>
 <th align="center">1</th>
@@ -688,7 +688,7 @@ What is the probability they are <em>not</em> a senior?
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">P(x)</td>
 <td align="center">0.1</td>
 <td align="center">0.2</td>
@@ -702,7 +702,7 @@ What is the probability they are <em>not</em> a senior?
 </ol>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">x</th>
 <th align="center">0 or 1</th>
 <th align="center">1 or 2</th>
@@ -711,7 +711,7 @@ What is the probability they are <em>not</em> a senior?
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">P(x)</td>
 <td align="center">0.1</td>
 <td align="center">0.2</td>
@@ -745,25 +745,25 @@ What is the probability they are <em>not</em> a senior?
 <p><strong>Example</strong>:</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center">Class</th>
 <th align="center">Frequency</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">freshman</td>
 <td align="center">12</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">sophomore</td>
 <td align="center">10</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center">junior</td>
 <td align="center">3</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">senior</td>
 <td align="center">5</td>
 </tr>
@@ -1113,7 +1113,7 @@ So then <span class="math display">\[P(A \text{ or } B) = 0.0392 + 0.8634 - 0.03
 <p>The chart below shows the rolls of Die 1 as columns and the rolls for Die 2 as rows. The numbers in the middle are the sums. Note that there are 36 possible ways to roll 2 dice.</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="left"></th>
 <th align="center">1</th>
 <th align="center">2</th>
@@ -1124,7 +1124,7 @@ So then <span class="math display">\[P(A \text{ or } B) = 0.0392 + 0.8634 - 0.03
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="left"><strong>1</strong></td>
 <td align="center">2</td>
 <td align="center">3</td>
@@ -1133,7 +1133,7 @@ So then <span class="math display">\[P(A \text{ or } B) = 0.0392 + 0.8634 - 0.03
 <td align="center">6</td>
 <td align="center">7</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left"><strong>2</strong></td>
 <td align="center">3</td>
 <td align="center">4</td>
@@ -1142,7 +1142,7 @@ So then <span class="math display">\[P(A \text{ or } B) = 0.0392 + 0.8634 - 0.03
 <td align="center">7</td>
 <td align="center">8</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left"><strong>3</strong></td>
 <td align="center">4</td>
 <td align="center">5</td>
@@ -1151,7 +1151,7 @@ So then <span class="math display">\[P(A \text{ or } B) = 0.0392 + 0.8634 - 0.03
 <td align="center">8</td>
 <td align="center">9</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left"><strong>4</strong></td>
 <td align="center">5</td>
 <td align="center">6</td>
@@ -1160,7 +1160,7 @@ So then <span class="math display">\[P(A \text{ or } B) = 0.0392 + 0.8634 - 0.03
 <td align="center">9</td>
 <td align="center">10</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="left"><strong>5</strong></td>
 <td align="center">6</td>
 <td align="center">7</td>
@@ -1169,7 +1169,7 @@ So then <span class="math display">\[P(A \text{ or } B) = 0.0392 + 0.8634 - 0.03
 <td align="center">10</td>
 <td align="center">11</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="left"><strong>6</strong></td>
 <td align="center">7</td>
 <td align="center">8</td>
@@ -1753,7 +1753,7 @@ Using the contingency table, find the indicated probabilities.
 </li>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center"></th>
 <th align="center"><span class="math inline">\(A\)</span></th>
 <th align="center"><span class="math inline">\(A^c\)</span></th>
@@ -1761,25 +1761,25 @@ Using the contingency table, find the indicated probabilities.
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center"><span class="math inline">\(B1\)</span></td>
 <td align="center">0.31</td>
 <td align="center">0.05</td>
 <td align="center">0.36</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center"><span class="math inline">\(B2\)</span></td>
 <td align="center">0.11</td>
 <td align="center">0.13</td>
 <td align="center">0.24</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center"><span class="math inline">\(B3\)</span></td>
 <td align="center">0.08</td>
 <td align="center">0.32</td>
 <td align="center">0.40</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center"><strong>Total</strong></td>
 <td align="center">0.5</td>
 <td align="center">0.5</td>
@@ -1809,7 +1809,7 @@ The following contingency table represents a sample of households asked about wh
 </li>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="center"></th>
 <th align="center">Children</th>
 <th align="center">No children</th>
@@ -1817,19 +1817,19 @@ The following contingency table represents a sample of households asked about wh
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td align="center">Pets</td>
 <td align="center">38</td>
 <td align="center">47</td>
 <td align="center">85</td>
 </tr>
-<tr>
+<tr class="even">
 <td align="center">No pets</td>
 <td align="center">21</td>
 <td align="center">44</td>
 <td align="center">65</td>
 </tr>
-<tr>
+<tr class="odd">
 <td align="center"><strong>Total</strong></td>
 <td align="center">59</td>
 <td align="center">91</td>
@@ -1879,42 +1879,42 @@ If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</s
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>
