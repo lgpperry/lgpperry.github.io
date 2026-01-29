@@ -756,17 +756,17 @@ Then the test statistic is <span class="math display">\[z = \frac{\hat{p_1}-\hat
 <p>This test has a few behind-the-scenes tweaks relative to what we do by hand. This means that the results might be slightly different than the results you get when running these tests by hand. That’s ok!</p>
 <p>The <code>sleep</code> dataset in R contains data on two groups (10 in each) of patients given soporific drugs (drugs designed to induce sleep). We want to examine whether the <em>proportion</em> of patients who experienced an increase in hours of sleep differs between the two groups.</p>
 <p>I have this set up with two variables, <code>d1</code> and <code>d2</code>, which represent drug 1 and drug 2. Each variable is <span class="math inline">\(1\)</span> if the patient experienced an increase in hours of sleep and <span class="math inline">\(0\)</span> if they did not. Let’s print these out and find out how many successes were in each group.</p>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="inference-comparing-parameters.html#cb105-1" tabindex="-1"></a>d1</span></code></pre></div>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="inference-comparing-parameters.html#cb102-1" tabindex="-1"></a>d1</span></code></pre></div>
 <pre><code>##  [1] 1 0 0 0 0 1 1 1 0 1</code></pre>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="inference-comparing-parameters.html#cb107-1" tabindex="-1"></a>d2</span></code></pre></div>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="inference-comparing-parameters.html#cb104-1" tabindex="-1"></a>d2</span></code></pre></div>
 <pre><code>##  [1] 1 1 1 1 0 1 1 1 1 1</code></pre>
 <p>We can find the total number of successes for each by summing the values in each variable. Let’s do that in R using the <code>sum</code> command:</p>
-<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="inference-comparing-parameters.html#cb109-1" tabindex="-1"></a><span class="fu">sum</span>(d1)</span></code></pre></div>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="inference-comparing-parameters.html#cb106-1" tabindex="-1"></a><span class="fu">sum</span>(d1)</span></code></pre></div>
 <pre><code>## [1] 5</code></pre>
-<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="inference-comparing-parameters.html#cb111-1" tabindex="-1"></a><span class="fu">sum</span>(d2)</span></code></pre></div>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="inference-comparing-parameters.html#cb108-1" tabindex="-1"></a><span class="fu">sum</span>(d2)</span></code></pre></div>
 <pre><code>## [1] 9</code></pre>
 <p>So the numbers of successes are <span class="math inline">\(x_1 = 5\)</span> and <span class="math inline">\(x_2 = 9\)</span> for group sizes <span class="math inline">\(n_1 = n_2 = 10\)</span>. For the <code>prop.test</code> command, this will look like <code>x = c(5, 9)</code> and <code>n = c(10,10)</code>. We will use an <span class="math inline">\(\alpha=0.1\)</span> level of significance. Then</p>
-<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="inference-comparing-parameters.html#cb113-1" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">9</span>), <span class="at">n =</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">10</span>), <span class="at">conf.level =</span> <span class="fl">0.9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="inference-comparing-parameters.html#cb110-1" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">9</span>), <span class="at">n =</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">10</span>), <span class="at">conf.level =</span> <span class="fl">0.9</span>)</span></code></pre></div>
 <pre><code>## 
 ##  2-sample test for equality of proportions with continuity correction
 ## 
@@ -792,7 +792,7 @@ Then the test statistic is <span class="math display">\[z = \frac{\hat{p_1}-\hat
 <h3>Hypothesis Tests for Two Means<a href="inference-comparing-parameters.html#hypothesis-tests-for-two-means-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The math has only gotten more cumbersome! Let’s use R to quickly run these types of tests without having to do any calculations by hand.</p>
 <p>There is data built into R that shows the effect of Vitamin C on tooth growth in guinea pigs through (A) ascorbic acid or (B) orange juice. (Each guinea pig was randomly assigned to either ascorbic acid <em>or</em> orange juice.) We want to compare the ascorbic acid group to the orange juice group to see if one has more tooth growth than the other. This is currently in a data set called <code>teeth</code>, which contains two variables: <code>aa</code>, the tooth length for guinea pigs in the ascorbic acid group and <code>oj</code> the tooth length for the orange juice group.</p>
-<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="inference-comparing-parameters.html#cb115-1" tabindex="-1"></a><span class="fu">attach</span>(teeth)</span></code></pre></div>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="inference-comparing-parameters.html#cb112-1" tabindex="-1"></a><span class="fu">attach</span>(teeth)</span></code></pre></div>
 <p>To run a two-sample test comparing means in R, we continue to use the command <code>t.test</code>. The arguments we need in this case are:</p>
 <ul>
 <li><code>x</code>: the first variable.</li>
@@ -802,7 +802,7 @@ Then the test statistic is <span class="math display">\[z = \frac{\hat{p_1}-\hat
 <li><code>conf.level</code>: the desired confidence level (<span class="math inline">\(1-\alpha\)</span>).</li>
 </ul>
 <p>In this case, we are interested in variables <code>x = aa</code> and <code>y = oj</code>. The null value is <code>mu = 0</code>. Guinea pigs were randomly assigned to each treatment group, so these are independent samples and <code>paired = FALSE</code>. Finally, we will go ahead and test this at a 0.05 level of significance, so <code>conf.level = 0.95</code>. Putting that all together, the R command looks like</p>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="inference-comparing-parameters.html#cb116-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">x =</span> aa, <span class="at">y =</span> oj, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">paired =</span> <span class="cn">FALSE</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="inference-comparing-parameters.html#cb113-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">x =</span> aa, <span class="at">y =</span> oj, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">paired =</span> <span class="cn">FALSE</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code></pre></div>
 <pre><code>## 
 ##  Welch Two Sample t-test
 ## 

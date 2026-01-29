@@ -641,7 +641,7 @@ Correct decision
 <li>For setting 3, the critical value is <span class="math inline">\(t_{df, \alpha/2}\)</span>. Here, <span class="math inline">\(df=n-1=18\)</span> and <span class="math inline">\(\alpha/2 = 0.025\)</span>:</li>
 </ol>
 </blockquote>
-<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="introduction-to-hypothesis-testing.html#cb95-1" tabindex="-1"></a><span class="fu">qt</span>(<span class="fl">0.025</span>, <span class="dv">18</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="introduction-to-hypothesis-testing.html#cb92-1" tabindex="-1"></a><span class="fu">qt</span>(<span class="fl">0.025</span>, <span class="dv">18</span>)</span></code></pre></div>
 <pre><code>## [1] -2.100922</code></pre>
 <blockquote>
 <ol start="4" style="list-style-type: decimal">
@@ -702,7 +702,7 @@ Correct decision
 <li>The critical value is <span class="math inline">\(t_{df, \alpha/2}\)</span>. Here, <span class="math inline">\(df=n-1=19\)</span> and <span class="math inline">\(\alpha/2 = 0.05\)</span>:</li>
 </ol>
 </blockquote>
-<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="introduction-to-hypothesis-testing.html#cb97-1" tabindex="-1"></a><span class="fu">qt</span>(<span class="fl">0.05</span>, <span class="dv">19</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="introduction-to-hypothesis-testing.html#cb94-1" tabindex="-1"></a><span class="fu">qt</span>(<span class="fl">0.05</span>, <span class="dv">19</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## [1] 1.729133</code></pre>
 <blockquote>
 <p>So the critical value is <span class="math inline">\(t_{19, 0.05}=1.729\)</span>.
@@ -795,9 +795,9 @@ Correct decision
 <li><code>conf.level</code>: the desired confidence level (<span class="math inline">\(1-\alpha\)</span>).</li>
 </ul>
 <p>We will again to use the <code>Loblolly</code> pine tree data.</p>
-<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="introduction-to-hypothesis-testing.html#cb99-1" tabindex="-1"></a><span class="fu">attach</span>(Loblolly)</span></code></pre></div>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="introduction-to-hypothesis-testing.html#cb96-1" tabindex="-1"></a><span class="fu">attach</span>(Loblolly)</span></code></pre></div>
 <p>Let’s test if the average height of Loblolly pines differs from <span class="math inline">\(40\)</span> feet. We will test at a 0.01 level of significance (<span class="math inline">\(\alpha = 0.01\)</span>). So <span class="math inline">\(H_0: \mu = 40\)</span> and <span class="math inline">\(H_A: \mu \ne 40\)</span> and the R command will look like</p>
-<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="introduction-to-hypothesis-testing.html#cb100-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">x =</span> height, <span class="at">mu =</span> <span class="dv">40</span>, <span class="at">conf.level =</span> <span class="fl">0.99</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="introduction-to-hypothesis-testing.html#cb97-1" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">x =</span> height, <span class="at">mu =</span> <span class="dv">40</span>, <span class="at">conf.level =</span> <span class="fl">0.99</span>)</span></code></pre></div>
 <pre><code>## 
 ##  One Sample t-test
 ## 
@@ -819,7 +819,7 @@ Correct decision
 </ul>
 <p>Based on this output, we have everything we need to conduct a hypothesis test using (A) the confidence interval approach, (B) the critical value approach, or (C) the p-value approach! In practice, we might include results from multiple approaches: At the 0.01 level of significance, there is sufficient evidence to reject the null hypothesis and conclude that the true mean height of Loblolly pines is less than 40 feet (<span class="math inline">\(t = -3.385\)</span>, p-value<span class="math inline">\(=0.001\)</span>).</p>
 <p><strong>Comment</strong>: Notice are we using <code>t.test</code> and not a test using the normal distribution? Remember that when <span class="math inline">\(n \ge 30\)</span>, the t and standard normal distributions are basically the same! Therefore, when using a computer, we often use the t-distribution regardless of sample size.</p>
-<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="introduction-to-hypothesis-testing.html#cb102-1" tabindex="-1"></a><span class="fu">detach</span>(Loblolly)</span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="introduction-to-hypothesis-testing.html#cb99-1" tabindex="-1"></a><span class="fu">detach</span>(Loblolly)</span></code></pre></div>
 
 </div>
 </div>

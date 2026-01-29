@@ -679,7 +679,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Let’s continue to use the example seen throughout this module. We have a random sample of 27 US households and 15 of them have dogs. We also have the claim that, in fact, 38.4% of US households have dogs. We will use a significance level of <span class="math inline">\(\alpha=0.05\)</span>.</p>
 <p>Based on the prompt, there are <span class="math inline">\(x = 15\)</span> successes; <span class="math inline">\(n=27\)</span> trials; and <span class="math inline">\(p_0=0.384\)</span>. So the R command will look like</p>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="inference-for-a-proportion.html#cb103-1" tabindex="-1"></a><span class="fu">binom.test</span>(<span class="at">x =</span> <span class="dv">15</span>, <span class="at">n =</span> <span class="dv">27</span>, <span class="at">p =</span> <span class="fl">0.384</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="inference-for-a-proportion.html#cb100-1" tabindex="-1"></a><span class="fu">binom.test</span>(<span class="at">x =</span> <span class="dv">15</span>, <span class="at">n =</span> <span class="dv">27</span>, <span class="at">p =</span> <span class="fl">0.384</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code></pre></div>
 <pre><code>## 
 ##  Exact binomial test
 ## 

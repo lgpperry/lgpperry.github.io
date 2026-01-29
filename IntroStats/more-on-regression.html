@@ -463,7 +463,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <blockquote>
 <p><em>Example:</em> Suppose I have a test with 100 observations and 5 groups. I find <span class="math inline">\(MSG = 0.041\)</span> and <span class="math inline">\(MSE = 0.023\)</span>. Then <span class="math display">\[df_G = k-1 = 5-1 = 4\]</span> and <span class="math display">\[df_E = n-k = 100-5 = 95\]</span> The test statistic is <span class="math display">\[f = \frac{0.041}{0.023} = 1.7826\]</span> To find the p-value using <code>R</code>, I would write the command</p>
 </blockquote>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="more-on-regression.html#cb118-1" tabindex="-1"></a><span class="fu">pf</span>(<span class="fl">1.7826</span>, <span class="dv">4</span>, <span class="dv">95</span>, <span class="at">lower.tail=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="more-on-regression.html#cb115-1" tabindex="-1"></a><span class="fu">pf</span>(<span class="fl">1.7826</span>, <span class="dv">4</span>, <span class="dv">95</span>, <span class="at">lower.tail=</span><span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1387132</code></pre>
 <blockquote>
 <p>and find a p-value of 0.1387.</p>

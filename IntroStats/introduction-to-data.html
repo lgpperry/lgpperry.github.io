@@ -915,13 +915,25 @@ Can this study be used to infer causality? Why or why not?
 <li>
 A drug manufacturer wants to know how well a new blood pressure medication works. They recruit 130 people with high blood pressure and randomly assign 65 of them to the new medication; the other 65 will receive an existing blood pressure medication that is known to work well. Researchers will then monitor each participant’s blood pressure over time to determine whether the new medication works at least as well as existing medications.
 </li>
-<pre><code>&lt;ol style=&quot;list-style-type: lower-alpha;&quot;&gt;
-&lt;li&gt;Is this an observational study or an experiment? Explain.&lt;/li&gt;
-&lt;li&gt;Identify the (i) cases and (ii) response variable.&lt;/li&gt;
-&lt;li&gt; Explain how this study satisfies the principles of (i) control, (ii) randomization, and (iii) replication. &lt;/li&gt;
-&lt;li&gt; What would need to be true for this study to be *blind*? &lt;/li&gt;
-&lt;li&gt; What would need to be true for this study to be *double blind*? &lt;/li&gt;
-&lt;li&gt; Why do you think the researchers chose not to use a placebo in this study? &lt;/li&gt;</code></pre>
+<ol style="list-style-type: lower-alpha;">
+<li>
+Is this an observational study or an experiment? Explain.
+</li>
+<li>
+Identify the (i) cases and (ii) response variable.
+</li>
+<li>
+Explain how this study satisfies the principles of (i) control, (ii) randomization, and (iii) replication.
+</li>
+<li>
+What would need to be true for this study to be <em>blind</em>?
+</li>
+<li>
+What would need to be true for this study to be <em>double blind</em>?
+</li>
+<li>
+Why do you think the researchers chose not to use a placebo in this study?
+</li>
 </ol>
 </ol>
 </div>
@@ -1134,9 +1146,9 @@ Create a Pareto chart for these data.
 </ul>
 <p>By default, R will always produce either the whole number result or a decimal. That’s what we want in this class!</p>
 <p>Try entering each of the commands given above in R, pressing the green “Run” button after each one. Notice that you can either delete everything in the box and then do a new calculation, or you can put your new calculation on the next line:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="introduction-to-data.html#cb2-1" tabindex="-1"></a><span class="dv">6-4</span></span>
-<span id="cb2-2"><a href="introduction-to-data.html#cb2-2" tabindex="-1"></a><span class="dv">3</span><span class="sc">*</span><span class="dv">4</span></span>
-<span id="cb2-3"><a href="introduction-to-data.html#cb2-3" tabindex="-1"></a><span class="dv">7</span><span class="sc">^</span><span class="dv">3</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="introduction-to-data.html#cb1-1" tabindex="-1"></a><span class="dv">6-4</span></span>
+<span id="cb1-2"><a href="introduction-to-data.html#cb1-2" tabindex="-1"></a><span class="dv">3</span><span class="sc">*</span><span class="dv">4</span></span>
+<span id="cb1-3"><a href="introduction-to-data.html#cb1-3" tabindex="-1"></a><span class="dv">7</span><span class="sc">^</span><span class="dv">3</span></span></code></pre></div>
 <p>Try copy and pasting the three lines above into the top left panel and then take a moment to notice what the output looks like and how it matches up with the lines of code you entered.</p>
 <div id="your-turn" class="section level4 unnumbered hasAnchor">
 <h4>Your Turn<a href="introduction-to-data.html#your-turn" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1167,7 +1179,7 @@ Create a Pareto chart for these data.
 <h3>Random Number Generation<a href="introduction-to-data.html#random-number-generation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To generate a random whole number using R, we can use the <code>sample</code> command. We use the <code>sample</code> command like <code>sample(minimum:maximum, size = n)</code>, replacing <code>minimum</code> with the minimum value (often the number 1), <code>maximum</code> with the maximum value, and <code>n</code> with the sample size.</p>
 <p>The following command takes a random sample of size 1 from the values 1 through 10 (the numbers 1, 2, 3, 4, 5, 6, 7, 8, 9, 10):</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="introduction-to-data.html#cb3-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="at">size =</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="introduction-to-data.html#cb2-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="at">size =</span> <span class="dv">1</span>)</span></code></pre></div>
 <p>which results in the output</p>
 <pre><code>## [1] 1</code></pre>
 <div id="your-turn-2" class="section level4 unnumbered hasAnchor">
@@ -1182,9 +1194,9 @@ Create a Pareto chart for these data.
 <h3>Entering Data<a href="introduction-to-data.html#entering-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can work with data in R by reading it in from a file or by entering it manually. To enter numeric data manually, we use the <code>c</code> command.</p>
 <p>The following line of code saves the <code>ages</code> data from the data matrix example above:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="introduction-to-data.html#cb5-1" tabindex="-1"></a>ages <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="dv">23</span>, <span class="dv">36</span>, <span class="dv">29</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="introduction-to-data.html#cb4-1" tabindex="-1"></a>ages <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="dv">23</span>, <span class="dv">36</span>, <span class="dv">29</span>)</span></code></pre></div>
 <p>Notice that we set <code>ages</code> equal to <code>c()</code> with the numbers in the parentheses, separated by commas. Also notice that the numbers are in the same order as in the data. If I want to use the <code>ages</code> variable later, I can refer to it directly in R and it will print out the values in that variable:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="introduction-to-data.html#cb6-1" tabindex="-1"></a>ages <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="dv">23</span>, <span class="dv">36</span>, <span class="dv">29</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="introduction-to-data.html#cb5-1" tabindex="-1"></a>ages <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="dv">23</span>, <span class="dv">36</span>, <span class="dv">29</span>)</span></code></pre></div>
 <div id="your-turn-3" class="section level4 unnumbered hasAnchor">
 <h4>Your Turn<a href="introduction-to-data.html#your-turn-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol start="5" style="list-style-type: decimal">
@@ -1199,7 +1211,7 @@ Create a Pareto chart for these data.
 </ol></li>
 </ol>
 <p>To enter categorical data in R, we do the same thing, but with the addition of quotation marks:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="introduction-to-data.html#cb7-1" tabindex="-1"></a>gender <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;Female&quot;</span>, <span class="st">&quot;Other&quot;</span>, <span class="st">&quot;Female&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="introduction-to-data.html#cb6-1" tabindex="-1"></a>gender <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="st">&quot;Female&quot;</span>, <span class="st">&quot;Other&quot;</span>, <span class="st">&quot;Female&quot;</span>)</span></code></pre></div>
 <p>Notice that for every variable I entered data for in R, I gave it a <em>single word name</em>. That’s important! R will not recognize spaces. However, R does recognize upper versus lowercase letters! In R, <code>age</code> is different from <code>Age</code>.</p>
 </div>
 <div id="your-turn-4" class="section level4 unnumbered hasAnchor">
@@ -1216,16 +1228,16 @@ Create a Pareto chart for these data.
 </ol>
 <p>Usually may want to use data without entering it by hand in R. In this class, we will do this in two ways. The first is by using datasets that are built into R. One such dataset is called</p>
 <p>To access and this data in R, we enter the following command:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="introduction-to-data.html#cb8-1" tabindex="-1"></a><span class="fu">data</span>(Loblolly)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="introduction-to-data.html#cb7-1" tabindex="-1"></a><span class="fu">data</span>(Loblolly)</span></code></pre></div>
 <p>The final way is what we use most often in practice. When we do data analysis in the real world, often our data is stored in an Excel, csv, or similar spreadsheet-type file. For this class, when we use external data, we will only use data stored in csv files. To read in a csv file, we use the command <code>read.csv</code>. For example</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="introduction-to-data.html#cb9-1" tabindex="-1"></a><span class="fu">read.csv</span>(<span class="st">&quot;C:\Users\perry\Documents\Courses\STAT 1\dataset.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="introduction-to-data.html#cb8-1" tabindex="-1"></a><span class="fu">read.csv</span>(<span class="st">&quot;C:\Users\perry\Documents\Courses\STAT 1\dataset.csv&quot;</span>)</span></code></pre></div>
 <p>Reads in a file located on my computer. The stuff inside the quotation marks is a <em>filepath</em>, which tells R both which file I want (<code>dataset.csv</code>) and where the file is located (<code>C:\Users\perry\Documents\Courses\STAT 1\</code>). We can do something similar with csv files stored online, which is how we will use external datafiles in this course. Further, for this course, I will always provide you with the line of code you need to read in any external files.</p>
 </div>
 </div>
 <div id="histograms" class="section level3 unnumbered hasAnchor">
 <h3>Histograms<a href="introduction-to-data.html#histograms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>There is a built-in dataset in R called <code>Loblolly</code>, which contains the variables <code>height</code> and <code>age</code> of some Loblolly pine trees. I can refer to this data by typing in <code>Loblolly</code> directly. To view just the first few observations (out of the 84 total in the data), I can use the <code>head</code> command:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="introduction-to-data.html#cb10-1" tabindex="-1"></a><span class="fu">head</span>(Loblolly)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="introduction-to-data.html#cb9-1" tabindex="-1"></a><span class="fu">head</span>(Loblolly)</span></code></pre></div>
 <pre><code>##   height age
 ## 1   4.51   3
 ## 2  10.89   5
@@ -1236,9 +1248,9 @@ Create a Pareto chart for these data.
 <p>The information that appears next to each ## is what R prints out for us.</p>
 <p>In order to refer to the variables in <code>Loblolly</code> directly, I will need to use the <code>attach</code> command. This tells R that when I say <code>age</code> I mean the age variable from the <code>Loblolly</code> dataset (and not from some other dataset).</p>
 <p>I want to create a histogram to visualize the ratio of tree height to age. First, I need to find this ratio for each observation. I can do this easily in R by dividing <code>height</code> by <code>age</code>. I will save this as a new variable called <code>htage_ratio</code>.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="introduction-to-data.html#cb12-1" tabindex="-1"></a>htage_ratio <span class="ot">=</span> height<span class="sc">/</span>age</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="introduction-to-data.html#cb11-1" tabindex="-1"></a>htage_ratio <span class="ot">=</span> height<span class="sc">/</span>age</span></code></pre></div>
 <p>Then to create a histogram of the height to age ratio, we will use the command <code>hist</code> on the variable <code>htage_ratio</code>:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="introduction-to-data.html#cb13-1" tabindex="-1"></a><span class="fu">hist</span>(htage_ratio)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="introduction-to-data.html#cb12-1" tabindex="-1"></a><span class="fu">hist</span>(htage_ratio)</span></code></pre></div>
 <p><img src="IntroStats_files/figure-html/unnamed-chunk-25-1.png" alt="" width="672" /></p>
 <p>I can clean up this graph by taking advantage of additional <em>arguments</em> in the <code>hist</code> command:</p>
 <ul>
@@ -1253,15 +1265,15 @@ Create a Pareto chart for these data.
 <li><code>col</code> allows us to give R a specific color for the bars.</li>
 </ul>
 <p>Notice that each argument is separated by a comma.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="introduction-to-data.html#cb14-1" tabindex="-1"></a><span class="fu">hist</span>(htage_ratio, </span>
-<span id="cb14-2"><a href="introduction-to-data.html#cb14-2" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Histogram of Height-to-Age Ratio&quot;</span>, </span>
-<span id="cb14-3"><a href="introduction-to-data.html#cb14-3" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Height-to-Age Ratio (feet/year)&quot;</span>, </span>
-<span id="cb14-4"><a href="introduction-to-data.html#cb14-4" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Relative Frequency&quot;</span>, </span>
-<span id="cb14-5"><a href="introduction-to-data.html#cb14-5" tabindex="-1"></a>     <span class="at">freq =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb14-6"><a href="introduction-to-data.html#cb14-6" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&#39;pink&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="introduction-to-data.html#cb13-1" tabindex="-1"></a><span class="fu">hist</span>(htage_ratio, </span>
+<span id="cb13-2"><a href="introduction-to-data.html#cb13-2" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Histogram of Height-to-Age Ratio&quot;</span>, </span>
+<span id="cb13-3"><a href="introduction-to-data.html#cb13-3" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Height-to-Age Ratio (feet/year)&quot;</span>, </span>
+<span id="cb13-4"><a href="introduction-to-data.html#cb13-4" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Relative Frequency&quot;</span>, </span>
+<span id="cb13-5"><a href="introduction-to-data.html#cb13-5" tabindex="-1"></a>     <span class="at">freq =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb13-6"><a href="introduction-to-data.html#cb13-6" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&#39;pink&#39;</span>)</span></code></pre></div>
 <p><img src="IntroStats_files/figure-html/unnamed-chunk-26-1.png" alt="" width="672" /></p>
 <p>When I am done, I will use the <code>detatch</code> command to tell R that I am not working with the <code>Loblolly</code> data anymore.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="introduction-to-data.html#cb15-1" tabindex="-1"></a><span class="fu">detach</span>(Loblolly)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="introduction-to-data.html#cb14-1" tabindex="-1"></a><span class="fu">detach</span>(Loblolly)</span></code></pre></div>
 <div id="your-turn-5" class="section level4 unnumbered hasAnchor">
 <h4>Your Turn<a href="introduction-to-data.html#your-turn-5" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol start="9" style="list-style-type: decimal">
