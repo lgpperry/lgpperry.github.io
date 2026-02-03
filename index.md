@@ -17,4 +17,4 @@ I ended up in statistics because I love solving puzzles and learning about every
 <iframe src="https://www.google.com/maps/d/embed?mid=1YRZ24pWx3K3KYFq9kcG_b70r-9-GMVw&hl=en&ehbc=2E312F" width="640" height="480"></iframe> 
 
 ### Curriculum Vitae
-My CV may be found <a href="https://lgpperry.github.io/PerryCV.pdf" target="_blank">here</a> (last update: Aug 2025).
+My CV may be found <a href="https://lgpperry.github.io/PerryCV.pdf" target="_blank">here</a> (last update: Feb 2026).
