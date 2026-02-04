@@ -193,8 +193,8 @@ ggplot(data=df, aes(x=wts)) +
 Notice that those last two histograms look the same *except for the numbers on the vertical axis*! 
 
 - This gives us insight into the shape of the data **distribution**, literally how the values are distributed across the bins. 
-- The part of the distribution that "trails off" to one or both sides is called a **tail** of the distribution. - When a histogram trails off to one side, we say it is **skewed**.
-
+- The part of the distribution that "trails off" to one or both sides is called a **tail** of the distribution. 
+- When a histogram trails off to one side, we say it is **skewed**.
     - right-skewed if it trails off to the right
     - left-skewed if it trails off to the left
 - Data sets with roughly equal tails are **symmetric**.
