@@ -3253,9 +3253,119 @@ ul.task-list{list-style: none;}
 
 <p>Note: If the mean and median are roughly equal, it is reasonable to assume the distribution is roughly symmetric.</p>
 
-</article></slide><slide class=""><hgroup><h2>Homework</h2></hgroup><article  id="homework">
+</article></slide><slide class=""><hgroup><h2>Weighted Means</h2></hgroup><article  id="weighted-means">
 
-<p>Section 2.1 Exercise 1</p></article></slide>
+<p>Sometimes we have reason to calculate a <strong>weighted mean</strong>.</p>
+
+<p>\[\bar{x}_w = w_1x_1 + w_2x_2 + \dots w_nx_n\] Each observation is multiplied by a corresponding <em>weight</em>, \(w\).</p>
+
+<ul>
+<li>In this case, each \(p\) represents the proportion attributed to that category.</li>
+<li>In general, we require that all of the \(w\) values sum to \(1\).</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Weighted Means</h2></hgroup><article  id="weighted-means-1">
+
+<p>If all the weights are equal, we get an (unweighted) mean:</p>
+
+<ul>
+<li>We would need \(n\) equal weights which sum to 1.
+
+<ul>
+<li>So each weight would be \(1/n\)</li>
+</ul></li>
+</ul>
+
+<p>Here’s what that looks like:</p>
+
+<p>\[\frac{1}{n}x_1 + \frac{1}{n}x_2 + \dots + \frac{1}{n}x_n = \frac{x_1 + x_2 + \dots + x_n}{n} = \bar{x}\]</p>
+
+</article></slide><slide class=""><hgroup><h2>Example 1</h2></hgroup><article  id="example-1">
+
+<p>Consider the following grade distribution:</p>
+
+<ul>
+<li>Assignments: 15%</li>
+<li>Quizzes: 20%</li>
+<li>Exam 1: 15%</li>
+<li>Exam 2: 15%</li>
+<li>Project: 15%</li>
+<li>Final Exam: 20%</li>
+</ul>
+
+<p>We can use this to calculate an overall grade.</p>
+
+</article></slide><slide class=""><hgroup><h2>Example 1</h2></hgroup><article  id="example-1-1">
+
+<p>Suppose some student has the following score in each category</p>
+
+<ul>
+<li>Assignments: 92%</li>
+<li>Quizzes: 76%</li>
+<li>Exam 1: 56%</li>
+<li>Exam 2: 69%</li>
+<li>Project: 89%</li>
+<li>Final Exam: 70%</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Example 1</h2></hgroup><article  id="example-1-2">
+
+<p>We can calculate their overall grade in the class using the weighted average formula.</p>
+
+<ul>
+<li>The proportion of the grade that comes from each category is the <em>weight</em>.
+
+<ul>
+<li>We will need to convert the percentages to proportions.</li>
+</ul></li>
+<li>The grades are our \(x\) values.</li>
+</ul>
+
+<p>\[\begin{aligned}\text{grade} &amp;= 92(0.15) + 76(0.20) + 56(0.15) + 69(0.15) + 89(0.15) + 70(0.20) \\
+&amp;= 13.8 + 15.2 + 8.4 + 10.35 + 13.35 + 14 \\ &amp;= 75.1\end{aligned}\]</p>
+
+<p>So this student would get a 75.1% in the class.</p>
+
+</article></slide><slide class=""><hgroup><h2>Example 2</h2></hgroup><article  id="example-2">
+
+<p>Now suppose a student has the following scores</p>
+
+<ul>
+<li>Assignments: 83%</li>
+<li>Quizzes: 71%</li>
+<li>Exam 1: 61%</li>
+<li>Exam 2: 68%</li>
+<li>Project: 91%</li>
+</ul>
+
+<p>and has not taken the final exam yet. He really wants to pass the class with at least a C-, but is not sure what kind of final exam grade would allow him to do that.</p>
+
+</article></slide><slide class=""><hgroup><h2>Example 2</h2></hgroup><article  id="example-2-1">
+
+<ul>
+<li>If he wants to pass, he needs a minimum overall grade of 70%.
+
+<ul>
+<li>(He needs his weighted average to be 70% or higher.)</li>
+</ul></li>
+<li>We know everything except his final exam score, so we’ll make that \(F\) in our formula:</li>
+</ul>
+
+<p>\[70 = 83(0.15) + 71(0.20) + 61(0.15) + 68(0.15) + 91(0.15) + F(0.20)\]</p>
+
+</article></slide><slide class=""><hgroup><h2>Example 2</h2></hgroup><article  id="example-2-2">
+
+<p>To figure out what he needs to get on the final, we need to solve for F.</p>
+
+<p>\[\begin{aligned}
+  70 &amp;= 83(0.15) + 71(0.20) + 61(0.15) + 68(0.15) + 91(0.15) + F(0.20)\\
+  70 &amp;= 12.45+14.2+9.15+10.2+13.65+0.2 \\
+  70  &amp;= 59.65 + 0.2F \\
+  10.35 &amp;= 0.2F \\
+  F &amp;= 51.75
+\end{aligned}\]</p>
+
+<p>So he needs to get at least a 51.75% on the final exam in order to pass the class.</p></article></slide>
 
 
   <slide class="backdrop"></slide>

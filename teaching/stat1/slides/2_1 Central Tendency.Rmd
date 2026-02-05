@@ -84,6 +84,94 @@ Because the median is not affected by extreme observations or skew, we say it is
 
 Note: If the mean and median are roughly equal, it is reasonable to assume the distribution is roughly symmetric. 
 
-## Homework
+## Weighted Means
 
-Section 2.1 Exercise 1
+Sometimes we have reason to calculate a **weighted mean**. 
+
+$$\bar{x}_w = w_1x_1 + w_2x_2 + \dots w_nx_n$$
+Each observation is multiplied by a corresponding *weight*, $w$. 
+
+- In this case, each $p$ represents the proportion attributed to that category. 
+- In general, we require that all of the $w$ values sum to $1$. 
+
+## Weighted Means
+
+If all the weights are equal, we get an (unweighted) mean:
+
+- We would need $n$ equal weights which sum to 1.
+    - So each weight would be $1/n$
+    
+Here's what that looks like:
+
+$$\frac{1}{n}x_1 + \frac{1}{n}x_2 + \dots + \frac{1}{n}x_n = \frac{x_1 + x_2 + \dots + x_n}{n} = \bar{x}$$
+
+## Example 1
+
+Consider the following grade distribution:
+ 
+ - Assignments: 15\%
+ - Quizzes: 20\%
+ - Exam 1: 15\%
+ - Exam 2: 15\%
+ - Project: 15\%
+ - Final Exam: 20\%
+ 
+We can use this to calculate an overall grade. 
+
+## Example 1
+
+Suppose some student has the following score in each category
+ 
+ - Assignments: 92\%
+ - Quizzes: 76\%
+ - Exam 1: 56\%
+ - Exam 2: 69\%
+ - Project: 89\%
+ - Final Exam: 70\%
+ 
+## Example 1
+ 
+We can calculate their overall grade in the class using the weighted average formula.
+
+- The proportion of the grade that comes from each category is the *weight*.
+    - We will need to convert the percentages to proportions.
+- The grades are our $x$ values.
+ 
+ \[\begin{aligned}\text{grade} &= 92(0.15) + 76(0.20) + 56(0.15) + 69(0.15) + 89(0.15) + 70(0.20) \\
+&= 13.8 + 15.2 + 8.4 + 10.35 + 13.35 + 14 \\ &= 75.1\end{aligned}\]
+
+So this student would get a 75.1\% in the class.
+
+## Example 2
+
+Now suppose a student has the following scores
+ 
+ - Assignments: 83\%
+ - Quizzes: 71\%
+ - Exam 1: 61\%
+ - Exam 2: 68\%
+ - Project: 91\%
+ 
+and has not taken the final exam yet. He really wants to pass the class with at least a C-, but is not sure what kind of final exam grade would allow him to do that. 
+
+## Example 2 
+ 
+- If he wants to pass, he needs a minimum overall grade of 70%. 
+    - (He needs his weighted average to be 70% or higher.)
+- We know everything except his final exam score, so we'll make that $F$ in our formula:
+ 
+$$70 = 83(0.15) + 71(0.20) + 61(0.15) + 68(0.15) + 91(0.15) + F(0.20)$$
+
+## Example 2
+
+To figure out what he needs to get on the final, we need to solve for F. 
+ 
+ \[\begin{aligned}
+  70 &= 83(0.15) + 71(0.20) + 61(0.15) + 68(0.15) + 91(0.15) + F(0.20)\\
+  70 &= 12.45+14.2+9.15+10.2+13.65+0.2 \\
+  70  &= 59.65 + 0.2F \\
+  10.35 &= 0.2F \\
+  F &= 51.75
+\end{aligned}\]
+ 
+So he needs to get at least a 51.75\% on the final exam in order to pass the class. 
