@@ -25,7 +25,7 @@ Original RMarkdown files available upon request.
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_3.pdf">4.3 Logistic Regression</a>
 - 4.4 Generative Models for Classification
     - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_1.pdf">4.4.1 Linear Discriminant Analysis for p = 1</a>
-    - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_2.pdf">4.4.2 Linear Discriminant Analysis for p > 2</a>
+    - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_2.pdf">4.4.2 Linear Discriminant Analysis for p > 1</a>
     - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_3.pdf">4.4.3 Quadratic Discriminant Analysis</a>
     - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_4.pdf">4.4.4 Naive Bayes</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_6.pdf">4.6 Generalized Linear Models</a>

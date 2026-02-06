@@ -15,7 +15,7 @@ author_profile: true
 - STAT 115B Introduction to Mathematical Statistics
 - <a href="https://lgpperry.github.io/teaching/stat128/">STAT 128 Statistical Computing</a>
 - <a href="https://lgpperry.github.io/teaching/stat140a/">STAT 140A Linear Models</a>
-- <a href="https://lgpperry.github.io/teaching/stat140b/">STAT 140B (STAT 196M) Statistical Learning</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/">STAT 140B Statistical Learning</a>
 - STAT 199 Independent Study
 - MATH 26A Calculus I for the Social and Life Sciences
 - MATH 107A Fundamental Mathematical Concepts
