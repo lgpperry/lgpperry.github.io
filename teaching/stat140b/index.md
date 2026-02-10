@@ -7,7 +7,7 @@ author_profile: true
 
 ## Slides
 
-Slides are based on [Introduction to Statistical Learning](https://www.statlearning.com/) by James, Witten, Hastie, And Tibshirani. 
+The following slides are adapted from the textbook [Introduction to Statistical Learning](https://www.statlearning.com/) and associated slides by James, Witten, Hastie, And Tibshirani. 
 
 Original RMarkdown files available upon request. 
 
@@ -32,15 +32,6 @@ Original RMarkdown files available upon request.
 
 ### Chapter 5: Resampling Methods
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_1.pdf">5.1 Cross-Validation</a>
-- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_2.pdf">5.2 Bootstrap</a> (slides from Dr. James Flegal, UCR)
-    - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_2.rmd">Original rmd with R code</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_2.pdf">5.2 Bootstrap</a> 
+    - (Thanks to Dr. James Flegal, UC Riverside, for some of the <a href="https://faculty.ucr.edu/~jflegal/206/">content</a> in these!)
 
-### Chapter 6: Linear Model Selection and Regularization
-- <a href="https://hastie.su.domains/ISLR2/Slides/Ch6_Model_Selection.pdf">Slides</a> (from <a href="https://www.statlearning.com/resources-second-edition">ISLR2 resources</a>).
-
-### Chapter 7: Moving Beyond Linearity
-- <a href="https://web.stanford.edu/~hastie/ISLR2/Slides/Ch7_Moving_Beyond_Linearity.pdf">Slides</a> (from <a href="https://www.statlearning.com/resources-second-edition">ISLR2 resources</a>).
-    - Slides 1-15
-
-### Chapter 8: Tree-Based Methods
-- <a href="https://web.stanford.edu/~hastie/ISLR2/Slides/Ch8_Tree_Based_Methods.pdf">Slides</a> (from <a href="https://www.statlearning.com/resources-second-edition">ISLR2 resources</a>).
