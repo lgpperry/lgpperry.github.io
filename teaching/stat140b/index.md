@@ -1,7 +1,7 @@
 ---
 permalink: /teaching/stat140b/
 layout: single
-title: "STAT 140B (STAT 196M): Statisical Learning"
+title: "STAT 140B Statisical Learning"
 author_profile: true
 ---
 
