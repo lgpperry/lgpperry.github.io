@@ -7,7 +7,9 @@ author_profile: true
 
 ## Slides
 
-Slides are based on my [Introduction to Statistics](https://lgpperry.github.io/IntroStats/). These slides have some short checkpoint problems, but do not include most of our in-class activities. Original RMarkdown files available upon request. The slides are optimized for web viewing, but I have also provided a pdf of each.
+Slides are based on my [Introduction to Statistics](https://lgpperry.github.io/IntroStats/). These slides have some short checkpoint problems, but do not include most of our in-class activities. Original RMarkdown files available upon request. 
+
+Note: The slides are optimized for desktop and may not work well on mobile. For those using a mobile device, I have also provided a pdf of each set of slides.
 
 ### Module 1
 - <a href="https://lgpperry.github.io/teaching/stat1/slides/1_1-Statistics-Terminology.html" target="blank">1.1 Statistics Terminology</a> (<a href="https://lgpperry.github.io/teaching/stat1/slides/1_1-Statistics-Terminology.pdf" target="blank">pdf</a>)
