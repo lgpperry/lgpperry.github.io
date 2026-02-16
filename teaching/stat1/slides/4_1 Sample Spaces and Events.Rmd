@@ -2,7 +2,8 @@
 title: "4.1 Sample Spaces and Events"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -112,7 +113,3 @@ The probability of selecting a junior **or** a senior is $$\frac{3\text{ juniors
 
 <br>
 Using probability notation, let $A$ be the event we selected a junior and $B$ be the event we selected a senior. Then $$P(A \text{ or } B) = \frac{8}{30} \approx 0.2667$$
-
-## Homework Problems
-
-Section 4.1 exercises 1 and 2

@@ -2,7 +2,8 @@
 title: "1.4 Frequency Distributions"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 

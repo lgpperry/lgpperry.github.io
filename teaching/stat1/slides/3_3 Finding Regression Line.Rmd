@@ -2,7 +2,8 @@
 title: "3.3 Finding a Regression Line"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -42,10 +43,10 @@ Goal: get each residual as close to 0 as possible.
 
 To shrink the residuals toward 0, we minimize:
 \[
-\begin{align}
+\begin{aligned}
 \sum_{i=1}^n e_i^2 &= \sum_{i=1}^n (y_i - \hat{y}_i)^2 \\
 & = \sum_{i=1}^n [y_i - (b_0 + b_1 x_i)]^2
-\end{align} 
+\end{aligned} 
 \]
 
 The values $b_0$ and $b_1$ that minimize this will make up our regression line.
@@ -190,6 +191,3 @@ plot(x,y,type='l', lwd=3, col='red', ylim=c(min(y), max(y.dat))); points(x.dat,y
   points(x=0.1, y=mod$coefficients[1]+0.1* mod$coefficients[2], pch=16, col='blue'); abline(v=0.1, lty=2)
 ```
 
-## Homework Problems
-
-Section 3.3 Exercises 1 and 2. 

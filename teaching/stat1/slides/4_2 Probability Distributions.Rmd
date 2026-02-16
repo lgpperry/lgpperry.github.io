@@ -2,7 +2,8 @@
 title: "4.2 Probability Distributions"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -130,7 +131,3 @@ B
 - Probability distributions look a lot like relative frequency distributions. 
 - This isn't a coincidence! 
 - A relative frequency distribution is a good way to use data to approximate a probability distribution. 
-
-## Homework Problems
-
-Section 4.2 exercises 1-3

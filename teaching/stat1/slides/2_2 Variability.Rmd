@@ -2,7 +2,8 @@
 title: "2.2 Variability"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -182,6 +183,3 @@ We won't draw box plots by hand, but understanding how they are drawn will help 
 | sample mean: $\bar{x}$ | population mean: $\mu$ |
 | sample standard deviation: $s$ | population standard deviation: $\sigma$ |
 
-## Homework Problems
-
-Section 2.2 Exercises 1-3

@@ -2,7 +2,8 @@
 title: "8.2 Hypothesis Tests for a Proportion"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 

@@ -2,7 +2,8 @@
 title: "3.2 Correlation"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -110,7 +111,3 @@ x <- -10:10
 y <- x^2
 plot(x,y, type='l', lwd=2); points(x,y, cex = 2, pch=16, col='salmon')
 ```
-
-## Homework Problems
-
-Section 3.2 Exercise 1

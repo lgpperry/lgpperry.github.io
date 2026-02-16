@@ -2,7 +2,8 @@
 title: "6.1 Sampling Distributions"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -108,7 +109,3 @@ Notes
 
 - This approximation improves with increasing sample size.
 - In general, "relatively large" means sample sizes $n \ge 30$. 
-
-## Homework Problems
-
-Section 6.1 Exercises 1 and 2

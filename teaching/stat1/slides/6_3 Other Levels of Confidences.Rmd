@@ -2,7 +2,8 @@
 title: "6.3 Other Levels of Confidence"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -98,7 +99,3 @@ $$\left(\bar{x}- z_{\alpha/2}\frac{\sigma}{\sqrt{n}}, \quad \bar{x} + z_{\alpha/
 If we can be 99\% confident (or even higher), why do we tend to "settle" for 95\%??
 
 - What will higher levels of confidence do to this interval? 
-
-## Homework Problems
-
-Section 6.3 Exercises 1 and 2

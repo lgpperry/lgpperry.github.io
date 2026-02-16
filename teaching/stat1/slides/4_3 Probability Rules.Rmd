@@ -1,7 +1,8 @@
 ---
 title: "4.3 Rules of Probability"
 author: "Dr. Lauren Perry"
-output: 
+output:
+  beamer_presentation: default
   ioslides_presentation:
     widescreen: true
 ---
@@ -106,7 +107,3 @@ The event of interest $A$ is a sum less than 12. Find
 Hint #1: how many ways can you get a sum of at least 12?
 
 Hint #2: there are 36 possible outcomes.
-
-## Homework Problems
-
-Section 4.3 exercises 1-3

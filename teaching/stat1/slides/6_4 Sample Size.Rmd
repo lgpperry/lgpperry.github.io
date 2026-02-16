@@ -2,7 +2,8 @@
 title: "6.4 Confidence Level, Precision, Sample Size"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -45,5 +46,3 @@ Suppose we want a 95\% confidence interval for the mean of a normally distribute
 Prior experience with SAT scores in the CSU system suggests that SAT scores are well-approximated by a normal distribution with standard deviation known to be 50. 
 
 Find the sample size required for a 98% confidence interval with maximum margin of error 10.
-
-## Homework Problems

@@ -2,8 +2,9 @@
 title: "3.1 Linear Equations"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  ioslides_presentation:
     widescreen: true
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -135,7 +136,3 @@ abline(temp$coefficients[1,1], temp$coefficients[2,1], lwd=2, col="red")
 To predict the body mass for a penguin with a flipper length of 180mm, we just need to plug in 180 for flipper length ($x$):
 $$\hat{y}=-5780.83 + 49.69\times 180 = 3163.37\text{g}.$$ 
 - Note that the regression line automatically deals with units.
-
-## Homework Problems
-
-Section 3.1 Exercises 1 and 2

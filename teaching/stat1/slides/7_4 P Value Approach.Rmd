@@ -2,7 +2,8 @@
 title: "7.4 The P-Value Approach to Hypothesis Testing"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 

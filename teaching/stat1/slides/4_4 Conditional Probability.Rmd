@@ -1,7 +1,8 @@
 ---
 title: "4.4 Conditional Probability"
 author: "Dr. Lauren Perry"
-output: 
+output:
+  beamer_presentation: default
   ioslides_presentation:
     widescreen: true
 ---
@@ -326,13 +327,13 @@ What can we learn about the result of smallpox if we already know something abou
 ***
 
 - For death given inoculation, 
-$$\begin{align}
+\[\begin{aligned}
 P(\text{death}|\text{inoculation}) &= \frac{P(\text{death and inoculation})}{P(\text{inoculation})} \\ &= \frac{0.0010}{0.0392} = 0.0255
-\end{align}$$
+\end{aligned}\]
 - We could also write this as 
-$$\begin{align}
+\[\begin{aligned}
 P(\text{death}|\text{inoculation}) &= \frac{P(\text{death and inoculation})}{P(\text{inoculation})} \\ &= \frac{6/6224}{244/6224} = \frac{6}{244}
-\end{align}$$ 
+\end{aligned}\]
 
 ## Independent Events
 
@@ -364,7 +365,3 @@ If $A$ and $B$ are any two events, then $$P(A \text{ and }B) = P(A|B)P(B).$$
 ## Checkpoint
 
 Suppose we know that 38.4\% of US households have dogs and that *among those with dogs*, 23.1\% have cats. Find the probability that a US household has both dogs and cats.
-
-## Homework Problems
-
-Section 4.4 exercises 1-4

@@ -2,7 +2,8 @@
 title: "6.2 Developing Confidence Intervals"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -145,7 +146,3 @@ The preferred keyboard height for typists is approximately normally distributed 
 
 1. Find and interpret a 95\% confidence interval for keyboard height.
 2. What is the width of the interval? If we wanted a narrower interval, what could we do? 
-
-## Homework Problems
-
-Section 6.2 Exercises 1 and 2

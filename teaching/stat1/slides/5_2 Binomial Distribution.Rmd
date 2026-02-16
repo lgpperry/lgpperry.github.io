@@ -1,8 +1,9 @@
 ---
-title: "5.1 The Binomial Distribution"
+title: "5.2 The Binomial Distribution"
 author: "Dr. Lauren Perry"
 output:
-  ioslides_presentation: 
+  beamer_presentation: default
+  ioslides_presentation:
     widescreen: true
 ---
 
@@ -116,7 +117,3 @@ Suppose 38.4% of people have dogs. We will take a random sample of 10 people and
 1. Use the binomial distribution to find the probability that exactly 2 of the people in our sample have a dog.
 
 2. Find the probability that between 3 and 5 people (inclusive) have a dog.
-
-## Homework Problems
-
-Section 5.2 Exercises 1-3
