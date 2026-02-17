@@ -35,3 +35,6 @@ Original RMarkdown files available upon request.
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_5_2.pdf">5.2 Bootstrap</a> 
     - (Thanks to Dr. James Flegal, UC Riverside, for some of the <a href="https://faculty.ucr.edu/~jflegal/206/">content</a> in these!)
 
+### Chapter 6: Linear Model Selection and Regularization
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_6_1.pdf">6.1 Subset Selection</a>
+
