@@ -7,9 +7,7 @@ author_profile: true
 
 ## Slides
 
-The following slides are adapted from the textbook [Introduction to Statistical Learning](https://www.statlearning.com/) and associated slides by James, Witten, Hastie, And Tibshirani. 
-
-Original RMarkdown files available upon request. 
+The following slides are adapted from the textbook [Introduction to Statistical Learning](https://www.statlearning.com/) and associated slides by James, Witten, Hastie, And Tibshirani.
 
 ### Chapter 2: Statistical Learning
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_2_1.pdf">2.1 What is Statistical Learning?</a>
