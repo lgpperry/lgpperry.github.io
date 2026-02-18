@@ -35,4 +35,5 @@ The following slides are adapted from the textbook [Introduction to Statistical 
 
 ### Chapter 6: Linear Model Selection and Regularization
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_6_1.pdf">6.1 Subset Selection</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_6_2.pdf">6.2 Shrinkage Methods</a>
 
