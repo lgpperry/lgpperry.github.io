@@ -2,9 +2,9 @@
 title: "3.3 Finding a Regression Line"
 author: "Dr. Lauren Perry"
 output:
-  beamer_presentation: default
   ioslides_presentation:
     widescreen: true
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -172,7 +172,7 @@ The best fit line is $$\hat{y} = 2.69 + 0.179x$$
 
 ## Prediction: Some Notes
 
-Suppose we wanted to predict the value of $y$ when $x=0.1$: $$\hat{y} = 2.66 + 0.181\times0.1 = 2.67$$
+Suppose we wanted to predict the value of $y$ when $x=0.1$: $$\hat{y} = 2.69 + 0.179\times0.1 = 2.71$$
 
 ## Prediction: Some Notes
 
