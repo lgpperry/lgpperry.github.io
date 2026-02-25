@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Module 10 More on Regression | Introduction to Statistics</title>
-  <meta name="description" content="Module 10 More on Regression | Introduction to Statistics." />
+  <title>Chapter 10 More on Regression | Introduction to Statistics</title>
+  <meta name="description" content="Chapter 10 More on Regression | Introduction to Statistics." />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Module 10 More on Regression | Introduction to Statistics" />
+  <meta property="og:title" content="Chapter 10 More on Regression | Introduction to Statistics" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Module 10 More on Regression | Introduction to Statistics." />
+  <meta property="og:description" content="Chapter 10 More on Regression | Introduction to Statistics." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Module 10 More on Regression | Introduction to Statistics" />
+  <meta name="twitter:title" content="Chapter 10 More on Regression | Introduction to Statistics" />
   
-  <meta name="twitter:description" content="Module 10 More on Regression | Introduction to Statistics." />
+  <meta name="twitter:description" content="Chapter 10 More on Regression | Introduction to Statistics." />
   
 
 <meta name="author" content="Dr. Lauren Perry" />
@@ -442,7 +442,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="more-on-regression" class="section level1 hasAnchor" number="10">
-<h1><span class="header-section-number">Module 10</span> More on Regression<a href="more-on-regression.html#more-on-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">Chapter 10</span> More on Regression<a href="more-on-regression.html#more-on-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>In this chapter, we return to regression to discuss some of the nuances of the linear regression model. We also talk about two hypothesis tests related to regression.</p>
 <p><strong>Chapter Learning Outcomes/Objectives</strong></p>
 <ol style="list-style-type: decimal">
@@ -499,15 +499,15 @@ It turns out this framework is remarkably similar to the hypothesis test for a m
 <p>In Chapter 3, we generated a regression model that used a penguin’s flipper length (<span class="math inline">\(x\)</span>, in mm) to predict its weight (<span class="math inline">\(y\)</span>, in g):</p>
 <p><span class="math display">\[\hat{y}=-5780.83 + 49.69x\]</span>
 We could examine the distribution of this model’s residuals using a histogram</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-127-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-126-1.png" alt="" width="672" /></p>
 <p>However, it can be kind of difficult to use a histogram to accurately determine normality.</p>
 <p>Instead, we typically use what we call a <strong>Q-Q Plot</strong>. A Q-Q Plot is a scatterplot that plots the model’s standardized residuals against the quantiles of a standard normal distribution. (Recall that <em>standardized</em> means we have z-scored everything.)</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-128-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-127-1.png" alt="" width="672" /></p>
 <p>If the points fall along the line <span class="math inline">\(y = x\)</span>, then the standardized residuals match the quantiles of the standard normal distribution, which means they are normally distributed! Here, the line <span class="math inline">\(y=x\)</span> has been added to the plot in red to make it easier to visually confirm normality.</p>
 <p>If a lot of the points are far from this line, then we have violated our normality assumption.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-129-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-128-1.png" alt="" width="672" /></p>
 <p>In this example, our points are far from the <span class="math inline">\(y=x\)</span> line in both tails. In fact, these residuals are heavily skewed!</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-130-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-129-1.png" alt="" width="672" /></p>
 <p>In settings where our residuals deviate significantly from normality, we should not use our linear regression model as-is. Techniques to “fix” this issue include transformations on <span class="math inline">\(y\)</span> and other modeling approaches, both of which are outside the scope of this class.</p>
 </div>
 </div>
