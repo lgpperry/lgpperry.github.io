@@ -443,8 +443,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="chi-square-tests" class="section level1 hasAnchor" number="11">
 <h1><span class="header-section-number">Module 11</span> Chi-Square Tests<a href="chi-square-tests.html#chi-square-tests" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this module, we will continue our discussion on statistical inference with a discussion on hypothesis testing. In hypothesis testing, we take a more active approach to our data by asking questions about population parameters and developing a framework to answer those questions. We will root this discussion in confidence intervals before learning about several other approaches to hypothesis testing.</p>
-<p><strong>Module Learning Outcomes/Objectives</strong></p>
+<p>In this chapter, we will continue our discussion on statistical inference with a discussion on hypothesis testing. In hypothesis testing, we take a more active approach to our data by asking questions about population parameters and developing a framework to answer those questions. We will root this discussion in confidence intervals before learning about several other approaches to hypothesis testing.</p>
+<p><strong>Chapter Learning Outcomes/Objectives</strong></p>
 <ol style="list-style-type: decimal">
 <li>Perform and interpret inference for
 <ol style="list-style-type: lower-alpha">
@@ -453,7 +453,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>tests of goodness of fit and contingency tables.</li>
 </ol></li>
 </ol>
-<p>This module’s outcomes correspond to course outcomes (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.</p>
+<p>This chapter’s outcomes correspond to course outcomes (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.</p>
 <div id="inference-for-a-population-variance" class="section level2 hasAnchor" number="11.1">
 <h2><span class="header-section-number">11.1</span> Inference for a Population Variance<a href="chi-square-tests.html#inference-for-a-population-variance" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Sometimes, it may be of interest to examine directly the variability of a population. Why? Suppose we have some medication that comes in a pill form. We know that each pill has an average of 10mg of active ingredient. For this medication to be consistently effective, we want to make sure that the amount of active ingredient does not <em>vary</em> too much from one pill to the next. We examine this using tests for population variance.</p>
@@ -469,7 +469,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>These makes it a great choice for modeling continuous random variables that can only take on positive values, like the variance!</p>
 <p>The chi-square distribution is denoted <span class="math inline">\(\chi^2_{\text{df}}\)</span>, where <span class="math inline">\(\chi\)</span> is the Greek letter “chi” and <span class="math inline">\(\text{df}\)</span> is the degrees of freedom. The plot below shows several examples of chi-square distributions with different degrees of freedom.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-129-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-131-1.png" alt="" width="672" /></p>
 <p>Note that we are not able to see the full distributions, so that right-skew may not always be apparent. The chi-square distribution goes on forever in the positive direction, though, so eventually each curve <em>has</em> to skew to the right. We should also notice that, for larger values of <span class="math inline">\(\text{df}\)</span>, the curve looks a bit like the normal curve.</p>
 </div>
 <div id="confidence-intervals-for-sigma" class="section level3 hasAnchor" number="11.1.2">
@@ -508,7 +508,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="critical-value-approach-1" class="section level4 unnumbered hasAnchor">
 <h4>Critical Value Approach<a href="chi-square-tests.html#critical-value-approach-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The critical values are <span class="math inline">\(\chi^2_{1-\alpha/2, n-1}\)</span> and <span class="math inline">\(\chi^2_{\alpha/2, n-1}\)</span>. The test statistic is <span class="math display">\[T = \frac{(n-1)s}{\sigma^2_0}\]</span> where <span class="math inline">\(s\)</span> is the sample standard deviation. The rejection region for this test is <span class="math inline">\(T &lt; \chi^2_{\alpha/2, n-1}\)</span> OR <span class="math inline">\(T &gt; \chi^2_{1-\alpha/2, n-1}\)</span>.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-130-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-132-1.png" alt="" width="672" /></p>
 <p>Steps:</p>
 <ol style="list-style-type: decimal">
 <li>State the null and alternative hypotheses.</li>
@@ -597,7 +597,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

@@ -443,12 +443,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="descriptive-measures" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">Module 2</span> Descriptive Measures<a href="descriptive-measures.html#descriptive-measures" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In the previous module, we thought about descriptive statistics using tables and graphs. Next, we summarize data by computing numbers. Some of these numbers you may already be familiar with, such as averages and percentiles. Numbers used to describe data are called <em>descriptive measures</em>.</p>
-<p><strong>Module Learning Objectives/Outcomes</strong></p>
-<p>After completing Module 2, you will be able to:</p>
+<p>In the previous chapter, we thought about descriptive statistics using tables and graphs. Next, we summarize data by computing numbers. Some of these numbers you may already be familiar with, such as averages and percentiles. Numbers used to describe data are called <em>descriptive measures</em>.</p>
+<p><strong>Chapter Learning Objectives/Outcomes</strong></p>
+<p>After completing Chapter 2, you will be able to:</p>
 <ol style="list-style-type: decimal">
 <li>Calculate and interpret measures of center.</li>
 <li>Calculate and interpret measures of variation.</li>
+<li>Determine which measure of center and spread to use for a given dataset.</li>
 <li>Find and interpret measures of position.</li>
 <li>Summarize data using box plots.</li>
 </ol>
@@ -459,16 +460,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Generate measures of position.</li>
 <li>Create box plots.</li>
 </ol>
-<p>This module’s outcomes correspond to course outcomes (1) organize, summarize, and interpret data in tabular, graphical, and pictorial formats, (2) organize and interpret bivariate data and learn simple linear regression and correlation, and (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation.</p>
+<p>This chapter’s outcomes correspond to course outcomes (1) organize, summarize, and interpret data in tabular, graphical, and pictorial formats, (2) organize and interpret bivariate data and learn simple linear regression and correlation, and (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation.</p>
 <div id="measures-of-central-tendency" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Measures of Central Tendency<a href="descriptive-measures.html#measures-of-central-tendency" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>One research question we might ask is: what values are most common or most likely?</p>
+<p>One research question we might ask is: what values are most common or most likely? That is, measures of center help us describe what a “typical” observation looks like.</p>
 <p><strong>Mode</strong>: the most commonly occurring value. We can use this for numeric variables, but typically we use the mode when talking about categorical data.</p>
 <p><strong>Mean</strong>: this is what we usually think of as the “average”. Denoted <span class="math inline">\(\bar{x}\)</span>. Add up all of the values and divide by the number of observations (<span class="math inline">\(n\)</span>):
 <span class="math display">\[
   \bar{x} = \frac{x_1 + x_2 + \dots + x_n}{n} = \sum_{i=1}^n \frac{x_i}{n}
 \]</span>
-where <span class="math inline">\(x_i\)</span> denotes the <span class="math inline">\(i\)</span>th observation and <span class="math inline">\(\sum_{i=1}^n\)</span> is the sum of all observations from 1 through <span class="math inline">\(n\)</span>. This is called <em>summation notation</em>.</p>
+where <span class="math inline">\(x_i\)</span> denotes the <span class="math inline">\(i\)</span>th observation and <span class="math inline">\(\sum_{i=1}^n\)</span> is the sum of all observations from 1 through <span class="math inline">\(n\)</span>. This is called <em>summation notation</em>: <span class="math inline">\(\Sigma\)</span> is “sum”, below that is <span class="math inline">\(i=1\)</span> “from 1”, and above that is <span class="math inline">\(n\)</span> “to n”.</p>
 <p><strong>Median</strong>: the middle number when the data are ordered from smallest to largest.</p>
 <ul>
 <li>If there are an odd number of observations, this will be the number in the middle:
@@ -518,7 +519,7 @@ where <span class="math inline">\(x_i\)</span> denotes the <span class="math inl
 </tbody>
 </table>
 <p>Notice how changing that 9 out for a 45 changes the <em>mean</em> a lot! But the <em>median</em> is 7 for both <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</p>
-<p>If the mean and median are roughly equal, it is reasonable to assume the distribution is roughly symmetric. Since calculating the mean involves adding all the values, the mean will get pulled toward any extremes (and away from the median).</p>
+<p>If the mean and median are roughly equal, it is reasonable to assume the distribution is roughly symmetric. Since calculating the mean involves adding all the values, the mean will get pulled toward any extremes (and away from the median). Extreme values pull the mean toward themselves; left (negative) skew will pull the mean in the negative direction and right (positive) skew will pull the mean in the positive direction.</p>
 <p>Because the median is not affected by extreme observations or skew, we say it is a <strong>resistant measure</strong> or that it is <strong>robust</strong>.</p>
 <center>
 <font size='4'><b>Which measure should we use?</b></font>
@@ -530,9 +531,9 @@ where <span class="math inline">\(x_i\)</span> denotes the <span class="math inl
 </ul>
 <div id="weighted-means" class="section level3 hasAnchor" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Weighted Means<a href="descriptive-measures.html#weighted-means" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Sometimes we have reason to calculate a <em>weighted mean</em>. For example, course grades are often calculated using a grading scheme that weights each category.</p>
+<p>Sometimes we have reason to calculate a <em>weighted mean</em>. For example, course grades are often calculated using a grading scheme that weights each category. The formula for calculating a weighted mean is</p>
 <p><span class="math display">\[\bar{x}_w = w_1x_1 + w_2x_2 + \dots w_nx_n\]</span></p>
-<p>In this case, each <span class="math inline">\(p\)</span> represents the proportion attributed to that category. In general, we require that all of the <span class="math inline">\(w\)</span> values sum to <span class="math inline">\(1\)</span>.</p>
+<p>In this case, each <span class="math inline">\(w\)</span> represents the weight attributed to that category. Often, the weights are the <em>proportion</em> in each category. In general, we require that all of the <span class="math inline">\(w\)</span> values sum to <span class="math inline">\(1\)</span>.</p>
 <blockquote>
 <p>Example Consider the following grade distribution:</p>
 <ul>
@@ -555,9 +556,9 @@ where <span class="math inline">\(x_i\)</span> denotes the <span class="math inl
 <p>We can calculate their overall grade in the class using the weighted average formula.</p>
 <p><span class="math display">\[\begin{aligned}\text{grade} &amp;= 92(0.15) + 76(0.20) + 56(0.15) + 69(0.15) + 89(0.15) + 70(0.20) \\
 &amp;= 13.8 + 15.2 + 8.4 + 10.35 + 13.35 + 14 \\ &amp;= 75.1\end{aligned}\]</span>
-So this student would get a 75.5% in the class. (Notice that we changed the grade distribution values from percents to proportions!)</p>
+So this student would get a 75.1% in the class. (Notice that we changed the grade distribution values from percents to proportions!)</p>
 </blockquote>
-<p>This is how learning management systems like Canvas automatically calculate grades.</p>
+<p>This is how learning management systems like Canvas automatically calculate grades (for classes with assessment weights).</p>
 <blockquote>
 <p>Example: Now suppose a student has the following scores</p>
 <ul>
@@ -641,7 +642,7 @@ What is the mode of these data?
 <li>
 A class of intro stats students were asked where they were from. A bar chart of their responses is shown below.
 </li>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-31-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-32-1.png" alt="" width="672" /></p>
 <ol style="list-style-type: lower-alpha;">
 <li>
 How many students are in this class?
@@ -710,12 +711,13 @@ Using your proportions from (a) as the weights, calculate the weighted mean grad
 <p>How much do the data vary?</p>
 <p>Should we care? Yes! The more variable the data, the harder it is to be confident in our measures of center!</p>
 <p>If you live in a place with extremely variable weather, it is going to be much harder to be confident in how to dress for tomorrow’s weather… but if you live in a place where the weather is always the same, it’s much easier to be confident in what you plan to wear.</p>
+<p>Another way to think about this is with human populations. If we have a group of people who are all pretty similar to each other, it’s going to be relatively easy to say what the “typical” person is. On the other hand, if we have a group of people who are very diverse, it’s going to be much harder to identify what we mean by “typical”. Describing the variability in these groups will help quantify that uncertainty associated with what is “typical”.</p>
 <p>We want to think about how far observations are from the measure of center.</p>
 <p>One easy way to think about variability is the <strong>range</strong> of the data: <span class="math display">\[\text{range} = \text{maximum} - \text{minimum}\]</span> This is quick and convenient, but it is <em>extremely</em> sensitive to outliers! It also takes into account only two of the observations - we would prefer a measure of variability that takes into account <em>all</em> the observations.</p>
 <div id="standard-deviation" class="section level3 hasAnchor" number="2.2.1">
 <h3><span class="header-section-number">2.2.1</span> Standard Deviation<a href="descriptive-measures.html#standard-deviation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Deviation</strong> is the distance of an observation from the mean: <span class="math inline">\(x - \bar{x}\)</span>. If we want to think about how far - on average - a typical observation is from the center, our intuition might be to take the average deviance… but it turns out that summing up the deviances will <em>always</em> result in 0! Conceptually, this is because the stuff below the mean (negative numbers) and the stuff above the mean (positive numbers) end up canceling each other out until we end up at 0. (If you are interested, <em>Appendix A: Average Deviance</em> has a mathematical proof of this using some relatively straightforward algebra.)</p>
-<p>One way to deal with this is to make all of the numbers positive, which we accomplish by squaring the deviance.</p>
+<p>One way to deal with this is to make all of the numbers positive. We have two general options to make numbers positive, absolute values or squares, but it turns out that squares are a lot easier to deal with mathematically:</p>
 <table>
 <thead>
 <tr class="header">
@@ -806,8 +808,9 @@ where <span class="math inline">\(n\)</span> is the sample size. Notice that we 
 <li>Q1 is the median of {1, 2, 3, 4, 5}, or 3</li>
 <li>Q3 is the median of {6, 7, 8, 9, 10}, or 8</li>
 </ul>
-</blockquote>
 <p><strong>Note:</strong> this is a “quick and dirty” way of finding quartiles. A computer will give a more exact result.</p>
+</blockquote>
+<p>The quartiles, along with the minimum and maximum, make up what we call the “five number summary” of a dataset: the minimum, Q1, the median (Q2), Q3, and the maximum. Together, these five numbers give us a measure of center, an idea of the variability, and an idea of the extremes.</p>
 <p>Then the interquartile range is
 <span class="math display">\[
   \text{IQR} = \text{Q3}-\text{Q1}
@@ -822,8 +825,8 @@ where <span class="math inline">\(n\)</span> is the sample size. Notice that we 
 </div>
 <div id="box-plots" class="section level3 hasAnchor" number="2.2.3">
 <h3><span class="header-section-number">2.2.3</span> Box Plots<a href="descriptive-measures.html#box-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Our quartiles are the foundation for constructing what we call a box plot, which summarizes the data with five five statistics plus extreme observations. These statistics are sometimes referred to collectively as the “five number summary”: the minimum, Q1, the median (Q2), Q3, and the maximum.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-32-1.png" alt="" width="672" /></p>
+<p>Our quartiles are the foundation for constructing what we call a box plot, which summarizes the data with five statistics plus extreme observations.</p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-33-1.png" alt="" width="672" /></p>
 <p>Drawing a box plot:</p>
 <ol style="list-style-type: decimal">
 <li>Draw the vertical axis to include all possible values in the data.</li>
@@ -872,7 +875,7 @@ Refer to the histogram of these data in <a href="https://bookdown.org/lgpperry/i
 <li>
 Draw or print out the following boxplot.
 </li>
-<img src="IntroStats_files/figure-html/unnamed-chunk-33-1.png" alt="" width="672" />
+<img src="IntroStats_files/figure-html/unnamed-chunk-34-1.png" alt="" width="672" />
 <ol style="list-style-type: lower-alpha;">
 <li>
 Label the median, Q1, and Q3 on the boxplot.
@@ -888,7 +891,7 @@ Use the boxplot to find the (approximate) interquartile range for eruption durat
 Use the boxplots below to answer questions a-b. Note that these are called side-by-side boxplots and can be used to compare different categories. In this case, we are comparing weights of chickens who have been given various types of feed.
 </li>
 </ol>
-<img src="IntroStats_files/figure-html/unnamed-chunk-34-1.png" alt="" width="672" />
+<img src="IntroStats_files/figure-html/unnamed-chunk-35-1.png" alt="" width="672" />
 <ol>
 <ol style="list-style-type: lower-alpha;">
 <li>
@@ -947,7 +950,7 @@ Are there any potential outliers? How do you know?
 <p>From R, we can see that the sample mean height of the Loblolly pines is 32.36 feet. (Note that R will often print things out with ## and a number in square brackets. This is just to help us keep track of things if we write a lot of lines of code. You can ignore that number in the brackets!)</p>
 <p>Is a mean the appropriate measure of center? We can quickly check the skew with a histogram:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="descriptive-measures.html#cb18-1" tabindex="-1"></a><span class="fu">hist</span>(height)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-37-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-38-1.png" alt="" width="672" /></p>
 <p>It might be a little bit hard to tell with this histogram, but it does not look particularly skewed. Let’s use our other trick: if the mean and median are approximatly equal, we can say the distribution is approximately symmetric (and therefore the mean is an appropriate measure of center). To calculate the median, we use the command <code>median</code>:</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="descriptive-measures.html#cb19-1" tabindex="-1"></a><span class="fu">median</span>(height)</span></code></pre></div>
 <pre><code>## [1] 34</code></pre>
@@ -1022,7 +1025,7 @@ Are there any potential outliers? How do you know?
 <span id="cb35-2"><a href="descriptive-measures.html#cb35-2" tabindex="-1"></a>        <span class="at">main =</span> <span class="st">&quot;Boxplot of Loblolly Pine Heights&quot;</span>, </span>
 <span id="cb35-3"><a href="descriptive-measures.html#cb35-3" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">&quot;Height (feet)&quot;</span>,</span>
 <span id="cb35-4"><a href="descriptive-measures.html#cb35-4" tabindex="-1"></a>        <span class="at">col =</span> <span class="st">&quot;green&quot;</span>)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-46-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-47-1.png" alt="" width="672" /></p>
 <p>R will automatically create the entire box plot, including showing any outliers. (Which we should note that there aren’t any in the <code>height</code> variable!)</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="descriptive-measures.html#cb36-1" tabindex="-1"></a><span class="fu">detach</span>(Loblolly)</span></code></pre></div>
 <div id="your-turn-9" class="section level4 unnumbered hasAnchor">
@@ -1133,7 +1136,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

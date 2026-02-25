@@ -443,8 +443,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="inference-for-a-proportion" class="section level1 hasAnchor" number="8">
 <h1><span class="header-section-number">Module 8</span> Inference for a Proportion<a href="inference-for-a-proportion.html#inference-for-a-proportion" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this module, we will continue our discussion on statistical inference with a discussion on hypothesis testing. In hypothesis testing, we take a more active approach to our data by asking questions about population parameters and developing a framework to answer those questions. We will root this discussion in confidence intervals before learning about several other approaches to hypothesis testing.</p>
-<p><strong>Module Learning Outcomes/Objectives</strong></p>
+<p>In this chapter, we will continue our discussion on statistical inference with a discussion on hypothesis testing. In hypothesis testing, we take a more active approach to our data by asking questions about population parameters and developing a framework to answer those questions. We will root this discussion in confidence intervals before learning about several other approaches to hypothesis testing.</p>
+<p><strong>Chapter Learning Outcomes/Objectives</strong></p>
 <ol style="list-style-type: decimal">
 <li>Perform and interpret inference for a population proportion.</li>
 </ol>
@@ -453,7 +453,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Generate hypothesis tests for a proportion.</li>
 <li>Interpret R output for tests of a proportion.</li>
 </ol>
-<p>This module’s outcomes correspond to course outcomes (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.</p>
+<p>This chapter’s outcomes correspond to course outcomes (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.</p>
 <div id="confidence-intervals-for-a-proportion" class="section level2 hasAnchor" number="8.1">
 <h2><span class="header-section-number">8.1</span> Confidence Intervals for a Proportion<a href="inference-for-a-proportion.html#confidence-intervals-for-a-proportion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Inference for a proportion is really similar to inference for a mean! It turns out we can apply the Central Limit Theorem to the sampling distribution for a proportion. But wait - isn’t our Central Limit Theorem only for means?</p>
@@ -472,7 +472,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The critical value is <span class="math inline">\(z_{\alpha/2}\)</span>. Using the normal distribution applet with <span class="math inline">\(\alpha = 0.05\)</span>, this yields a value of 1.96. Plugging everything in, <span class="math display">\[\hat{p}\pm z_{\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}} = 0.56 \pm 1.96\sqrt{\frac{0.56\times0.44}{27}} = 0.56 \pm 0.19\]</span> or a 95% confidence interval of (0.37, 0.75).</p>
 <p>Based on our sample, we can be 95% confident that the proportion of US households with dogs is between 0.37 and 0.75.</p>
 </blockquote>
-<p>The concepts and interpretation behind these confidence intervals are the same as those for confidence intervals for a mean. Refer back to Module 6 for details.</p>
+<p>The concepts and interpretation behind these confidence intervals are the same as those for confidence intervals for a mean. Refer back to Chapter 6 for details.</p>
 <div id="section-exercises-25" class="section level3 unnumbered hasAnchor">
 <h3>Section Exercises<a href="inference-for-a-proportion.html#section-exercises-25" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A survey of Stat 1 students resulted in the following data:</p>
@@ -523,7 +523,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><span class="math inline">\(H_0: p = p_0\)</span></li>
 <li><span class="math inline">\(H_A: p \ne p_0\)</span></li>
 </ul>
-<p>We can perform a hypothesis test for <span class="math inline">\(p\)</span> using the confidence interval, critical value, or p-value approach we covered previously. The concepts and interpretation are the same as those described in Module 7. You will also notice that the steps for each approach have not changed! The only modifications we need to make are to our setting, assumption, and a couple of formulas.</p>
+<p>We can perform a hypothesis test for <span class="math inline">\(p\)</span> using the confidence interval, critical value, or p-value approach we covered previously. The concepts and interpretation are the same as those described in Chapter 7. You will also notice that the steps for each approach have not changed! The only modifications we need to make are to our setting, assumption, and a couple of formulas.</p>
 <p><strong>Setting and Assumptions</strong>: <span class="math inline">\(p\)</span> is target parameter, <span class="math inline">\(np_0 &gt; 10\)</span>, <span class="math inline">\(n(1-p_0)&gt;10\)</span>.</p>
 <div id="confidence-interval-approach" class="section level3 hasAnchor" number="8.2.1">
 <h3><span class="header-section-number">8.2.1</span> Confidence Interval Approach<a href="inference-for-a-proportion.html#confidence-interval-approach" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -670,14 +670,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="r-hypothesis-tests-for-a-proportion" class="section level2 unnumbered hasAnchor">
 <h2>R: Hypothesis Tests for a Proportion<a href="inference-for-a-proportion.html#r-hypothesis-tests-for-a-proportion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>To generate confidence intervals and hypothesis tests for a proportion, we will use the command <code>binom.test</code>. This will give us slightly different results than the z-test we used throughout this module, but it is actually going to be more exact! This approach also does not have any limitations on the values <span class="math inline">\(n\hat{p}\)</span> or <span class="math inline">\(np_0\)</span>. We use the z-test when working by hand because the exact binomial test is difficult to do on paper. The arguments we need are:</p>
+<p>To generate confidence intervals and hypothesis tests for a proportion, we will use the command <code>binom.test</code>. This will give us slightly different results than the z-test we used throughout this chapter, but it is actually going to be more exact! This approach also does not have any limitations on the values <span class="math inline">\(n\hat{p}\)</span> or <span class="math inline">\(np_0\)</span>. We use the z-test when working by hand because the exact binomial test is difficult to do on paper. The arguments we need are:</p>
 <ul>
 <li><code>x</code>: the number of successes.</li>
 <li><code>n</code>: the number of trials.</li>
 <li><code>p</code>: the null value <span class="math inline">\(p_0\)</span>.</li>
 <li><code>conf.level</code>: the desired confidence level (<span class="math inline">\(1-\alpha\)</span>).</li>
 </ul>
-<p>Let’s continue to use the example seen throughout this module. We have a random sample of 27 US households and 15 of them have dogs. We also have the claim that, in fact, 38.4% of US households have dogs. We will use a significance level of <span class="math inline">\(\alpha=0.05\)</span>.</p>
+<p>Let’s continue to use the example seen throughout this chapter. We have a random sample of 27 US households and 15 of them have dogs. We also have the claim that, in fact, 38.4% of US households have dogs. We will use a significance level of <span class="math inline">\(\alpha=0.05\)</span>.</p>
 <p>Based on the prompt, there are <span class="math inline">\(x = 15\)</span> successes; <span class="math inline">\(n=27\)</span> trials; and <span class="math inline">\(p_0=0.384\)</span>. So the R command will look like</p>
 <div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="inference-for-a-proportion.html#cb100-1" tabindex="-1"></a><span class="fu">binom.test</span>(<span class="at">x =</span> <span class="dv">15</span>, <span class="at">n =</span> <span class="dv">27</span>, <span class="at">p =</span> <span class="fl">0.384</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code></pre></div>
 <pre><code>## 
@@ -750,7 +750,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

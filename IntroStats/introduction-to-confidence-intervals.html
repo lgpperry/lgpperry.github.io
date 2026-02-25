@@ -443,8 +443,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="introduction-to-confidence-intervals" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Module 6</span> Introduction to Confidence Intervals<a href="introduction-to-confidence-intervals.html#introduction-to-confidence-intervals" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This module will bridge the gap between our discussion on the normal distribution and our first forays into statistical inference. As it turns out, much of the statistical inference we will use relies on the normal distribution and the t-distribution, which we will introduce in this module. We begin our study of statistical inference by learning about confidence intervals.</p>
-<p><strong>Module Learning Objectives/Outcomes</strong></p>
+<p>This chapter will bridge the gap between our discussion on the normal distribution and our first forays into statistical inference. As it turns out, much of the statistical inference we will use relies on the normal distribution and the t-distribution, which we will introduce in this chapter. We begin our study of statistical inference by learning about confidence intervals.</p>
+<p><strong>Chapter Learning Objectives/Outcomes</strong></p>
 <ol style="list-style-type: decimal">
 <li>Find the distribution of a sample mean.</li>
 <li>Estimate probabilities for a sample mean.</li>
@@ -456,7 +456,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Find z and t critical values.</li>
 <li>Generate complete confidence intervals for a population mean.</li>
 </ol>
-<p>This module’s outcomes correspond to course outcome (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.</p>
+<p>This chapter’s outcomes correspond to course outcome (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.</p>
 <div id="sampling-distributions" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Sampling Distributions<a href="introduction-to-confidence-intervals.html#sampling-distributions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="sampling-error" class="section level3 hasAnchor" number="6.1.1">
@@ -569,7 +569,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="the-central-limit-theorem" class="section level3 hasAnchor" number="6.1.2">
 <h3><span class="header-section-number">6.1.2</span> The Central Limit Theorem<a href="introduction-to-confidence-intervals.html#the-central-limit-theorem" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Consider the setting where <span class="math inline">\(X\)</span> is Normal(<span class="math inline">\(\mu\)</span>, <span class="math inline">\(\sigma\)</span>). The plots below show (A) a random sample of 1000 from a Normal(100, 25) distribution and (B) the approximate sampling distribution of <span class="math inline">\(\bar{X}\)</span> when X is Normal(100, 25).</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-93-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-94-1.png" alt="" width="672" /></p>
 <p>Notice how the x-axis changes from one plot to the next.</p>
 <p>In fact, if <span class="math inline">\(X\)</span> is Normal(<span class="math inline">\(\mu\)</span>, <span class="math inline">\(\sigma\)</span>), then <span class="math inline">\(\bar{X}\)</span> is Normal(<span class="math inline">\(\mu_{\bar{X}}=\mu\)</span>, <span class="math inline">\(\sigma_{\bar{X}}=\sigma/\sqrt{n}\)</span>).</p>
 <p>Surprisingly, we see a similar result for <span class="math inline">\(\bar{X}\)</span> even when <span class="math inline">\(X\)</span> is not normally distributed!</p>
@@ -616,7 +616,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>On the flip side, think about July in Phoenix. The average high is 106 degrees Fahrenheit. In Phoenix, it’s uncommon to have a July day with a high below 100. Since the highs are <em>not variable</em>, you could feel pretty confident using 106 to predict tomorrow’s weather.</p>
 </blockquote>
 <p>Take a look at these two boxplots:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-94-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-95-1.png" alt="" width="672" /></p>
 <p>Both samples are size <span class="math inline">\(n=100\)</span> and have <span class="math inline">\(\bar{x}=0\)</span>, which would be our point estimate for <span class="math inline">\(\mu\)</span>… but Variable 1 has a standard deviation of <span class="math inline">\(\sigma=0.5\)</span> and Variable 2 has standard deviation <span class="math inline">\(\sigma=5\)</span>. As a result, we can be more confident in our estimate of the population mean for Variable 1 than for Variable 2.</p>
 <p>We want to formalize this idea of confidence in our estimates. A <strong>confidence interval</strong> is an interval of numbers based on the point estimate of the parameter. Say we want to be 95% confident about a statement. In Statistics, this means that we have arrived at our statement using a method that will give us a correct statement 95% of the time.</p>
 <p>Our best point estimate for <span class="math inline">\(\mu\)</span> (based on a random sample) is <span class="math inline">\(\bar{x}\)</span>, so that value will make up the center (or midpoint) of the interval. To create an interval around <span class="math inline">\(\bar{x}\)</span>, we will construct what is called the <strong>margin of error</strong>. We will use the variability of the data along with some normal distribution properties. This will look like <span class="math display">\[z\times\frac{\sigma}{\sqrt{n}}\]</span> The value <span class="math inline">\(z\)</span> will come from the normal distribution and will be based on how confident we want to be, e.g., 95% confident.</p>
@@ -625,7 +625,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="interpreting-a-confidence-interval" class="section level3 hasAnchor" number="6.2.1">
 <h3><span class="header-section-number">6.2.1</span> Interpreting a Confidence Interval<a href="introduction-to-confidence-intervals.html#interpreting-a-confidence-interval" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To interpret a confidence interval, we need to think back to our definition of probability as “the proportion of times an event would occur if the experiment were run infinitely many times”. In the confidence interval case, if an experiment is run infinitely many times, the true value of <span class="math inline">\(\mu\)</span> will be contained in 95% of the intervals.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-95-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-96-1.png" alt="" width="672" /></p>
 <p>The graphic above shows 95% confidence intervals for 100 samples of size <span class="math inline">\(n=60\)</span> drawn from a population with mean <span class="math inline">\(\mu=80\)</span> and standard deviation <span class="math inline">\(\sigma=25\)</span>. Each sample’s confidence interval is represented by a horizontal line. The dot in the middle of each is the sample mean. When a confidence interval does <em>not</em> capture the population mean <span class="math inline">\(\mu\)</span>, the line is printed in red. Based on this concept of repeated sampling, we would expect about 95% of these intervals to capture <span class="math inline">\(\mu\)</span>. In fact, 96 of the 100 intervals capture <span class="math inline">\(\mu\)</span>.</p>
 <p>Finally, when you interpret a confidence interval, it is important to do so in the context of the problem.</p>
 <blockquote>
@@ -664,7 +664,7 @@ Interpretation: We can be 95% confident that the true mean SAT score for Sac Sta
 <h2><span class="header-section-number">6.3</span> Other Levels of Confidence<a href="introduction-to-confidence-intervals.html#other-levels-of-confidence" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>While the 95% confidence interval is common in research, there’s nothing inherently special about it. You could calculate a 90%, a 99%, or - if you’re feeling spicy - something like a 43.8% confidence interval. These numbers are called the <strong>confidence level</strong> and they represent the proportion of times that the parameter will fall in the interval (if we took many samples).</p>
 <p>The 100(1-<span class="math inline">\(\alpha\)</span>)% confidence interval for <span class="math inline">\(\mu\)</span> is given by <span class="math display">\[\bar{x}\pm z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\]</span> where <span class="math inline">\(z_{\alpha/2}\)</span> is the z-score associated with the <span class="math inline">\([1-(\alpha/2)]\)</span>th percentile of the standard normal distribution. The value <span class="math inline">\(z_{\alpha/2}\)</span> is called the <strong>critical value</strong> (“c.v.” on the plot, below).</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-96-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-97-1.png" alt="" width="672" /></p>
 <p>Using the those normal distribution properties, we can also say that <span class="math inline">\(P(Z &gt; z_{\alpha/2}) = \alpha/2\)</span>. Depending on how you’ve been using software to find normal distribution probabilities, you may find you prefer this approach to the percentile approach.</p>
 <center>
 <font size='4'><b>Common Critical Values</b></font>
@@ -802,7 +802,7 @@ Once we’ve done this calculation, we need a whole number for <span class="math
 <div id="confidence-intervals-for-a-mean" class="section level2 hasAnchor" number="6.5">
 <h2><span class="header-section-number">6.5</span> Confidence Intervals for a Mean<a href="introduction-to-confidence-intervals.html#confidence-intervals-for-a-mean" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In practice, the value of <span class="math inline">\(\sigma\)</span> is almost never known… but we know that we can estimate <span class="math inline">\(\sigma\)</span> using <span class="math inline">\(s\)</span>. Can we plug in <span class="math inline">\(s\)</span> for <span class="math inline">\(\sigma\)</span>? Sometimes!</p>
-<p>Remember the Central Limit Theorem from earlier in this this module? For samples of size <span class="math inline">\(n \ge 30\)</span>, <span class="math inline">\(\bar{X}\)</span> will be approximately normal even if <span class="math inline">\(X\)</span> isn’t. In this case, we can plug in <span class="math inline">\(s\)</span> for <span class="math inline">\(\sigma\)</span>: <span class="math display">\[\bar{x} \pm z_{\alpha/2}\frac{s}{\sqrt{n}}.\]</span></p>
+<p>Remember the Central Limit Theorem from earlier in this this chapter? For samples of size <span class="math inline">\(n \ge 30\)</span>, <span class="math inline">\(\bar{X}\)</span> will be approximately normal even if <span class="math inline">\(X\)</span> isn’t. In this case, we can plug in <span class="math inline">\(s\)</span> for <span class="math inline">\(\sigma\)</span>: <span class="math display">\[\bar{x} \pm z_{\alpha/2}\frac{s}{\sqrt{n}}.\]</span></p>
 <p>That setting is pretty straightforward! Now we need to consider the setting where <span class="math inline">\(n &lt; 30\)</span>, which will require a bit of additional work.</p>
 <blockquote>
 <p><strong>Example</strong>: The General Social Survey (GSS) is a sociological survey used to collect data on demographic characteristics and attitudes of residents of the United States. In 2010, the survey collected responses from 1,154 US residents. The survey is conducted face-to-face with an in-person interview of a randomly selected sample of adults. One of the questions on the survey is “After an average workday, about how many hours do you have to relax or pursue activities that you enjoy?”. The average time spent relaxing was 3.68 hours, with a standard deviation of 2.6 hours.</p>
@@ -816,7 +816,7 @@ which results in the interval <span class="math inline">\((3.53, 3.83)\)</span>.
 <div id="the-t-distribution" class="section level3 hasAnchor" number="6.5.1">
 <h3><span class="header-section-number">6.5.1</span> The T-Distribution<a href="introduction-to-confidence-intervals.html#the-t-distribution" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Enter: the t-distribution. If <span class="math display">\[Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\]</span> has a standard normal distribution (for <span class="math inline">\(X\)</span> normal or <span class="math inline">\(n\ge30\)</span>), the slightly modified <span class="math display">\[T = \frac{\bar{X}-\mu}{s/\sqrt{n}}\]</span> has what we call the <strong>t-distribution</strong> with <span class="math inline">\(n-1\)</span> <strong>degrees of freedom</strong> (even when <span class="math inline">\(n &lt; 30\)</span>!). The only thing we need to know about degrees of freedom is that <span class="math inline">\(\text{df}=n-1\)</span> is the t-distribution’s only parameter.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-97-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-98-1.png" alt="" width="672" /></p>
 <p>The t-distribution is symmetric and always centered at 0. When <span class="math inline">\(n\ge30\)</span>, the t-distribution is approximately equivalent to the standard normal distribution. For smaller sample sizes, the t-distribution has more area in the tails (and therefore less area in the center of the distribution). Therefore, we can always use t confidence intervals (even if <span class="math inline">\(n\)</span> is large) because the critical values are essentially equivalent between the t and standard normal distributions for large values of <span class="math inline">\(n\)</span>. This is usually what happens in practice.</p>
 <p>In practice, we plug in <span class="math inline">\(s\)</span> for <span class="math inline">\(\sigma\)</span> and almost always use a t critical value (instead of a z critical value): <span class="math inline">\(t_{\text{df}, \, \alpha/2}\)</span>. The t critical value is the <span class="math inline">\([1- \alpha/2]\)</span>th percentile of the t-distribution with <span class="math inline">\(n-1\)</span> degrees of freedom. The resulting 95% confidence interval is <span class="math display">\[\bar{x} \pm t_{\text{df}, \, \alpha/2}\frac{s}{\sqrt{n}}.\]</span></p>
 <p>You may use the applet, <a href="http://www.rossmanchance.com/applets/2021/tcalc/tCalc.htm" target="blank">Rossman and Chance t Probability Calculator</a> to find t critical values. For this applet, enter the degrees of freedom <span class="math inline">\(n-1\)</span> next to “df”. Then check the top box under “t-value probability” and make sure the inequality is clicked to “&gt;” . Enter the value of <span class="math inline">\(\alpha/2\)</span> for the probability. Click anywhere else on the page and the applet will automatically fill in the box under “t-value”. This is your t critical value.</p>
@@ -996,7 +996,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

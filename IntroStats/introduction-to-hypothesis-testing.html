@@ -443,8 +443,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="introduction-to-hypothesis-testing" class="section level1 hasAnchor" number="7">
 <h1><span class="header-section-number">Module 7</span> Introduction to Hypothesis Testing<a href="introduction-to-hypothesis-testing.html#introduction-to-hypothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this module, we will continue our discussion on statistical inference with a discussion on hypothesis testing. In hypothesis testing, we take a more active approach to our data by asking questions about population parameters and developing a framework to answer those questions. We will root this discussion in confidence intervals before learning about several other approaches to hypothesis testing.</p>
-<p><strong>Module Learning Outcomes/Objectives</strong></p>
+<p>In this chapter, we will continue our discussion on statistical inference with a discussion on hypothesis testing. In hypothesis testing, we take a more active approach to our data by asking questions about population parameters and developing a framework to answer those questions. We will root this discussion in confidence intervals before learning about several other approaches to hypothesis testing.</p>
+<p><strong>Chapter Learning Outcomes/Objectives</strong></p>
 <ol style="list-style-type: decimal">
 <li>Test one sample means using
 <ol style="list-style-type: lower-alpha">
@@ -458,7 +458,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Generate hypothesis tests for a mean.</li>
 <li>Interpret R output for tests of a mean.</li>
 </ol>
-<p>This module’s outcomes correspond to course outcomes (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.</p>
+<p>This chapter’s outcomes correspond to course outcomes (6) apply statistical inference techniques of parameter estimation such as point estimation and confidence interval estimation and (7) apply techniques of testing various statistical hypotheses concerning population parameters.</p>
 <div id="logic-of-hypothesis-testing" class="section level2 hasAnchor" number="7.1">
 <h2><span class="header-section-number">7.1</span> Logic of Hypothesis Testing<a href="introduction-to-hypothesis-testing.html#logic-of-hypothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This section is framed in terms of questions about a population mean <span class="math inline">\(\mu\)</span>, but the same logic applies to <span class="math inline">\(p\)</span> (and other population parameters).</p>
@@ -579,7 +579,7 @@ Correct decision
 </ul>
 <p>A Type I error is concluding guilt when the defendant is innocent. A Type II error is failing to convict when the person is guilty.</p>
 </blockquote>
-<p>How likely are we to make errors? Well, <span class="math inline">\(P(\)</span>Type I Error<span class="math inline">\()=\alpha\)</span>, the <strong>significance level</strong>. (Yes, this is the same <span class="math inline">\(\alpha\)</span> we saw in confidence intervals!) For Type II error, <span class="math inline">\(P(\)</span>Type II Error<span class="math inline">\()=\beta\)</span>. This is related to the sample size calculation from the previous module, but is otherwise something we don’t have time to cover.</p>
+<p>How likely are we to make errors? Well, <span class="math inline">\(P(\)</span>Type I Error<span class="math inline">\()=\alpha\)</span>, the <strong>significance level</strong>. (Yes, this is the same <span class="math inline">\(\alpha\)</span> we saw in confidence intervals!) For Type II error, <span class="math inline">\(P(\)</span>Type II Error<span class="math inline">\()=\beta\)</span>. This is related to the sample size calculation from the previous chapter, but is otherwise something we don’t have time to cover.</p>
 <p>We would like both <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> to be small but, like many other things in statistics, there’s a trade off! For a fixed sample size,</p>
 <ul>
 <li>If we decrease <span class="math inline">\(\alpha\)</span>, then <span class="math inline">\(\beta\)</span> will increase.</li>
@@ -682,7 +682,7 @@ Correct decision
 </ul>
 <p><span class="math display">\[t = \frac{\bar{x}-\mu_0}{s/\sqrt{n}}\]</span></p>
 <p>The set of values for the test statistic that cause us to reject <span class="math inline">\(H_0\)</span> is the <strong>rejection region</strong>. The remaining values are the <strong>nonrejection region</strong>. The value that separates these is the critical value!</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-108-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-109-1.png" alt="" width="672" /></p>
 <p>Steps:</p>
 <ol style="list-style-type: decimal">
 <li>State the null and alternative hypotheses.</li>
@@ -708,7 +708,7 @@ Correct decision
 <p>So the critical value is <span class="math inline">\(t_{19, 0.05}=1.729\)</span>.
 5. The test statistic is <em>not</em> in the rejection region, so we will fail to reject the null hypothesis:</p>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-110-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-111-1.png" alt="" width="672" /></p>
 <blockquote>
 <ol start="6" style="list-style-type: decimal">
 <li>At the 0.05 level of significance, the data provide insufficient evidence to conclude that the true mean number of eggs in a green sea turtle next differs from <span class="math inline">\(110\)</span>.</li>
@@ -871,7 +871,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

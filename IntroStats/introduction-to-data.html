@@ -449,8 +449,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>The science of analyzing, organizing, and summarizing data.</li>
 </ol>
 <p>As a field, Statistics provides tools for scientists, practitioners, and laypeople to better understand data. You may find yourself using knowledge from this course in a research lab, while reading a research report, or even while watching the news!</p>
-<p><strong>Module Learning Objectives/Outcomes</strong></p>
-<p>After completing Module 1, you will be able to:</p>
+<p><strong>Chapter Learning Objectives/Outcomes</strong></p>
+<p>After completing Chapter 1, you will be able to:</p>
 <ol style="list-style-type: decimal">
 <li>Understand basic statistical terminology.</li>
 <li>Describe sampling and experimental design techniques.</li>
@@ -464,7 +464,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Generate random numbers.</li>
 <li>Create histograms.</li>
 </ol>
-<p>This module’s outcomes correspond to course outcomes (1) organize, summarize, and interpret data in tabular, graphical, and pictorial formats and (2) organize and interpret bivariate data and learn simple linear regression and correlation.</p>
+<p>This chapter’s outcomes correspond to course outcomes (1) organize, summarize, and interpret data in tabular, graphical, and pictorial formats and (2) organize and interpret bivariate data and learn simple linear regression and correlation.</p>
 <div id="statistics-terminology" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Statistics Terminology<a href="introduction-to-data.html#statistics-terminology" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There are two ways to think about statistics:</p>
@@ -476,7 +476,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>Inferential statistics</strong> are methods for <em>drawing inference</em> (making decisions about something we are uncertain about).</li>
 </ol>
 <p>For example, a poll suggests that 75% of voters will select Candidate A. People haven’t voted yet, so we don’t know what will happen, but we could reasonably conclude that Candidate A will win the election.</p>
-<p>The first three modules of this text are dedicated to methods for descriptive statistics. Modules 4 and 5 build up some background information to help with inferential statistics, and then Modules 6 and beyond deal with inferential statistics.</p>
+<p>The first three chapters of this text are dedicated to methods for descriptive statistics. Chapters 4 and 5 build up some background information to help with inferential statistics, and then Chapters 6 and beyond deal with inferential statistics.</p>
 <p><strong>Data</strong> is factual information. We collect data from a <strong>population</strong>, the collection of all individuals or items a researcher is interested in.</p>
 <ul>
 <li>Collecting data from an entire population is called a <strong>census</strong>.
@@ -973,10 +973,10 @@ Why do you think the researchers chose not to use a placebo in this study?
 </table>
 <p>Note that I can also quickly get the total number of students in the class from this frequency distribution; since all students are accounted for in the data, the total number of students is <span class="math inline">\(12 + 10 + 3 + 5 = 30\)</span>.</p>
 <p>A <strong>bar plot</strong> is a graphical representation of a frequency distribution. Each bar’s height is based on the frequency of the corresponding category.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-1-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-2-1.png" alt="" width="672" /></p>
 <p>The bar plot above shows the class level breakdown for students in an Introductory Statistics course. Take a moment to notice how the bars match up with the frequency distribution above. Since class level is an ordinal variable, we should match the order of the bars to the order of the categories.</p>
 <p>For nominal variables, we can use a <strong>Pareto chart</strong>, which is a bar chart with the bars sorted from highest to lowest frequency.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-2-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-3-1.png" alt="" width="672" /></p>
 <p>This allows us to quickly examine which categories appear most and least frequently, as well as how their frequencies compare to each other.</p>
 <p><strong>Relative frequency</strong> is the ratio of the frequency to the total number of observations.</p>
 <p><span class="math display">\[
@@ -1025,7 +1025,7 @@ Why do you think the researchers chose not to use a placebo in this study?
 <div id="quantitative-variables" class="section level3 hasAnchor" number="1.4.2">
 <h3><span class="header-section-number">1.4.2</span> Quantitative Variables<a href="introduction-to-data.html#quantitative-variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can also apply this concept to numeric data. A <strong>dot plot</strong> is one graphical representation of this. A dot plot shows a number line with dots drawn above the line. Each dot represents a single point.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-3-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-4-1.png" alt="" width="672" /></p>
 <p>For example, the dot plot above shows a sample where the value 1 appears three times, the value 5 appears six times, etc.</p>
 <p>We would also like to be able to visualize larger, more complex data sets. This is hard to do using a dot plot! Instead, we can do this using <strong>bins</strong>, which group numeric data into equal-width consecutive intervals.</p>
 <blockquote>
@@ -1068,21 +1068,21 @@ Why do you think the researchers chose not to use a placebo in this study?
 <p>Now, a cat with a weight of 15.0 lbs would be placed in the third bin (but not the second). (Recall that the interval notation <span class="math inline">\([5, 10)\)</span> means <span class="math inline">\(5 \le x &lt; 10\)</span>.)</p>
 </blockquote>
 <p>We will visualize this using a <strong>histogram</strong>, which is a lot like a bar plot but for numeric data:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-4-1.png" alt="" width="672" /></p>
-<p>This is what we call a <strong>frequency histogram</strong> because each bar height reflects the frequency of that bin. We can also create a <strong>relative frequency histogram</strong> which displays the relative frequency instead of the frequency:</p>
 <p><img src="IntroStats_files/figure-html/unnamed-chunk-5-1.png" alt="" width="672" /></p>
+<p>This is what we call a <strong>frequency histogram</strong> because each bar height reflects the frequency of that bin. We can also create a <strong>relative frequency histogram</strong> which displays the relative frequency instead of the frequency:</p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-6-1.png" alt="" width="672" /></p>
 <p>Notice that these last two histograms look the same <em>except for the numbers on the vertical axis</em>! This gives us insight into the shape of the data <strong>distribution</strong>, literally how the values are distributed across the bins. The part of the distribution that “trails off” to one or both sides is called a <strong>tail</strong> of the distribution.</p>
 <p>When a histogram trails off to one side, we say it is <strong>skewed</strong> (right-skewed if it trails off to the right, left-skewed if it trails off to the left). Data sets with roughly equal tails are <strong>symmetric</strong>.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-6-1.png" alt="" width="672" /></p>
-<p>We can also use a histogram to identify <strong>modes</strong>. For numeric data, especially continuous variables, we think of modes as <em>prominent peaks</em>.</p>
 <p><img src="IntroStats_files/figure-html/unnamed-chunk-7-1.png" alt="" width="672" /></p>
+<p>We can also use a histogram to identify <strong>modes</strong>. For numeric data, especially continuous variables, we think of modes as <em>prominent peaks</em>.</p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-8-1.png" alt="" width="672" /></p>
 <ul>
 <li><strong>Unimodal</strong>: one prominent peak.</li>
 <li><strong>Bimodal</strong>: two prominent peaks.</li>
 <li><strong>Multimodal</strong>: three or more prominent peaks.</li>
 </ul>
 <p>Finally, we can also “smooth out” these histograms and use a smooth curve to examine the shape of the distribution. Below are the smooth curve versions of the distributions shown in the four histograms used to demonstrate skew and symmetry.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-8-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-9-1.png" alt="" width="672" /></p>
 </div>
 <div id="section-exercises-3" class="section level3 unnumbered hasAnchor">
 <h3>Section Exercises<a href="introduction-to-data.html#section-exercises-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1090,14 +1090,14 @@ Why do you think the researchers chose not to use a placebo in this study?
 <li>
 Twenty-five Stat 1 students were asked how tall they were. A histogram of their responses is shown below. Describe the shape (modality and skew/symmetry) of this distribution.
 </li>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-9-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-10-1.png" alt="" width="672" /></p>
 <li>
 The following histogram shows the duration (in minutes) for 299 eruptions of Old Faithful Geyser in Yellowstone National Park. Describe the shape of this distribution
 </li>
 </ol>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-10-1.png" alt="" width="672" /></p>
-<p>For exercises 3-5, twenty-one Stat 1 students were asked where they were from. A bar chart of their responses is shown below.</p>
 <p><img src="IntroStats_files/figure-html/unnamed-chunk-11-1.png" alt="" width="672" /></p>
+<p>For exercises 3-5, twenty-one Stat 1 students were asked where they were from. A bar chart of their responses is shown below.</p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-12-1.png" alt="" width="672" /></p>
 <ol start="3">
 <li>
 How many people in this class are from the Bay Area?
@@ -1251,7 +1251,7 @@ Create a Pareto chart for these data.
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="introduction-to-data.html#cb11-1" tabindex="-1"></a>htage_ratio <span class="ot">=</span> height<span class="sc">/</span>age</span></code></pre></div>
 <p>Then to create a histogram of the height to age ratio, we will use the command <code>hist</code> on the variable <code>htage_ratio</code>:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="introduction-to-data.html#cb12-1" tabindex="-1"></a><span class="fu">hist</span>(htage_ratio)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-25-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-26-1.png" alt="" width="672" /></p>
 <p>I can clean up this graph by taking advantage of additional <em>arguments</em> in the <code>hist</code> command:</p>
 <ul>
 <li><code>main</code> is where I can give the plot a new title. (Make sure to put the title in quotes!)</li>
@@ -1271,7 +1271,7 @@ Create a Pareto chart for these data.
 <span id="cb13-4"><a href="introduction-to-data.html#cb13-4" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Relative Frequency&quot;</span>, </span>
 <span id="cb13-5"><a href="introduction-to-data.html#cb13-5" tabindex="-1"></a>     <span class="at">freq =</span> <span class="cn">FALSE</span>,</span>
 <span id="cb13-6"><a href="introduction-to-data.html#cb13-6" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&#39;pink&#39;</span>)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-26-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-27-1.png" alt="" width="672" /></p>
 <p>When I am done, I will use the <code>detatch</code> command to tell R that I am not working with the <code>Loblolly</code> data anymore.</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="introduction-to-data.html#cb14-1" tabindex="-1"></a><span class="fu">detach</span>(Loblolly)</span></code></pre></div>
 <div id="your-turn-5" class="section level4 unnumbered hasAnchor">
@@ -1290,10 +1290,10 @@ Create a Pareto chart for these data.
 ## Female   Male  Other 
 ##      2      1      1</code></pre>
 <p>To make a bar plot, we need to put that table command into the barplot command. Here’s what that looks like:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-29-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-30-1.png" alt="" width="672" /></p>
 <p>To do this with a different variable, I would change out <code>gender</code> for the other variable. Everything else stays the same!</p>
 <p>The customization for the bar plot is essentially the same as for histograms:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-30-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-31-1.png" alt="" width="672" /></p>
 
 </div>
 </div>
@@ -1346,7 +1346,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

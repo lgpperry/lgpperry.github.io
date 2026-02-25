@@ -443,10 +443,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="regression-and-correlation" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Module 3</span> Regression and Correlation<a href="regression-and-correlation.html#regression-and-correlation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this module, we will extend our conversation on descriptive measures
+<p>In this chapter, we will extend our conversation on descriptive measures
 for quantitative variables to include the relationship between two
 variables.</p>
-<p><strong>Module Learning Outcomes/Objectives</strong></p>
+<p><strong>Chapter Learning Outcomes/Objectives</strong></p>
 <ol style="list-style-type: decimal">
 <li>Interpret a correlation coefficient.</li>
 <li>Calculate and interpret a regression line.</li>
@@ -462,14 +462,12 @@ with linear equations like <span class="math inline">\(y=mx+b\)</span>. In stati
 <span class="math display">\[y=b_0 + b_1x\]</span> where <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> are constants, <span class="math inline">\(x\)</span> is the
 independent variable, and <span class="math inline">\(y\)</span> is the dependent variable. The graph of a
 linear function is always a (straight) line.</p>
-<p>The <strong>y-intercept</strong> is <span class="math inline">\(b_0\)</span>, the value the dependent variable takes
-when the independent variable <span class="math inline">\(x=0\)</span>. The <strong>slope</strong> is <span class="math inline">\(b_1\)</span>, the change
-in <span class="math inline">\(y\)</span> for a one-unit increase in <span class="math inline">\(x\)</span>.</p>
+<p>The <strong>y-intercept</strong> is <span class="math inline">\((0, b_0)\)</span>. In the world of regression, when we talk about “the intercept”, we mean the value <span class="math inline">\(b_0\)</span>. Here, <span class="math inline">\(b_0\)</span> can be interpreted as the value the dependent variable takes when the independent variable <span class="math inline">\(x=0\)</span>. The <strong>slope</strong> is <span class="math inline">\(b_1\)</span>, interpreted as the change in <span class="math inline">\(y\)</span> for a one-unit increase in <span class="math inline">\(x\)</span>.</p>
 <div id="scatter-plots" class="section level3 hasAnchor" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> Scatter Plots<a href="regression-and-correlation.html#scatter-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A <strong>scatter plot</strong> shows the relationship between two (numeric)
 variables.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-51-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-52-1.png" alt="" width="672" /></p>
 <p>This is just a bunch of points of the form <span class="math inline">\((x,y)\)</span> plotted in the
 <span class="math inline">\(xy\)</span>-plane, where instead of showing the full x- and y-axes, we crop the
 plot to show only the part where we have data.</p>
@@ -480,7 +478,7 @@ We call this type of data <strong>bivariate data</strong> (“bi” as in “two
 for their home coffee machine. Each coffee they purchase costs $4.25.
 If we know the numbers of coffees they bought last month, we know
 <em>exactly</em> how much money they spent!</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-52-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-53-1.png" alt="" width="672" /></p>
 <p>This relationship can be modeled perfectly with a straight line:
 <span class="math inline">\(y = 15 + 4.25x\)</span>. The y-intercept tells us that, in a month when this person buys zero coffees (<span class="math inline">\(x=0\)</span>), they spend <span class="math inline">\(\$15\)</span>. The slope tells us that, for each additional coffee purchased, the amount of money spent in that month goes up by <span class="math inline">\(\$4.25\)</span></p>
 <p>When we can do this – model a relationship perfectly
@@ -494,7 +492,7 @@ typically real-world data is much more complex than this.</p>
 the relationship to be imperfect. What if that bag of coffee didn’t
 always cost $15? Or the coffee drinks didn’t always cost $4.25? In
 this case, you might get a plot that looks something like this:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-53-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-54-1.png" alt="" width="672" /></p>
 <p>Without doing any math, you can think about where you might draw a line
 through these points. Later on, we will formalize how to do that
 mathematically.</p>
@@ -546,7 +544,7 @@ in Antarctica.</p>
 <p>We will consider two measurements for each penguin: their body mass
 (weight in grams) and flipper length (in millimeters).</p>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-54-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-55-1.png" alt="" width="672" /></p>
 <blockquote>
 <p>Clearly, the relationship isn’t perfectly linear, but there does
 appear to be some kind of linear relationship (as flipper length
@@ -554,7 +552,7 @@ increases, body mass also increases). We want to try to use flipper
 length (<span class="math inline">\(x\)</span>) to predict body mass (<span class="math inline">\(y\)</span>).</p>
 <p>The regression model for these data is <span class="math display">\[\hat{y}=-5780.83 + 49.69x\]</span></p>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-55-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-56-1.png" alt="" width="672" /></p>
 <blockquote>
 <p>We can interpret the slope and intercept by using the definitions
 given previously and tweaking them to match the context of the data:</p>
@@ -570,13 +568,13 @@ have a flipper length of 0, so we shouldn’t be concerned that plugging
 in 0 gives us a nonsense value for body length. That intercept value
 is still important in the regression line because it helps situate the
 regression line in the xy plane.</p>
-<p>To predict the body mass for a penguin with a flipper length of 180cm,
+<p>To predict the body mass for a penguin with, for example, a flipper length of 180cm,
 we just need to plug in 180 for flipper length (<span class="math inline">\(x\)</span>):
-<span class="math display">\[\hat{y}=-5780.83 + 49.69\times 180 = 3163.37\text{g}.\]</span> Note:
+<span class="math display">\[\hat{y}=-5780.83 + 49.69\times 180 = 3163.37\text{g}\]</span> Note:
 because the regression line is built using the data’s original units
 (mm for flipper length, g for body mass), the regression line will
 preserve those units. That means that when we plugged in a value in
-mm, the equation spit out a predicted value in g.</p>
+milimeters, the equation spit out a predicted value in grams.</p>
 </blockquote>
 </div>
 <div id="section-exercises-6" class="section level3 unnumbered hasAnchor">
@@ -641,7 +639,7 @@ mm.
 </div>
 <div id="correlation" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Correlation<a href="regression-and-correlation.html#correlation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We’ve talked about the strength of linear relationships, but it would be
+<p>We’ve talked a little bit about the strength of linear relationships, but it would be
 nice to formalize this concept. The <strong>correlation</strong> between two
 variables describes the strength of their linear relationship. It always
 takes values between <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>. We denote the correlation (or
@@ -731,19 +729,19 @@ where <span class="math inline">\(s_x\)</span> and <span class="math inline">\(s
 <li>If <span class="math inline">\(R \approx 0\)</span>, there is no relationship and <span class="math inline">\(b_1 \approx 0\)</span>.</li>
 </ul>
 <p>When two variables are highly correlated (<span class="math inline">\(R\)</span> close to <span class="math inline">\(-1\)</span> or <span class="math inline">\(1\)</span>), we
-know there is a strong linear <em>relationship</em> between them, but we do not know
+know there is a strong linear relationship between them, but we do not know
 what <em>causes</em> that relationship. For example, when we looked at the
 Palmer penguins, we noticed that an increase in flipper length related
 to an increase in body weight… but we have no way of knowing if
 flipper length <em>causes</em> a higher body weight (or vice versa). That is,
 <em>correlation does not imply causation</em>.</p>
 <blockquote>
-<p>Example Correlations:
-<img src="IntroStats_files/figure-html/unnamed-chunk-56-1.png" alt="" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-56-2.png" alt="" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-56-3.png" alt="" width="672" /></p>
+<p>Example Correlations:</p>
 </blockquote>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-57-1.png" alt="" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-57-2.png" alt="" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-57-3.png" alt="" width="672" /></p>
 <p>A final note: correlations only represent <em>linear</em> relationships. Consider the
 following scatter plot:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-57-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-58-1.png" alt="" width="672" /></p>
 <p>Obviously there’s a strong relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. In fact,
 there’s a perfect relationship here: <span class="math inline">\(y = x^2\)</span>. But the <em>correlation</em>
 between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> is 0! This is one reason why it’s important to
@@ -757,7 +755,7 @@ relationship between a penguin’s <code>body mass</code> from its
 <code>flipper length</code>. The scatter plot below shows the relationship
 between these two variables.</li>
 </ol>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-58-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-59-1.png" alt="" width="672" /></p>
 <ol>
 <ol style="list-style-type: lower-alpha;">
 <li>
@@ -806,7 +804,7 @@ Geyser in Yellowstone National Park: <code>eruptions</code>, the length of each
 eruption and <code>waiting</code>, the time between eruptions. Each is measured
 in minutes.</p>
 </blockquote>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-59-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-60-1.png" alt="" width="672" /></p>
 <blockquote>
 <p>There does appear to be some kind of linear relationship here, so we
 will see if we can use the wait time to predict the eruption duration.
@@ -871,7 +869,7 @@ applying a model estimate for values outside of the data’s range for
 anything about how the relationship outside of the scope of our data!</p>
 <p>Consider the following data with the best fit line drawn on the scatter
 plot.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-60-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-61-1.png" alt="" width="672" /></p>
 <p>The best fit line is <span class="math display">\[\hat{y} = 2.69 + 0.179x\]</span> and the correlation is
 <span class="math inline">\(R=0.877\)</span>. Then the coefficient of determination is <span class="math inline">\(R^2 = 0.767\)</span>
 (think: a C grade), so the model has decent predictive capabilities.
@@ -883,7 +881,7 @@ the data using the model <span class="math inline">\(y = 2\ln(x) + \text{random 
 not familiar with the natural log, <span class="math inline">\(\ln\)</span>, don’t worry about it! You
 won’t need to use it.) The true (population) best-fit model would look
 like this:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-61-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-62-1.png" alt="" width="672" /></p>
 <p>The vertical lines at <span class="math inline">\(x=5\)</span> and <span class="math inline">\(x=20\)</span> show the bounds of our data. The
 blue dot at <span class="math inline">\(x=0.1\)</span> is the predicted value <span class="math inline">\(\hat{y}\)</span> based on the linear
 model. The dashed horizontal line helps demonstrate just how far this
@@ -1046,7 +1044,7 @@ for these data are</li>
 </tr>
 </tbody>
 </table>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-62-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-63-1.png" alt="" width="672" /></p>
 <ol>
 <ol style="list-style-type: lower-alpha;">
 <li>
@@ -1110,7 +1108,7 @@ the title in quotes!)</li>
 <span id="cb42-4"><a href="regression-and-correlation.html#cb42-4" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Scatterplot of Old Faithful Geyser Data&quot;</span>,</span>
 <span id="cb42-5"><a href="regression-and-correlation.html#cb42-5" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Waiting Time (minutes)&quot;</span>,</span>
 <span id="cb42-6"><a href="regression-and-correlation.html#cb42-6" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Eruption Duration (minutes)&quot;</span>)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-63-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-64-1.png" alt="" width="672" /></p>
 </div>
 <div id="correlation-1" class="section level3 unnumbered hasAnchor">
 <h3>Correlation<a href="regression-and-correlation.html#correlation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1162,7 +1160,7 @@ optional arguments for adjusting line color and thickness:</p>
 <span id="cb49-4"><a href="regression-and-correlation.html#cb49-4" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Eruption Duration (minutes)&quot;</span>)</span>
 <span id="cb49-5"><a href="regression-and-correlation.html#cb49-5" tabindex="-1"></a><span class="fu">abline</span>(<span class="fu">summary</span>(<span class="fu">lm</span>(<span class="at">formula =</span> eruptions <span class="sc">~</span> waiting))<span class="sc">$</span>coef[,<span class="dv">1</span>],</span>
 <span id="cb49-6"><a href="regression-and-correlation.html#cb49-6" tabindex="-1"></a>       <span class="at">col =</span> <span class="st">&quot;red&quot;</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code></pre></div>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-67-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-68-1.png" alt="" width="672" /></p>
 
 </div>
 </div>
@@ -1215,7 +1213,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

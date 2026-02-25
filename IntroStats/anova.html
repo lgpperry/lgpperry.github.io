@@ -443,8 +443,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="anova" class="section level1 hasAnchor" number="12">
 <h1><span class="header-section-number">Module 12</span> ANOVA<a href="anova.html#anova" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this module, we extend the concepts from Module 6 to answer questions like “is there a difference between these means?” We will also consider hypothesis tests for whether a sample represents the population or closely matches a particular distribution.</p>
-<p><strong>Module Learning Outcomes/Objectives</strong></p>
+<p>In this chapter, we extend the concepts from Chapter 6 to answer questions like “is there a difference between these means?” We will also consider hypothesis tests for whether a sample represents the population or closely matches a particular distribution.</p>
+<p><strong>Chapter Learning Outcomes/Objectives</strong></p>
 <p>Perform and interpret inference for</p>
 <ol style="list-style-type: decimal">
 <li>Interpret an ANOVA.</li>
@@ -483,7 +483,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </center>
 <p></font></p>
 <p>You may have seen the name “analysis of variance” and wondered what the variance has to do with comparing many means. Consider the following boxplots:</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-131-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-133-1.png" alt="" width="672" /></p>
 <p>Is there a difference in the means for Experiment 1? What about Experiment 2?</p>
 <p>In fact, the means are <span class="math inline">\(\mu_1 = \mu_4 = 2\)</span>, <span class="math inline">\(\mu_2 = \mu_5 = 1\)</span>, and <span class="math inline">\(\mu_3 = \mu_6 = 0.5\)</span>. But the variances for the Experiment 1 groups are much larger than for the Experiment 2 groups! The larger variances in Experiment 1 obscure any differences between the group means. It is for this reason that we analyze variance as part of our test for differences in means.</p>
 <blockquote>
@@ -492,7 +492,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </blockquote>
 <p>In order to perform an ANOVA, we need to consider whether the sample means differ more than we would expect them to based on natural variation (remember that we expect random samples to produce slightly different sample statistics each time!). This type of variation is called <strong>mean square between groups</strong> or <span class="math inline">\(MSG\)</span>. It has associated degrees of freedom <span class="math inline">\(df_G = k-1\)</span> where <span class="math inline">\(k\)</span> is the number of groups. Note that <span class="math display">\[MSG = \frac{SSG}{df_G}\]</span> where <span class="math inline">\(SSE\)</span> is the <strong>sum of squares group</strong>. If the null hypothesis is true, variation in the sample means is due to chance. In this case, we would expect the MSG to be relatively small.</p>
 <p>When I say “relatively small”, I mean we need to compare this quantity to something. We need some quantity that will give us an idea of how much variability to expect if the null hypothesis is true. This is the <strong>mean square error</strong> or <span class="math inline">\(MSE\)</span>, which has degrees of freedom <span class="math inline">\(df_E = n-k\)</span>. Again, we have the relationship that <span class="math display">\[MSE = \frac{SSE}{df_E}\]</span> where <span class="math inline">\(SSE\)</span> is the <strong>sum of squares error</strong>. These calculations are very similar to the calculation for variance (and standard deviation)! (Note: we will not calculate these quantities by hand, but if you are interested in the mathematical details they are available in the OpenIntro Statistics textbook in the footnote on page 289.)</p>
-<p>We compare these two quantities by examining their ratio: <span class="math display">\[F = \frac{MSG}{MSE}\]</span> This is the test statistic for the ANOVA. (See Module 10 for an introduction to the F distribution.)</p>
+<p>We compare these two quantities by examining their ratio: <span class="math display">\[F = \frac{MSG}{MSE}\]</span> This is the test statistic for the ANOVA. (See Chapter 10 for an introduction to the F distribution.)</p>
 <center>
 <font size='4'><strong>The ANOVA Table</strong>
 </center>
@@ -542,7 +542,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## n        12.00     10.00   12.00    11.00   14.00     12.00
 ## Mean    323.58    160.20  218.75   276.91  246.43    328.92
 ## Std Dev  64.43     38.63   52.24    64.90   54.13     48.84</code></pre>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-132-1.png" alt="" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-132-2.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-134-1.png" alt="" width="672" /><img src="IntroStats_files/figure-html/unnamed-chunk-134-2.png" alt="" width="672" /></p>
 <blockquote>
 <p>The group sizes are relatively small, so it’s difficult to determine how far from normality these data are based on the histograms. We may also run into some issues with constant variance. However, for the sake of the example, let’s push ahead with the ANOVA! Since we usually use software to calculate ANOVAs, I’ve used <code>R</code> to create the following ANOVA table:</p>
 </blockquote>
@@ -631,7 +631,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

@@ -443,10 +443,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="probability-concepts" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Module 4</span> Probability Concepts<a href="probability-concepts.html#probability-concepts" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In previous modules, we discussed ways to describe variables and the relationships between them. From here, we want to start asking inferential statistics questions like “If my sample mean is 10, how likely is it that the population mean is actually 11?”. Probability is going to start us on this path.</p>
-<p>Probability theory is the science of uncertainty and it is really interesting! But it can also be pretty challenging. I try to frame probability around things most of us can do at home: flipping a coin, rolling a die, drawing from a deck of cards. You certainly don’t need any of these things to get through this module, but you may find it helpful to have a coin/die/deck of cards on hand as you read through the examples.</p>
+<p>In previous chapters, we discussed ways to describe variables and the relationships between them. From here, we want to start asking inferential statistics questions like “If my sample mean is 10, how likely is it that the population mean is actually 11?”. Probability is going to start us on this path.</p>
+<p>Probability theory is the science of uncertainty and it is really interesting! But it can also be pretty challenging. I try to frame probability around things most of us can do at home: flipping a coin, rolling a die, drawing from a deck of cards. You certainly don’t need any of these things to get through this chapter, but you may find it helpful to have a coin/die/deck of cards on hand as you read through the examples.</p>
 <p>Take your time running practice problems and going through the examples, using a tactile approach like sorting through your deck of cards whenever it seems helpful.</p>
-<p><strong>Module Learning Objectives/Outcomes</strong></p>
+<p><strong>Chapter Learning Objectives/Outcomes</strong></p>
 <ol style="list-style-type: decimal">
 <li>Find and interpret probabilities for equally likely events.</li>
 <li>Find and interpret probabilities for events that are not equally likely.</li>
@@ -455,7 +455,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Use the multiplication rule and independence to calculate probabilities.</li>
 </ol>
 <p>R Objectives: <em>none</em></p>
-<p>This module’s outcomes correspond to course outcome (3) understand the basic rules of probability.</p>
+<p>This chapter’s outcomes correspond to course outcome (3) understand the basic rules of probability.</p>
 <div id="experiments-sample-spaces-and-events" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Experiments, Sample Spaces, and Events<a href="probability-concepts.html#experiments-sample-spaces-and-events" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Probability</strong> is the science of uncertainty. When we run an experiment, we are unsure of what the outcome will be. Because of this uncertainty, we say an experiment is a <strong>random process</strong>.</p>
@@ -479,7 +479,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>We can estimate probabilities from a sample using a frequency distribution.</p>
 <blockquote>
-<p><strong>Example</strong>: Consider the following frequency distribution from Module 1</p>
+<p><strong>Example</strong>: Consider the following frequency distribution from Chapter 1</p>
 <table>
 <thead>
 <tr class="header">
@@ -517,7 +517,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>What is the sample space?</li>
 <li>What is the probability of rolling a 17 or higher?</li>
 </ol></li>
-<li>Consider again frequency distribution from Module 1</li>
+<li>Consider again the frequency distribution from Chapter 1</li>
 </ol>
 <table>
 <thead>
@@ -570,7 +570,7 @@ What is the probability they are <em>not</em> a senior?
 <div id="venn-diagrams" class="section level3 hasAnchor" number="4.2.1">
 <h3><span class="header-section-number">4.2.1</span> Venn Diagrams<a href="probability-concepts.html#venn-diagrams" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Venn Diagrams</strong> show events as circles. The circles overlap where events share common outcomes.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-69-1.png" alt="" width="672" /></p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-70-1.png" alt="" width="672" /></p>
 <p>When a Venn Diagram has <em>no overlap</em> the events are mutually exclusive. This Venn Diagram shows the event “Draw a Diamond” and the event “Draw a Face Card”. There are 13 diamonds and 12 face cards in a deck. In this case, the events are <em>not</em> mutually exclusive: it’s possible to draw both a diamond and a face card at the same time: the Jack of Diamonds, Queen of Diamonds, and King of Diamonds.</p>
 <div class="float">
 <img src="standard52.jpg" alt="Image retrieved from www.cis.upenn.edu/~cis110/" />
@@ -578,9 +578,9 @@ What is the probability they are <em>not</em> a senior?
 </div>
 <p>The “face cards” are the Jacks, Queens, and Kings. Each row represents a “suit”. From top to bottom, the suits are clubs, spades, hearts, and diamonds. Cards can be either red (hearts and diamonds) or black (spades and clubs).</p>
 <p>We can also use Venn Diagrams to visualize the relationships between events.</p>
-<p><img src="IntroStats_files/figure-html/unnamed-chunk-70-1.png" alt="" width="672" /></p>
-<p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are disjoint, this looks like</p>
 <p><img src="IntroStats_files/figure-html/unnamed-chunk-71-1.png" alt="" width="672" /></p>
+<p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are disjoint, this looks like</p>
+<p><img src="IntroStats_files/figure-html/unnamed-chunk-72-1.png" alt="" width="672" /></p>
 <p>Notice that in this case there is no shading for <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> because they cannot both happen!</p>
 </div>
 <div id="probability-axioms" class="section level3 hasAnchor" number="4.2.2">
@@ -610,7 +610,7 @@ What is the probability they are <em>not</em> a senior?
 </tr>
 </tbody>
 </table>
-<p>(note that we could visualize this with a bar plot!) or an equation, which we will discuss in a later module.</p>
+<p>(note that we could visualize this with a bar plot!) or an equation, which we will discuss in a later chapter.</p>
 <p>The <strong>probability axioms</strong> are requirements for a valid probability distribution. They are:</p>
 <ol style="list-style-type: decimal">
 <li>All listed outcomes must be disjoint.</li>
@@ -1907,7 +1907,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["IntroStats.pdf"],
   "search": {
     "engine": "fuse",
     "options": null
