@@ -5,6 +5,8 @@ title: "STAT 140B Statisical Learning"
 author_profile: true
 ---
 
+[Sample Syllabus](https://lgpperry.github.io/teaching/stat140b/stat140B-syllabus.pdf)
+
 ## Slides
 
 The following slides are adapted from the textbook [Introduction to Statistical Learning](https://www.statlearning.com/) and associated slides by James, Witten, Hastie, And Tibshirani.

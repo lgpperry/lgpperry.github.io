@@ -5,6 +5,8 @@ title: "STAT 140A: Linear Models"
 author_profile: true
 ---
 
+[Sample Syllabus](https://lgpperry.github.io/teaching/stat140a/stat140A-syllabus.pdf)
+
 ## Slides
 
 (Theoretical work is done on the board in class.)
