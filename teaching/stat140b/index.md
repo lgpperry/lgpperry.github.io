@@ -43,3 +43,6 @@ The following slides are adapted from the textbook [Introduction to Statistical 
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_6_3.pdf">6.3 Dimension Reduction Methods</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_6_4.pdf">6.4 Considerations in High Dimensions</a>
 
+### Chapter 7: Linear Model Selection and Regularization
+- 7.1 Polynomial Regression (covered in detail in Stat 140A)
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_2.pdf">7.2 Step Functions</a>
