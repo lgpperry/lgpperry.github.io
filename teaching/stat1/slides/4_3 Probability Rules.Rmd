@@ -14,7 +14,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Goals
 
 1. Use the addition rule to calculate the probability of one event *or* some other event occurring. 
-2. Use the complement rule to calculate probabilities. 
+2. Use contingency tables to describe relationships between two variables.
+3. Use the complement rule to calculate probabilities. 
 
 ## Rules of Probability
 
@@ -69,7 +70,388 @@ For any two events $A$ and $B$, the probability that *at least* one will occur i
     - A is true
     - B is true
     - both A and B are true. 
-- This is an *inclusive or*.  
+- This is an *inclusive or*. 
+
+## Contingency Tables
+
+A **contingency table** is a way to summarize **bivariate data**, or data from two variables. 
+
+***
+
+*Smallpox in Boston (1726)*
+<center>
+<table>
+    <tbody>
+        <tr>
+            <td style="text-align: center;" colspan="2" width="130">
+                <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" colspan="3" width="254">
+                <p style="text-align: center;"><strong>Inoculated</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2" width="130">
+                <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p><strong>yes</strong></p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p><strong>no</strong></p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p><strong>total</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" rowspan="3" width="72">
+                <p><strong>Result</strong></p>
+            </td>
+            <td style="text-align: center;" width="58">
+                <p><strong>lived</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>238</p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>
+                    <span style="color: #000000; background-color: #fbeeb8;">5136</span>
+                </p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>
+                    <span style="background-color: #bfedd2;">5374</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" width="58">
+                <p><strong>died</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>6</p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>844</p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>850</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" width="58">
+                <p><strong>total</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>
+                    <span style="background-color: #eccafa;">244</span>
+                </p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>5980</p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>
+                    <span style="background-color: #c2e0f4;">6224</span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</center>
+
+<ul>
+    <li>
+        <span style="background-color: #fbeeb8;">5136</span> is the count of people who lived AND were not inoculated.&nbsp;
+    </li>
+    <li>
+        <span style="background-color: #c2e0f4;">6224</span> is the total number of observations.
+    </li>
+    <li>
+        <span style="background-color: #eccafa;">244</span> is the total number of people who were inoculated.
+    </li>
+    <li>
+        <span style="background-color: #bfedd2;">5374</span> is the total number of people who lived.
+    </li>
+</ul>
+
+## Contingency Tables
+
+- These are basically two-variable frequency distributions. 
+- We can convert to proportions by dividing each count by the total number of observations.
+
+***
+
+<center>
+<table>
+    <tbody>
+        <tr>
+            <td style="text-align: center;" colspan="2" width="130">
+                <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" colspan="3" width="254">
+                <p><strong>Inoculated</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2" width="130">
+                <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p><strong>yes</strong></p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p><strong>no</strong></p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p><strong>total</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" rowspan="3" width="72">
+                <p><strong>Result</strong></p>
+            </td>
+            <td style="text-align: center;" width="58">
+                <p><strong>lived</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>0.0382</p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>
+                    <span style="background-color: #fbeeb8;">0.8252</span>
+                </p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>
+                    <span style="background-color: #bfedd2;">0.8634</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" width="58">
+                <p><strong>died</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>0.0010</p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>0.1356</p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>0.1366</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" width="58">
+                <p><strong>total</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>
+                    <span style="background-color: #eccafa;">0.0392</span>
+                </p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>0.9608</p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>
+                    <span style="background-color: #c2e0f4;">1.0000</span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</center>
+
+<ul>
+    <li>
+        <span style="background-color: #fbeeb8;">0.8252</span> is the proportion of people who lived AND were not inoculated.&nbsp;
+    </li>
+    <li>
+        <span style="background-color: #c2e0f4;">1.000</span> is the proportion of total number of observations. Think of this as 100% of the observations.
+    </li>
+    <li>
+        <span style="background-color: #eccafa;">0.0392</span> is the proportion of people who were inoculated.
+    </li>
+    <li>
+        <span style="background-color: #bfedd2;">0.8634</span> is the proportion of people who lived.
+    </li>
+</ul>
+
+***
+
+<center>
+<table>
+    <tbody>
+        <tr>
+            <td style="text-align: center;" colspan="2" width="130">
+                <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" colspan="3" width="254">
+                <p><strong>Inoculated</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2" width="130">
+                <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p><strong>yes</strong></p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p><strong>no</strong></p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p><strong>total</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" rowspan="3" width="72">
+                <p><strong>Result</strong></p>
+            </td>
+            <td style="text-align: center;" width="58">
+                <p><strong>lived</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>0.0382</p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>
+                    <span style="background-color: #fbeeb8;">0.8252</span>
+                </p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>
+                    <span style="background-color: #bfedd2;">0.8634</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" width="58">
+                <p><strong>died</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>0.0010</p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>0.1356</p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>0.1366</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" width="58">
+                <p><strong>total</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>
+                    <span style="background-color: #eccafa;">0.0392</span>
+                </p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>0.9608</p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>
+                    <span style="background-color: #c2e0f4;">1.0000</span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</center>
+
+- The row and column totals are **marginal probabilities**. 
+- The probability of two events together ($A$ and $B$) is a **joint probability**.
+
+## Example
+
+<center>
+<table>
+    <tbody>
+        <tr>
+            <td style="text-align: center;" colspan="2" width="130">
+                <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" colspan="3" width="254">
+                <p><strong>Inoculated</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2" width="130">
+                <p>&nbsp;</p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p><strong>yes</strong></p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p><strong>no</strong></p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p><strong>total</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" rowspan="3" width="72">
+                <p><strong>Result</strong></p>
+            </td>
+            <td style="text-align: center;" width="58">
+                <p><strong>lived</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>0.0382</p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>
+                    <span style="background-color: #fbeeb8;">0.8252</span>
+                </p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>
+                    <span style="background-color: #bfedd2;">0.8634</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" width="58">
+                <p><strong>died</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>0.0010</p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>0.1356</p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>0.1366</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" width="58">
+                <p><strong>total</strong></p>
+            </td>
+            <td style="text-align: center;" width="74">
+                <p>
+                    <span style="background-color: #eccafa;">0.0392</span>
+                </p>
+            </td>
+            <td style="text-align: center;" width="84">
+                <p>0.9608</p>
+            </td>
+            <td style="text-align: center;" width="96">
+                <p>
+                    <span style="background-color: #c2e0f4;">1.0000</span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</center>
+
+Find the probability an individual was inoculated OR lived. 
 
 ## Complements
 
@@ -94,7 +476,11 @@ $$P(A \text{ or } A^c)=1$$
 
 $$P(A) = 1-P(A^c)$$
 
-## Checkpoint
+## Example
+
+Use the complement rule to find the probability a person was NOT inoculated. 
+
+## Example
 
 Consider rolling 2 six-sided dice and taking their sum. 
 
@@ -103,7 +489,3 @@ The event of interest $A$ is a sum less than 12. Find
 1. $A^c$
 2. $P(A^c)$
 3. $P(A)$
-
-Hint #1: how many ways can you get a sum of at least 12?
-
-Hint #2: there are 36 possible outcomes.

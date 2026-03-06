@@ -13,121 +13,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Goals
 
-1. Use contingency tables to describe relationships between two variables.
-2. Find and interpret joint and marginal probabilities.
-3. Find and interpret conditional probabilities.
-4. Use the multiplication rule to find the probability of two events occurring together.
+1. Find and interpret joint and marginal probabilities.
+2. Find and interpret conditional probabilities.
+3. Use the multiplication rule to find the probability of two events occurring together.
 
 ## Contingency Tables
 
-A **contingency table** is a way to summarize **bivariate data**, or data from two variables. 
-
-***
-
-*Smallpox in Boston (1726)*
-<center>
-<table>
-    <tbody>
-        <tr>
-            <td style="text-align: center;" colspan="2" width="130">
-                <p>&nbsp;</p>
-            </td>
-            <td style="text-align: center;" colspan="3" width="254">
-                <p style="text-align: center;"><strong>Inoculated</strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;" colspan="2" width="130">
-                <p>&nbsp;</p>
-            </td>
-            <td style="text-align: center;" width="74">
-                <p><strong>yes</strong></p>
-            </td>
-            <td style="text-align: center;" width="84">
-                <p><strong>no</strong></p>
-            </td>
-            <td style="text-align: center;" width="96">
-                <p><strong>total</strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;" rowspan="3" width="72">
-                <p><strong>Result</strong></p>
-            </td>
-            <td style="text-align: center;" width="58">
-                <p><strong>lived</strong></p>
-            </td>
-            <td style="text-align: center;" width="74">
-                <p>238</p>
-            </td>
-            <td style="text-align: center;" width="84">
-                <p>
-                    <span style="color: #000000; background-color: #fbeeb8;">5136</span>
-                </p>
-            </td>
-            <td style="text-align: center;" width="96">
-                <p>
-                    <span style="background-color: #bfedd2;">5374</span>
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;" width="58">
-                <p><strong>died</strong></p>
-            </td>
-            <td style="text-align: center;" width="74">
-                <p>6</p>
-            </td>
-            <td style="text-align: center;" width="84">
-                <p>844</p>
-            </td>
-            <td style="text-align: center;" width="96">
-                <p>850</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;" width="58">
-                <p><strong>total</strong></p>
-            </td>
-            <td style="text-align: center;" width="74">
-                <p>
-                    <span style="background-color: #eccafa;">244</span>
-                </p>
-            </td>
-            <td style="text-align: center;" width="84">
-                <p>5980</p>
-            </td>
-            <td style="text-align: center;" width="96">
-                <p>
-                    <span style="background-color: #c2e0f4;">6224</span>
-                </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-</center>
-
-<ul>
-    <li>
-        <span style="background-color: #fbeeb8;">5136</span> is the count of people who lived AND were not inoculated.&nbsp;
-    </li>
-    <li>
-        <span style="background-color: #c2e0f4;">6224</span> is the total number of observations.
-    </li>
-    <li>
-        <span style="background-color: #eccafa;">244</span> is the total number of people who were inoculated.
-    </li>
-    <li>
-        <span style="background-color: #bfedd2;">5374</span> is the total number of people who lived.
-    </li>
-</ul>
-
-## Contingency Tables
-
-- These are basically two-variable frequency distributions. 
-- We can convert to proportions by dividing each count by the total number of observations.
-
-***
+Last section, we examined the following contingency table. 
 
 <center>
 <table>
@@ -228,93 +120,6 @@ A **contingency table** is a way to summarize **bivariate data**, or data from t
 
 ***
 
-<center>
-<table>
-    <tbody>
-        <tr>
-            <td style="text-align: center;" colspan="2" width="130">
-                <p>&nbsp;</p>
-            </td>
-            <td style="text-align: center;" colspan="3" width="254">
-                <p><strong>Inoculated</strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;" colspan="2" width="130">
-                <p>&nbsp;</p>
-            </td>
-            <td style="text-align: center;" width="74">
-                <p><strong>yes</strong></p>
-            </td>
-            <td style="text-align: center;" width="84">
-                <p><strong>no</strong></p>
-            </td>
-            <td style="text-align: center;" width="96">
-                <p><strong>total</strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;" rowspan="3" width="72">
-                <p><strong>Result</strong></p>
-            </td>
-            <td style="text-align: center;" width="58">
-                <p><strong>lived</strong></p>
-            </td>
-            <td style="text-align: center;" width="74">
-                <p>0.0382</p>
-            </td>
-            <td style="text-align: center;" width="84">
-                <p>
-                    <span style="background-color: #fbeeb8;">0.8252</span>
-                </p>
-            </td>
-            <td style="text-align: center;" width="96">
-                <p>
-                    <span style="background-color: #bfedd2;">0.8634</span>
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;" width="58">
-                <p><strong>died</strong></p>
-            </td>
-            <td style="text-align: center;" width="74">
-                <p>0.0010</p>
-            </td>
-            <td style="text-align: center;" width="84">
-                <p>0.1356</p>
-            </td>
-            <td style="text-align: center;" width="96">
-                <p>0.1366</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center;" width="58">
-                <p><strong>total</strong></p>
-            </td>
-            <td style="text-align: center;" width="74">
-                <p>
-                    <span style="background-color: #eccafa;">0.0392</span>
-                </p>
-            </td>
-            <td style="text-align: center;" width="84">
-                <p>0.9608</p>
-            </td>
-            <td style="text-align: center;" width="96">
-                <p>
-                    <span style="background-color: #c2e0f4;">1.0000</span>
-                </p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-</center>
-
-- The row and column totals are **marginal probabilities**. 
-- The probability of two events together ($A$ and $B$) is a **joint probability**.
-
-***
-
 What can we learn about the result of smallpox if we already know something about inoculation status? 
 
 - For example, given that a person is inoculated, what is the probability of death? 
@@ -362,6 +167,6 @@ If $A$ and $B$ are any two events, then $$P(A \text{ and }B) = P(A|B)P(B).$$
 
 - This is just the conditional probability formula, rewritten in terms of $P(A \text{ and }B)$!
 
-## Checkpoint
+## Example
 
 Suppose we know that 38.4\% of US households have dogs and that *among those with dogs*, 23.1\% have cats. Find the probability that a US household has both dogs and cats.
