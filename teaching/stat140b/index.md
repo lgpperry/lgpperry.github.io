@@ -9,7 +9,7 @@ author_profile: true
 
 ## Slides
 
-The following slides are adapted from the textbook [Introduction to Statistical Learning](https://www.statlearning.com/) and associated slides by James, Witten, Hastie, And Tibshirani.
+The following slides' content is borrowed/adapted from the textbook [Introduction to Statistical Learning](https://www.statlearning.com/) and associated slides by James, Witten, Hastie, And Tibshirani.
 
 ### Chapter 2: Statistical Learning
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_2_1.pdf">2.1 What is Statistical Learning?</a>
@@ -46,3 +46,4 @@ The following slides are adapted from the textbook [Introduction to Statistical 
 ### Chapter 7: Linear Model Selection and Regularization
 - 7.1 Polynomial Regression (covered in detail in Stat 140A)
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_2.pdf">7.2 Step Functions</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_3.pdf">7.3 and 7.4: Basis Functions and Regression Splines</a>
