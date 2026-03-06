@@ -2,9 +2,9 @@
 title: "4.3 Rules of Probability"
 author: "Dr. Lauren Perry"
 output:
-  beamer_presentation: default
   ioslides_presentation:
     widescreen: true
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}

@@ -3146,6 +3146,7 @@ ul.task-list{list-style: none;}
 
 <ol>
 <li>Use the addition rule to calculate the probability of one event <em>or</em> some other event occurring.</li>
+<li>Use contingency tables to describe relationships between two variables.</li>
 <li>Use the complement rule to calculate probabilities.</li>
 </ol>
 
@@ -3226,11 +3227,1007 @@ ul.task-list{list-style: none;}
 <li>This is an <em>inclusive or</em>.</li>
 </ul>
 
+</article></slide><slide class=""><hgroup><h2>Contingency Tables</h2></hgroup><article  id="contingency-tables">
+
+<p>A <strong>contingency table</strong> is a way to summarize <strong>bivariate data</strong>, or data from two variables.</p>
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<em>Smallpox in Boston (1726)</em>
+
+<center>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align: center;" colspan="2" width="130">
+
+<p>
+
+ 
+
+</p>
+
+</td>
+
+<td style="text-align: center;" colspan="3" width="254">
+
+<p style="text-align: center;">
+
+<strong>Inoculated</strong>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" colspan="2" width="130">
+
+<p>
+
+ 
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+<strong>yes</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+<strong>no</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<strong>total</strong>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" rowspan="3" width="72">
+
+<p>
+
+<strong>Result</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>lived</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+238
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+<span style="color: #000000; background-color: #fbeeb8;">
+5136</span>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<span style="background-color: #bfedd2;">
+5374</span>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>died</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+6
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+844
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+850
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>total</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+<span style="background-color: #eccafa;">
+244</span>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+5980
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<span style="background-color: #c2e0f4;">
+6224</span>
+
+</p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
+
+<ul>
+
+<li>
+
+<span style="background-color: #fbeeb8;">
+5136</span> is the count of people who lived AND were not inoculated. 
+
+</li>
+
+<li>
+
+<span style="background-color: #c2e0f4;">
+6224</span> is the total number of observations.
+
+</li>
+
+<li>
+
+<span style="background-color: #eccafa;">
+244</span> is the total number of people who were inoculated.
+
+</li>
+
+<li>
+
+<span style="background-color: #bfedd2;">
+5374</span> is the total number of people who lived.
+
+</li>
+
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Contingency Tables</h2></hgroup><article  id="contingency-tables-1">
+
+<ul>
+<li>These are basically two-variable frequency distributions.</li>
+<li>We can convert to proportions by dividing each count by the total number of observations.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<center>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align: center;" colspan="2" width="130">
+
+<p>
+
+ 
+
+</p>
+
+</td>
+
+<td style="text-align: center;" colspan="3" width="254">
+
+<p>
+
+<strong>Inoculated</strong>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" colspan="2" width="130">
+
+<p>
+
+ 
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+<strong>yes</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+<strong>no</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<strong>total</strong>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" rowspan="3" width="72">
+
+<p>
+
+<strong>Result</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>lived</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+0.0382
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+<span style="background-color: #fbeeb8;">
+0.8252</span>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<span style="background-color: #bfedd2;">
+0.8634</span>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>died</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+0.0010
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+0.1356
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+0.1366
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>total</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+<span style="background-color: #eccafa;">
+0.0392</span>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+0.9608
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<span style="background-color: #c2e0f4;">
+1.0000</span>
+
+</p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
+
+<ul>
+
+<li>
+
+<span style="background-color: #fbeeb8;">
+0.8252</span> is the proportion of people who lived AND were not inoculated. 
+
+</li>
+
+<li>
+
+<span style="background-color: #c2e0f4;">
+1.000</span> is the proportion of total number of observations. Think of this as 100% of the observations.
+
+</li>
+
+<li>
+
+<span style="background-color: #eccafa;">
+0.0392</span> is the proportion of people who were inoculated.
+
+</li>
+
+<li>
+
+<span style="background-color: #bfedd2;">
+0.8634</span> is the proportion of people who lived.
+
+</li>
+
+</ul>
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<center>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align: center;" colspan="2" width="130">
+
+<p>
+
+ 
+
+</p>
+
+</td>
+
+<td style="text-align: center;" colspan="3" width="254">
+
+<p>
+
+<strong>Inoculated</strong>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" colspan="2" width="130">
+
+<p>
+
+ 
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+<strong>yes</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+<strong>no</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<strong>total</strong>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" rowspan="3" width="72">
+
+<p>
+
+<strong>Result</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>lived</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+0.0382
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+<span style="background-color: #fbeeb8;">
+0.8252</span>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<span style="background-color: #bfedd2;">
+0.8634</span>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>died</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+0.0010
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+0.1356
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+0.1366
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>total</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+<span style="background-color: #eccafa;">
+0.0392</span>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+0.9608
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<span style="background-color: #c2e0f4;">
+1.0000</span>
+
+</p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
+
+<ul>
+<li>The row and column totals are <strong>marginal probabilities</strong>.</li>
+<li>The probability of two events together (\(A\) and \(B\)) is a <strong>joint probability</strong>.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Example</h2></hgroup><article  id="example">
+
+<center>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align: center;" colspan="2" width="130">
+
+<p>
+
+ 
+
+</p>
+
+</td>
+
+<td style="text-align: center;" colspan="3" width="254">
+
+<p>
+
+<strong>Inoculated</strong>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" colspan="2" width="130">
+
+<p>
+
+ 
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+<strong>yes</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+<strong>no</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<strong>total</strong>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" rowspan="3" width="72">
+
+<p>
+
+<strong>Result</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>lived</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+0.0382
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+<span style="background-color: #fbeeb8;">
+0.8252</span>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<span style="background-color: #bfedd2;">
+0.8634</span>
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>died</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+0.0010
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+0.1356
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+0.1366
+
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align: center;" width="58">
+
+<p>
+
+<strong>total</strong>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="74">
+
+<p>
+
+<span style="background-color: #eccafa;">
+0.0392</span>
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="84">
+
+<p>
+
+0.9608
+
+</p>
+
+</td>
+
+<td style="text-align: center;" width="96">
+
+<p>
+
+<span style="background-color: #c2e0f4;">
+1.0000</span>
+
+</p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</center>
+
+<p>Find the probability an individual was inoculated OR lived.</p>
+
 </article></slide><slide class=""><hgroup><h2>Complements</h2></hgroup><article  id="complements">
 
 <p>The <strong>complement</strong> of an event is all of the outcomes in the sample space that are <em>not</em> in the event. For an event \(A\), we denote its complement by \(A^c\).</p>
 
-</article></slide><slide class=""><hgroup><h2>Example</h2></hgroup><article  id="example">
+</article></slide><slide class=""><hgroup><h2>Example</h2></hgroup><article  id="example-1">
 
 <ul>
 <li>For a single roll of a six-sided die, the sample space is all possible rolls: 1, 2, 3, 4, 5, or 6.</li>
@@ -3253,7 +4250,11 @@ ul.task-list{list-style: none;}
 
 <p>\[P(A) = 1-P(A^c)\]</p>
 
-</article></slide><slide class=""><hgroup><h2>Checkpoint</h2></hgroup><article  id="checkpoint">
+</article></slide><slide class=""><hgroup><h2>Example</h2></hgroup><article  id="example-2">
+
+<p>Use the complement rule to find the probability a person was NOT inoculated.</p>
+
+</article></slide><slide class=""><hgroup><h2>Example</h2></hgroup><article  id="example-3">
 
 <p>Consider rolling 2 six-sided dice and taking their sum.</p>
 
@@ -3263,15 +4264,7 @@ ul.task-list{list-style: none;}
 <li>\(A^c\)</li>
 <li>\(P(A^c)\)</li>
 <li>\(P(A)\)</li>
-</ol>
-
-<p>Hint #1: how many ways can you get a sum of at least 12?</p>
-
-<p>Hint #2: there are 36 possible outcomes.</p>
-
-</article></slide><slide class=""><hgroup><h2>Homework Problems</h2></hgroup><article  id="homework-problems">
-
-<p>Section 4.3 exercises 1-3</p></article></slide>
+</ol></article></slide>
 
 
   <slide class="backdrop"></slide>
