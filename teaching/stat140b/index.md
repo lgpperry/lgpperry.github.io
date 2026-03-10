@@ -47,3 +47,4 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 - 7.1 Polynomial Regression (covered in detail in Stat 140A)
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_2.pdf">7.2 Step Functions</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_3.pdf">7.3 and 7.4: Basis Functions and Regression Splines</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_5.pdf">7.5 Smoothing Splines</a>
