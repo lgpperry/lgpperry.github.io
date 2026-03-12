@@ -48,3 +48,4 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_2.pdf">7.2 Step Functions</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_3.pdf">7.3 and 7.4: Basis Functions and Regression Splines</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_5.pdf">7.5 Smoothing Splines</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_6.pdf">7.6 and 7.7 Local Regression and Generalized Additive Models</a>
