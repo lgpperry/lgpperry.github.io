@@ -1323,12 +1323,12 @@ But trying to count all of the ways to get <span class="math inline">\(A\)</span
 </td>
 <td style="text-align: center;" width="84">
 <p>
-<span style="color: #000000; background-color: #fbeeb8;">5136</span>
+5136
 </p>
 </td>
 <td style="text-align: center;" width="96">
 <p>
-<span style="background-color: #bfedd2;">5374</span>
+5374
 </p>
 </td>
 </tr>
@@ -1362,7 +1362,7 @@ But trying to count all of the ways to get <span class="math inline">\(A\)</span
 </td>
 <td style="text-align: center;" width="74">
 <p>
-<span style="background-color: #eccafa;">244</span>
+244
 </p>
 </td>
 <td style="text-align: center;" width="84">
@@ -1372,7 +1372,7 @@ But trying to count all of the ways to get <span class="math inline">\(A\)</span
 </td>
 <td style="text-align: center;" width="96">
 <p>
-<span style="background-color: #c2e0f4;">6224</span>
+6224
 </p>
 </td>
 </tr>
@@ -1433,12 +1433,12 @@ But trying to count all of the ways to get <span class="math inline">\(A\)</span
 </td>
 <td style="text-align: center;" width="84">
 <p>
-<span style="background-color: #fbeeb8;">0.8252</span>
+0.8252
 </p>
 </td>
 <td style="text-align: center;" width="96">
 <p>
-<span style="background-color: #bfedd2;">0.8634</span>
+0.8634
 </p>
 </td>
 </tr>
@@ -1472,7 +1472,7 @@ But trying to count all of the ways to get <span class="math inline">\(A\)</span
 </td>
 <td style="text-align: center;" width="74">
 <p>
-<span style="background-color: #eccafa;">0.0392</span>
+0.0392
 </p>
 </td>
 <td style="text-align: center;" width="84">
@@ -1482,7 +1482,7 @@ But trying to count all of the ways to get <span class="math inline">\(A\)</span
 </td>
 <td style="text-align: center;" width="96">
 <p>
-<span style="background-color: #c2e0f4;">1.0000</span>
+1.0000
 </p>
 </td>
 </tr>
@@ -1599,12 +1599,12 @@ Notice that we could also write this as <span class="math display">\[P(\text{dea
 </td>
 <td style="text-align: center;" width="84">
 <p>
-<span style="background-color: #fbeeb8;">0.8252</span>
+0.8252
 </p>
 </td>
 <td style="text-align: center;" width="96">
 <p>
-<span style="background-color: #bfedd2;">0.8634</span>
+0.8634
 </p>
 </td>
 </tr>
@@ -1638,7 +1638,7 @@ Notice that we could also write this as <span class="math display">\[P(\text{dea
 </td>
 <td style="text-align: center;" width="74">
 <p>
-<span style="background-color: #eccafa;">0.0392</span>
+0.0392
 </p>
 </td>
 <td style="text-align: center;" width="84">
@@ -1648,7 +1648,7 @@ Notice that we could also write this as <span class="math display">\[P(\text{dea
 </td>
 <td style="text-align: center;" width="96">
 <p>
-<span style="background-color: #c2e0f4;">1.0000</span>
+1.0000
 </p>
 </td>
 </tr>
@@ -1659,9 +1659,9 @@ Notice that we could also write this as <span class="math display">\[P(\text{dea
   P(\text{lived}) = P(\text{lived and inoculated}) +
   P(\text{lived and not inoculated})
 \]</span></p>
-<p>We can generalize this for some event <span class="math inline">\(A\)</span> and some event <span class="math inline">\(B\)</span> whose <span class="math inline">\(k\)</span> possible outcomes can be listed as (mutually exclusive) events <span class="math inline">\(B_1, B_2, \dots B_k\)</span>. Then <span class="math display">\[P(A) = P(A \text{ and }B_1) + P(A \text{ and }B_2) + \dots + P(A \text{ and }B_k) \]</span>
-Using our General Multiplication Rule, we have <span class="math inline">\(P(A \text{ and }B) = P(A|B)P(B)\)</span>, so we can rewrite this as
-<span class="math display">\[P(A) = P(A|B_1)P(B_1) + P(A|B_2)P(B_2) + \dots + P(A|B_k)P(B_k) \]</span></p>
+<p>We can generalize this for some event <span class="math inline">\(A\)</span> and some variable <span class="math inline">\(X\)</span> whose <span class="math inline">\(k\)</span> possible outcomes can be listed as (mutually exclusive) events <span class="math inline">\(B_1, B_2, \dots B_k\)</span>. Then <span class="math display">\[P(A) = P(A \text{ and }B_1) + P(A \text{ and }B_2) + \dots + P(A \text{ and }B_k) \]</span>
+Using our General Multiplication Rule, we have <span class="math inline">\(P(A \text{ and }B) = P(A|B)P(B)\)</span>, so we can rewrite this as the <strong>Law of Total Probability</strong>: <span class="math display">\[P(A) = P(A|B_1)P(B_1) + P(A|B_2)P(B_2) + \dots + P(A|B_k)P(B_k) \]</span></p>
+<p>Often, we end up thinking of some variable <span class="math inline">\(X\)</span> with two possible outcomes, which we can call <span class="math inline">\(B\)</span> and <span class="math inline">\(B^c\)</span>. This simplifies the Law of Total Probability to <span class="math display">\[P(A) = P(A|B)P(B) + P(A|B^c)P(B^2)\]</span></p>
 <blockquote>
 <p><strong>Example:</strong> Consider a test for some rare disease affecting only 0.5% of the population. If you have the disease, this test accurately identifies it 99% of the time. If you do not have the disease, the test results in a false positive only 4% of the time. Find the probability of a positive test.</p>
 <p><strong>Solution:</strong> Let’s start by assigning some probabilities to events. Let <span class="math inline">\(D\)</span> be the event a person has the disease and let <span class="math inline">\(T\)</span> be the probability the test is positive. From the prompt, we know that <span class="math inline">\(P(D) = 0.005\)</span> (0.5% of the population has the disease).</p>
