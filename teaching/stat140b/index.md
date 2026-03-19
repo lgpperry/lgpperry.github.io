@@ -49,3 +49,6 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_3.pdf">7.3 and 7.4: Basis Functions and Regression Splines</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_5.pdf">7.5 Smoothing Splines</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_7_6.pdf">7.6 and 7.7 Local Regression and Generalized Additive Models</a>
+
+### Chapter 8: Tree-Based Methods
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_8_1.pdf">8.1 Decision Tree Basics</a>
