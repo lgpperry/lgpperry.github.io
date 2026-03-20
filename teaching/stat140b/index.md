@@ -23,11 +23,7 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 ### Chapter 4: Classification
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_1.pdf">4.1 and 4.2 Introducing Classification</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_3.pdf">4.3 Logistic Regression</a>
-- 4.4 Generative Models for Classification
-    - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_1.pdf">4.4.1 Linear Discriminant Analysis for p = 1</a>
-    - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_2.pdf">4.4.2 Linear Discriminant Analysis for p > 1</a>
-    - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_3.pdf">4.4.3 Quadratic Discriminant Analysis</a>
-    - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4_4.pdf">4.4.4 Naive Bayes</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_4.pdf">4.4 Generative Models for Classification</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_5.pdf">4.5 A Comparison of Classification Methods</a>
     - Note that these are not directly based on the ISLR text; students are recommended to browse that section on their own.
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_4_6.pdf">4.6 Generalized Linear Models</a>
