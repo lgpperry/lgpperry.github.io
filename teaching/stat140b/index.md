@@ -48,3 +48,4 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 
 ### Chapter 8: Tree-Based Methods
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_8_1.pdf">8.1 Decision Tree Basics</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_8_2.pdf">8.2 Bagging, Random Forests, Boosting, and Bayesian Additive Regression Trees</a>
