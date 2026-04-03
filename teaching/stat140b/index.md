@@ -51,4 +51,5 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_8_2.pdf">8.2 Bagging, Random Forests, Boosting, and Bayesian Additive Regression Trees</a>
 
 ### Chapter 9: Support Vector Machines
-- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_9_1.pdf">9.1 Maximal Margin Classifier</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_9_1.pdf">9.1 Maximal Margin Classifiers</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_9_1.pdf">9.2 Support Vector Classifiers</a>
