@@ -67,18 +67,15 @@ Let $x$ denote the total number of successes in $n$ Bernoulli trials with succes
 
 To find a binomial probability formula:
 
-<ol><li>Check assumptions.</li>
-  <ol type="a">
-  <li>Exactly $n$ trials to be performed.</li>
-  <li>Two possible outcomes for each trial.</li>
-  <li>Trials are independent (each trial does not impact the result of the next)</li>
-  <li>Success probability $p$ remains the same from trial to trial.</li>
-  </ol>
-<li>Identify a "success". Generally, this is whichever of the two possible outcomes we are most interested in.</li>
-<li>Determine the success probability $p$.</li>
-<li>Determine $n$, the number of trials.</li>
-<li>Plug $n$ and $p$ into the binomial distribution formula.</li>
-</ol>
+1. Check assumptions.
+    a. Exactly $n$ trials to be performed.
+    b. Two possible outcomes for each trial.
+    c. Trials are independent (each trial does not impact the result of the next)
+    d. Success probability $p$ remains the same from trial to trial.
+2. Identify a "success". Generally, this is whichever of the two possible outcomes we are most interested in.
+3. Determine the success probability $p$.
+4. Determine $n$, the number of trials.
+5. Plug $n$ and $p$ into the binomial distribution formula.
 
 ## Probabilities with Inequalities
 
