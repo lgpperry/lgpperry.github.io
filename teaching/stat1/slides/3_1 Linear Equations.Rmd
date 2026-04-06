@@ -2,9 +2,9 @@
 title: "3.1 Linear Equations"
 author: "Dr. Lauren Perry"
 output:
+  beamer_presentation: default
   ioslides_presentation:
     widescreen: true
-  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -38,7 +38,7 @@ $$y=b_0 + b_1x$$
 
 A **scatterplot** shows the relationship between two (numeric) variables.
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 plot(1000*mtcars$wt, mtcars$mpg, pch=16,
      main = "Scatterplot of Car Weight vs MPG",
      xlab="Weight (lbs)", ylab="Miles Per Gallon")
@@ -48,7 +48,7 @@ We call this type of data **bivariate data**.
 
 ***
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 set.seed(0)
 num <- sample(1:30, 10)
 price <- 8 + 3.25*num
@@ -71,7 +71,7 @@ $$y = 8 + 3.25x$$ where $x$ is the number of coffees purchased in a month and $y
 - But what if that pound of coffee didn't always cost \$8? 
 - Or the coffee drinks didn't always cost \$3.25? 
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 set.seed(0)
 num <- sample(1:30, 10)
 price <- 8 + 3.25*num + rnorm(10,0,15)
@@ -112,7 +112,7 @@ Think of this as the 2-dimensional version of a point estimate!
 *Example*: Researchers took a variety of measurements on 344 adult
 penguins in Antarctica.
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 library(palmerpenguins)
 #head(penguins)
 plot(penguins$flipper_length_mm, penguins$body_mass_g,
@@ -124,7 +124,7 @@ plot(penguins$flipper_length_mm, penguins$body_mass_g,
 
 The regression model for these data is $$\hat{y}=-5780.83 + 49.69x$$
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 temp <- summary(lm(penguins$body_mass_g ~ penguins$flipper_length_mm))
 plot(penguins$flipper_length_mm, penguins$body_mass_g,
      xlab = "Flipper Length (mm)", ylab = "Body Mass (g)")
