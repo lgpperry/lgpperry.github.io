@@ -54,3 +54,6 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_9_1.pdf">9.1 Maximal Margin Classifiers</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_9_2.pdf">9.2 Support Vector Classifiers</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_9_3.pdf">9.3-9.5 Support Vector Machines</a>
+
+### Chapter 10: Deep Learning
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_10_1.pdf">10.1 Single Layer Neural Networks</a>
