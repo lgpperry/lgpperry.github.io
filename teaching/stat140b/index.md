@@ -58,3 +58,4 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 ### Chapter 10: Deep Learning
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_10_1.pdf">10.1 Single Layer Neural Networks</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_10_2.pdf">10.2 Multilayer Neural Networks</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_10_3.pdf">10.3 Convolutional Neural Networks</a>
