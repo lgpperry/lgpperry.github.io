@@ -260,7 +260,3 @@ Note that if $z = \frac{x-\mu}{\sigma}$, then $x = \mu + z\sigma$.
 SAT scores are approximately Normal($\mu=1100$, $\sigma=200$). Find the 90th percentile for SAT scores. 
 
 <a href="http://www.rossmanchance.com/applets/2021/normcalc/NormCalc.html" target="blank">Rossman and Chance Normal Probability Calculator</a>
-
-## Homework Problems
-
-Section 5.3 Exercises 1-10

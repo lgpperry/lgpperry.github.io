@@ -31,7 +31,7 @@ Alternately, we may specify a maximum margin of error $m$ instead: $$ n \ge \lef
 - Once we've done a sample size calculation, we need a whole number for $n$. 
 - Since $n \ge$ something, we will *always round up*.
 
-## Checkpoint 
+## Example 
 
 Suppose we want a 95\% confidence interval for the mean of a normally distributed population with standard deviation $\sigma=10$. It is important for our margin of error to be no more than 2. What sample size do we need?
 
@@ -41,7 +41,7 @@ Suppose we want a 95\% confidence interval for the mean of a normally distribute
 - As $\sigma$ increases, $n$ will also increase. (More population variability will necessitate a larger sample size.)
 - As confidence level increases, $n$ will also increase.
 
-## Checkpoint
+## Example
 
 Prior experience with SAT scores in the CSU system suggests that SAT scores are well-approximated by a normal distribution with standard deviation known to be 50. 
 

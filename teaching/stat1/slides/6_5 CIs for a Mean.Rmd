@@ -100,10 +100,6 @@ Find t critical values for the following settings:
 
 The weights of 6 randomly selected NFL linebackers were $$243, 238, 229, 253, 248, 225$$. Find and interpret a 90\% confidence interval for the average weight of NFL linebackers.
 
-## Checkpoint
+## Example
 
 A different sample of NFL linebacker weights from 23 randomly selected players resulted in a mean of 242 pounds and a standard deviation of 13 pounds. Based on this new sample, find and interpret a 98\% confidence interval for the average weight of NFL linebackers.
-
-## Homework Problems
-
-Section 6.5 Exercises 1-4

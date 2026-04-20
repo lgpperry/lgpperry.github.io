@@ -64,12 +64,14 @@ Prior experience with SAT scores in the CSU system suggests that SAT scores are 
 1. Calculate a 98\% confidence interval.
 2. Interpret the interval in the context of the problem.
 
-## Checkpoint
+## Example
 
-Prior experience with SAT scores in the CSU system suggests that SAT scores are well-approximated by a normal distribution with standard deviation known to be 50. Suppose we have a random sample of 50 Sac State students with (sample) mean SAT score 1112. 
+Use the [applet](https://www.rossmanchance.com/applets/2021/normcalc/NormCalc.html) to find critical values for the following levels of confidence:
 
-3. Calculate a 90\% confidence interval.
-4. Interpret each interval in the context of the problem. Comment on how the intervals change as you change the confidence level.
+1. 95%
+2. 80%
+3. 96%
+4. 99.9%
 
 ## Breaking Down a Confidence Interval
 
