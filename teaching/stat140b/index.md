@@ -61,3 +61,4 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_10_3.pdf">10.3 Convolutional Neural Networks</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_10_4.pdf">10.4 Document Classification</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_10_5.pdf">10.5 Recurrent Neural Networks</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_10_6.pdf">10.6 When to Use Deep Learning</a>
