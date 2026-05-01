@@ -768,7 +768,8 @@ Then the test statistic is <span class="math display">\[z = \frac{\hat{p_1}-\hat
 <p>So the numbers of successes are <span class="math inline">\(x_1 = 5\)</span> and <span class="math inline">\(x_2 = 9\)</span> for group sizes <span class="math inline">\(n_1 = n_2 = 10\)</span>. For the <code>prop.test</code> command, this will look like <code>x = c(5, 9)</code> and <code>n = c(10,10)</code>. We will use an <span class="math inline">\(\alpha=0.1\)</span> level of significance. Then</p>
 <div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="inference-comparing-parameters.html#cb110-1" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">9</span>), <span class="at">n =</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">10</span>), <span class="at">conf.level =</span> <span class="fl">0.9</span>)</span></code></pre></div>
 <pre><code>## 
-##  2-sample test for equality of proportions with continuity correction
+##  2-sample test for equality of proportions with continuity
+##  correction
 ## 
 ## data:  c(5, 9) out of c(10, 10)
 ## X-squared = 2.1429, df = 1, p-value = 0.1432

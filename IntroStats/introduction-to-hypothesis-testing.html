@@ -672,7 +672,7 @@ Correct decision
 <p>Idea: the null is our “default assumption”. If the null is true, how likely are we to observe a sample that looks like the one we have? If our sample is very inconsistent with the null hypothesis, we want to reject the null hypothesis.</p>
 <div id="test-statistics" class="section level3 hasAnchor" number="7.3.1">
 <h3><span class="header-section-number">7.3.1</span> Test statistics<a href="introduction-to-hypothesis-testing.html#test-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Test statistics are similar to z- and t-scores: <span class="math display">\[\text{test statistic} = \frac{\text{point estimate}-\text{null value}}{\text{standard error}}.\]</span> In fact, they serve a similar function in converting a variable <span class="math inline">\(\bar{X}\)</span> into a distribution we can work with easily.</p>
+<p>Test statistics are similar to z- and t-scores: <span class="math display">\[\text{test statistic} = \frac{\text{point estimate}-\text{null value}}{\text{standard error}}.\]</span></p>
 <ul>
 <li><strong>Large Sample Setting</strong>: <span class="math inline">\(\mu\)</span> is target parameter, <span class="math inline">\(n \ge 30\)</span></li>
 </ul>
@@ -681,7 +681,8 @@ Correct decision
 <li><strong>Small Sample Setting</strong>: <span class="math inline">\(\mu\)</span> is target parameter, <span class="math inline">\(n &lt; 30\)</span></li>
 </ul>
 <p><span class="math display">\[t = \frac{\bar{x}-\mu_0}{s/\sqrt{n}}\]</span></p>
-<p>The set of values for the test statistic that cause us to reject <span class="math inline">\(H_0\)</span> is the <strong>rejection region</strong>. The remaining values are the <strong>nonrejection region</strong>. The value that separates these is the critical value!</p>
+<p>We can use our intuition about z-scores to build some intuition about test statistics. Remember we can use z-scores to think about unusual observations and outliers. Test statistics serve a similar function - they give us a measure of how <em>extreme</em> our data are relative to the null hypothesis. If the test statistic represents an “outlier”, then the data are very inconsistent with the null hypothesis!</p>
+<p>The critical value approach formalizes this idea by coming up with a formal cutoff for what is considered “extreme enough”. The set of values for the test statistic that cause us to reject <span class="math inline">\(H_0\)</span> is the <strong>rejection region</strong>. The remaining values are the <strong>nonrejection region</strong>. The value that separates these is the critical value!</p>
 <p><img src="IntroStats_files/figure-html/unnamed-chunk-108-1.png" alt="" width="672" /></p>
 <p>Steps:</p>
 <ol style="list-style-type: decimal">
@@ -705,8 +706,10 @@ Correct decision
 <div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="introduction-to-hypothesis-testing.html#cb94-1" tabindex="-1"></a><span class="fu">qt</span>(<span class="fl">0.05</span>, <span class="dv">19</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## [1] 1.729133</code></pre>
 <blockquote>
-<p>So the critical value is <span class="math inline">\(t_{19, 0.05}=1.729\)</span>.
-5. The test statistic is <em>not</em> in the rejection region, so we will fail to reject the null hypothesis:</p>
+<p>So the critical value is <span class="math inline">\(t_{19, 0.05}=1.729\)</span>.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>The test statistic is <em>not</em> in the rejection region, so we will fail to reject the null hypothesis:</li>
+</ol>
 </blockquote>
 <p><img src="IntroStats_files/figure-html/unnamed-chunk-110-1.png" alt="" width="672" /></p>
 <blockquote>
