@@ -74,7 +74,7 @@ text(x2, 0.-0.015, "-c.v."); text(x3, -0.015, "+c.v.")
 
 Researchers took a random sample of 20 green sea turtle nests and counted the number of eggs in each. They found a mean of 107.3 eggs with standard deviation 13.7.
 
-At the 0.1 level of significance, test if the mean number of eggs in green sea turtle clutches is 120. 
+At the 0.1 level of significance, test if the mean number of eggs in green sea turtle clutches is 110. 
 
 ## Checkpoint
 
