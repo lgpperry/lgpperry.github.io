@@ -70,3 +70,6 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_12_2.pdf">12.2 Principal Components Analysis</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_12_3.pdf">12.3 Missing Values and Matrix Completion</a>
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_12_4.pdf">12.4 Clustering Methods</a>
+
+### Chapter 11: Survival Analysis
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_11_1.pdf">11.1 and 11.2 Survival and Censoring</a>
