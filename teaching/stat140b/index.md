@@ -73,3 +73,4 @@ The following slides' content is borrowed/adapted from the textbook [Introductio
 
 ### Chapter 11: Survival Analysis
 - <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_11_1.pdf">11.1 and 11.2 Survival and Censoring</a>
+- <a href="https://lgpperry.github.io/teaching/stat140b/slides/Slides_11_3.pdf">11.3 The Kaplan-Meier Survival Curve</a>
