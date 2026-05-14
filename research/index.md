@@ -24,7 +24,7 @@ If you are a student interested in statistics research, [send me an email](mailt
 
 ### Publications and Conferences
 
-- [*A Friendly Intervention: Propensity Scores, Overlap Weights, and Peer Assisted Learning*](https://lgpperry.github.io/research/FacultySpotlightSlides.pdf)
+- [*A Friendly Intervention: Propensity Scores, Overlap Weights, and Peer Assisted Learning*](https://lgpperry.github.io/research/FacultySpotlightSlides.pdf) (Faculty Spotlight Talk, Sac State Math Colloquium, April 2026)
 - [*Where are all the professors of color?*](https://lgpperry.github.io/research/AHSIE2023.pdf) (Lightning talk, AHSIE 2023)
 - [*Challenges and Successes of Emergency Online Teaching*](https://lgpperry.github.io/research/Emergency_Online_Teaching_Talk.pdf) (Talk given at the Chico State Math Colloquium, October 2022)
 
