@@ -24,9 +24,10 @@ If you are a student interested in statistics research, [send me an email](mailt
 
 ### Publications and Conferences
 
+- [*A Friendly Intervention: Propensity Scores, Overlap Weights, and Peer Assisted Learning*](https://lgpperry.github.io/research/FacultySpotlightSlides.pdf)
 - [*Where are all the professors of color?*](https://lgpperry.github.io/research/AHSIE2023.pdf) (Lightning talk, AHSIE 2023)
 - [*Challenges and Successes of Emergency Online Teaching*](https://lgpperry.github.io/research/Emergency_Online_Teaching_Talk.pdf) (Talk given at the Chico State Math Colloquium, October 2022)
 
-You can check out my dissertation, [*Adjusting for Population Differences Using Applied Machine Learning Methods*, here](https://escholarship.org/uc/item/5ng9c2bn#main). (For the "too long, didn't read" version, [here are the slides for the 15 minute talk](https://lgpperry.github.io/research/ResearchTalk_CSUS.pdf) I gave on this work when I applied for my job here at Sac State!)
+You can check out my dissertation, [*Adjusting for Population Differences Using Applied Machine Learning Methods*, here](https://lgpperry.github.io/research/Dissertation.pdf). (For the "too long, didn't read" version, [here are the slides for the 15 minute talk](https://lgpperry.github.io/research/ResearchTalk_CSUS.pdf) I gave on this work when I applied for my job here at Sac State!)
 
-For a complete list of my publications and presentations, see my [CV](https://lgpperry.github.io/PerryCV.pdf). 
+For a complete list of my publications and presentations, see my [CV](https://lgpperry.github.io/PerryCV.pdf). I'm happy to share copies of any of the listed articles.
